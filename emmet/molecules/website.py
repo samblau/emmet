@@ -8,7 +8,7 @@ import numpy as np
 import networkx as nx
 
 from pymatgen import Molecule
-from pymatgen.analysis.graphs import MoleculeGraph, isomorphic
+from pymatgen.analysis.graphs import MoleculeGraph
 from pymatgen.analysis.local_env import OpenBabelNN
 from pymatgen.io.babel import BabelMolAdaptor
 from pymatgen.io.xyz import XYZ
@@ -195,17 +195,17 @@ class WebsiteMoleculesBuilder(Builder):
         """
         # Search index for molecules
         self.molecules.ensure_index(self.molecules.key, unique=True)
-        self.molecules.ensure_index(self.molecules.lu_field)
+        self.molecules.ensure_index(self.molecules.last_updated_field)
         self.molecules.ensure_index("formula_alphabetical")
         
         # Search index for molecules
         self.redox.ensure_index(self.redox.key, unique=True)
-        self.redox.ensure_index(self.redox.lu_field)
+        self.redox.ensure_index(self.redox.last_updated_field)
         self.redox.ensure_index("formula_alphabetical")
 
         # Search index for website
         self.website.ensure_index(self.website.key, unique=True)
-        self.website.ensure_index(self.website.lu_field)
+        self.website.ensure_index(self.website.last_updated_field)
         self.website.ensure_index("formula_alphabetical")
 
 

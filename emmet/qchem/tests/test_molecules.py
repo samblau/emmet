@@ -12,7 +12,7 @@ test_tasks = os.path.join(module_dir, "..", "..", "..", "test_files", "sample_qc
 class TestMolecules(unittest.TestCase):
     def setUp(self):
         tasks = JSONStore(test_tasks)
-        self.molecules = MemoryStore(name="molecules")
+        self.molecules = MemoryStore()
         tasks.connect()
         self.molecules.connect()
         self.mbuilder = MoleculesBuilder(tasks, self.molecules)

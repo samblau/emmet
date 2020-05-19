@@ -181,12 +181,12 @@ class RedoxBuilder(Builder):
         """
         # Search index for molecules
         self.molecules.ensure_index(self.molecules.key, unique=True)
-        self.molecules.ensure_index(self.molecules.lu_field)
+        self.molecules.ensure_index(self.molecules.last_updated_field)
         self.molecules.ensure_index("formula_alphabetical")
         
         # Search index for molecules
         self.redox.ensure_index(self.redox.key, unique=True)
-        self.redox.ensure_index(self.redox.lu_field)
+        self.redox.ensure_index(self.redox.last_updated_field)
         self.redox.ensure_index("formula_alphabetical")
 
     def get_entries(self, formula_alphabetical):

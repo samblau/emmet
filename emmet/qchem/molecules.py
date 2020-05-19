@@ -166,7 +166,7 @@ class MoleculesBuilder(Builder):
 
         if len(items) > 0:
             self.logger.info("Updating {} molecules".format(len(items)))
-            self.molecules.update(docs=items, update_lu=False)
+            self.molecules.update(docs=items)
         else:
             self.logger.info("No items to update")
 
@@ -214,7 +214,7 @@ class MoleculesBuilder(Builder):
         task_types = {t["task_id"]: t["task_type"] for t in all_props}
 
         mol = {
-            self.molecules.lu_field: max([prop["last_updated"] for prop in all_props]),
+            self.molecules.last_updated_field: max([prop["last_updated"] for prop in all_props]),
             "created_at": min([prop["last_updated"] for prop in all_props]),
             "task_ids": task_ids,
             "deprecated_tasks": deprecated_tasks,
@@ -275,7 +275,7 @@ class MoleculesBuilder(Builder):
                             "accuracy_score": calc_accuracy_score(task["orig"]),
                             "track": prop.get("track", False),
                             "aggregate": prop.get("aggregate", False),
-                            "last_updated": task[self.tasks.lu_field],
+                            "last_updated": task[self.tasks.last_updated_field],
                             "energy": get(task, "output.final_energy", 0.0),
                             "molecules_key": prop["molecules_key"],
                             "is_valid": task.get("is_valid", True)
@@ -316,13 +316,13 @@ class MoleculesBuilder(Builder):
         self.tasks.ensure_index(self.tasks.key, unique=True)
         self.tasks.ensure_index("state")
         self.tasks.ensure_index("formula_pretty")
-        self.tasks.ensure_index(self.tasks.lu_field)
+        self.tasks.ensure_index(self.tasks.last_updated_field)
 
         # Search index for molecules
         self.molecules.ensure_index(self.molecules.key, unique=True)
         self.molecules.ensure_index("task_ids")
         self.molecules.ensure_index("formula_alphabetical")
-        self.molecules.ensure_index(self.molecules.lu_field)
+        self.molecules.ensure_index(self.molecules.last_updated_field)
 
         if self.task_types:
             self.task_types.ensure_index(self.task_types.key)

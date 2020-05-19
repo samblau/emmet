@@ -14,9 +14,9 @@ test_tasks = os.path.join(module_dir, "..", "..", "..", "test_files", "sample_qc
 class TestWebsite(unittest.TestCase):
     def setUp(self):
         tasks = JSONStore(test_tasks)
-        molecules = MemoryStore(name="molecules")
-        redox = MemoryStore(name="redox")
-        self.website = MemoryStore(name="redox")
+        molecules = MemoryStore()
+        redox = MemoryStore()
+        self.website = MemoryStore()
         tasks.connect()
         molecules.connect()
         redox.connect()

@@ -13,8 +13,8 @@ test_tasks = os.path.join(module_dir, "..", "..", "..", "test_files", "sample_qc
 class TestRedox(unittest.TestCase):
     def setUp(self):
         tasks = JSONStore(test_tasks)
-        molecules = MemoryStore(name="molecules")
-        self.redox = MemoryStore(name="redox")
+        molecules = MemoryStore()
+        self.redox = MemoryStore()
         tasks.connect()
         molecules.connect()
         self.redox.connect()
