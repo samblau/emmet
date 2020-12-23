@@ -512,34 +512,35 @@ def group_molecules(molecules):
                                           "mol_dict_list":[mol_dict]})
 
         # Separate by M3:
-        final_subgroups = []
-        m3 = M3()
-        for subgroup in subgroups:
-            if len(subgroup["mol_dict_list"]) == 1:
-                final_subgroups.append(subgroup)
-            else:
-                adj = nx.Graph()
-                tmp_ids = list(range(len(subgroup["mol_dict_list"])))
-                adj.add_nodes_from(tmp_ids)
-                pairs = combinations(tmp_ids,2)
-                for pair in pairs:
-                    atoms1 = AseAtomsAdaptor.get_atoms(subgroup["mol_dict_list"][pair[0]]["molecule"])
-                    atoms2 = AseAtomsAdaptor.get_atoms(subgroup["mol_dict_list"][pair[1]]["molecule"])
-                    if m3(atoms1,atoms2) < 0.1:
-                        adj.add_edge(pair[0],pair[1])
-                subgraphs = list(nx.connected_components(adj))
-                if len(subgraphs) == 1:
-                    final_subgroups.append(subgroup)
-                else:
-                    for subgraph in subgraphs:
-                        new_subgroup = {}
-                        new_subgroup["mol_graph"] = subgroup["mol_graph"]
-                        new_subgroup["mol_dict_list"] = [subgroup["mol_dict_list"][ind] for ind in subgraph]
-                        if "metal_charges" in subgroup:
-                            new_subgroup["metal_charges"] = subgroup["metal_charges"]
-                        final_subgroups.append(new_subgroup)
+        # final_subgroups = []
+        # m3 = M3()
+        # for subgroup in subgroups:
+        #     if len(subgroup["mol_dict_list"]) == 1:
+        #         final_subgroups.append(subgroup)
+        #     else:
+        #         adj = nx.Graph()
+        #         tmp_ids = list(range(len(subgroup["mol_dict_list"])))
+        #         adj.add_nodes_from(tmp_ids)
+        #         pairs = combinations(tmp_ids,2)
+        #         for pair in pairs:
+        #             atoms1 = AseAtomsAdaptor.get_atoms(subgroup["mol_dict_list"][pair[0]]["molecule"])
+        #             atoms2 = AseAtomsAdaptor.get_atoms(subgroup["mol_dict_list"][pair[1]]["molecule"])
+        #             if m3(atoms1,atoms2) < 0.1:
+        #                 adj.add_edge(pair[0],pair[1])
+        #         subgraphs = list(nx.connected_components(adj))
+        #         if len(subgraphs) == 1:
+        #             final_subgroups.append(subgroup)
+        #         else:
+        #             for subgraph in subgraphs:
+        #                 new_subgroup = {}
+        #                 new_subgroup["mol_graph"] = subgroup["mol_graph"]
+        #                 new_subgroup["mol_dict_list"] = [subgroup["mol_dict_list"][ind] for ind in subgraph]
+        #                 if "metal_charges" in subgroup:
+        #                     new_subgroup["metal_charges"] = subgroup["metal_charges"]
+        #                 final_subgroups.append(new_subgroup)
 
-        for subgroup in final_subgroups:
+        # for subgroup in final_subgroups:
+        for subgroup in subgroups:
             yield subgroup["mol_dict_list"]
 
 
