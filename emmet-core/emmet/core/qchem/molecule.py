@@ -45,6 +45,11 @@ def evaluate_lot(
     else:
         lot_comp = lot.split("/")
 
+    print(lot_comp[0])
+    print(lot_comp[1])
+    print(lot_comp[2])
+    print(lot_comp[2].split("(")[0])
+
     return (
         -1 * funct_scores.get(lot_comp[0], 0),
         -1 * basis_scores.get(lot_comp[1], 0),
