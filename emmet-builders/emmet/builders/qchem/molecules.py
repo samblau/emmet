@@ -557,19 +557,19 @@ class MoleculesBuilder(Builder):
                     # Unconnected molecule graphs are discarded at this step
                     # TODO: What about molecules that would be connected under a different
                     # TODO: bonding scheme? For now, ¯\_(ツ)_/¯
-                    if nx.is_connected(mol_graph.graph.to_undirected()):
-                        matched = False
+                    # if nx.is_connected(mol_graph.graph.to_undirected()):
+                    matched = False
 
-                        for subgroup in subgroups:
-                            if mol_graph.isomorphic_to(subgroup["mol_graph"]):
-                                subgroup["mol_docs"].append(mol_doc)
-                                matched = True
-                                break
+                    for subgroup in subgroups:
+                        if mol_graph.isomorphic_to(subgroup["mol_graph"]):
+                            subgroup["mol_docs"].append(mol_doc)
+                            matched = True
+                            break
 
-                        if not matched:
-                            subgroups.append(
-                                {"mol_graph": mol_graph, "mol_docs": [mol_doc]}
-                            )
+                    if not matched:
+                        subgroups.append(
+                            {"mol_graph": mol_graph, "mol_docs": [mol_doc]}
+                        )
 
                 for subgroup in subgroups:
                     yield subgroup["mol_docs"]
