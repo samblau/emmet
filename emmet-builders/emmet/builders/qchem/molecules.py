@@ -205,6 +205,7 @@ class MoleculesAssociationBuilder(Builder):
                     TaskDocument(**t).level_of_theory
                     t["is_valid"] = True
                 except Exception as e:
+                    self.logger.info(TaskDocument(**t).level_of_theory)
                     self.logger.info(
                         f"Processing task {t['task_id']} failed with Exception - {e}"
                     )
