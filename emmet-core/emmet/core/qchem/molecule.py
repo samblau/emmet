@@ -45,12 +45,10 @@ def evaluate_lot(
     else:
         lot_comp = lot.split("/")
 
-    solvent_field = lot_comp[2].split("(")
-
     return (
         -1 * funct_scores.get(lot_comp[0], 0),
         -1 * basis_scores.get(lot_comp[1], 0),
-        -1 * solvent_scores.get(solvent_field[0], 0),
+        -1 * solvent_scores.get(lot_comp[2].split("(")[0], 0),
     )
 
 
