@@ -112,7 +112,7 @@ class MoleculesAssociationBuilder(Builder):
         """Prechunk the molecule builder for distributed computation"""
 
         temp_query = dict(self.query)
-        temp_query["state"] = "successful"
+        # temp_query["state"] = "successful"
 
         self.logger.info("Finding tasks to process")
         all_tasks = list(
@@ -155,7 +155,7 @@ class MoleculesAssociationBuilder(Builder):
 
         # Get all processed tasks
         temp_query = dict(self.query)
-        temp_query["state"] = "successful"
+        # temp_query["state"] = "successful"
 
         self.logger.info("Finding tasks to process")
         all_tasks = list(
