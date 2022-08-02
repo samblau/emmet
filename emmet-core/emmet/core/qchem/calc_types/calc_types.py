@@ -112,7 +112,7 @@ PCM_DIELECTRICS = {
     "EC": 95.3,
     "EC/EMC": 18.5,
     "PC": 65.5,
-    "ACETONITRILE": 38.8,
+    "ACETONITRILE": 38.88,
 }
 
 SMD_PARAMETERS = {
