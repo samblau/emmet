@@ -283,13 +283,13 @@ class ThermoBuilder(Builder):
 
             sp_entries = list()
             for entry in mol.entries:
-                if isinstance(entry["job_type"], TaskType):
-                    job_type = entry["job_type"].value
+                if isinstance(entry["task_type"], TaskType):
+                    task_type = entry["task_type"].value
                 else:
-                    job_type = entry["job_type"]
+                    task_type = entry["task_type"]
 
                 if (
-                    job_type == "Single Point"
+                    task_type == "Single Point"
                     and entry["charge"] == mol.charge
                     and entry["spin_multiplicity"] == mol.spin_multiplicity
                 ):
@@ -336,7 +336,7 @@ class ThermoBuilder(Builder):
                 matching_structures = list()
                 for entry in thermo_entries:
                     if mm.fit(entry["molecule"], best_spec["molecule"]):
-                         matching_structures.append(entry)
+                        matching_structures.append(entry)
 
                 best_dict = sorted(
                     matching_structures,
@@ -347,15 +347,21 @@ class ThermoBuilder(Builder):
                 )[0]
                 task_dict = best_dict["task_id"]
 
-                task_doc_dict = TaskDocument(**self.tasks.query_one({"task_id": int(task_dict)}))
-                task_doc_spec = TaskDocument(**self.tasks.query_one({"task_id": int(task_spec)}))
+                task_doc_dict = TaskDocument(
+                    **self.tasks.query_one({"task_id": int(task_dict)})
+                )
+                task_doc_spec = TaskDocument(
+                    **self.tasks.query_one({"task_id": int(task_spec)})
+                )
                 thermo_doc = ThermoDoc.from_task(
                     task_doc_dict,
                     correction_task=task_doc_spec,
                     molecule_id=mol.molecule_id,
-                    deprecated=False
+                    deprecated=False,
                 )
-                thermo_doc = _add_single_atom_enthalpy_entropy(task_doc_dict, thermo_doc)
+                thermo_doc = _add_single_atom_enthalpy_entropy(
+                    task_doc_dict, thermo_doc
+                )
                 this_thermo_docs.append(thermo_doc)
 
             docs_by_solvent = defaultdict(list)
@@ -370,13 +376,27 @@ class ThermoBuilder(Builder):
                 with_eval_e = list()
                 for member in collection:
                     if member.correction_level_of_theory is None:
-                        with_eval_e.append((member, evaluate_lot(member.level_of_theory), member.electronic_energy))
+                        with_eval_e.append(
+                            (
+                                member,
+                                evaluate_lot(member.level_of_theory),
+                                member.electronic_energy,
+                            )
+                        )
                     else:
                         dict_lot = evaluate_lot(member.level_of_theory)
                         spec_lot = evaluate_lot(member.correction_level_of_theory)
-                        with_eval_e.append((member, (dict_lot + spec_lot) / 2, member.electronic_energy))
+                        with_eval_e.append(
+                            (
+                                member,
+                                (dict_lot + spec_lot) / 2,
+                                member.electronic_energy,
+                            )
+                        )
 
-                thermo_docs.append(sorted(with_eval_e, key=lambda x: (x[1], x[2]))[0][0])
+                thermo_docs.append(
+                    sorted(with_eval_e, key=lambda x: (x[1], x[2]))[0][0]
+                )
 
         self.logger.debug(f"Produced {len(thermo_docs)} thermo docs for {formula}")
 
