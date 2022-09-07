@@ -67,7 +67,7 @@ FUNCTIONAL_CLASSES = {
         # "SCAN0",
         # "mPWB1K",
         # "mPWB1K-D3(BJ)",
-        "wb97mv"
+        "wb97m-v"
     ],
 }
 
