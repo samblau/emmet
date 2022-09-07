@@ -35,7 +35,7 @@ class PartialChargesDoc(PropertyDoc):
         molecule_id: MPculeID,
         preferred_methods: List[str],
         deprecated: bool = False,
-        **kwargs
+        **kwargs,
     ):  # type: ignore[override]
         """
         Determine partial charges from a task document
@@ -79,9 +79,11 @@ class PartialChargesDoc(PropertyDoc):
                     charges = [mull[0] for mull in task.output.mulliken]
                 break
 
-        id_string = f"partial_charges-{molecule_id}-{task.task_id}-{task.lot_solvent}-{method}"
+        id_string = (
+            f"partial_charges-{molecule_id}-{task.task_id}-{task.lot_solvent}-{method}"
+        )
         h = blake2b()
-        h.update(id_string)
+        h.update(id_string.encode("utf-8"))
         property_id = h.hexdigest()
 
         if charges is None:
@@ -98,7 +100,7 @@ class PartialChargesDoc(PropertyDoc):
             method=method,
             origins=[PropertyOrigin(name="partial_charges", task_id=task.task_id)],
             deprecated=deprecated,
-            **kwargs
+            **kwargs,
         )
 
 
@@ -120,7 +122,7 @@ class PartialSpinsDoc(PropertyDoc):
         molecule_id: MPculeID,
         preferred_methods: List[str],
         deprecated: bool = False,
-        **kwargs
+        **kwargs,
     ):  # type: ignore[override]
         """
         Determine partial spins from a task document
@@ -156,9 +158,11 @@ class PartialSpinsDoc(PropertyDoc):
                 spins = [mull[1] for mull in task.output.mulliken]
                 break
 
-        id_string = f"partial_spins-{molecule_id}-{task.task_id}-{task.lot_solvent}-{method}"
+        id_string = (
+            f"partial_spins-{molecule_id}-{task.task_id}-{task.lot_solvent}-{method}"
+        )
         h = blake2b()
-        h.update(id_string)
+        h.update(id_string.encode("utf-8"))
         property_id = h.hexdigest()
 
         if spins is None:
@@ -175,5 +179,5 @@ class PartialSpinsDoc(PropertyDoc):
             method=method,
             origins=[PropertyOrigin(name="partial_spins", task_id=task.task_id)],
             deprecated=deprecated,
-            **kwargs
+            **kwargs,
         )

@@ -38,7 +38,7 @@ class ThermoDoc(PropertyDoc):
     correction: bool = Field(
         False,
         description="Was a single-point calculation at higher level of "
-                    "theory used to correct the electronic energy?"
+        "theory used to correct the electronic energy?",
     )
 
     correction_level_of_theory: LevelOfTheory = Field(
@@ -106,7 +106,7 @@ class ThermoDoc(PropertyDoc):
         molecule_id: MPculeID,
         correction_task: Optional[TaskDocument] = None,
         deprecated: bool = False,
-        **kwargs
+        **kwargs,
     ):  # type: ignore[override]
 
         """
@@ -140,18 +140,19 @@ class ThermoDoc(PropertyDoc):
         total_enthalpy = task.output.enthalpy
         total_entropy = task.output.entropy
 
-        origins=[PropertyOrigin(name="thermo", task_id=task.task_id)]
+        origins = [PropertyOrigin(name="thermo", task_id=task.task_id)]
         if correction:
             origins.append(
-                PropertyOrigin(name="thermo_energy_correction",
-                               task_id=correction_task.task_id)
+                PropertyOrigin(
+                    name="thermo_energy_correction", task_id=correction_task.task_id
+                )
             )
 
         id_string = f"thermo-{molecule_id}-{task.task_id}-{task.lot_solvent}"
         if correction:
             id_string += f"-{correction_task.task_id}-{correction_task.lot_solvent}"
         h = blake2b()
-        h.update(id_string)
+        h.update(id_string.encode("utf-8"))
         property_id = h.hexdigest()
 
         if total_enthalpy is not None and total_entropy is not None:
@@ -198,7 +199,7 @@ class ThermoDoc(PropertyDoc):
                         free_energy=free_energy,
                         deprecated=deprecated,
                         origins=origins,
-                        **kwargs
+                        **kwargs,
                     )
 
         # If all thermodynamic data is not available
@@ -216,5 +217,5 @@ class ThermoDoc(PropertyDoc):
             electronic_energy=energy * 27.2114,
             deprecated=deprecated,
             origins=origins,
-            **kwargs
+            **kwargs,
         )

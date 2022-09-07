@@ -46,7 +46,7 @@ class VibrationDoc(PropertyDoc):
         task: TaskDocument,
         molecule_id: MPculeID,
         deprecated: bool = False,
-        **kwargs
+        **kwargs,
     ):  # type: ignore[override]
         """
         Construct a vibration document from a task document
@@ -99,7 +99,7 @@ class VibrationDoc(PropertyDoc):
 
         id_string = f"vibrations-{molecule_id}-{task.task_id}-{task.lot_solvent}"
         h = blake2b()
-        h.update(id_string)
+        h.update(id_string.encode("utf-8"))
         property_id = h.hexdigest()
 
         return super().from_molecule(
@@ -117,5 +117,5 @@ class VibrationDoc(PropertyDoc):
             warnings=warnings,
             origins=[PropertyOrigin(name="vibrations", task_id=task.task_id)],
             deprecated=deprecated,
-            **kwargs
+            **kwargs,
         )

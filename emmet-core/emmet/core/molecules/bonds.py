@@ -18,9 +18,33 @@ from emmet.core.molecules.molecule_property import PropertyDoc
 __author__ = "Evan Spotte-Smith <ewcspottesmith@lbl.gov>"
 
 
-metals = ['Zn', 'Tl', 'Ti', 'Te', 'Sr', 'Sn', 'Pt', 'Rb', 'Po', 'Pb', 'Na',
-          'Mg', 'Li', 'K', 'In', 'Ga', 'Cu', 'Ca', 'Bi', 'Be', 'Ba', 'Au',
-          'At', 'Al', 'Ag']
+metals = [
+    "Zn",
+    "Tl",
+    "Ti",
+    "Te",
+    "Sr",
+    "Sn",
+    "Pt",
+    "Rb",
+    "Po",
+    "Pb",
+    "Na",
+    "Mg",
+    "Li",
+    "K",
+    "In",
+    "Ga",
+    "Cu",
+    "Ca",
+    "Bi",
+    "Be",
+    "Ba",
+    "Au",
+    "At",
+    "Al",
+    "Ag",
+]
 
 BOND_METHODS = ["nbo", "critic2", "OpenBabelNN + metal_edge_extender"]
 
@@ -343,8 +367,9 @@ class BondingDoc(PropertyDoc):
                 break
 
             if m == "nbo" and task.output.nbo is not None:
-                if task.orig["rem"].get("run_nbo6", False) \
-                        or task.orig["rem"].get("nbo_external", False):
+                if task.orig["rem"].get("run_nbo6", False) or task.orig["rem"].get(
+                    "nbo_external", False
+                ):
                     method = "nbo"
                     mg, warnings = nbo_molecule_graph(mol, task.output.nbo)
                 else:
@@ -389,7 +414,7 @@ class BondingDoc(PropertyDoc):
 
         id_string = f"bonding-{molecule_id}-{task.task_id}-{task.lot_solvent}-{method}"
         h = blake2b()
-        h.update(id_string)
+        h.update(id_string.encode("utf-8"))
         property_id = h.hexdigest()
 
         return super().from_molecule(
