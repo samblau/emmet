@@ -37,7 +37,7 @@ FUNCTIONAL_CLASSES = {
         # "TPSS-D3(BJ)",
         # "MN12-L",
         # "MN12-L-D3(BJ)",
-        "B97M-rV"
+        "b97mv"
     ],
     "hybrid-gga": [
         # "PBE0",
@@ -67,7 +67,7 @@ FUNCTIONAL_CLASSES = {
         # "SCAN0",
         # "mPWB1K",
         # "mPWB1K-D3(BJ)",
-        "wB97M-V"
+        "wb97mv"
     ],
 }
 
