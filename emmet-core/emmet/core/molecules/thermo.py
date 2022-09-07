@@ -38,7 +38,7 @@ class ThermoDoc(PropertyDoc):
     correction: bool = Field(
         False,
         description="Was a single-point calculation at higher level of "
-                    "theory used to correct the electronic energy?"
+        "theory used to correct the electronic energy?",
     )
 
     correction_level_of_theory: LevelOfTheory = Field(
@@ -96,7 +96,7 @@ class ThermoDoc(PropertyDoc):
         molecule_id: MPculeID,
         correction_task: Optional[TaskDocument] = None,
         deprecated: bool = False,
-        **kwargs
+        **kwargs,
     ):  # type: ignore[override]
 
         """
@@ -135,8 +135,9 @@ class ThermoDoc(PropertyDoc):
         origins = [PropertyOrigin(name="thermo", task_id=task.task_id)]
         if correction:
             origins.append(
-                PropertyOrigin(name="thermo_energy_correction",
-                               task_id=correction_task.task_id)
+                PropertyOrigin(
+                    name="thermo_energy_correction", task_id=correction_task.task_id
+                )
             )
 
         id_string = f"thermo-{molecule_id}-{task.task_id}-{task.lot_solvent}"
@@ -191,7 +192,7 @@ class ThermoDoc(PropertyDoc):
                         free_energy=free_energy,
                         deprecated=deprecated,
                         origins=origins,
-                        **kwargs
+                        **kwargs,
                     )
 
         # If all thermodynamic data is not available
@@ -210,5 +211,5 @@ class ThermoDoc(PropertyDoc):
             electronic_energy=energy * 27.2114,
             deprecated=deprecated,
             origins=origins,
-            **kwargs
+            **kwargs,
         )

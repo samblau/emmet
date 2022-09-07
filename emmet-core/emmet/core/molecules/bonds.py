@@ -18,9 +18,33 @@ from emmet.core.molecules.molecule_property import PropertyDoc
 __author__ = "Evan Spotte-Smith <ewcspottesmith@lbl.gov>"
 
 
-metals = ['Zn', 'Tl', 'Ti', 'Te', 'Sr', 'Sn', 'Pt', 'Rb', 'Po', 'Pb', 'Na',
-          'Mg', 'Li', 'K', 'In', 'Ga', 'Cu', 'Ca', 'Bi', 'Be', 'Ba', 'Au',
-          'At', 'Al', 'Ag']
+metals = [
+    "Zn",
+    "Tl",
+    "Ti",
+    "Te",
+    "Sr",
+    "Sn",
+    "Pt",
+    "Rb",
+    "Po",
+    "Pb",
+    "Na",
+    "Mg",
+    "Li",
+    "K",
+    "In",
+    "Ga",
+    "Cu",
+    "Ca",
+    "Bi",
+    "Be",
+    "Ba",
+    "Au",
+    "At",
+    "Al",
+    "Ag",
+]
 
 BOND_METHODS = ["nbo", "critic2", "OpenBabelNN + metal_edge_extender"]
 
