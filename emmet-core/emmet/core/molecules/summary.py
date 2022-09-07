@@ -263,7 +263,7 @@ class SummaryDoc(PropertyDoc):
 
         doc = _copy_from_doc(docs)
 
-        id_string = f"summary-{molecule_id}-{task.task_id}-{task.lot_solvent}"
+        id_string = f"summary-{molecule_id}"
         h = blake2b()
         h.update(id_string.encode("utf-8"))
         property_id = h.hexdigest()
