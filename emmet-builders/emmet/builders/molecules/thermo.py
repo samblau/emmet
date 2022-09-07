@@ -379,7 +379,9 @@ class ThermoBuilder(Builder):
                         spec_lot = sum(evaluate_lot(member.correction_level_of_theory))
                         with_eval_e.append((member, (dict_lot + spec_lot) / 2, member.electronic_energy))
 
-                thermo_docs.append(sorted(with_eval_e, key=lambda x: (x[1], x[2]))[0][0])
+                thermo_docs.append(
+                    sorted(with_eval_e, key=lambda x: (x[1], x[2]))[0][0]
+                )
 
         self.logger.debug(f"Produced {len(thermo_docs)} thermo docs for {formula}")
 
