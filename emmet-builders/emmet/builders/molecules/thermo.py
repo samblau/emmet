@@ -4,6 +4,7 @@ from itertools import chain, groupby
 from math import ceil
 from typing import Optional, Iterable, Iterator, List, Dict
 
+from pymatgen.core.structure import Molecule
 from pymatgen.analysis.molecule_matcher import MoleculeMatcher
 
 from maggma.builders import Builder
@@ -335,7 +336,10 @@ class ThermoBuilder(Builder):
 
                 matching_structures = list()
                 for entry in thermo_entries:
-                    if mm.fit(entry["molecule"], best_spec["molecule"]):
+                    if mm.fit(
+                        Molecule.from_dict(entry["molecule"]),
+                        Molecule.from_dict(best_spec["molecule"]),
+                    ):
                         matching_structures.append(entry)
 
                 best_dict = sorted(
