@@ -383,13 +383,13 @@ class ThermoBuilder(Builder):
                         with_eval_e.append(
                             (
                                 member,
-                                evaluate_lot(member.level_of_theory),
+                                sum(evaluate_lot(member.level_of_theory)),
                                 member.electronic_energy,
                             )
                         )
                     else:
-                        dict_lot = evaluate_lot(member.level_of_theory)
-                        spec_lot = evaluate_lot(member.correction_level_of_theory)
+                        dict_lot = sum(evaluate_lot(member.level_of_theory))
+                        spec_lot = sum(evaluate_lot(member.correction_level_of_theory))
                         with_eval_e.append(
                             (
                                 member,
