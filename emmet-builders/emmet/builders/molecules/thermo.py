@@ -51,7 +51,7 @@ single_mol_thermo = {
     "K": {"enthalpy": 1.481, "entropy": 36.908},
     "In": {"enthalpy": 1.481, "entropy": 40.132},
     "I": {"enthalpy": 1.481, "entropy": 40.428},
-    "H": {"enthalpy": 1.481, "entropy": 26.014},
+    "H1": {"enthalpy": 1.481, "entropy": 26.014},
     "He": {"enthalpy": 1.481, "entropy": 30.125},
     "Ge": {"enthalpy": 1.481, "entropy": 38.817},
     "Ga": {"enthalpy": 1.481, "entropy": 38.609},
@@ -232,7 +232,7 @@ class ThermoBuilder(Builder):
         def _add_single_atom_enthalpy_entropy(task: TaskDocument, doc: ThermoDoc):
             initial_mol = task.output.initial_molecule
             # If single atom, try to add enthalpy and entropy
-            if len(initial_mol["sites"]) == 1:
+            if len(initial_mol) == 1:
                 if doc.total_enthalpy is None or doc.total_entropy is None:
                     formula = initial_mol.composition.alphabetical_formula
                     if formula in single_mol_thermo:
