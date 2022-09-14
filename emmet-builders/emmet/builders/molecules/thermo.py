@@ -337,6 +337,13 @@ class ThermoBuilder(Builder):
                                   and sum(evaluate_lot(entry["level_of_theory"])) < sum(evaluate_lot(best_spec["level_of_theory"]))):
                              matching_structures.append(entry)
 
+                matching_structures = list()
+                for entry in thermo_entries:
+                    if mm.fit(
+                        Molecule.from_dict(entry["molecule"]),
+                        Molecule.from_dict(best_spec["molecule"]),
+                    ):
+                        matching_structures.append(entry)
                     if len(matching_structures) == 0:
                         continue
 
