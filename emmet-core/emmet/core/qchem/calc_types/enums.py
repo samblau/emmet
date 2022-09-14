@@ -6,7 +6,7 @@ from emmet.core.utils import ValueEnum
 
 
 class LevelOfTheory(ValueEnum):
-    """Levels of theory for calculations in Q-Chem"""
+    """ Levels of theory for calculations in Q-Chem """
 
     PBE_6_31g_d_VACUUM = "PBE/6-31g*/VACUUM"
     PBE_6_31g_d_PCM = "PBE/6-31g*/PCM"
@@ -80,30 +80,30 @@ class LevelOfTheory(ValueEnum):
     B97_D3_def2_QZVPPD_VACUUM = "B97-D3/def2-QZVPPD/VACUUM"
     B97_D3_def2_QZVPPD_PCM = "B97-D3/def2-QZVPPD/PCM"
     B97_D3_def2_QZVPPD_SMD = "B97-D3/def2-QZVPPD/SMD"
-    B97M_rV_6_31g_d_VACUUM = "B97M-rV/6-31g*/VACUUM"
-    B97M_rV_6_31g_d_PCM = "B97M-rV/6-31g*/PCM"
-    B97M_rV_6_31g_d_SMD = "B97M-rV/6-31g*/SMD"
-    B97M_rV_def2_SVPD_VACUUM = "B97M-rV/def2-SVPD/VACUUM"
-    B97M_rV_def2_SVPD_PCM = "B97M-rV/def2-SVPD/PCM"
-    B97M_rV_def2_SVPD_SMD = "B97M-rV/def2-SVPD/SMD"
-    B97M_rV_def2_TZVP_VACUUM = "B97M-rV/def2-TZVP/VACUUM"
-    B97M_rV_def2_TZVP_PCM = "B97M-rV/def2-TZVP/PCM"
-    B97M_rV_def2_TZVP_SMD = "B97M-rV/def2-TZVP/SMD"
-    B97M_rV_def2_TZVPD_VACUUM = "B97M-rV/def2-TZVPD/VACUUM"
-    B97M_rV_def2_TZVPD_PCM = "B97M-rV/def2-TZVPD/PCM"
-    B97M_rV_def2_TZVPD_SMD = "B97M-rV/def2-TZVPD/SMD"
-    B97M_rV_def2_TZVPP_VACUUM = "B97M-rV/def2-TZVPP/VACUUM"
-    B97M_rV_def2_TZVPP_PCM = "B97M-rV/def2-TZVPP/PCM"
-    B97M_rV_def2_TZVPP_SMD = "B97M-rV/def2-TZVPP/SMD"
-    B97M_rV_def2_TZVPPD_VACUUM = "B97M-rV/def2-TZVPPD/VACUUM"
-    B97M_rV_def2_TZVPPD_PCM = "B97M-rV/def2-TZVPPD/PCM"
-    B97M_rV_def2_TZVPPD_SMD = "B97M-rV/def2-TZVPPD/SMD"
-    B97M_rV_def2_QZVPD_VACUUM = "B97M-rV/def2-QZVPD/VACUUM"
-    B97M_rV_def2_QZVPD_PCM = "B97M-rV/def2-QZVPD/PCM"
-    B97M_rV_def2_QZVPD_SMD = "B97M-rV/def2-QZVPD/SMD"
-    B97M_rV_def2_QZVPPD_VACUUM = "B97M-rV/def2-QZVPPD/VACUUM"
-    B97M_rV_def2_QZVPPD_PCM = "B97M-rV/def2-QZVPPD/PCM"
-    B97M_rV_def2_QZVPPD_SMD = "B97M-rV/def2-QZVPPD/SMD"
+    b97mv_6_31g_d_VACUUM = "b97mv/6-31g*/VACUUM"
+    b97mv_6_31g_d_PCM = "b97mv/6-31g*/PCM"
+    b97mv_6_31g_d_SMD = "b97mv/6-31g*/SMD"
+    b97mv_def2_SVPD_VACUUM = "b97mv/def2-SVPD/VACUUM"
+    b97mv_def2_SVPD_PCM = "b97mv/def2-SVPD/PCM"
+    b97mv_def2_SVPD_SMD = "b97mv/def2-SVPD/SMD"
+    b97mv_def2_TZVP_VACUUM = "b97mv/def2-TZVP/VACUUM"
+    b97mv_def2_TZVP_PCM = "b97mv/def2-TZVP/PCM"
+    b97mv_def2_TZVP_SMD = "b97mv/def2-TZVP/SMD"
+    b97mv_def2_TZVPD_VACUUM = "b97mv/def2-TZVPD/VACUUM"
+    b97mv_def2_TZVPD_PCM = "b97mv/def2-TZVPD/PCM"
+    b97mv_def2_TZVPD_SMD = "b97mv/def2-TZVPD/SMD"
+    b97mv_def2_TZVPP_VACUUM = "b97mv/def2-TZVPP/VACUUM"
+    b97mv_def2_TZVPP_PCM = "b97mv/def2-TZVPP/PCM"
+    b97mv_def2_TZVPP_SMD = "b97mv/def2-TZVPP/SMD"
+    b97mv_def2_TZVPPD_VACUUM = "b97mv/def2-TZVPPD/VACUUM"
+    b97mv_def2_TZVPPD_PCM = "b97mv/def2-TZVPPD/PCM"
+    b97mv_def2_TZVPPD_SMD = "b97mv/def2-TZVPPD/SMD"
+    b97mv_def2_QZVPD_VACUUM = "b97mv/def2-QZVPD/VACUUM"
+    b97mv_def2_QZVPD_PCM = "b97mv/def2-QZVPD/PCM"
+    b97mv_def2_QZVPD_SMD = "b97mv/def2-QZVPD/SMD"
+    b97mv_def2_QZVPPD_VACUUM = "b97mv/def2-QZVPPD/VACUUM"
+    b97mv_def2_QZVPPD_PCM = "b97mv/def2-QZVPPD/PCM"
+    b97mv_def2_QZVPPD_SMD = "b97mv/def2-QZVPPD/SMD"
     B3LYP_6_31g_d_VACUUM = "B3LYP/6-31g*/VACUUM"
     B3LYP_6_31g_d_PCM = "B3LYP/6-31g*/PCM"
     B3LYP_6_31g_d_SMD = "B3LYP/6-31g*/SMD"
@@ -200,3413 +200,1773 @@ class LevelOfTheory(ValueEnum):
     wB97X_V_def2_QZVPPD_VACUUM = "wB97X-V/def2-QZVPPD/VACUUM"
     wB97X_V_def2_QZVPPD_PCM = "wB97X-V/def2-QZVPPD/PCM"
     wB97X_V_def2_QZVPPD_SMD = "wB97X-V/def2-QZVPPD/SMD"
-    wB97M_V_6_31g_d_VACUUM = "wB97M-V/6-31g*/VACUUM"
-    wB97M_V_6_31g_d_PCM = "wB97M-V/6-31g*/PCM"
-    wB97M_V_6_31g_d_SMD = "wB97M-V/6-31g*/SMD"
-    wB97M_V_def2_SVPD_VACUUM = "wB97M-V/def2-SVPD/VACUUM"
-    wB97M_V_def2_SVPD_PCM = "wB97M-V/def2-SVPD/PCM"
-    wB97M_V_def2_SVPD_SMD = "wB97M-V/def2-SVPD/SMD"
-    wB97M_V_def2_TZVP_VACUUM = "wB97M-V/def2-TZVP/VACUUM"
-    wB97M_V_def2_TZVP_PCM = "wB97M-V/def2-TZVP/PCM"
-    wB97M_V_def2_TZVP_SMD = "wB97M-V/def2-TZVP/SMD"
-    wB97M_V_def2_TZVPD_VACUUM = "wB97M-V/def2-TZVPD/VACUUM"
-    wB97M_V_def2_TZVPD_PCM = "wB97M-V/def2-TZVPD/PCM"
-    wB97M_V_def2_TZVPD_SMD = "wB97M-V/def2-TZVPD/SMD"
-    wB97M_V_def2_TZVPP_VACUUM = "wB97M-V/def2-TZVPP/VACUUM"
-    wB97M_V_def2_TZVPP_PCM = "wB97M-V/def2-TZVPP/PCM"
-    wB97M_V_def2_TZVPP_SMD = "wB97M-V/def2-TZVPP/SMD"
-    wB97M_V_def2_TZVPPD_VACUUM = "wB97M-V/def2-TZVPPD/VACUUM"
-    wB97M_V_def2_TZVPPD_PCM = "wB97M-V/def2-TZVPPD/PCM"
-    wB97M_V_def2_TZVPPD_SMD = "wB97M-V/def2-TZVPPD/SMD"
-    wB97M_V_def2_QZVPD_VACUUM = "wB97M-V/def2-QZVPD/VACUUM"
-    wB97M_V_def2_QZVPD_PCM = "wB97M-V/def2-QZVPD/PCM"
-    wB97M_V_def2_QZVPD_SMD = "wB97M-V/def2-QZVPD/SMD"
-    wB97M_V_def2_QZVPPD_VACUUM = "wB97M-V/def2-QZVPPD/VACUUM"
-    wB97M_V_def2_QZVPPD_PCM = "wB97M-V/def2-QZVPPD/PCM"
-    wB97M_V_def2_QZVPPD_SMD = "wB97M-V/def2-QZVPPD/SMD"
+    wb97m_v_6_31g_d_VACUUM = "wb97m-v/6-31g*/VACUUM"
+    wb97m_v_6_31g_d_PCM = "wb97m-v/6-31g*/PCM"
+    wb97m_v_6_31g_d_SMD = "wb97m-v/6-31g*/SMD"
+    wb97m_v_def2_SVPD_VACUUM = "wb97m-v/def2-SVPD/VACUUM"
+    wb97m_v_def2_SVPD_PCM = "wb97m-v/def2-SVPD/PCM"
+    wb97m_v_def2_SVPD_SMD = "wb97m-v/def2-SVPD/SMD"
+    wb97m_v_def2_TZVP_VACUUM = "wb97m-v/def2-TZVP/VACUUM"
+    wb97m_v_def2_TZVP_PCM = "wb97m-v/def2-TZVP/PCM"
+    wb97m_v_def2_TZVP_SMD = "wb97m-v/def2-TZVP/SMD"
+    wb97m_v_def2_TZVPD_VACUUM = "wb97m-v/def2-TZVPD/VACUUM"
+    wb97m_v_def2_TZVPD_PCM = "wb97m-v/def2-TZVPD/PCM"
+    wb97m_v_def2_TZVPD_SMD = "wb97m-v/def2-TZVPD/SMD"
+    wb97m_v_def2_TZVPP_VACUUM = "wb97m-v/def2-TZVPP/VACUUM"
+    wb97m_v_def2_TZVPP_PCM = "wb97m-v/def2-TZVPP/PCM"
+    wb97m_v_def2_TZVPP_SMD = "wb97m-v/def2-TZVPP/SMD"
+    wb97m_v_def2_TZVPPD_VACUUM = "wb97m-v/def2-TZVPPD/VACUUM"
+    wb97m_v_def2_TZVPPD_PCM = "wb97m-v/def2-TZVPPD/PCM"
+    wb97m_v_def2_TZVPPD_SMD = "wb97m-v/def2-TZVPPD/SMD"
+    wb97m_v_def2_QZVPD_VACUUM = "wb97m-v/def2-QZVPD/VACUUM"
+    wb97m_v_def2_QZVPD_PCM = "wb97m-v/def2-QZVPD/PCM"
+    wb97m_v_def2_QZVPD_SMD = "wb97m-v/def2-QZVPD/SMD"
+    wb97m_v_def2_QZVPPD_VACUUM = "wb97m-v/def2-QZVPPD/VACUUM"
+    wb97m_v_def2_QZVPPD_PCM = "wb97m-v/def2-QZVPPD/PCM"
+    wb97m_v_def2_QZVPPD_SMD = "wb97m-v/def2-QZVPPD/SMD"
 
 
 class TaskType(ValueEnum):
-    """Calculation task types for Q-Chem"""
+    """ Calculation task types for Q-Chem """
 
     Single_Point = "Single Point"
     Force = "Force"
     Geometry_Optimization = "Geometry Optimization"
     Frequency_Analysis = "Frequency Analysis"
-    Frequency_Flattening_Geometry_Optimization = (
-        "Frequency Flattening Geometry Optimization"
-    )
+    Frequency_Flattening_Geometry_Optimization = "Frequency Flattening Geometry Optimization"
     Transition_State_Geometry_Optimization = "Transition State Geometry Optimization"
-    Frequency_Flattening_Transition_State_Geometry_Optimization = (
-        "Frequency Flattening Transition State Geometry Optimization"
-    )
+    Frequency_Flattening_Transition_State_Geometry_Optimization = "Frequency Flattening Transition State Geometry Optimization"
     Unknown = "Unknown"
 
 
 class CalcType(ValueEnum):
-    """Calculation types (LOT + task type) for Q-Chem"""
+    """ Calculation types (LOT + task type) for Q-Chem """
 
     PBE_6_31g_d_VACUUM_Single_Point = "PBE/6-31g*/VACUUM Single Point"
     PBE_6_31g_d_VACUUM_Force = "PBE/6-31g*/VACUUM Force"
     PBE_6_31g_d_VACUUM_Geometry_Optimization = "PBE/6-31g*/VACUUM Geometry Optimization"
     PBE_6_31g_d_VACUUM_Frequency_Analysis = "PBE/6-31g*/VACUUM Frequency Analysis"
-    PBE_6_31g_d_VACUUM_Frequency_Flattening_Geometry_Optimization = (
-        "PBE/6-31g*/VACUUM Frequency Flattening Geometry Optimization"
-    )
-    PBE_6_31g_d_VACUUM_Transition_State_Geometry_Optimization = (
-        "PBE/6-31g*/VACUUM Transition State Geometry Optimization"
-    )
-    PBE_6_31g_d_VACUUM_Frequency_Flattening_Transition_State_Geometry_Optimization = (
-        "PBE/6-31g*/VACUUM Frequency Flattening Transition State Geometry Optimization"
-    )
+    PBE_6_31g_d_VACUUM_Frequency_Flattening_Geometry_Optimization = "PBE/6-31g*/VACUUM Frequency Flattening Geometry Optimization"
+    PBE_6_31g_d_VACUUM_Transition_State_Geometry_Optimization = "PBE/6-31g*/VACUUM Transition State Geometry Optimization"
+    PBE_6_31g_d_VACUUM_Frequency_Flattening_Transition_State_Geometry_Optimization = "PBE/6-31g*/VACUUM Frequency Flattening Transition State Geometry Optimization"
     PBE_6_31g_d_VACUUM_Unknown = "PBE/6-31g*/VACUUM Unknown"
     PBE_6_31g_d_PCM_Single_Point = "PBE/6-31g*/PCM Single Point"
     PBE_6_31g_d_PCM_Force = "PBE/6-31g*/PCM Force"
     PBE_6_31g_d_PCM_Geometry_Optimization = "PBE/6-31g*/PCM Geometry Optimization"
     PBE_6_31g_d_PCM_Frequency_Analysis = "PBE/6-31g*/PCM Frequency Analysis"
-    PBE_6_31g_d_PCM_Frequency_Flattening_Geometry_Optimization = (
-        "PBE/6-31g*/PCM Frequency Flattening Geometry Optimization"
-    )
-    PBE_6_31g_d_PCM_Transition_State_Geometry_Optimization = (
-        "PBE/6-31g*/PCM Transition State Geometry Optimization"
-    )
-    PBE_6_31g_d_PCM_Frequency_Flattening_Transition_State_Geometry_Optimization = (
-        "PBE/6-31g*/PCM Frequency Flattening Transition State Geometry Optimization"
-    )
+    PBE_6_31g_d_PCM_Frequency_Flattening_Geometry_Optimization = "PBE/6-31g*/PCM Frequency Flattening Geometry Optimization"
+    PBE_6_31g_d_PCM_Transition_State_Geometry_Optimization = "PBE/6-31g*/PCM Transition State Geometry Optimization"
+    PBE_6_31g_d_PCM_Frequency_Flattening_Transition_State_Geometry_Optimization = "PBE/6-31g*/PCM Frequency Flattening Transition State Geometry Optimization"
     PBE_6_31g_d_PCM_Unknown = "PBE/6-31g*/PCM Unknown"
     PBE_6_31g_d_SMD_Single_Point = "PBE/6-31g*/SMD Single Point"
     PBE_6_31g_d_SMD_Force = "PBE/6-31g*/SMD Force"
     PBE_6_31g_d_SMD_Geometry_Optimization = "PBE/6-31g*/SMD Geometry Optimization"
     PBE_6_31g_d_SMD_Frequency_Analysis = "PBE/6-31g*/SMD Frequency Analysis"
-    PBE_6_31g_d_SMD_Frequency_Flattening_Geometry_Optimization = (
-        "PBE/6-31g*/SMD Frequency Flattening Geometry Optimization"
-    )
-    PBE_6_31g_d_SMD_Transition_State_Geometry_Optimization = (
-        "PBE/6-31g*/SMD Transition State Geometry Optimization"
-    )
-    PBE_6_31g_d_SMD_Frequency_Flattening_Transition_State_Geometry_Optimization = (
-        "PBE/6-31g*/SMD Frequency Flattening Transition State Geometry Optimization"
-    )
+    PBE_6_31g_d_SMD_Frequency_Flattening_Geometry_Optimization = "PBE/6-31g*/SMD Frequency Flattening Geometry Optimization"
+    PBE_6_31g_d_SMD_Transition_State_Geometry_Optimization = "PBE/6-31g*/SMD Transition State Geometry Optimization"
+    PBE_6_31g_d_SMD_Frequency_Flattening_Transition_State_Geometry_Optimization = "PBE/6-31g*/SMD Frequency Flattening Transition State Geometry Optimization"
     PBE_6_31g_d_SMD_Unknown = "PBE/6-31g*/SMD Unknown"
     PBE_def2_SVPD_VACUUM_Single_Point = "PBE/def2-SVPD/VACUUM Single Point"
     PBE_def2_SVPD_VACUUM_Force = "PBE/def2-SVPD/VACUUM Force"
-    PBE_def2_SVPD_VACUUM_Geometry_Optimization = (
-        "PBE/def2-SVPD/VACUUM Geometry Optimization"
-    )
+    PBE_def2_SVPD_VACUUM_Geometry_Optimization = "PBE/def2-SVPD/VACUUM Geometry Optimization"
     PBE_def2_SVPD_VACUUM_Frequency_Analysis = "PBE/def2-SVPD/VACUUM Frequency Analysis"
-    PBE_def2_SVPD_VACUUM_Frequency_Flattening_Geometry_Optimization = (
-        "PBE/def2-SVPD/VACUUM Frequency Flattening Geometry Optimization"
-    )
-    PBE_def2_SVPD_VACUUM_Transition_State_Geometry_Optimization = (
-        "PBE/def2-SVPD/VACUUM Transition State Geometry Optimization"
-    )
+    PBE_def2_SVPD_VACUUM_Frequency_Flattening_Geometry_Optimization = "PBE/def2-SVPD/VACUUM Frequency Flattening Geometry Optimization"
+    PBE_def2_SVPD_VACUUM_Transition_State_Geometry_Optimization = "PBE/def2-SVPD/VACUUM Transition State Geometry Optimization"
     PBE_def2_SVPD_VACUUM_Frequency_Flattening_Transition_State_Geometry_Optimization = "PBE/def2-SVPD/VACUUM Frequency Flattening Transition State Geometry Optimization"
     PBE_def2_SVPD_VACUUM_Unknown = "PBE/def2-SVPD/VACUUM Unknown"
     PBE_def2_SVPD_PCM_Single_Point = "PBE/def2-SVPD/PCM Single Point"
     PBE_def2_SVPD_PCM_Force = "PBE/def2-SVPD/PCM Force"
     PBE_def2_SVPD_PCM_Geometry_Optimization = "PBE/def2-SVPD/PCM Geometry Optimization"
     PBE_def2_SVPD_PCM_Frequency_Analysis = "PBE/def2-SVPD/PCM Frequency Analysis"
-    PBE_def2_SVPD_PCM_Frequency_Flattening_Geometry_Optimization = (
-        "PBE/def2-SVPD/PCM Frequency Flattening Geometry Optimization"
-    )
-    PBE_def2_SVPD_PCM_Transition_State_Geometry_Optimization = (
-        "PBE/def2-SVPD/PCM Transition State Geometry Optimization"
-    )
-    PBE_def2_SVPD_PCM_Frequency_Flattening_Transition_State_Geometry_Optimization = (
-        "PBE/def2-SVPD/PCM Frequency Flattening Transition State Geometry Optimization"
-    )
+    PBE_def2_SVPD_PCM_Frequency_Flattening_Geometry_Optimization = "PBE/def2-SVPD/PCM Frequency Flattening Geometry Optimization"
+    PBE_def2_SVPD_PCM_Transition_State_Geometry_Optimization = "PBE/def2-SVPD/PCM Transition State Geometry Optimization"
+    PBE_def2_SVPD_PCM_Frequency_Flattening_Transition_State_Geometry_Optimization = "PBE/def2-SVPD/PCM Frequency Flattening Transition State Geometry Optimization"
     PBE_def2_SVPD_PCM_Unknown = "PBE/def2-SVPD/PCM Unknown"
     PBE_def2_SVPD_SMD_Single_Point = "PBE/def2-SVPD/SMD Single Point"
     PBE_def2_SVPD_SMD_Force = "PBE/def2-SVPD/SMD Force"
     PBE_def2_SVPD_SMD_Geometry_Optimization = "PBE/def2-SVPD/SMD Geometry Optimization"
     PBE_def2_SVPD_SMD_Frequency_Analysis = "PBE/def2-SVPD/SMD Frequency Analysis"
-    PBE_def2_SVPD_SMD_Frequency_Flattening_Geometry_Optimization = (
-        "PBE/def2-SVPD/SMD Frequency Flattening Geometry Optimization"
-    )
-    PBE_def2_SVPD_SMD_Transition_State_Geometry_Optimization = (
-        "PBE/def2-SVPD/SMD Transition State Geometry Optimization"
-    )
-    PBE_def2_SVPD_SMD_Frequency_Flattening_Transition_State_Geometry_Optimization = (
-        "PBE/def2-SVPD/SMD Frequency Flattening Transition State Geometry Optimization"
-    )
+    PBE_def2_SVPD_SMD_Frequency_Flattening_Geometry_Optimization = "PBE/def2-SVPD/SMD Frequency Flattening Geometry Optimization"
+    PBE_def2_SVPD_SMD_Transition_State_Geometry_Optimization = "PBE/def2-SVPD/SMD Transition State Geometry Optimization"
+    PBE_def2_SVPD_SMD_Frequency_Flattening_Transition_State_Geometry_Optimization = "PBE/def2-SVPD/SMD Frequency Flattening Transition State Geometry Optimization"
     PBE_def2_SVPD_SMD_Unknown = "PBE/def2-SVPD/SMD Unknown"
     PBE_def2_TZVP_VACUUM_Single_Point = "PBE/def2-TZVP/VACUUM Single Point"
     PBE_def2_TZVP_VACUUM_Force = "PBE/def2-TZVP/VACUUM Force"
-    PBE_def2_TZVP_VACUUM_Geometry_Optimization = (
-        "PBE/def2-TZVP/VACUUM Geometry Optimization"
-    )
+    PBE_def2_TZVP_VACUUM_Geometry_Optimization = "PBE/def2-TZVP/VACUUM Geometry Optimization"
     PBE_def2_TZVP_VACUUM_Frequency_Analysis = "PBE/def2-TZVP/VACUUM Frequency Analysis"
-    PBE_def2_TZVP_VACUUM_Frequency_Flattening_Geometry_Optimization = (
-        "PBE/def2-TZVP/VACUUM Frequency Flattening Geometry Optimization"
-    )
-    PBE_def2_TZVP_VACUUM_Transition_State_Geometry_Optimization = (
-        "PBE/def2-TZVP/VACUUM Transition State Geometry Optimization"
-    )
+    PBE_def2_TZVP_VACUUM_Frequency_Flattening_Geometry_Optimization = "PBE/def2-TZVP/VACUUM Frequency Flattening Geometry Optimization"
+    PBE_def2_TZVP_VACUUM_Transition_State_Geometry_Optimization = "PBE/def2-TZVP/VACUUM Transition State Geometry Optimization"
     PBE_def2_TZVP_VACUUM_Frequency_Flattening_Transition_State_Geometry_Optimization = "PBE/def2-TZVP/VACUUM Frequency Flattening Transition State Geometry Optimization"
     PBE_def2_TZVP_VACUUM_Unknown = "PBE/def2-TZVP/VACUUM Unknown"
     PBE_def2_TZVP_PCM_Single_Point = "PBE/def2-TZVP/PCM Single Point"
     PBE_def2_TZVP_PCM_Force = "PBE/def2-TZVP/PCM Force"
     PBE_def2_TZVP_PCM_Geometry_Optimization = "PBE/def2-TZVP/PCM Geometry Optimization"
     PBE_def2_TZVP_PCM_Frequency_Analysis = "PBE/def2-TZVP/PCM Frequency Analysis"
-    PBE_def2_TZVP_PCM_Frequency_Flattening_Geometry_Optimization = (
-        "PBE/def2-TZVP/PCM Frequency Flattening Geometry Optimization"
-    )
-    PBE_def2_TZVP_PCM_Transition_State_Geometry_Optimization = (
-        "PBE/def2-TZVP/PCM Transition State Geometry Optimization"
-    )
-    PBE_def2_TZVP_PCM_Frequency_Flattening_Transition_State_Geometry_Optimization = (
-        "PBE/def2-TZVP/PCM Frequency Flattening Transition State Geometry Optimization"
-    )
+    PBE_def2_TZVP_PCM_Frequency_Flattening_Geometry_Optimization = "PBE/def2-TZVP/PCM Frequency Flattening Geometry Optimization"
+    PBE_def2_TZVP_PCM_Transition_State_Geometry_Optimization = "PBE/def2-TZVP/PCM Transition State Geometry Optimization"
+    PBE_def2_TZVP_PCM_Frequency_Flattening_Transition_State_Geometry_Optimization = "PBE/def2-TZVP/PCM Frequency Flattening Transition State Geometry Optimization"
     PBE_def2_TZVP_PCM_Unknown = "PBE/def2-TZVP/PCM Unknown"
     PBE_def2_TZVP_SMD_Single_Point = "PBE/def2-TZVP/SMD Single Point"
     PBE_def2_TZVP_SMD_Force = "PBE/def2-TZVP/SMD Force"
     PBE_def2_TZVP_SMD_Geometry_Optimization = "PBE/def2-TZVP/SMD Geometry Optimization"
     PBE_def2_TZVP_SMD_Frequency_Analysis = "PBE/def2-TZVP/SMD Frequency Analysis"
-    PBE_def2_TZVP_SMD_Frequency_Flattening_Geometry_Optimization = (
-        "PBE/def2-TZVP/SMD Frequency Flattening Geometry Optimization"
-    )
-    PBE_def2_TZVP_SMD_Transition_State_Geometry_Optimization = (
-        "PBE/def2-TZVP/SMD Transition State Geometry Optimization"
-    )
-    PBE_def2_TZVP_SMD_Frequency_Flattening_Transition_State_Geometry_Optimization = (
-        "PBE/def2-TZVP/SMD Frequency Flattening Transition State Geometry Optimization"
-    )
+    PBE_def2_TZVP_SMD_Frequency_Flattening_Geometry_Optimization = "PBE/def2-TZVP/SMD Frequency Flattening Geometry Optimization"
+    PBE_def2_TZVP_SMD_Transition_State_Geometry_Optimization = "PBE/def2-TZVP/SMD Transition State Geometry Optimization"
+    PBE_def2_TZVP_SMD_Frequency_Flattening_Transition_State_Geometry_Optimization = "PBE/def2-TZVP/SMD Frequency Flattening Transition State Geometry Optimization"
     PBE_def2_TZVP_SMD_Unknown = "PBE/def2-TZVP/SMD Unknown"
     PBE_def2_TZVPD_VACUUM_Single_Point = "PBE/def2-TZVPD/VACUUM Single Point"
     PBE_def2_TZVPD_VACUUM_Force = "PBE/def2-TZVPD/VACUUM Force"
-    PBE_def2_TZVPD_VACUUM_Geometry_Optimization = (
-        "PBE/def2-TZVPD/VACUUM Geometry Optimization"
-    )
-    PBE_def2_TZVPD_VACUUM_Frequency_Analysis = (
-        "PBE/def2-TZVPD/VACUUM Frequency Analysis"
-    )
-    PBE_def2_TZVPD_VACUUM_Frequency_Flattening_Geometry_Optimization = (
-        "PBE/def2-TZVPD/VACUUM Frequency Flattening Geometry Optimization"
-    )
-    PBE_def2_TZVPD_VACUUM_Transition_State_Geometry_Optimization = (
-        "PBE/def2-TZVPD/VACUUM Transition State Geometry Optimization"
-    )
+    PBE_def2_TZVPD_VACUUM_Geometry_Optimization = "PBE/def2-TZVPD/VACUUM Geometry Optimization"
+    PBE_def2_TZVPD_VACUUM_Frequency_Analysis = "PBE/def2-TZVPD/VACUUM Frequency Analysis"
+    PBE_def2_TZVPD_VACUUM_Frequency_Flattening_Geometry_Optimization = "PBE/def2-TZVPD/VACUUM Frequency Flattening Geometry Optimization"
+    PBE_def2_TZVPD_VACUUM_Transition_State_Geometry_Optimization = "PBE/def2-TZVPD/VACUUM Transition State Geometry Optimization"
     PBE_def2_TZVPD_VACUUM_Frequency_Flattening_Transition_State_Geometry_Optimization = "PBE/def2-TZVPD/VACUUM Frequency Flattening Transition State Geometry Optimization"
     PBE_def2_TZVPD_VACUUM_Unknown = "PBE/def2-TZVPD/VACUUM Unknown"
     PBE_def2_TZVPD_PCM_Single_Point = "PBE/def2-TZVPD/PCM Single Point"
     PBE_def2_TZVPD_PCM_Force = "PBE/def2-TZVPD/PCM Force"
-    PBE_def2_TZVPD_PCM_Geometry_Optimization = (
-        "PBE/def2-TZVPD/PCM Geometry Optimization"
-    )
+    PBE_def2_TZVPD_PCM_Geometry_Optimization = "PBE/def2-TZVPD/PCM Geometry Optimization"
     PBE_def2_TZVPD_PCM_Frequency_Analysis = "PBE/def2-TZVPD/PCM Frequency Analysis"
-    PBE_def2_TZVPD_PCM_Frequency_Flattening_Geometry_Optimization = (
-        "PBE/def2-TZVPD/PCM Frequency Flattening Geometry Optimization"
-    )
-    PBE_def2_TZVPD_PCM_Transition_State_Geometry_Optimization = (
-        "PBE/def2-TZVPD/PCM Transition State Geometry Optimization"
-    )
-    PBE_def2_TZVPD_PCM_Frequency_Flattening_Transition_State_Geometry_Optimization = (
-        "PBE/def2-TZVPD/PCM Frequency Flattening Transition State Geometry Optimization"
-    )
+    PBE_def2_TZVPD_PCM_Frequency_Flattening_Geometry_Optimization = "PBE/def2-TZVPD/PCM Frequency Flattening Geometry Optimization"
+    PBE_def2_TZVPD_PCM_Transition_State_Geometry_Optimization = "PBE/def2-TZVPD/PCM Transition State Geometry Optimization"
+    PBE_def2_TZVPD_PCM_Frequency_Flattening_Transition_State_Geometry_Optimization = "PBE/def2-TZVPD/PCM Frequency Flattening Transition State Geometry Optimization"
     PBE_def2_TZVPD_PCM_Unknown = "PBE/def2-TZVPD/PCM Unknown"
     PBE_def2_TZVPD_SMD_Single_Point = "PBE/def2-TZVPD/SMD Single Point"
     PBE_def2_TZVPD_SMD_Force = "PBE/def2-TZVPD/SMD Force"
-    PBE_def2_TZVPD_SMD_Geometry_Optimization = (
-        "PBE/def2-TZVPD/SMD Geometry Optimization"
-    )
+    PBE_def2_TZVPD_SMD_Geometry_Optimization = "PBE/def2-TZVPD/SMD Geometry Optimization"
     PBE_def2_TZVPD_SMD_Frequency_Analysis = "PBE/def2-TZVPD/SMD Frequency Analysis"
-    PBE_def2_TZVPD_SMD_Frequency_Flattening_Geometry_Optimization = (
-        "PBE/def2-TZVPD/SMD Frequency Flattening Geometry Optimization"
-    )
-    PBE_def2_TZVPD_SMD_Transition_State_Geometry_Optimization = (
-        "PBE/def2-TZVPD/SMD Transition State Geometry Optimization"
-    )
-    PBE_def2_TZVPD_SMD_Frequency_Flattening_Transition_State_Geometry_Optimization = (
-        "PBE/def2-TZVPD/SMD Frequency Flattening Transition State Geometry Optimization"
-    )
+    PBE_def2_TZVPD_SMD_Frequency_Flattening_Geometry_Optimization = "PBE/def2-TZVPD/SMD Frequency Flattening Geometry Optimization"
+    PBE_def2_TZVPD_SMD_Transition_State_Geometry_Optimization = "PBE/def2-TZVPD/SMD Transition State Geometry Optimization"
+    PBE_def2_TZVPD_SMD_Frequency_Flattening_Transition_State_Geometry_Optimization = "PBE/def2-TZVPD/SMD Frequency Flattening Transition State Geometry Optimization"
     PBE_def2_TZVPD_SMD_Unknown = "PBE/def2-TZVPD/SMD Unknown"
     PBE_def2_TZVPP_VACUUM_Single_Point = "PBE/def2-TZVPP/VACUUM Single Point"
     PBE_def2_TZVPP_VACUUM_Force = "PBE/def2-TZVPP/VACUUM Force"
-    PBE_def2_TZVPP_VACUUM_Geometry_Optimization = (
-        "PBE/def2-TZVPP/VACUUM Geometry Optimization"
-    )
-    PBE_def2_TZVPP_VACUUM_Frequency_Analysis = (
-        "PBE/def2-TZVPP/VACUUM Frequency Analysis"
-    )
-    PBE_def2_TZVPP_VACUUM_Frequency_Flattening_Geometry_Optimization = (
-        "PBE/def2-TZVPP/VACUUM Frequency Flattening Geometry Optimization"
-    )
-    PBE_def2_TZVPP_VACUUM_Transition_State_Geometry_Optimization = (
-        "PBE/def2-TZVPP/VACUUM Transition State Geometry Optimization"
-    )
+    PBE_def2_TZVPP_VACUUM_Geometry_Optimization = "PBE/def2-TZVPP/VACUUM Geometry Optimization"
+    PBE_def2_TZVPP_VACUUM_Frequency_Analysis = "PBE/def2-TZVPP/VACUUM Frequency Analysis"
+    PBE_def2_TZVPP_VACUUM_Frequency_Flattening_Geometry_Optimization = "PBE/def2-TZVPP/VACUUM Frequency Flattening Geometry Optimization"
+    PBE_def2_TZVPP_VACUUM_Transition_State_Geometry_Optimization = "PBE/def2-TZVPP/VACUUM Transition State Geometry Optimization"
     PBE_def2_TZVPP_VACUUM_Frequency_Flattening_Transition_State_Geometry_Optimization = "PBE/def2-TZVPP/VACUUM Frequency Flattening Transition State Geometry Optimization"
     PBE_def2_TZVPP_VACUUM_Unknown = "PBE/def2-TZVPP/VACUUM Unknown"
     PBE_def2_TZVPP_PCM_Single_Point = "PBE/def2-TZVPP/PCM Single Point"
     PBE_def2_TZVPP_PCM_Force = "PBE/def2-TZVPP/PCM Force"
-    PBE_def2_TZVPP_PCM_Geometry_Optimization = (
-        "PBE/def2-TZVPP/PCM Geometry Optimization"
-    )
+    PBE_def2_TZVPP_PCM_Geometry_Optimization = "PBE/def2-TZVPP/PCM Geometry Optimization"
     PBE_def2_TZVPP_PCM_Frequency_Analysis = "PBE/def2-TZVPP/PCM Frequency Analysis"
-    PBE_def2_TZVPP_PCM_Frequency_Flattening_Geometry_Optimization = (
-        "PBE/def2-TZVPP/PCM Frequency Flattening Geometry Optimization"
-    )
-    PBE_def2_TZVPP_PCM_Transition_State_Geometry_Optimization = (
-        "PBE/def2-TZVPP/PCM Transition State Geometry Optimization"
-    )
-    PBE_def2_TZVPP_PCM_Frequency_Flattening_Transition_State_Geometry_Optimization = (
-        "PBE/def2-TZVPP/PCM Frequency Flattening Transition State Geometry Optimization"
-    )
+    PBE_def2_TZVPP_PCM_Frequency_Flattening_Geometry_Optimization = "PBE/def2-TZVPP/PCM Frequency Flattening Geometry Optimization"
+    PBE_def2_TZVPP_PCM_Transition_State_Geometry_Optimization = "PBE/def2-TZVPP/PCM Transition State Geometry Optimization"
+    PBE_def2_TZVPP_PCM_Frequency_Flattening_Transition_State_Geometry_Optimization = "PBE/def2-TZVPP/PCM Frequency Flattening Transition State Geometry Optimization"
     PBE_def2_TZVPP_PCM_Unknown = "PBE/def2-TZVPP/PCM Unknown"
     PBE_def2_TZVPP_SMD_Single_Point = "PBE/def2-TZVPP/SMD Single Point"
     PBE_def2_TZVPP_SMD_Force = "PBE/def2-TZVPP/SMD Force"
-    PBE_def2_TZVPP_SMD_Geometry_Optimization = (
-        "PBE/def2-TZVPP/SMD Geometry Optimization"
-    )
+    PBE_def2_TZVPP_SMD_Geometry_Optimization = "PBE/def2-TZVPP/SMD Geometry Optimization"
     PBE_def2_TZVPP_SMD_Frequency_Analysis = "PBE/def2-TZVPP/SMD Frequency Analysis"
-    PBE_def2_TZVPP_SMD_Frequency_Flattening_Geometry_Optimization = (
-        "PBE/def2-TZVPP/SMD Frequency Flattening Geometry Optimization"
-    )
-    PBE_def2_TZVPP_SMD_Transition_State_Geometry_Optimization = (
-        "PBE/def2-TZVPP/SMD Transition State Geometry Optimization"
-    )
-    PBE_def2_TZVPP_SMD_Frequency_Flattening_Transition_State_Geometry_Optimization = (
-        "PBE/def2-TZVPP/SMD Frequency Flattening Transition State Geometry Optimization"
-    )
+    PBE_def2_TZVPP_SMD_Frequency_Flattening_Geometry_Optimization = "PBE/def2-TZVPP/SMD Frequency Flattening Geometry Optimization"
+    PBE_def2_TZVPP_SMD_Transition_State_Geometry_Optimization = "PBE/def2-TZVPP/SMD Transition State Geometry Optimization"
+    PBE_def2_TZVPP_SMD_Frequency_Flattening_Transition_State_Geometry_Optimization = "PBE/def2-TZVPP/SMD Frequency Flattening Transition State Geometry Optimization"
     PBE_def2_TZVPP_SMD_Unknown = "PBE/def2-TZVPP/SMD Unknown"
     PBE_def2_TZVPPD_VACUUM_Single_Point = "PBE/def2-TZVPPD/VACUUM Single Point"
     PBE_def2_TZVPPD_VACUUM_Force = "PBE/def2-TZVPPD/VACUUM Force"
-    PBE_def2_TZVPPD_VACUUM_Geometry_Optimization = (
-        "PBE/def2-TZVPPD/VACUUM Geometry Optimization"
-    )
-    PBE_def2_TZVPPD_VACUUM_Frequency_Analysis = (
-        "PBE/def2-TZVPPD/VACUUM Frequency Analysis"
-    )
-    PBE_def2_TZVPPD_VACUUM_Frequency_Flattening_Geometry_Optimization = (
-        "PBE/def2-TZVPPD/VACUUM Frequency Flattening Geometry Optimization"
-    )
-    PBE_def2_TZVPPD_VACUUM_Transition_State_Geometry_Optimization = (
-        "PBE/def2-TZVPPD/VACUUM Transition State Geometry Optimization"
-    )
+    PBE_def2_TZVPPD_VACUUM_Geometry_Optimization = "PBE/def2-TZVPPD/VACUUM Geometry Optimization"
+    PBE_def2_TZVPPD_VACUUM_Frequency_Analysis = "PBE/def2-TZVPPD/VACUUM Frequency Analysis"
+    PBE_def2_TZVPPD_VACUUM_Frequency_Flattening_Geometry_Optimization = "PBE/def2-TZVPPD/VACUUM Frequency Flattening Geometry Optimization"
+    PBE_def2_TZVPPD_VACUUM_Transition_State_Geometry_Optimization = "PBE/def2-TZVPPD/VACUUM Transition State Geometry Optimization"
     PBE_def2_TZVPPD_VACUUM_Frequency_Flattening_Transition_State_Geometry_Optimization = "PBE/def2-TZVPPD/VACUUM Frequency Flattening Transition State Geometry Optimization"
     PBE_def2_TZVPPD_VACUUM_Unknown = "PBE/def2-TZVPPD/VACUUM Unknown"
     PBE_def2_TZVPPD_PCM_Single_Point = "PBE/def2-TZVPPD/PCM Single Point"
     PBE_def2_TZVPPD_PCM_Force = "PBE/def2-TZVPPD/PCM Force"
-    PBE_def2_TZVPPD_PCM_Geometry_Optimization = (
-        "PBE/def2-TZVPPD/PCM Geometry Optimization"
-    )
+    PBE_def2_TZVPPD_PCM_Geometry_Optimization = "PBE/def2-TZVPPD/PCM Geometry Optimization"
     PBE_def2_TZVPPD_PCM_Frequency_Analysis = "PBE/def2-TZVPPD/PCM Frequency Analysis"
-    PBE_def2_TZVPPD_PCM_Frequency_Flattening_Geometry_Optimization = (
-        "PBE/def2-TZVPPD/PCM Frequency Flattening Geometry Optimization"
-    )
-    PBE_def2_TZVPPD_PCM_Transition_State_Geometry_Optimization = (
-        "PBE/def2-TZVPPD/PCM Transition State Geometry Optimization"
-    )
+    PBE_def2_TZVPPD_PCM_Frequency_Flattening_Geometry_Optimization = "PBE/def2-TZVPPD/PCM Frequency Flattening Geometry Optimization"
+    PBE_def2_TZVPPD_PCM_Transition_State_Geometry_Optimization = "PBE/def2-TZVPPD/PCM Transition State Geometry Optimization"
     PBE_def2_TZVPPD_PCM_Frequency_Flattening_Transition_State_Geometry_Optimization = "PBE/def2-TZVPPD/PCM Frequency Flattening Transition State Geometry Optimization"
     PBE_def2_TZVPPD_PCM_Unknown = "PBE/def2-TZVPPD/PCM Unknown"
     PBE_def2_TZVPPD_SMD_Single_Point = "PBE/def2-TZVPPD/SMD Single Point"
     PBE_def2_TZVPPD_SMD_Force = "PBE/def2-TZVPPD/SMD Force"
-    PBE_def2_TZVPPD_SMD_Geometry_Optimization = (
-        "PBE/def2-TZVPPD/SMD Geometry Optimization"
-    )
+    PBE_def2_TZVPPD_SMD_Geometry_Optimization = "PBE/def2-TZVPPD/SMD Geometry Optimization"
     PBE_def2_TZVPPD_SMD_Frequency_Analysis = "PBE/def2-TZVPPD/SMD Frequency Analysis"
-    PBE_def2_TZVPPD_SMD_Frequency_Flattening_Geometry_Optimization = (
-        "PBE/def2-TZVPPD/SMD Frequency Flattening Geometry Optimization"
-    )
-    PBE_def2_TZVPPD_SMD_Transition_State_Geometry_Optimization = (
-        "PBE/def2-TZVPPD/SMD Transition State Geometry Optimization"
-    )
+    PBE_def2_TZVPPD_SMD_Frequency_Flattening_Geometry_Optimization = "PBE/def2-TZVPPD/SMD Frequency Flattening Geometry Optimization"
+    PBE_def2_TZVPPD_SMD_Transition_State_Geometry_Optimization = "PBE/def2-TZVPPD/SMD Transition State Geometry Optimization"
     PBE_def2_TZVPPD_SMD_Frequency_Flattening_Transition_State_Geometry_Optimization = "PBE/def2-TZVPPD/SMD Frequency Flattening Transition State Geometry Optimization"
     PBE_def2_TZVPPD_SMD_Unknown = "PBE/def2-TZVPPD/SMD Unknown"
     PBE_def2_QZVPD_VACUUM_Single_Point = "PBE/def2-QZVPD/VACUUM Single Point"
     PBE_def2_QZVPD_VACUUM_Force = "PBE/def2-QZVPD/VACUUM Force"
-    PBE_def2_QZVPD_VACUUM_Geometry_Optimization = (
-        "PBE/def2-QZVPD/VACUUM Geometry Optimization"
-    )
-    PBE_def2_QZVPD_VACUUM_Frequency_Analysis = (
-        "PBE/def2-QZVPD/VACUUM Frequency Analysis"
-    )
-    PBE_def2_QZVPD_VACUUM_Frequency_Flattening_Geometry_Optimization = (
-        "PBE/def2-QZVPD/VACUUM Frequency Flattening Geometry Optimization"
-    )
-    PBE_def2_QZVPD_VACUUM_Transition_State_Geometry_Optimization = (
-        "PBE/def2-QZVPD/VACUUM Transition State Geometry Optimization"
-    )
+    PBE_def2_QZVPD_VACUUM_Geometry_Optimization = "PBE/def2-QZVPD/VACUUM Geometry Optimization"
+    PBE_def2_QZVPD_VACUUM_Frequency_Analysis = "PBE/def2-QZVPD/VACUUM Frequency Analysis"
+    PBE_def2_QZVPD_VACUUM_Frequency_Flattening_Geometry_Optimization = "PBE/def2-QZVPD/VACUUM Frequency Flattening Geometry Optimization"
+    PBE_def2_QZVPD_VACUUM_Transition_State_Geometry_Optimization = "PBE/def2-QZVPD/VACUUM Transition State Geometry Optimization"
     PBE_def2_QZVPD_VACUUM_Frequency_Flattening_Transition_State_Geometry_Optimization = "PBE/def2-QZVPD/VACUUM Frequency Flattening Transition State Geometry Optimization"
     PBE_def2_QZVPD_VACUUM_Unknown = "PBE/def2-QZVPD/VACUUM Unknown"
     PBE_def2_QZVPD_PCM_Single_Point = "PBE/def2-QZVPD/PCM Single Point"
     PBE_def2_QZVPD_PCM_Force = "PBE/def2-QZVPD/PCM Force"
-    PBE_def2_QZVPD_PCM_Geometry_Optimization = (
-        "PBE/def2-QZVPD/PCM Geometry Optimization"
-    )
+    PBE_def2_QZVPD_PCM_Geometry_Optimization = "PBE/def2-QZVPD/PCM Geometry Optimization"
     PBE_def2_QZVPD_PCM_Frequency_Analysis = "PBE/def2-QZVPD/PCM Frequency Analysis"
-    PBE_def2_QZVPD_PCM_Frequency_Flattening_Geometry_Optimization = (
-        "PBE/def2-QZVPD/PCM Frequency Flattening Geometry Optimization"
-    )
-    PBE_def2_QZVPD_PCM_Transition_State_Geometry_Optimization = (
-        "PBE/def2-QZVPD/PCM Transition State Geometry Optimization"
-    )
-    PBE_def2_QZVPD_PCM_Frequency_Flattening_Transition_State_Geometry_Optimization = (
-        "PBE/def2-QZVPD/PCM Frequency Flattening Transition State Geometry Optimization"
-    )
+    PBE_def2_QZVPD_PCM_Frequency_Flattening_Geometry_Optimization = "PBE/def2-QZVPD/PCM Frequency Flattening Geometry Optimization"
+    PBE_def2_QZVPD_PCM_Transition_State_Geometry_Optimization = "PBE/def2-QZVPD/PCM Transition State Geometry Optimization"
+    PBE_def2_QZVPD_PCM_Frequency_Flattening_Transition_State_Geometry_Optimization = "PBE/def2-QZVPD/PCM Frequency Flattening Transition State Geometry Optimization"
     PBE_def2_QZVPD_PCM_Unknown = "PBE/def2-QZVPD/PCM Unknown"
     PBE_def2_QZVPD_SMD_Single_Point = "PBE/def2-QZVPD/SMD Single Point"
     PBE_def2_QZVPD_SMD_Force = "PBE/def2-QZVPD/SMD Force"
-    PBE_def2_QZVPD_SMD_Geometry_Optimization = (
-        "PBE/def2-QZVPD/SMD Geometry Optimization"
-    )
+    PBE_def2_QZVPD_SMD_Geometry_Optimization = "PBE/def2-QZVPD/SMD Geometry Optimization"
     PBE_def2_QZVPD_SMD_Frequency_Analysis = "PBE/def2-QZVPD/SMD Frequency Analysis"
-    PBE_def2_QZVPD_SMD_Frequency_Flattening_Geometry_Optimization = (
-        "PBE/def2-QZVPD/SMD Frequency Flattening Geometry Optimization"
-    )
-    PBE_def2_QZVPD_SMD_Transition_State_Geometry_Optimization = (
-        "PBE/def2-QZVPD/SMD Transition State Geometry Optimization"
-    )
-    PBE_def2_QZVPD_SMD_Frequency_Flattening_Transition_State_Geometry_Optimization = (
-        "PBE/def2-QZVPD/SMD Frequency Flattening Transition State Geometry Optimization"
-    )
+    PBE_def2_QZVPD_SMD_Frequency_Flattening_Geometry_Optimization = "PBE/def2-QZVPD/SMD Frequency Flattening Geometry Optimization"
+    PBE_def2_QZVPD_SMD_Transition_State_Geometry_Optimization = "PBE/def2-QZVPD/SMD Transition State Geometry Optimization"
+    PBE_def2_QZVPD_SMD_Frequency_Flattening_Transition_State_Geometry_Optimization = "PBE/def2-QZVPD/SMD Frequency Flattening Transition State Geometry Optimization"
     PBE_def2_QZVPD_SMD_Unknown = "PBE/def2-QZVPD/SMD Unknown"
     PBE_def2_QZVPPD_VACUUM_Single_Point = "PBE/def2-QZVPPD/VACUUM Single Point"
     PBE_def2_QZVPPD_VACUUM_Force = "PBE/def2-QZVPPD/VACUUM Force"
-    PBE_def2_QZVPPD_VACUUM_Geometry_Optimization = (
-        "PBE/def2-QZVPPD/VACUUM Geometry Optimization"
-    )
-    PBE_def2_QZVPPD_VACUUM_Frequency_Analysis = (
-        "PBE/def2-QZVPPD/VACUUM Frequency Analysis"
-    )
-    PBE_def2_QZVPPD_VACUUM_Frequency_Flattening_Geometry_Optimization = (
-        "PBE/def2-QZVPPD/VACUUM Frequency Flattening Geometry Optimization"
-    )
-    PBE_def2_QZVPPD_VACUUM_Transition_State_Geometry_Optimization = (
-        "PBE/def2-QZVPPD/VACUUM Transition State Geometry Optimization"
-    )
+    PBE_def2_QZVPPD_VACUUM_Geometry_Optimization = "PBE/def2-QZVPPD/VACUUM Geometry Optimization"
+    PBE_def2_QZVPPD_VACUUM_Frequency_Analysis = "PBE/def2-QZVPPD/VACUUM Frequency Analysis"
+    PBE_def2_QZVPPD_VACUUM_Frequency_Flattening_Geometry_Optimization = "PBE/def2-QZVPPD/VACUUM Frequency Flattening Geometry Optimization"
+    PBE_def2_QZVPPD_VACUUM_Transition_State_Geometry_Optimization = "PBE/def2-QZVPPD/VACUUM Transition State Geometry Optimization"
     PBE_def2_QZVPPD_VACUUM_Frequency_Flattening_Transition_State_Geometry_Optimization = "PBE/def2-QZVPPD/VACUUM Frequency Flattening Transition State Geometry Optimization"
     PBE_def2_QZVPPD_VACUUM_Unknown = "PBE/def2-QZVPPD/VACUUM Unknown"
     PBE_def2_QZVPPD_PCM_Single_Point = "PBE/def2-QZVPPD/PCM Single Point"
     PBE_def2_QZVPPD_PCM_Force = "PBE/def2-QZVPPD/PCM Force"
-    PBE_def2_QZVPPD_PCM_Geometry_Optimization = (
-        "PBE/def2-QZVPPD/PCM Geometry Optimization"
-    )
+    PBE_def2_QZVPPD_PCM_Geometry_Optimization = "PBE/def2-QZVPPD/PCM Geometry Optimization"
     PBE_def2_QZVPPD_PCM_Frequency_Analysis = "PBE/def2-QZVPPD/PCM Frequency Analysis"
-    PBE_def2_QZVPPD_PCM_Frequency_Flattening_Geometry_Optimization = (
-        "PBE/def2-QZVPPD/PCM Frequency Flattening Geometry Optimization"
-    )
-    PBE_def2_QZVPPD_PCM_Transition_State_Geometry_Optimization = (
-        "PBE/def2-QZVPPD/PCM Transition State Geometry Optimization"
-    )
+    PBE_def2_QZVPPD_PCM_Frequency_Flattening_Geometry_Optimization = "PBE/def2-QZVPPD/PCM Frequency Flattening Geometry Optimization"
+    PBE_def2_QZVPPD_PCM_Transition_State_Geometry_Optimization = "PBE/def2-QZVPPD/PCM Transition State Geometry Optimization"
     PBE_def2_QZVPPD_PCM_Frequency_Flattening_Transition_State_Geometry_Optimization = "PBE/def2-QZVPPD/PCM Frequency Flattening Transition State Geometry Optimization"
     PBE_def2_QZVPPD_PCM_Unknown = "PBE/def2-QZVPPD/PCM Unknown"
     PBE_def2_QZVPPD_SMD_Single_Point = "PBE/def2-QZVPPD/SMD Single Point"
     PBE_def2_QZVPPD_SMD_Force = "PBE/def2-QZVPPD/SMD Force"
-    PBE_def2_QZVPPD_SMD_Geometry_Optimization = (
-        "PBE/def2-QZVPPD/SMD Geometry Optimization"
-    )
+    PBE_def2_QZVPPD_SMD_Geometry_Optimization = "PBE/def2-QZVPPD/SMD Geometry Optimization"
     PBE_def2_QZVPPD_SMD_Frequency_Analysis = "PBE/def2-QZVPPD/SMD Frequency Analysis"
-    PBE_def2_QZVPPD_SMD_Frequency_Flattening_Geometry_Optimization = (
-        "PBE/def2-QZVPPD/SMD Frequency Flattening Geometry Optimization"
-    )
-    PBE_def2_QZVPPD_SMD_Transition_State_Geometry_Optimization = (
-        "PBE/def2-QZVPPD/SMD Transition State Geometry Optimization"
-    )
+    PBE_def2_QZVPPD_SMD_Frequency_Flattening_Geometry_Optimization = "PBE/def2-QZVPPD/SMD Frequency Flattening Geometry Optimization"
+    PBE_def2_QZVPPD_SMD_Transition_State_Geometry_Optimization = "PBE/def2-QZVPPD/SMD Transition State Geometry Optimization"
     PBE_def2_QZVPPD_SMD_Frequency_Flattening_Transition_State_Geometry_Optimization = "PBE/def2-QZVPPD/SMD Frequency Flattening Transition State Geometry Optimization"
     PBE_def2_QZVPPD_SMD_Unknown = "PBE/def2-QZVPPD/SMD Unknown"
     B97_D_6_31g_d_VACUUM_Single_Point = "B97-D/6-31g*/VACUUM Single Point"
     B97_D_6_31g_d_VACUUM_Force = "B97-D/6-31g*/VACUUM Force"
-    B97_D_6_31g_d_VACUUM_Geometry_Optimization = (
-        "B97-D/6-31g*/VACUUM Geometry Optimization"
-    )
+    B97_D_6_31g_d_VACUUM_Geometry_Optimization = "B97-D/6-31g*/VACUUM Geometry Optimization"
     B97_D_6_31g_d_VACUUM_Frequency_Analysis = "B97-D/6-31g*/VACUUM Frequency Analysis"
-    B97_D_6_31g_d_VACUUM_Frequency_Flattening_Geometry_Optimization = (
-        "B97-D/6-31g*/VACUUM Frequency Flattening Geometry Optimization"
-    )
-    B97_D_6_31g_d_VACUUM_Transition_State_Geometry_Optimization = (
-        "B97-D/6-31g*/VACUUM Transition State Geometry Optimization"
-    )
+    B97_D_6_31g_d_VACUUM_Frequency_Flattening_Geometry_Optimization = "B97-D/6-31g*/VACUUM Frequency Flattening Geometry Optimization"
+    B97_D_6_31g_d_VACUUM_Transition_State_Geometry_Optimization = "B97-D/6-31g*/VACUUM Transition State Geometry Optimization"
     B97_D_6_31g_d_VACUUM_Frequency_Flattening_Transition_State_Geometry_Optimization = "B97-D/6-31g*/VACUUM Frequency Flattening Transition State Geometry Optimization"
     B97_D_6_31g_d_VACUUM_Unknown = "B97-D/6-31g*/VACUUM Unknown"
     B97_D_6_31g_d_PCM_Single_Point = "B97-D/6-31g*/PCM Single Point"
     B97_D_6_31g_d_PCM_Force = "B97-D/6-31g*/PCM Force"
     B97_D_6_31g_d_PCM_Geometry_Optimization = "B97-D/6-31g*/PCM Geometry Optimization"
     B97_D_6_31g_d_PCM_Frequency_Analysis = "B97-D/6-31g*/PCM Frequency Analysis"
-    B97_D_6_31g_d_PCM_Frequency_Flattening_Geometry_Optimization = (
-        "B97-D/6-31g*/PCM Frequency Flattening Geometry Optimization"
-    )
-    B97_D_6_31g_d_PCM_Transition_State_Geometry_Optimization = (
-        "B97-D/6-31g*/PCM Transition State Geometry Optimization"
-    )
-    B97_D_6_31g_d_PCM_Frequency_Flattening_Transition_State_Geometry_Optimization = (
-        "B97-D/6-31g*/PCM Frequency Flattening Transition State Geometry Optimization"
-    )
+    B97_D_6_31g_d_PCM_Frequency_Flattening_Geometry_Optimization = "B97-D/6-31g*/PCM Frequency Flattening Geometry Optimization"
+    B97_D_6_31g_d_PCM_Transition_State_Geometry_Optimization = "B97-D/6-31g*/PCM Transition State Geometry Optimization"
+    B97_D_6_31g_d_PCM_Frequency_Flattening_Transition_State_Geometry_Optimization = "B97-D/6-31g*/PCM Frequency Flattening Transition State Geometry Optimization"
     B97_D_6_31g_d_PCM_Unknown = "B97-D/6-31g*/PCM Unknown"
     B97_D_6_31g_d_SMD_Single_Point = "B97-D/6-31g*/SMD Single Point"
     B97_D_6_31g_d_SMD_Force = "B97-D/6-31g*/SMD Force"
     B97_D_6_31g_d_SMD_Geometry_Optimization = "B97-D/6-31g*/SMD Geometry Optimization"
     B97_D_6_31g_d_SMD_Frequency_Analysis = "B97-D/6-31g*/SMD Frequency Analysis"
-    B97_D_6_31g_d_SMD_Frequency_Flattening_Geometry_Optimization = (
-        "B97-D/6-31g*/SMD Frequency Flattening Geometry Optimization"
-    )
-    B97_D_6_31g_d_SMD_Transition_State_Geometry_Optimization = (
-        "B97-D/6-31g*/SMD Transition State Geometry Optimization"
-    )
-    B97_D_6_31g_d_SMD_Frequency_Flattening_Transition_State_Geometry_Optimization = (
-        "B97-D/6-31g*/SMD Frequency Flattening Transition State Geometry Optimization"
-    )
+    B97_D_6_31g_d_SMD_Frequency_Flattening_Geometry_Optimization = "B97-D/6-31g*/SMD Frequency Flattening Geometry Optimization"
+    B97_D_6_31g_d_SMD_Transition_State_Geometry_Optimization = "B97-D/6-31g*/SMD Transition State Geometry Optimization"
+    B97_D_6_31g_d_SMD_Frequency_Flattening_Transition_State_Geometry_Optimization = "B97-D/6-31g*/SMD Frequency Flattening Transition State Geometry Optimization"
     B97_D_6_31g_d_SMD_Unknown = "B97-D/6-31g*/SMD Unknown"
     B97_D_def2_SVPD_VACUUM_Single_Point = "B97-D/def2-SVPD/VACUUM Single Point"
     B97_D_def2_SVPD_VACUUM_Force = "B97-D/def2-SVPD/VACUUM Force"
-    B97_D_def2_SVPD_VACUUM_Geometry_Optimization = (
-        "B97-D/def2-SVPD/VACUUM Geometry Optimization"
-    )
-    B97_D_def2_SVPD_VACUUM_Frequency_Analysis = (
-        "B97-D/def2-SVPD/VACUUM Frequency Analysis"
-    )
-    B97_D_def2_SVPD_VACUUM_Frequency_Flattening_Geometry_Optimization = (
-        "B97-D/def2-SVPD/VACUUM Frequency Flattening Geometry Optimization"
-    )
-    B97_D_def2_SVPD_VACUUM_Transition_State_Geometry_Optimization = (
-        "B97-D/def2-SVPD/VACUUM Transition State Geometry Optimization"
-    )
+    B97_D_def2_SVPD_VACUUM_Geometry_Optimization = "B97-D/def2-SVPD/VACUUM Geometry Optimization"
+    B97_D_def2_SVPD_VACUUM_Frequency_Analysis = "B97-D/def2-SVPD/VACUUM Frequency Analysis"
+    B97_D_def2_SVPD_VACUUM_Frequency_Flattening_Geometry_Optimization = "B97-D/def2-SVPD/VACUUM Frequency Flattening Geometry Optimization"
+    B97_D_def2_SVPD_VACUUM_Transition_State_Geometry_Optimization = "B97-D/def2-SVPD/VACUUM Transition State Geometry Optimization"
     B97_D_def2_SVPD_VACUUM_Frequency_Flattening_Transition_State_Geometry_Optimization = "B97-D/def2-SVPD/VACUUM Frequency Flattening Transition State Geometry Optimization"
     B97_D_def2_SVPD_VACUUM_Unknown = "B97-D/def2-SVPD/VACUUM Unknown"
     B97_D_def2_SVPD_PCM_Single_Point = "B97-D/def2-SVPD/PCM Single Point"
     B97_D_def2_SVPD_PCM_Force = "B97-D/def2-SVPD/PCM Force"
-    B97_D_def2_SVPD_PCM_Geometry_Optimization = (
-        "B97-D/def2-SVPD/PCM Geometry Optimization"
-    )
+    B97_D_def2_SVPD_PCM_Geometry_Optimization = "B97-D/def2-SVPD/PCM Geometry Optimization"
     B97_D_def2_SVPD_PCM_Frequency_Analysis = "B97-D/def2-SVPD/PCM Frequency Analysis"
-    B97_D_def2_SVPD_PCM_Frequency_Flattening_Geometry_Optimization = (
-        "B97-D/def2-SVPD/PCM Frequency Flattening Geometry Optimization"
-    )
-    B97_D_def2_SVPD_PCM_Transition_State_Geometry_Optimization = (
-        "B97-D/def2-SVPD/PCM Transition State Geometry Optimization"
-    )
+    B97_D_def2_SVPD_PCM_Frequency_Flattening_Geometry_Optimization = "B97-D/def2-SVPD/PCM Frequency Flattening Geometry Optimization"
+    B97_D_def2_SVPD_PCM_Transition_State_Geometry_Optimization = "B97-D/def2-SVPD/PCM Transition State Geometry Optimization"
     B97_D_def2_SVPD_PCM_Frequency_Flattening_Transition_State_Geometry_Optimization = "B97-D/def2-SVPD/PCM Frequency Flattening Transition State Geometry Optimization"
     B97_D_def2_SVPD_PCM_Unknown = "B97-D/def2-SVPD/PCM Unknown"
     B97_D_def2_SVPD_SMD_Single_Point = "B97-D/def2-SVPD/SMD Single Point"
     B97_D_def2_SVPD_SMD_Force = "B97-D/def2-SVPD/SMD Force"
-    B97_D_def2_SVPD_SMD_Geometry_Optimization = (
-        "B97-D/def2-SVPD/SMD Geometry Optimization"
-    )
+    B97_D_def2_SVPD_SMD_Geometry_Optimization = "B97-D/def2-SVPD/SMD Geometry Optimization"
     B97_D_def2_SVPD_SMD_Frequency_Analysis = "B97-D/def2-SVPD/SMD Frequency Analysis"
-    B97_D_def2_SVPD_SMD_Frequency_Flattening_Geometry_Optimization = (
-        "B97-D/def2-SVPD/SMD Frequency Flattening Geometry Optimization"
-    )
-    B97_D_def2_SVPD_SMD_Transition_State_Geometry_Optimization = (
-        "B97-D/def2-SVPD/SMD Transition State Geometry Optimization"
-    )
+    B97_D_def2_SVPD_SMD_Frequency_Flattening_Geometry_Optimization = "B97-D/def2-SVPD/SMD Frequency Flattening Geometry Optimization"
+    B97_D_def2_SVPD_SMD_Transition_State_Geometry_Optimization = "B97-D/def2-SVPD/SMD Transition State Geometry Optimization"
     B97_D_def2_SVPD_SMD_Frequency_Flattening_Transition_State_Geometry_Optimization = "B97-D/def2-SVPD/SMD Frequency Flattening Transition State Geometry Optimization"
     B97_D_def2_SVPD_SMD_Unknown = "B97-D/def2-SVPD/SMD Unknown"
     B97_D_def2_TZVP_VACUUM_Single_Point = "B97-D/def2-TZVP/VACUUM Single Point"
     B97_D_def2_TZVP_VACUUM_Force = "B97-D/def2-TZVP/VACUUM Force"
-    B97_D_def2_TZVP_VACUUM_Geometry_Optimization = (
-        "B97-D/def2-TZVP/VACUUM Geometry Optimization"
-    )
-    B97_D_def2_TZVP_VACUUM_Frequency_Analysis = (
-        "B97-D/def2-TZVP/VACUUM Frequency Analysis"
-    )
-    B97_D_def2_TZVP_VACUUM_Frequency_Flattening_Geometry_Optimization = (
-        "B97-D/def2-TZVP/VACUUM Frequency Flattening Geometry Optimization"
-    )
-    B97_D_def2_TZVP_VACUUM_Transition_State_Geometry_Optimization = (
-        "B97-D/def2-TZVP/VACUUM Transition State Geometry Optimization"
-    )
+    B97_D_def2_TZVP_VACUUM_Geometry_Optimization = "B97-D/def2-TZVP/VACUUM Geometry Optimization"
+    B97_D_def2_TZVP_VACUUM_Frequency_Analysis = "B97-D/def2-TZVP/VACUUM Frequency Analysis"
+    B97_D_def2_TZVP_VACUUM_Frequency_Flattening_Geometry_Optimization = "B97-D/def2-TZVP/VACUUM Frequency Flattening Geometry Optimization"
+    B97_D_def2_TZVP_VACUUM_Transition_State_Geometry_Optimization = "B97-D/def2-TZVP/VACUUM Transition State Geometry Optimization"
     B97_D_def2_TZVP_VACUUM_Frequency_Flattening_Transition_State_Geometry_Optimization = "B97-D/def2-TZVP/VACUUM Frequency Flattening Transition State Geometry Optimization"
     B97_D_def2_TZVP_VACUUM_Unknown = "B97-D/def2-TZVP/VACUUM Unknown"
     B97_D_def2_TZVP_PCM_Single_Point = "B97-D/def2-TZVP/PCM Single Point"
     B97_D_def2_TZVP_PCM_Force = "B97-D/def2-TZVP/PCM Force"
-    B97_D_def2_TZVP_PCM_Geometry_Optimization = (
-        "B97-D/def2-TZVP/PCM Geometry Optimization"
-    )
+    B97_D_def2_TZVP_PCM_Geometry_Optimization = "B97-D/def2-TZVP/PCM Geometry Optimization"
     B97_D_def2_TZVP_PCM_Frequency_Analysis = "B97-D/def2-TZVP/PCM Frequency Analysis"
-    B97_D_def2_TZVP_PCM_Frequency_Flattening_Geometry_Optimization = (
-        "B97-D/def2-TZVP/PCM Frequency Flattening Geometry Optimization"
-    )
-    B97_D_def2_TZVP_PCM_Transition_State_Geometry_Optimization = (
-        "B97-D/def2-TZVP/PCM Transition State Geometry Optimization"
-    )
+    B97_D_def2_TZVP_PCM_Frequency_Flattening_Geometry_Optimization = "B97-D/def2-TZVP/PCM Frequency Flattening Geometry Optimization"
+    B97_D_def2_TZVP_PCM_Transition_State_Geometry_Optimization = "B97-D/def2-TZVP/PCM Transition State Geometry Optimization"
     B97_D_def2_TZVP_PCM_Frequency_Flattening_Transition_State_Geometry_Optimization = "B97-D/def2-TZVP/PCM Frequency Flattening Transition State Geometry Optimization"
     B97_D_def2_TZVP_PCM_Unknown = "B97-D/def2-TZVP/PCM Unknown"
     B97_D_def2_TZVP_SMD_Single_Point = "B97-D/def2-TZVP/SMD Single Point"
     B97_D_def2_TZVP_SMD_Force = "B97-D/def2-TZVP/SMD Force"
-    B97_D_def2_TZVP_SMD_Geometry_Optimization = (
-        "B97-D/def2-TZVP/SMD Geometry Optimization"
-    )
+    B97_D_def2_TZVP_SMD_Geometry_Optimization = "B97-D/def2-TZVP/SMD Geometry Optimization"
     B97_D_def2_TZVP_SMD_Frequency_Analysis = "B97-D/def2-TZVP/SMD Frequency Analysis"
-    B97_D_def2_TZVP_SMD_Frequency_Flattening_Geometry_Optimization = (
-        "B97-D/def2-TZVP/SMD Frequency Flattening Geometry Optimization"
-    )
-    B97_D_def2_TZVP_SMD_Transition_State_Geometry_Optimization = (
-        "B97-D/def2-TZVP/SMD Transition State Geometry Optimization"
-    )
+    B97_D_def2_TZVP_SMD_Frequency_Flattening_Geometry_Optimization = "B97-D/def2-TZVP/SMD Frequency Flattening Geometry Optimization"
+    B97_D_def2_TZVP_SMD_Transition_State_Geometry_Optimization = "B97-D/def2-TZVP/SMD Transition State Geometry Optimization"
     B97_D_def2_TZVP_SMD_Frequency_Flattening_Transition_State_Geometry_Optimization = "B97-D/def2-TZVP/SMD Frequency Flattening Transition State Geometry Optimization"
     B97_D_def2_TZVP_SMD_Unknown = "B97-D/def2-TZVP/SMD Unknown"
     B97_D_def2_TZVPD_VACUUM_Single_Point = "B97-D/def2-TZVPD/VACUUM Single Point"
     B97_D_def2_TZVPD_VACUUM_Force = "B97-D/def2-TZVPD/VACUUM Force"
-    B97_D_def2_TZVPD_VACUUM_Geometry_Optimization = (
-        "B97-D/def2-TZVPD/VACUUM Geometry Optimization"
-    )
-    B97_D_def2_TZVPD_VACUUM_Frequency_Analysis = (
-        "B97-D/def2-TZVPD/VACUUM Frequency Analysis"
-    )
-    B97_D_def2_TZVPD_VACUUM_Frequency_Flattening_Geometry_Optimization = (
-        "B97-D/def2-TZVPD/VACUUM Frequency Flattening Geometry Optimization"
-    )
-    B97_D_def2_TZVPD_VACUUM_Transition_State_Geometry_Optimization = (
-        "B97-D/def2-TZVPD/VACUUM Transition State Geometry Optimization"
-    )
+    B97_D_def2_TZVPD_VACUUM_Geometry_Optimization = "B97-D/def2-TZVPD/VACUUM Geometry Optimization"
+    B97_D_def2_TZVPD_VACUUM_Frequency_Analysis = "B97-D/def2-TZVPD/VACUUM Frequency Analysis"
+    B97_D_def2_TZVPD_VACUUM_Frequency_Flattening_Geometry_Optimization = "B97-D/def2-TZVPD/VACUUM Frequency Flattening Geometry Optimization"
+    B97_D_def2_TZVPD_VACUUM_Transition_State_Geometry_Optimization = "B97-D/def2-TZVPD/VACUUM Transition State Geometry Optimization"
     B97_D_def2_TZVPD_VACUUM_Frequency_Flattening_Transition_State_Geometry_Optimization = "B97-D/def2-TZVPD/VACUUM Frequency Flattening Transition State Geometry Optimization"
     B97_D_def2_TZVPD_VACUUM_Unknown = "B97-D/def2-TZVPD/VACUUM Unknown"
     B97_D_def2_TZVPD_PCM_Single_Point = "B97-D/def2-TZVPD/PCM Single Point"
     B97_D_def2_TZVPD_PCM_Force = "B97-D/def2-TZVPD/PCM Force"
-    B97_D_def2_TZVPD_PCM_Geometry_Optimization = (
-        "B97-D/def2-TZVPD/PCM Geometry Optimization"
-    )
+    B97_D_def2_TZVPD_PCM_Geometry_Optimization = "B97-D/def2-TZVPD/PCM Geometry Optimization"
     B97_D_def2_TZVPD_PCM_Frequency_Analysis = "B97-D/def2-TZVPD/PCM Frequency Analysis"
-    B97_D_def2_TZVPD_PCM_Frequency_Flattening_Geometry_Optimization = (
-        "B97-D/def2-TZVPD/PCM Frequency Flattening Geometry Optimization"
-    )
-    B97_D_def2_TZVPD_PCM_Transition_State_Geometry_Optimization = (
-        "B97-D/def2-TZVPD/PCM Transition State Geometry Optimization"
-    )
+    B97_D_def2_TZVPD_PCM_Frequency_Flattening_Geometry_Optimization = "B97-D/def2-TZVPD/PCM Frequency Flattening Geometry Optimization"
+    B97_D_def2_TZVPD_PCM_Transition_State_Geometry_Optimization = "B97-D/def2-TZVPD/PCM Transition State Geometry Optimization"
     B97_D_def2_TZVPD_PCM_Frequency_Flattening_Transition_State_Geometry_Optimization = "B97-D/def2-TZVPD/PCM Frequency Flattening Transition State Geometry Optimization"
     B97_D_def2_TZVPD_PCM_Unknown = "B97-D/def2-TZVPD/PCM Unknown"
     B97_D_def2_TZVPD_SMD_Single_Point = "B97-D/def2-TZVPD/SMD Single Point"
     B97_D_def2_TZVPD_SMD_Force = "B97-D/def2-TZVPD/SMD Force"
-    B97_D_def2_TZVPD_SMD_Geometry_Optimization = (
-        "B97-D/def2-TZVPD/SMD Geometry Optimization"
-    )
+    B97_D_def2_TZVPD_SMD_Geometry_Optimization = "B97-D/def2-TZVPD/SMD Geometry Optimization"
     B97_D_def2_TZVPD_SMD_Frequency_Analysis = "B97-D/def2-TZVPD/SMD Frequency Analysis"
-    B97_D_def2_TZVPD_SMD_Frequency_Flattening_Geometry_Optimization = (
-        "B97-D/def2-TZVPD/SMD Frequency Flattening Geometry Optimization"
-    )
-    B97_D_def2_TZVPD_SMD_Transition_State_Geometry_Optimization = (
-        "B97-D/def2-TZVPD/SMD Transition State Geometry Optimization"
-    )
+    B97_D_def2_TZVPD_SMD_Frequency_Flattening_Geometry_Optimization = "B97-D/def2-TZVPD/SMD Frequency Flattening Geometry Optimization"
+    B97_D_def2_TZVPD_SMD_Transition_State_Geometry_Optimization = "B97-D/def2-TZVPD/SMD Transition State Geometry Optimization"
     B97_D_def2_TZVPD_SMD_Frequency_Flattening_Transition_State_Geometry_Optimization = "B97-D/def2-TZVPD/SMD Frequency Flattening Transition State Geometry Optimization"
     B97_D_def2_TZVPD_SMD_Unknown = "B97-D/def2-TZVPD/SMD Unknown"
     B97_D_def2_TZVPP_VACUUM_Single_Point = "B97-D/def2-TZVPP/VACUUM Single Point"
     B97_D_def2_TZVPP_VACUUM_Force = "B97-D/def2-TZVPP/VACUUM Force"
-    B97_D_def2_TZVPP_VACUUM_Geometry_Optimization = (
-        "B97-D/def2-TZVPP/VACUUM Geometry Optimization"
-    )
-    B97_D_def2_TZVPP_VACUUM_Frequency_Analysis = (
-        "B97-D/def2-TZVPP/VACUUM Frequency Analysis"
-    )
-    B97_D_def2_TZVPP_VACUUM_Frequency_Flattening_Geometry_Optimization = (
-        "B97-D/def2-TZVPP/VACUUM Frequency Flattening Geometry Optimization"
-    )
-    B97_D_def2_TZVPP_VACUUM_Transition_State_Geometry_Optimization = (
-        "B97-D/def2-TZVPP/VACUUM Transition State Geometry Optimization"
-    )
+    B97_D_def2_TZVPP_VACUUM_Geometry_Optimization = "B97-D/def2-TZVPP/VACUUM Geometry Optimization"
+    B97_D_def2_TZVPP_VACUUM_Frequency_Analysis = "B97-D/def2-TZVPP/VACUUM Frequency Analysis"
+    B97_D_def2_TZVPP_VACUUM_Frequency_Flattening_Geometry_Optimization = "B97-D/def2-TZVPP/VACUUM Frequency Flattening Geometry Optimization"
+    B97_D_def2_TZVPP_VACUUM_Transition_State_Geometry_Optimization = "B97-D/def2-TZVPP/VACUUM Transition State Geometry Optimization"
     B97_D_def2_TZVPP_VACUUM_Frequency_Flattening_Transition_State_Geometry_Optimization = "B97-D/def2-TZVPP/VACUUM Frequency Flattening Transition State Geometry Optimization"
     B97_D_def2_TZVPP_VACUUM_Unknown = "B97-D/def2-TZVPP/VACUUM Unknown"
     B97_D_def2_TZVPP_PCM_Single_Point = "B97-D/def2-TZVPP/PCM Single Point"
     B97_D_def2_TZVPP_PCM_Force = "B97-D/def2-TZVPP/PCM Force"
-    B97_D_def2_TZVPP_PCM_Geometry_Optimization = (
-        "B97-D/def2-TZVPP/PCM Geometry Optimization"
-    )
+    B97_D_def2_TZVPP_PCM_Geometry_Optimization = "B97-D/def2-TZVPP/PCM Geometry Optimization"
     B97_D_def2_TZVPP_PCM_Frequency_Analysis = "B97-D/def2-TZVPP/PCM Frequency Analysis"
-    B97_D_def2_TZVPP_PCM_Frequency_Flattening_Geometry_Optimization = (
-        "B97-D/def2-TZVPP/PCM Frequency Flattening Geometry Optimization"
-    )
-    B97_D_def2_TZVPP_PCM_Transition_State_Geometry_Optimization = (
-        "B97-D/def2-TZVPP/PCM Transition State Geometry Optimization"
-    )
+    B97_D_def2_TZVPP_PCM_Frequency_Flattening_Geometry_Optimization = "B97-D/def2-TZVPP/PCM Frequency Flattening Geometry Optimization"
+    B97_D_def2_TZVPP_PCM_Transition_State_Geometry_Optimization = "B97-D/def2-TZVPP/PCM Transition State Geometry Optimization"
     B97_D_def2_TZVPP_PCM_Frequency_Flattening_Transition_State_Geometry_Optimization = "B97-D/def2-TZVPP/PCM Frequency Flattening Transition State Geometry Optimization"
     B97_D_def2_TZVPP_PCM_Unknown = "B97-D/def2-TZVPP/PCM Unknown"
     B97_D_def2_TZVPP_SMD_Single_Point = "B97-D/def2-TZVPP/SMD Single Point"
     B97_D_def2_TZVPP_SMD_Force = "B97-D/def2-TZVPP/SMD Force"
-    B97_D_def2_TZVPP_SMD_Geometry_Optimization = (
-        "B97-D/def2-TZVPP/SMD Geometry Optimization"
-    )
+    B97_D_def2_TZVPP_SMD_Geometry_Optimization = "B97-D/def2-TZVPP/SMD Geometry Optimization"
     B97_D_def2_TZVPP_SMD_Frequency_Analysis = "B97-D/def2-TZVPP/SMD Frequency Analysis"
-    B97_D_def2_TZVPP_SMD_Frequency_Flattening_Geometry_Optimization = (
-        "B97-D/def2-TZVPP/SMD Frequency Flattening Geometry Optimization"
-    )
-    B97_D_def2_TZVPP_SMD_Transition_State_Geometry_Optimization = (
-        "B97-D/def2-TZVPP/SMD Transition State Geometry Optimization"
-    )
+    B97_D_def2_TZVPP_SMD_Frequency_Flattening_Geometry_Optimization = "B97-D/def2-TZVPP/SMD Frequency Flattening Geometry Optimization"
+    B97_D_def2_TZVPP_SMD_Transition_State_Geometry_Optimization = "B97-D/def2-TZVPP/SMD Transition State Geometry Optimization"
     B97_D_def2_TZVPP_SMD_Frequency_Flattening_Transition_State_Geometry_Optimization = "B97-D/def2-TZVPP/SMD Frequency Flattening Transition State Geometry Optimization"
     B97_D_def2_TZVPP_SMD_Unknown = "B97-D/def2-TZVPP/SMD Unknown"
     B97_D_def2_TZVPPD_VACUUM_Single_Point = "B97-D/def2-TZVPPD/VACUUM Single Point"
     B97_D_def2_TZVPPD_VACUUM_Force = "B97-D/def2-TZVPPD/VACUUM Force"
-    B97_D_def2_TZVPPD_VACUUM_Geometry_Optimization = (
-        "B97-D/def2-TZVPPD/VACUUM Geometry Optimization"
-    )
-    B97_D_def2_TZVPPD_VACUUM_Frequency_Analysis = (
-        "B97-D/def2-TZVPPD/VACUUM Frequency Analysis"
-    )
-    B97_D_def2_TZVPPD_VACUUM_Frequency_Flattening_Geometry_Optimization = (
-        "B97-D/def2-TZVPPD/VACUUM Frequency Flattening Geometry Optimization"
-    )
-    B97_D_def2_TZVPPD_VACUUM_Transition_State_Geometry_Optimization = (
-        "B97-D/def2-TZVPPD/VACUUM Transition State Geometry Optimization"
-    )
+    B97_D_def2_TZVPPD_VACUUM_Geometry_Optimization = "B97-D/def2-TZVPPD/VACUUM Geometry Optimization"
+    B97_D_def2_TZVPPD_VACUUM_Frequency_Analysis = "B97-D/def2-TZVPPD/VACUUM Frequency Analysis"
+    B97_D_def2_TZVPPD_VACUUM_Frequency_Flattening_Geometry_Optimization = "B97-D/def2-TZVPPD/VACUUM Frequency Flattening Geometry Optimization"
+    B97_D_def2_TZVPPD_VACUUM_Transition_State_Geometry_Optimization = "B97-D/def2-TZVPPD/VACUUM Transition State Geometry Optimization"
     B97_D_def2_TZVPPD_VACUUM_Frequency_Flattening_Transition_State_Geometry_Optimization = "B97-D/def2-TZVPPD/VACUUM Frequency Flattening Transition State Geometry Optimization"
     B97_D_def2_TZVPPD_VACUUM_Unknown = "B97-D/def2-TZVPPD/VACUUM Unknown"
     B97_D_def2_TZVPPD_PCM_Single_Point = "B97-D/def2-TZVPPD/PCM Single Point"
     B97_D_def2_TZVPPD_PCM_Force = "B97-D/def2-TZVPPD/PCM Force"
-    B97_D_def2_TZVPPD_PCM_Geometry_Optimization = (
-        "B97-D/def2-TZVPPD/PCM Geometry Optimization"
-    )
-    B97_D_def2_TZVPPD_PCM_Frequency_Analysis = (
-        "B97-D/def2-TZVPPD/PCM Frequency Analysis"
-    )
-    B97_D_def2_TZVPPD_PCM_Frequency_Flattening_Geometry_Optimization = (
-        "B97-D/def2-TZVPPD/PCM Frequency Flattening Geometry Optimization"
-    )
-    B97_D_def2_TZVPPD_PCM_Transition_State_Geometry_Optimization = (
-        "B97-D/def2-TZVPPD/PCM Transition State Geometry Optimization"
-    )
+    B97_D_def2_TZVPPD_PCM_Geometry_Optimization = "B97-D/def2-TZVPPD/PCM Geometry Optimization"
+    B97_D_def2_TZVPPD_PCM_Frequency_Analysis = "B97-D/def2-TZVPPD/PCM Frequency Analysis"
+    B97_D_def2_TZVPPD_PCM_Frequency_Flattening_Geometry_Optimization = "B97-D/def2-TZVPPD/PCM Frequency Flattening Geometry Optimization"
+    B97_D_def2_TZVPPD_PCM_Transition_State_Geometry_Optimization = "B97-D/def2-TZVPPD/PCM Transition State Geometry Optimization"
     B97_D_def2_TZVPPD_PCM_Frequency_Flattening_Transition_State_Geometry_Optimization = "B97-D/def2-TZVPPD/PCM Frequency Flattening Transition State Geometry Optimization"
     B97_D_def2_TZVPPD_PCM_Unknown = "B97-D/def2-TZVPPD/PCM Unknown"
     B97_D_def2_TZVPPD_SMD_Single_Point = "B97-D/def2-TZVPPD/SMD Single Point"
     B97_D_def2_TZVPPD_SMD_Force = "B97-D/def2-TZVPPD/SMD Force"
-    B97_D_def2_TZVPPD_SMD_Geometry_Optimization = (
-        "B97-D/def2-TZVPPD/SMD Geometry Optimization"
-    )
-    B97_D_def2_TZVPPD_SMD_Frequency_Analysis = (
-        "B97-D/def2-TZVPPD/SMD Frequency Analysis"
-    )
-    B97_D_def2_TZVPPD_SMD_Frequency_Flattening_Geometry_Optimization = (
-        "B97-D/def2-TZVPPD/SMD Frequency Flattening Geometry Optimization"
-    )
-    B97_D_def2_TZVPPD_SMD_Transition_State_Geometry_Optimization = (
-        "B97-D/def2-TZVPPD/SMD Transition State Geometry Optimization"
-    )
+    B97_D_def2_TZVPPD_SMD_Geometry_Optimization = "B97-D/def2-TZVPPD/SMD Geometry Optimization"
+    B97_D_def2_TZVPPD_SMD_Frequency_Analysis = "B97-D/def2-TZVPPD/SMD Frequency Analysis"
+    B97_D_def2_TZVPPD_SMD_Frequency_Flattening_Geometry_Optimization = "B97-D/def2-TZVPPD/SMD Frequency Flattening Geometry Optimization"
+    B97_D_def2_TZVPPD_SMD_Transition_State_Geometry_Optimization = "B97-D/def2-TZVPPD/SMD Transition State Geometry Optimization"
     B97_D_def2_TZVPPD_SMD_Frequency_Flattening_Transition_State_Geometry_Optimization = "B97-D/def2-TZVPPD/SMD Frequency Flattening Transition State Geometry Optimization"
     B97_D_def2_TZVPPD_SMD_Unknown = "B97-D/def2-TZVPPD/SMD Unknown"
     B97_D_def2_QZVPD_VACUUM_Single_Point = "B97-D/def2-QZVPD/VACUUM Single Point"
     B97_D_def2_QZVPD_VACUUM_Force = "B97-D/def2-QZVPD/VACUUM Force"
-    B97_D_def2_QZVPD_VACUUM_Geometry_Optimization = (
-        "B97-D/def2-QZVPD/VACUUM Geometry Optimization"
-    )
-    B97_D_def2_QZVPD_VACUUM_Frequency_Analysis = (
-        "B97-D/def2-QZVPD/VACUUM Frequency Analysis"
-    )
-    B97_D_def2_QZVPD_VACUUM_Frequency_Flattening_Geometry_Optimization = (
-        "B97-D/def2-QZVPD/VACUUM Frequency Flattening Geometry Optimization"
-    )
-    B97_D_def2_QZVPD_VACUUM_Transition_State_Geometry_Optimization = (
-        "B97-D/def2-QZVPD/VACUUM Transition State Geometry Optimization"
-    )
+    B97_D_def2_QZVPD_VACUUM_Geometry_Optimization = "B97-D/def2-QZVPD/VACUUM Geometry Optimization"
+    B97_D_def2_QZVPD_VACUUM_Frequency_Analysis = "B97-D/def2-QZVPD/VACUUM Frequency Analysis"
+    B97_D_def2_QZVPD_VACUUM_Frequency_Flattening_Geometry_Optimization = "B97-D/def2-QZVPD/VACUUM Frequency Flattening Geometry Optimization"
+    B97_D_def2_QZVPD_VACUUM_Transition_State_Geometry_Optimization = "B97-D/def2-QZVPD/VACUUM Transition State Geometry Optimization"
     B97_D_def2_QZVPD_VACUUM_Frequency_Flattening_Transition_State_Geometry_Optimization = "B97-D/def2-QZVPD/VACUUM Frequency Flattening Transition State Geometry Optimization"
     B97_D_def2_QZVPD_VACUUM_Unknown = "B97-D/def2-QZVPD/VACUUM Unknown"
     B97_D_def2_QZVPD_PCM_Single_Point = "B97-D/def2-QZVPD/PCM Single Point"
     B97_D_def2_QZVPD_PCM_Force = "B97-D/def2-QZVPD/PCM Force"
-    B97_D_def2_QZVPD_PCM_Geometry_Optimization = (
-        "B97-D/def2-QZVPD/PCM Geometry Optimization"
-    )
+    B97_D_def2_QZVPD_PCM_Geometry_Optimization = "B97-D/def2-QZVPD/PCM Geometry Optimization"
     B97_D_def2_QZVPD_PCM_Frequency_Analysis = "B97-D/def2-QZVPD/PCM Frequency Analysis"
-    B97_D_def2_QZVPD_PCM_Frequency_Flattening_Geometry_Optimization = (
-        "B97-D/def2-QZVPD/PCM Frequency Flattening Geometry Optimization"
-    )
-    B97_D_def2_QZVPD_PCM_Transition_State_Geometry_Optimization = (
-        "B97-D/def2-QZVPD/PCM Transition State Geometry Optimization"
-    )
+    B97_D_def2_QZVPD_PCM_Frequency_Flattening_Geometry_Optimization = "B97-D/def2-QZVPD/PCM Frequency Flattening Geometry Optimization"
+    B97_D_def2_QZVPD_PCM_Transition_State_Geometry_Optimization = "B97-D/def2-QZVPD/PCM Transition State Geometry Optimization"
     B97_D_def2_QZVPD_PCM_Frequency_Flattening_Transition_State_Geometry_Optimization = "B97-D/def2-QZVPD/PCM Frequency Flattening Transition State Geometry Optimization"
     B97_D_def2_QZVPD_PCM_Unknown = "B97-D/def2-QZVPD/PCM Unknown"
     B97_D_def2_QZVPD_SMD_Single_Point = "B97-D/def2-QZVPD/SMD Single Point"
     B97_D_def2_QZVPD_SMD_Force = "B97-D/def2-QZVPD/SMD Force"
-    B97_D_def2_QZVPD_SMD_Geometry_Optimization = (
-        "B97-D/def2-QZVPD/SMD Geometry Optimization"
-    )
+    B97_D_def2_QZVPD_SMD_Geometry_Optimization = "B97-D/def2-QZVPD/SMD Geometry Optimization"
     B97_D_def2_QZVPD_SMD_Frequency_Analysis = "B97-D/def2-QZVPD/SMD Frequency Analysis"
-    B97_D_def2_QZVPD_SMD_Frequency_Flattening_Geometry_Optimization = (
-        "B97-D/def2-QZVPD/SMD Frequency Flattening Geometry Optimization"
-    )
-    B97_D_def2_QZVPD_SMD_Transition_State_Geometry_Optimization = (
-        "B97-D/def2-QZVPD/SMD Transition State Geometry Optimization"
-    )
+    B97_D_def2_QZVPD_SMD_Frequency_Flattening_Geometry_Optimization = "B97-D/def2-QZVPD/SMD Frequency Flattening Geometry Optimization"
+    B97_D_def2_QZVPD_SMD_Transition_State_Geometry_Optimization = "B97-D/def2-QZVPD/SMD Transition State Geometry Optimization"
     B97_D_def2_QZVPD_SMD_Frequency_Flattening_Transition_State_Geometry_Optimization = "B97-D/def2-QZVPD/SMD Frequency Flattening Transition State Geometry Optimization"
     B97_D_def2_QZVPD_SMD_Unknown = "B97-D/def2-QZVPD/SMD Unknown"
     B97_D_def2_QZVPPD_VACUUM_Single_Point = "B97-D/def2-QZVPPD/VACUUM Single Point"
     B97_D_def2_QZVPPD_VACUUM_Force = "B97-D/def2-QZVPPD/VACUUM Force"
-    B97_D_def2_QZVPPD_VACUUM_Geometry_Optimization = (
-        "B97-D/def2-QZVPPD/VACUUM Geometry Optimization"
-    )
-    B97_D_def2_QZVPPD_VACUUM_Frequency_Analysis = (
-        "B97-D/def2-QZVPPD/VACUUM Frequency Analysis"
-    )
-    B97_D_def2_QZVPPD_VACUUM_Frequency_Flattening_Geometry_Optimization = (
-        "B97-D/def2-QZVPPD/VACUUM Frequency Flattening Geometry Optimization"
-    )
-    B97_D_def2_QZVPPD_VACUUM_Transition_State_Geometry_Optimization = (
-        "B97-D/def2-QZVPPD/VACUUM Transition State Geometry Optimization"
-    )
+    B97_D_def2_QZVPPD_VACUUM_Geometry_Optimization = "B97-D/def2-QZVPPD/VACUUM Geometry Optimization"
+    B97_D_def2_QZVPPD_VACUUM_Frequency_Analysis = "B97-D/def2-QZVPPD/VACUUM Frequency Analysis"
+    B97_D_def2_QZVPPD_VACUUM_Frequency_Flattening_Geometry_Optimization = "B97-D/def2-QZVPPD/VACUUM Frequency Flattening Geometry Optimization"
+    B97_D_def2_QZVPPD_VACUUM_Transition_State_Geometry_Optimization = "B97-D/def2-QZVPPD/VACUUM Transition State Geometry Optimization"
     B97_D_def2_QZVPPD_VACUUM_Frequency_Flattening_Transition_State_Geometry_Optimization = "B97-D/def2-QZVPPD/VACUUM Frequency Flattening Transition State Geometry Optimization"
     B97_D_def2_QZVPPD_VACUUM_Unknown = "B97-D/def2-QZVPPD/VACUUM Unknown"
     B97_D_def2_QZVPPD_PCM_Single_Point = "B97-D/def2-QZVPPD/PCM Single Point"
     B97_D_def2_QZVPPD_PCM_Force = "B97-D/def2-QZVPPD/PCM Force"
-    B97_D_def2_QZVPPD_PCM_Geometry_Optimization = (
-        "B97-D/def2-QZVPPD/PCM Geometry Optimization"
-    )
-    B97_D_def2_QZVPPD_PCM_Frequency_Analysis = (
-        "B97-D/def2-QZVPPD/PCM Frequency Analysis"
-    )
-    B97_D_def2_QZVPPD_PCM_Frequency_Flattening_Geometry_Optimization = (
-        "B97-D/def2-QZVPPD/PCM Frequency Flattening Geometry Optimization"
-    )
-    B97_D_def2_QZVPPD_PCM_Transition_State_Geometry_Optimization = (
-        "B97-D/def2-QZVPPD/PCM Transition State Geometry Optimization"
-    )
+    B97_D_def2_QZVPPD_PCM_Geometry_Optimization = "B97-D/def2-QZVPPD/PCM Geometry Optimization"
+    B97_D_def2_QZVPPD_PCM_Frequency_Analysis = "B97-D/def2-QZVPPD/PCM Frequency Analysis"
+    B97_D_def2_QZVPPD_PCM_Frequency_Flattening_Geometry_Optimization = "B97-D/def2-QZVPPD/PCM Frequency Flattening Geometry Optimization"
+    B97_D_def2_QZVPPD_PCM_Transition_State_Geometry_Optimization = "B97-D/def2-QZVPPD/PCM Transition State Geometry Optimization"
     B97_D_def2_QZVPPD_PCM_Frequency_Flattening_Transition_State_Geometry_Optimization = "B97-D/def2-QZVPPD/PCM Frequency Flattening Transition State Geometry Optimization"
     B97_D_def2_QZVPPD_PCM_Unknown = "B97-D/def2-QZVPPD/PCM Unknown"
     B97_D_def2_QZVPPD_SMD_Single_Point = "B97-D/def2-QZVPPD/SMD Single Point"
     B97_D_def2_QZVPPD_SMD_Force = "B97-D/def2-QZVPPD/SMD Force"
-    B97_D_def2_QZVPPD_SMD_Geometry_Optimization = (
-        "B97-D/def2-QZVPPD/SMD Geometry Optimization"
-    )
-    B97_D_def2_QZVPPD_SMD_Frequency_Analysis = (
-        "B97-D/def2-QZVPPD/SMD Frequency Analysis"
-    )
-    B97_D_def2_QZVPPD_SMD_Frequency_Flattening_Geometry_Optimization = (
-        "B97-D/def2-QZVPPD/SMD Frequency Flattening Geometry Optimization"
-    )
-    B97_D_def2_QZVPPD_SMD_Transition_State_Geometry_Optimization = (
-        "B97-D/def2-QZVPPD/SMD Transition State Geometry Optimization"
-    )
+    B97_D_def2_QZVPPD_SMD_Geometry_Optimization = "B97-D/def2-QZVPPD/SMD Geometry Optimization"
+    B97_D_def2_QZVPPD_SMD_Frequency_Analysis = "B97-D/def2-QZVPPD/SMD Frequency Analysis"
+    B97_D_def2_QZVPPD_SMD_Frequency_Flattening_Geometry_Optimization = "B97-D/def2-QZVPPD/SMD Frequency Flattening Geometry Optimization"
+    B97_D_def2_QZVPPD_SMD_Transition_State_Geometry_Optimization = "B97-D/def2-QZVPPD/SMD Transition State Geometry Optimization"
     B97_D_def2_QZVPPD_SMD_Frequency_Flattening_Transition_State_Geometry_Optimization = "B97-D/def2-QZVPPD/SMD Frequency Flattening Transition State Geometry Optimization"
     B97_D_def2_QZVPPD_SMD_Unknown = "B97-D/def2-QZVPPD/SMD Unknown"
     B97_D3_6_31g_d_VACUUM_Single_Point = "B97-D3/6-31g*/VACUUM Single Point"
     B97_D3_6_31g_d_VACUUM_Force = "B97-D3/6-31g*/VACUUM Force"
-    B97_D3_6_31g_d_VACUUM_Geometry_Optimization = (
-        "B97-D3/6-31g*/VACUUM Geometry Optimization"
-    )
+    B97_D3_6_31g_d_VACUUM_Geometry_Optimization = "B97-D3/6-31g*/VACUUM Geometry Optimization"
     B97_D3_6_31g_d_VACUUM_Frequency_Analysis = "B97-D3/6-31g*/VACUUM Frequency Analysis"
-    B97_D3_6_31g_d_VACUUM_Frequency_Flattening_Geometry_Optimization = (
-        "B97-D3/6-31g*/VACUUM Frequency Flattening Geometry Optimization"
-    )
-    B97_D3_6_31g_d_VACUUM_Transition_State_Geometry_Optimization = (
-        "B97-D3/6-31g*/VACUUM Transition State Geometry Optimization"
-    )
+    B97_D3_6_31g_d_VACUUM_Frequency_Flattening_Geometry_Optimization = "B97-D3/6-31g*/VACUUM Frequency Flattening Geometry Optimization"
+    B97_D3_6_31g_d_VACUUM_Transition_State_Geometry_Optimization = "B97-D3/6-31g*/VACUUM Transition State Geometry Optimization"
     B97_D3_6_31g_d_VACUUM_Frequency_Flattening_Transition_State_Geometry_Optimization = "B97-D3/6-31g*/VACUUM Frequency Flattening Transition State Geometry Optimization"
     B97_D3_6_31g_d_VACUUM_Unknown = "B97-D3/6-31g*/VACUUM Unknown"
     B97_D3_6_31g_d_PCM_Single_Point = "B97-D3/6-31g*/PCM Single Point"
     B97_D3_6_31g_d_PCM_Force = "B97-D3/6-31g*/PCM Force"
     B97_D3_6_31g_d_PCM_Geometry_Optimization = "B97-D3/6-31g*/PCM Geometry Optimization"
     B97_D3_6_31g_d_PCM_Frequency_Analysis = "B97-D3/6-31g*/PCM Frequency Analysis"
-    B97_D3_6_31g_d_PCM_Frequency_Flattening_Geometry_Optimization = (
-        "B97-D3/6-31g*/PCM Frequency Flattening Geometry Optimization"
-    )
-    B97_D3_6_31g_d_PCM_Transition_State_Geometry_Optimization = (
-        "B97-D3/6-31g*/PCM Transition State Geometry Optimization"
-    )
-    B97_D3_6_31g_d_PCM_Frequency_Flattening_Transition_State_Geometry_Optimization = (
-        "B97-D3/6-31g*/PCM Frequency Flattening Transition State Geometry Optimization"
-    )
+    B97_D3_6_31g_d_PCM_Frequency_Flattening_Geometry_Optimization = "B97-D3/6-31g*/PCM Frequency Flattening Geometry Optimization"
+    B97_D3_6_31g_d_PCM_Transition_State_Geometry_Optimization = "B97-D3/6-31g*/PCM Transition State Geometry Optimization"
+    B97_D3_6_31g_d_PCM_Frequency_Flattening_Transition_State_Geometry_Optimization = "B97-D3/6-31g*/PCM Frequency Flattening Transition State Geometry Optimization"
     B97_D3_6_31g_d_PCM_Unknown = "B97-D3/6-31g*/PCM Unknown"
     B97_D3_6_31g_d_SMD_Single_Point = "B97-D3/6-31g*/SMD Single Point"
     B97_D3_6_31g_d_SMD_Force = "B97-D3/6-31g*/SMD Force"
     B97_D3_6_31g_d_SMD_Geometry_Optimization = "B97-D3/6-31g*/SMD Geometry Optimization"
     B97_D3_6_31g_d_SMD_Frequency_Analysis = "B97-D3/6-31g*/SMD Frequency Analysis"
-    B97_D3_6_31g_d_SMD_Frequency_Flattening_Geometry_Optimization = (
-        "B97-D3/6-31g*/SMD Frequency Flattening Geometry Optimization"
-    )
-    B97_D3_6_31g_d_SMD_Transition_State_Geometry_Optimization = (
-        "B97-D3/6-31g*/SMD Transition State Geometry Optimization"
-    )
-    B97_D3_6_31g_d_SMD_Frequency_Flattening_Transition_State_Geometry_Optimization = (
-        "B97-D3/6-31g*/SMD Frequency Flattening Transition State Geometry Optimization"
-    )
+    B97_D3_6_31g_d_SMD_Frequency_Flattening_Geometry_Optimization = "B97-D3/6-31g*/SMD Frequency Flattening Geometry Optimization"
+    B97_D3_6_31g_d_SMD_Transition_State_Geometry_Optimization = "B97-D3/6-31g*/SMD Transition State Geometry Optimization"
+    B97_D3_6_31g_d_SMD_Frequency_Flattening_Transition_State_Geometry_Optimization = "B97-D3/6-31g*/SMD Frequency Flattening Transition State Geometry Optimization"
     B97_D3_6_31g_d_SMD_Unknown = "B97-D3/6-31g*/SMD Unknown"
     B97_D3_def2_SVPD_VACUUM_Single_Point = "B97-D3/def2-SVPD/VACUUM Single Point"
     B97_D3_def2_SVPD_VACUUM_Force = "B97-D3/def2-SVPD/VACUUM Force"
-    B97_D3_def2_SVPD_VACUUM_Geometry_Optimization = (
-        "B97-D3/def2-SVPD/VACUUM Geometry Optimization"
-    )
-    B97_D3_def2_SVPD_VACUUM_Frequency_Analysis = (
-        "B97-D3/def2-SVPD/VACUUM Frequency Analysis"
-    )
-    B97_D3_def2_SVPD_VACUUM_Frequency_Flattening_Geometry_Optimization = (
-        "B97-D3/def2-SVPD/VACUUM Frequency Flattening Geometry Optimization"
-    )
-    B97_D3_def2_SVPD_VACUUM_Transition_State_Geometry_Optimization = (
-        "B97-D3/def2-SVPD/VACUUM Transition State Geometry Optimization"
-    )
+    B97_D3_def2_SVPD_VACUUM_Geometry_Optimization = "B97-D3/def2-SVPD/VACUUM Geometry Optimization"
+    B97_D3_def2_SVPD_VACUUM_Frequency_Analysis = "B97-D3/def2-SVPD/VACUUM Frequency Analysis"
+    B97_D3_def2_SVPD_VACUUM_Frequency_Flattening_Geometry_Optimization = "B97-D3/def2-SVPD/VACUUM Frequency Flattening Geometry Optimization"
+    B97_D3_def2_SVPD_VACUUM_Transition_State_Geometry_Optimization = "B97-D3/def2-SVPD/VACUUM Transition State Geometry Optimization"
     B97_D3_def2_SVPD_VACUUM_Frequency_Flattening_Transition_State_Geometry_Optimization = "B97-D3/def2-SVPD/VACUUM Frequency Flattening Transition State Geometry Optimization"
     B97_D3_def2_SVPD_VACUUM_Unknown = "B97-D3/def2-SVPD/VACUUM Unknown"
     B97_D3_def2_SVPD_PCM_Single_Point = "B97-D3/def2-SVPD/PCM Single Point"
     B97_D3_def2_SVPD_PCM_Force = "B97-D3/def2-SVPD/PCM Force"
-    B97_D3_def2_SVPD_PCM_Geometry_Optimization = (
-        "B97-D3/def2-SVPD/PCM Geometry Optimization"
-    )
+    B97_D3_def2_SVPD_PCM_Geometry_Optimization = "B97-D3/def2-SVPD/PCM Geometry Optimization"
     B97_D3_def2_SVPD_PCM_Frequency_Analysis = "B97-D3/def2-SVPD/PCM Frequency Analysis"
-    B97_D3_def2_SVPD_PCM_Frequency_Flattening_Geometry_Optimization = (
-        "B97-D3/def2-SVPD/PCM Frequency Flattening Geometry Optimization"
-    )
-    B97_D3_def2_SVPD_PCM_Transition_State_Geometry_Optimization = (
-        "B97-D3/def2-SVPD/PCM Transition State Geometry Optimization"
-    )
+    B97_D3_def2_SVPD_PCM_Frequency_Flattening_Geometry_Optimization = "B97-D3/def2-SVPD/PCM Frequency Flattening Geometry Optimization"
+    B97_D3_def2_SVPD_PCM_Transition_State_Geometry_Optimization = "B97-D3/def2-SVPD/PCM Transition State Geometry Optimization"
     B97_D3_def2_SVPD_PCM_Frequency_Flattening_Transition_State_Geometry_Optimization = "B97-D3/def2-SVPD/PCM Frequency Flattening Transition State Geometry Optimization"
     B97_D3_def2_SVPD_PCM_Unknown = "B97-D3/def2-SVPD/PCM Unknown"
     B97_D3_def2_SVPD_SMD_Single_Point = "B97-D3/def2-SVPD/SMD Single Point"
     B97_D3_def2_SVPD_SMD_Force = "B97-D3/def2-SVPD/SMD Force"
-    B97_D3_def2_SVPD_SMD_Geometry_Optimization = (
-        "B97-D3/def2-SVPD/SMD Geometry Optimization"
-    )
+    B97_D3_def2_SVPD_SMD_Geometry_Optimization = "B97-D3/def2-SVPD/SMD Geometry Optimization"
     B97_D3_def2_SVPD_SMD_Frequency_Analysis = "B97-D3/def2-SVPD/SMD Frequency Analysis"
-    B97_D3_def2_SVPD_SMD_Frequency_Flattening_Geometry_Optimization = (
-        "B97-D3/def2-SVPD/SMD Frequency Flattening Geometry Optimization"
-    )
-    B97_D3_def2_SVPD_SMD_Transition_State_Geometry_Optimization = (
-        "B97-D3/def2-SVPD/SMD Transition State Geometry Optimization"
-    )
+    B97_D3_def2_SVPD_SMD_Frequency_Flattening_Geometry_Optimization = "B97-D3/def2-SVPD/SMD Frequency Flattening Geometry Optimization"
+    B97_D3_def2_SVPD_SMD_Transition_State_Geometry_Optimization = "B97-D3/def2-SVPD/SMD Transition State Geometry Optimization"
     B97_D3_def2_SVPD_SMD_Frequency_Flattening_Transition_State_Geometry_Optimization = "B97-D3/def2-SVPD/SMD Frequency Flattening Transition State Geometry Optimization"
     B97_D3_def2_SVPD_SMD_Unknown = "B97-D3/def2-SVPD/SMD Unknown"
     B97_D3_def2_TZVP_VACUUM_Single_Point = "B97-D3/def2-TZVP/VACUUM Single Point"
     B97_D3_def2_TZVP_VACUUM_Force = "B97-D3/def2-TZVP/VACUUM Force"
-    B97_D3_def2_TZVP_VACUUM_Geometry_Optimization = (
-        "B97-D3/def2-TZVP/VACUUM Geometry Optimization"
-    )
-    B97_D3_def2_TZVP_VACUUM_Frequency_Analysis = (
-        "B97-D3/def2-TZVP/VACUUM Frequency Analysis"
-    )
-    B97_D3_def2_TZVP_VACUUM_Frequency_Flattening_Geometry_Optimization = (
-        "B97-D3/def2-TZVP/VACUUM Frequency Flattening Geometry Optimization"
-    )
-    B97_D3_def2_TZVP_VACUUM_Transition_State_Geometry_Optimization = (
-        "B97-D3/def2-TZVP/VACUUM Transition State Geometry Optimization"
-    )
+    B97_D3_def2_TZVP_VACUUM_Geometry_Optimization = "B97-D3/def2-TZVP/VACUUM Geometry Optimization"
+    B97_D3_def2_TZVP_VACUUM_Frequency_Analysis = "B97-D3/def2-TZVP/VACUUM Frequency Analysis"
+    B97_D3_def2_TZVP_VACUUM_Frequency_Flattening_Geometry_Optimization = "B97-D3/def2-TZVP/VACUUM Frequency Flattening Geometry Optimization"
+    B97_D3_def2_TZVP_VACUUM_Transition_State_Geometry_Optimization = "B97-D3/def2-TZVP/VACUUM Transition State Geometry Optimization"
     B97_D3_def2_TZVP_VACUUM_Frequency_Flattening_Transition_State_Geometry_Optimization = "B97-D3/def2-TZVP/VACUUM Frequency Flattening Transition State Geometry Optimization"
     B97_D3_def2_TZVP_VACUUM_Unknown = "B97-D3/def2-TZVP/VACUUM Unknown"
     B97_D3_def2_TZVP_PCM_Single_Point = "B97-D3/def2-TZVP/PCM Single Point"
     B97_D3_def2_TZVP_PCM_Force = "B97-D3/def2-TZVP/PCM Force"
-    B97_D3_def2_TZVP_PCM_Geometry_Optimization = (
-        "B97-D3/def2-TZVP/PCM Geometry Optimization"
-    )
+    B97_D3_def2_TZVP_PCM_Geometry_Optimization = "B97-D3/def2-TZVP/PCM Geometry Optimization"
     B97_D3_def2_TZVP_PCM_Frequency_Analysis = "B97-D3/def2-TZVP/PCM Frequency Analysis"
-    B97_D3_def2_TZVP_PCM_Frequency_Flattening_Geometry_Optimization = (
-        "B97-D3/def2-TZVP/PCM Frequency Flattening Geometry Optimization"
-    )
-    B97_D3_def2_TZVP_PCM_Transition_State_Geometry_Optimization = (
-        "B97-D3/def2-TZVP/PCM Transition State Geometry Optimization"
-    )
+    B97_D3_def2_TZVP_PCM_Frequency_Flattening_Geometry_Optimization = "B97-D3/def2-TZVP/PCM Frequency Flattening Geometry Optimization"
+    B97_D3_def2_TZVP_PCM_Transition_State_Geometry_Optimization = "B97-D3/def2-TZVP/PCM Transition State Geometry Optimization"
     B97_D3_def2_TZVP_PCM_Frequency_Flattening_Transition_State_Geometry_Optimization = "B97-D3/def2-TZVP/PCM Frequency Flattening Transition State Geometry Optimization"
     B97_D3_def2_TZVP_PCM_Unknown = "B97-D3/def2-TZVP/PCM Unknown"
     B97_D3_def2_TZVP_SMD_Single_Point = "B97-D3/def2-TZVP/SMD Single Point"
     B97_D3_def2_TZVP_SMD_Force = "B97-D3/def2-TZVP/SMD Force"
-    B97_D3_def2_TZVP_SMD_Geometry_Optimization = (
-        "B97-D3/def2-TZVP/SMD Geometry Optimization"
-    )
+    B97_D3_def2_TZVP_SMD_Geometry_Optimization = "B97-D3/def2-TZVP/SMD Geometry Optimization"
     B97_D3_def2_TZVP_SMD_Frequency_Analysis = "B97-D3/def2-TZVP/SMD Frequency Analysis"
-    B97_D3_def2_TZVP_SMD_Frequency_Flattening_Geometry_Optimization = (
-        "B97-D3/def2-TZVP/SMD Frequency Flattening Geometry Optimization"
-    )
-    B97_D3_def2_TZVP_SMD_Transition_State_Geometry_Optimization = (
-        "B97-D3/def2-TZVP/SMD Transition State Geometry Optimization"
-    )
+    B97_D3_def2_TZVP_SMD_Frequency_Flattening_Geometry_Optimization = "B97-D3/def2-TZVP/SMD Frequency Flattening Geometry Optimization"
+    B97_D3_def2_TZVP_SMD_Transition_State_Geometry_Optimization = "B97-D3/def2-TZVP/SMD Transition State Geometry Optimization"
     B97_D3_def2_TZVP_SMD_Frequency_Flattening_Transition_State_Geometry_Optimization = "B97-D3/def2-TZVP/SMD Frequency Flattening Transition State Geometry Optimization"
     B97_D3_def2_TZVP_SMD_Unknown = "B97-D3/def2-TZVP/SMD Unknown"
     B97_D3_def2_TZVPD_VACUUM_Single_Point = "B97-D3/def2-TZVPD/VACUUM Single Point"
     B97_D3_def2_TZVPD_VACUUM_Force = "B97-D3/def2-TZVPD/VACUUM Force"
-    B97_D3_def2_TZVPD_VACUUM_Geometry_Optimization = (
-        "B97-D3/def2-TZVPD/VACUUM Geometry Optimization"
-    )
-    B97_D3_def2_TZVPD_VACUUM_Frequency_Analysis = (
-        "B97-D3/def2-TZVPD/VACUUM Frequency Analysis"
-    )
-    B97_D3_def2_TZVPD_VACUUM_Frequency_Flattening_Geometry_Optimization = (
-        "B97-D3/def2-TZVPD/VACUUM Frequency Flattening Geometry Optimization"
-    )
-    B97_D3_def2_TZVPD_VACUUM_Transition_State_Geometry_Optimization = (
-        "B97-D3/def2-TZVPD/VACUUM Transition State Geometry Optimization"
-    )
+    B97_D3_def2_TZVPD_VACUUM_Geometry_Optimization = "B97-D3/def2-TZVPD/VACUUM Geometry Optimization"
+    B97_D3_def2_TZVPD_VACUUM_Frequency_Analysis = "B97-D3/def2-TZVPD/VACUUM Frequency Analysis"
+    B97_D3_def2_TZVPD_VACUUM_Frequency_Flattening_Geometry_Optimization = "B97-D3/def2-TZVPD/VACUUM Frequency Flattening Geometry Optimization"
+    B97_D3_def2_TZVPD_VACUUM_Transition_State_Geometry_Optimization = "B97-D3/def2-TZVPD/VACUUM Transition State Geometry Optimization"
     B97_D3_def2_TZVPD_VACUUM_Frequency_Flattening_Transition_State_Geometry_Optimization = "B97-D3/def2-TZVPD/VACUUM Frequency Flattening Transition State Geometry Optimization"
     B97_D3_def2_TZVPD_VACUUM_Unknown = "B97-D3/def2-TZVPD/VACUUM Unknown"
     B97_D3_def2_TZVPD_PCM_Single_Point = "B97-D3/def2-TZVPD/PCM Single Point"
     B97_D3_def2_TZVPD_PCM_Force = "B97-D3/def2-TZVPD/PCM Force"
-    B97_D3_def2_TZVPD_PCM_Geometry_Optimization = (
-        "B97-D3/def2-TZVPD/PCM Geometry Optimization"
-    )
-    B97_D3_def2_TZVPD_PCM_Frequency_Analysis = (
-        "B97-D3/def2-TZVPD/PCM Frequency Analysis"
-    )
-    B97_D3_def2_TZVPD_PCM_Frequency_Flattening_Geometry_Optimization = (
-        "B97-D3/def2-TZVPD/PCM Frequency Flattening Geometry Optimization"
-    )
-    B97_D3_def2_TZVPD_PCM_Transition_State_Geometry_Optimization = (
-        "B97-D3/def2-TZVPD/PCM Transition State Geometry Optimization"
-    )
+    B97_D3_def2_TZVPD_PCM_Geometry_Optimization = "B97-D3/def2-TZVPD/PCM Geometry Optimization"
+    B97_D3_def2_TZVPD_PCM_Frequency_Analysis = "B97-D3/def2-TZVPD/PCM Frequency Analysis"
+    B97_D3_def2_TZVPD_PCM_Frequency_Flattening_Geometry_Optimization = "B97-D3/def2-TZVPD/PCM Frequency Flattening Geometry Optimization"
+    B97_D3_def2_TZVPD_PCM_Transition_State_Geometry_Optimization = "B97-D3/def2-TZVPD/PCM Transition State Geometry Optimization"
     B97_D3_def2_TZVPD_PCM_Frequency_Flattening_Transition_State_Geometry_Optimization = "B97-D3/def2-TZVPD/PCM Frequency Flattening Transition State Geometry Optimization"
     B97_D3_def2_TZVPD_PCM_Unknown = "B97-D3/def2-TZVPD/PCM Unknown"
     B97_D3_def2_TZVPD_SMD_Single_Point = "B97-D3/def2-TZVPD/SMD Single Point"
     B97_D3_def2_TZVPD_SMD_Force = "B97-D3/def2-TZVPD/SMD Force"
-    B97_D3_def2_TZVPD_SMD_Geometry_Optimization = (
-        "B97-D3/def2-TZVPD/SMD Geometry Optimization"
-    )
-    B97_D3_def2_TZVPD_SMD_Frequency_Analysis = (
-        "B97-D3/def2-TZVPD/SMD Frequency Analysis"
-    )
-    B97_D3_def2_TZVPD_SMD_Frequency_Flattening_Geometry_Optimization = (
-        "B97-D3/def2-TZVPD/SMD Frequency Flattening Geometry Optimization"
-    )
-    B97_D3_def2_TZVPD_SMD_Transition_State_Geometry_Optimization = (
-        "B97-D3/def2-TZVPD/SMD Transition State Geometry Optimization"
-    )
+    B97_D3_def2_TZVPD_SMD_Geometry_Optimization = "B97-D3/def2-TZVPD/SMD Geometry Optimization"
+    B97_D3_def2_TZVPD_SMD_Frequency_Analysis = "B97-D3/def2-TZVPD/SMD Frequency Analysis"
+    B97_D3_def2_TZVPD_SMD_Frequency_Flattening_Geometry_Optimization = "B97-D3/def2-TZVPD/SMD Frequency Flattening Geometry Optimization"
+    B97_D3_def2_TZVPD_SMD_Transition_State_Geometry_Optimization = "B97-D3/def2-TZVPD/SMD Transition State Geometry Optimization"
     B97_D3_def2_TZVPD_SMD_Frequency_Flattening_Transition_State_Geometry_Optimization = "B97-D3/def2-TZVPD/SMD Frequency Flattening Transition State Geometry Optimization"
     B97_D3_def2_TZVPD_SMD_Unknown = "B97-D3/def2-TZVPD/SMD Unknown"
     B97_D3_def2_TZVPP_VACUUM_Single_Point = "B97-D3/def2-TZVPP/VACUUM Single Point"
     B97_D3_def2_TZVPP_VACUUM_Force = "B97-D3/def2-TZVPP/VACUUM Force"
-    B97_D3_def2_TZVPP_VACUUM_Geometry_Optimization = (
-        "B97-D3/def2-TZVPP/VACUUM Geometry Optimization"
-    )
-    B97_D3_def2_TZVPP_VACUUM_Frequency_Analysis = (
-        "B97-D3/def2-TZVPP/VACUUM Frequency Analysis"
-    )
-    B97_D3_def2_TZVPP_VACUUM_Frequency_Flattening_Geometry_Optimization = (
-        "B97-D3/def2-TZVPP/VACUUM Frequency Flattening Geometry Optimization"
-    )
-    B97_D3_def2_TZVPP_VACUUM_Transition_State_Geometry_Optimization = (
-        "B97-D3/def2-TZVPP/VACUUM Transition State Geometry Optimization"
-    )
+    B97_D3_def2_TZVPP_VACUUM_Geometry_Optimization = "B97-D3/def2-TZVPP/VACUUM Geometry Optimization"
+    B97_D3_def2_TZVPP_VACUUM_Frequency_Analysis = "B97-D3/def2-TZVPP/VACUUM Frequency Analysis"
+    B97_D3_def2_TZVPP_VACUUM_Frequency_Flattening_Geometry_Optimization = "B97-D3/def2-TZVPP/VACUUM Frequency Flattening Geometry Optimization"
+    B97_D3_def2_TZVPP_VACUUM_Transition_State_Geometry_Optimization = "B97-D3/def2-TZVPP/VACUUM Transition State Geometry Optimization"
     B97_D3_def2_TZVPP_VACUUM_Frequency_Flattening_Transition_State_Geometry_Optimization = "B97-D3/def2-TZVPP/VACUUM Frequency Flattening Transition State Geometry Optimization"
     B97_D3_def2_TZVPP_VACUUM_Unknown = "B97-D3/def2-TZVPP/VACUUM Unknown"
     B97_D3_def2_TZVPP_PCM_Single_Point = "B97-D3/def2-TZVPP/PCM Single Point"
     B97_D3_def2_TZVPP_PCM_Force = "B97-D3/def2-TZVPP/PCM Force"
-    B97_D3_def2_TZVPP_PCM_Geometry_Optimization = (
-        "B97-D3/def2-TZVPP/PCM Geometry Optimization"
-    )
-    B97_D3_def2_TZVPP_PCM_Frequency_Analysis = (
-        "B97-D3/def2-TZVPP/PCM Frequency Analysis"
-    )
-    B97_D3_def2_TZVPP_PCM_Frequency_Flattening_Geometry_Optimization = (
-        "B97-D3/def2-TZVPP/PCM Frequency Flattening Geometry Optimization"
-    )
-    B97_D3_def2_TZVPP_PCM_Transition_State_Geometry_Optimization = (
-        "B97-D3/def2-TZVPP/PCM Transition State Geometry Optimization"
-    )
+    B97_D3_def2_TZVPP_PCM_Geometry_Optimization = "B97-D3/def2-TZVPP/PCM Geometry Optimization"
+    B97_D3_def2_TZVPP_PCM_Frequency_Analysis = "B97-D3/def2-TZVPP/PCM Frequency Analysis"
+    B97_D3_def2_TZVPP_PCM_Frequency_Flattening_Geometry_Optimization = "B97-D3/def2-TZVPP/PCM Frequency Flattening Geometry Optimization"
+    B97_D3_def2_TZVPP_PCM_Transition_State_Geometry_Optimization = "B97-D3/def2-TZVPP/PCM Transition State Geometry Optimization"
     B97_D3_def2_TZVPP_PCM_Frequency_Flattening_Transition_State_Geometry_Optimization = "B97-D3/def2-TZVPP/PCM Frequency Flattening Transition State Geometry Optimization"
     B97_D3_def2_TZVPP_PCM_Unknown = "B97-D3/def2-TZVPP/PCM Unknown"
     B97_D3_def2_TZVPP_SMD_Single_Point = "B97-D3/def2-TZVPP/SMD Single Point"
     B97_D3_def2_TZVPP_SMD_Force = "B97-D3/def2-TZVPP/SMD Force"
-    B97_D3_def2_TZVPP_SMD_Geometry_Optimization = (
-        "B97-D3/def2-TZVPP/SMD Geometry Optimization"
-    )
-    B97_D3_def2_TZVPP_SMD_Frequency_Analysis = (
-        "B97-D3/def2-TZVPP/SMD Frequency Analysis"
-    )
-    B97_D3_def2_TZVPP_SMD_Frequency_Flattening_Geometry_Optimization = (
-        "B97-D3/def2-TZVPP/SMD Frequency Flattening Geometry Optimization"
-    )
-    B97_D3_def2_TZVPP_SMD_Transition_State_Geometry_Optimization = (
-        "B97-D3/def2-TZVPP/SMD Transition State Geometry Optimization"
-    )
+    B97_D3_def2_TZVPP_SMD_Geometry_Optimization = "B97-D3/def2-TZVPP/SMD Geometry Optimization"
+    B97_D3_def2_TZVPP_SMD_Frequency_Analysis = "B97-D3/def2-TZVPP/SMD Frequency Analysis"
+    B97_D3_def2_TZVPP_SMD_Frequency_Flattening_Geometry_Optimization = "B97-D3/def2-TZVPP/SMD Frequency Flattening Geometry Optimization"
+    B97_D3_def2_TZVPP_SMD_Transition_State_Geometry_Optimization = "B97-D3/def2-TZVPP/SMD Transition State Geometry Optimization"
     B97_D3_def2_TZVPP_SMD_Frequency_Flattening_Transition_State_Geometry_Optimization = "B97-D3/def2-TZVPP/SMD Frequency Flattening Transition State Geometry Optimization"
     B97_D3_def2_TZVPP_SMD_Unknown = "B97-D3/def2-TZVPP/SMD Unknown"
     B97_D3_def2_TZVPPD_VACUUM_Single_Point = "B97-D3/def2-TZVPPD/VACUUM Single Point"
     B97_D3_def2_TZVPPD_VACUUM_Force = "B97-D3/def2-TZVPPD/VACUUM Force"
-    B97_D3_def2_TZVPPD_VACUUM_Geometry_Optimization = (
-        "B97-D3/def2-TZVPPD/VACUUM Geometry Optimization"
-    )
-    B97_D3_def2_TZVPPD_VACUUM_Frequency_Analysis = (
-        "B97-D3/def2-TZVPPD/VACUUM Frequency Analysis"
-    )
-    B97_D3_def2_TZVPPD_VACUUM_Frequency_Flattening_Geometry_Optimization = (
-        "B97-D3/def2-TZVPPD/VACUUM Frequency Flattening Geometry Optimization"
-    )
-    B97_D3_def2_TZVPPD_VACUUM_Transition_State_Geometry_Optimization = (
-        "B97-D3/def2-TZVPPD/VACUUM Transition State Geometry Optimization"
-    )
+    B97_D3_def2_TZVPPD_VACUUM_Geometry_Optimization = "B97-D3/def2-TZVPPD/VACUUM Geometry Optimization"
+    B97_D3_def2_TZVPPD_VACUUM_Frequency_Analysis = "B97-D3/def2-TZVPPD/VACUUM Frequency Analysis"
+    B97_D3_def2_TZVPPD_VACUUM_Frequency_Flattening_Geometry_Optimization = "B97-D3/def2-TZVPPD/VACUUM Frequency Flattening Geometry Optimization"
+    B97_D3_def2_TZVPPD_VACUUM_Transition_State_Geometry_Optimization = "B97-D3/def2-TZVPPD/VACUUM Transition State Geometry Optimization"
     B97_D3_def2_TZVPPD_VACUUM_Frequency_Flattening_Transition_State_Geometry_Optimization = "B97-D3/def2-TZVPPD/VACUUM Frequency Flattening Transition State Geometry Optimization"
     B97_D3_def2_TZVPPD_VACUUM_Unknown = "B97-D3/def2-TZVPPD/VACUUM Unknown"
     B97_D3_def2_TZVPPD_PCM_Single_Point = "B97-D3/def2-TZVPPD/PCM Single Point"
     B97_D3_def2_TZVPPD_PCM_Force = "B97-D3/def2-TZVPPD/PCM Force"
-    B97_D3_def2_TZVPPD_PCM_Geometry_Optimization = (
-        "B97-D3/def2-TZVPPD/PCM Geometry Optimization"
-    )
-    B97_D3_def2_TZVPPD_PCM_Frequency_Analysis = (
-        "B97-D3/def2-TZVPPD/PCM Frequency Analysis"
-    )
-    B97_D3_def2_TZVPPD_PCM_Frequency_Flattening_Geometry_Optimization = (
-        "B97-D3/def2-TZVPPD/PCM Frequency Flattening Geometry Optimization"
-    )
-    B97_D3_def2_TZVPPD_PCM_Transition_State_Geometry_Optimization = (
-        "B97-D3/def2-TZVPPD/PCM Transition State Geometry Optimization"
-    )
+    B97_D3_def2_TZVPPD_PCM_Geometry_Optimization = "B97-D3/def2-TZVPPD/PCM Geometry Optimization"
+    B97_D3_def2_TZVPPD_PCM_Frequency_Analysis = "B97-D3/def2-TZVPPD/PCM Frequency Analysis"
+    B97_D3_def2_TZVPPD_PCM_Frequency_Flattening_Geometry_Optimization = "B97-D3/def2-TZVPPD/PCM Frequency Flattening Geometry Optimization"
+    B97_D3_def2_TZVPPD_PCM_Transition_State_Geometry_Optimization = "B97-D3/def2-TZVPPD/PCM Transition State Geometry Optimization"
     B97_D3_def2_TZVPPD_PCM_Frequency_Flattening_Transition_State_Geometry_Optimization = "B97-D3/def2-TZVPPD/PCM Frequency Flattening Transition State Geometry Optimization"
     B97_D3_def2_TZVPPD_PCM_Unknown = "B97-D3/def2-TZVPPD/PCM Unknown"
     B97_D3_def2_TZVPPD_SMD_Single_Point = "B97-D3/def2-TZVPPD/SMD Single Point"
     B97_D3_def2_TZVPPD_SMD_Force = "B97-D3/def2-TZVPPD/SMD Force"
-    B97_D3_def2_TZVPPD_SMD_Geometry_Optimization = (
-        "B97-D3/def2-TZVPPD/SMD Geometry Optimization"
-    )
-    B97_D3_def2_TZVPPD_SMD_Frequency_Analysis = (
-        "B97-D3/def2-TZVPPD/SMD Frequency Analysis"
-    )
-    B97_D3_def2_TZVPPD_SMD_Frequency_Flattening_Geometry_Optimization = (
-        "B97-D3/def2-TZVPPD/SMD Frequency Flattening Geometry Optimization"
-    )
-    B97_D3_def2_TZVPPD_SMD_Transition_State_Geometry_Optimization = (
-        "B97-D3/def2-TZVPPD/SMD Transition State Geometry Optimization"
-    )
+    B97_D3_def2_TZVPPD_SMD_Geometry_Optimization = "B97-D3/def2-TZVPPD/SMD Geometry Optimization"
+    B97_D3_def2_TZVPPD_SMD_Frequency_Analysis = "B97-D3/def2-TZVPPD/SMD Frequency Analysis"
+    B97_D3_def2_TZVPPD_SMD_Frequency_Flattening_Geometry_Optimization = "B97-D3/def2-TZVPPD/SMD Frequency Flattening Geometry Optimization"
+    B97_D3_def2_TZVPPD_SMD_Transition_State_Geometry_Optimization = "B97-D3/def2-TZVPPD/SMD Transition State Geometry Optimization"
     B97_D3_def2_TZVPPD_SMD_Frequency_Flattening_Transition_State_Geometry_Optimization = "B97-D3/def2-TZVPPD/SMD Frequency Flattening Transition State Geometry Optimization"
     B97_D3_def2_TZVPPD_SMD_Unknown = "B97-D3/def2-TZVPPD/SMD Unknown"
     B97_D3_def2_QZVPD_VACUUM_Single_Point = "B97-D3/def2-QZVPD/VACUUM Single Point"
     B97_D3_def2_QZVPD_VACUUM_Force = "B97-D3/def2-QZVPD/VACUUM Force"
-    B97_D3_def2_QZVPD_VACUUM_Geometry_Optimization = (
-        "B97-D3/def2-QZVPD/VACUUM Geometry Optimization"
-    )
-    B97_D3_def2_QZVPD_VACUUM_Frequency_Analysis = (
-        "B97-D3/def2-QZVPD/VACUUM Frequency Analysis"
-    )
-    B97_D3_def2_QZVPD_VACUUM_Frequency_Flattening_Geometry_Optimization = (
-        "B97-D3/def2-QZVPD/VACUUM Frequency Flattening Geometry Optimization"
-    )
-    B97_D3_def2_QZVPD_VACUUM_Transition_State_Geometry_Optimization = (
-        "B97-D3/def2-QZVPD/VACUUM Transition State Geometry Optimization"
-    )
+    B97_D3_def2_QZVPD_VACUUM_Geometry_Optimization = "B97-D3/def2-QZVPD/VACUUM Geometry Optimization"
+    B97_D3_def2_QZVPD_VACUUM_Frequency_Analysis = "B97-D3/def2-QZVPD/VACUUM Frequency Analysis"
+    B97_D3_def2_QZVPD_VACUUM_Frequency_Flattening_Geometry_Optimization = "B97-D3/def2-QZVPD/VACUUM Frequency Flattening Geometry Optimization"
+    B97_D3_def2_QZVPD_VACUUM_Transition_State_Geometry_Optimization = "B97-D3/def2-QZVPD/VACUUM Transition State Geometry Optimization"
     B97_D3_def2_QZVPD_VACUUM_Frequency_Flattening_Transition_State_Geometry_Optimization = "B97-D3/def2-QZVPD/VACUUM Frequency Flattening Transition State Geometry Optimization"
     B97_D3_def2_QZVPD_VACUUM_Unknown = "B97-D3/def2-QZVPD/VACUUM Unknown"
     B97_D3_def2_QZVPD_PCM_Single_Point = "B97-D3/def2-QZVPD/PCM Single Point"
     B97_D3_def2_QZVPD_PCM_Force = "B97-D3/def2-QZVPD/PCM Force"
-    B97_D3_def2_QZVPD_PCM_Geometry_Optimization = (
-        "B97-D3/def2-QZVPD/PCM Geometry Optimization"
-    )
-    B97_D3_def2_QZVPD_PCM_Frequency_Analysis = (
-        "B97-D3/def2-QZVPD/PCM Frequency Analysis"
-    )
-    B97_D3_def2_QZVPD_PCM_Frequency_Flattening_Geometry_Optimization = (
-        "B97-D3/def2-QZVPD/PCM Frequency Flattening Geometry Optimization"
-    )
-    B97_D3_def2_QZVPD_PCM_Transition_State_Geometry_Optimization = (
-        "B97-D3/def2-QZVPD/PCM Transition State Geometry Optimization"
-    )
+    B97_D3_def2_QZVPD_PCM_Geometry_Optimization = "B97-D3/def2-QZVPD/PCM Geometry Optimization"
+    B97_D3_def2_QZVPD_PCM_Frequency_Analysis = "B97-D3/def2-QZVPD/PCM Frequency Analysis"
+    B97_D3_def2_QZVPD_PCM_Frequency_Flattening_Geometry_Optimization = "B97-D3/def2-QZVPD/PCM Frequency Flattening Geometry Optimization"
+    B97_D3_def2_QZVPD_PCM_Transition_State_Geometry_Optimization = "B97-D3/def2-QZVPD/PCM Transition State Geometry Optimization"
     B97_D3_def2_QZVPD_PCM_Frequency_Flattening_Transition_State_Geometry_Optimization = "B97-D3/def2-QZVPD/PCM Frequency Flattening Transition State Geometry Optimization"
     B97_D3_def2_QZVPD_PCM_Unknown = "B97-D3/def2-QZVPD/PCM Unknown"
     B97_D3_def2_QZVPD_SMD_Single_Point = "B97-D3/def2-QZVPD/SMD Single Point"
     B97_D3_def2_QZVPD_SMD_Force = "B97-D3/def2-QZVPD/SMD Force"
-    B97_D3_def2_QZVPD_SMD_Geometry_Optimization = (
-        "B97-D3/def2-QZVPD/SMD Geometry Optimization"
-    )
-    B97_D3_def2_QZVPD_SMD_Frequency_Analysis = (
-        "B97-D3/def2-QZVPD/SMD Frequency Analysis"
-    )
-    B97_D3_def2_QZVPD_SMD_Frequency_Flattening_Geometry_Optimization = (
-        "B97-D3/def2-QZVPD/SMD Frequency Flattening Geometry Optimization"
-    )
-    B97_D3_def2_QZVPD_SMD_Transition_State_Geometry_Optimization = (
-        "B97-D3/def2-QZVPD/SMD Transition State Geometry Optimization"
-    )
+    B97_D3_def2_QZVPD_SMD_Geometry_Optimization = "B97-D3/def2-QZVPD/SMD Geometry Optimization"
+    B97_D3_def2_QZVPD_SMD_Frequency_Analysis = "B97-D3/def2-QZVPD/SMD Frequency Analysis"
+    B97_D3_def2_QZVPD_SMD_Frequency_Flattening_Geometry_Optimization = "B97-D3/def2-QZVPD/SMD Frequency Flattening Geometry Optimization"
+    B97_D3_def2_QZVPD_SMD_Transition_State_Geometry_Optimization = "B97-D3/def2-QZVPD/SMD Transition State Geometry Optimization"
     B97_D3_def2_QZVPD_SMD_Frequency_Flattening_Transition_State_Geometry_Optimization = "B97-D3/def2-QZVPD/SMD Frequency Flattening Transition State Geometry Optimization"
     B97_D3_def2_QZVPD_SMD_Unknown = "B97-D3/def2-QZVPD/SMD Unknown"
     B97_D3_def2_QZVPPD_VACUUM_Single_Point = "B97-D3/def2-QZVPPD/VACUUM Single Point"
     B97_D3_def2_QZVPPD_VACUUM_Force = "B97-D3/def2-QZVPPD/VACUUM Force"
-    B97_D3_def2_QZVPPD_VACUUM_Geometry_Optimization = (
-        "B97-D3/def2-QZVPPD/VACUUM Geometry Optimization"
-    )
-    B97_D3_def2_QZVPPD_VACUUM_Frequency_Analysis = (
-        "B97-D3/def2-QZVPPD/VACUUM Frequency Analysis"
-    )
-    B97_D3_def2_QZVPPD_VACUUM_Frequency_Flattening_Geometry_Optimization = (
-        "B97-D3/def2-QZVPPD/VACUUM Frequency Flattening Geometry Optimization"
-    )
-    B97_D3_def2_QZVPPD_VACUUM_Transition_State_Geometry_Optimization = (
-        "B97-D3/def2-QZVPPD/VACUUM Transition State Geometry Optimization"
-    )
+    B97_D3_def2_QZVPPD_VACUUM_Geometry_Optimization = "B97-D3/def2-QZVPPD/VACUUM Geometry Optimization"
+    B97_D3_def2_QZVPPD_VACUUM_Frequency_Analysis = "B97-D3/def2-QZVPPD/VACUUM Frequency Analysis"
+    B97_D3_def2_QZVPPD_VACUUM_Frequency_Flattening_Geometry_Optimization = "B97-D3/def2-QZVPPD/VACUUM Frequency Flattening Geometry Optimization"
+    B97_D3_def2_QZVPPD_VACUUM_Transition_State_Geometry_Optimization = "B97-D3/def2-QZVPPD/VACUUM Transition State Geometry Optimization"
     B97_D3_def2_QZVPPD_VACUUM_Frequency_Flattening_Transition_State_Geometry_Optimization = "B97-D3/def2-QZVPPD/VACUUM Frequency Flattening Transition State Geometry Optimization"
     B97_D3_def2_QZVPPD_VACUUM_Unknown = "B97-D3/def2-QZVPPD/VACUUM Unknown"
     B97_D3_def2_QZVPPD_PCM_Single_Point = "B97-D3/def2-QZVPPD/PCM Single Point"
     B97_D3_def2_QZVPPD_PCM_Force = "B97-D3/def2-QZVPPD/PCM Force"
-    B97_D3_def2_QZVPPD_PCM_Geometry_Optimization = (
-        "B97-D3/def2-QZVPPD/PCM Geometry Optimization"
-    )
-    B97_D3_def2_QZVPPD_PCM_Frequency_Analysis = (
-        "B97-D3/def2-QZVPPD/PCM Frequency Analysis"
-    )
-    B97_D3_def2_QZVPPD_PCM_Frequency_Flattening_Geometry_Optimization = (
-        "B97-D3/def2-QZVPPD/PCM Frequency Flattening Geometry Optimization"
-    )
-    B97_D3_def2_QZVPPD_PCM_Transition_State_Geometry_Optimization = (
-        "B97-D3/def2-QZVPPD/PCM Transition State Geometry Optimization"
-    )
+    B97_D3_def2_QZVPPD_PCM_Geometry_Optimization = "B97-D3/def2-QZVPPD/PCM Geometry Optimization"
+    B97_D3_def2_QZVPPD_PCM_Frequency_Analysis = "B97-D3/def2-QZVPPD/PCM Frequency Analysis"
+    B97_D3_def2_QZVPPD_PCM_Frequency_Flattening_Geometry_Optimization = "B97-D3/def2-QZVPPD/PCM Frequency Flattening Geometry Optimization"
+    B97_D3_def2_QZVPPD_PCM_Transition_State_Geometry_Optimization = "B97-D3/def2-QZVPPD/PCM Transition State Geometry Optimization"
     B97_D3_def2_QZVPPD_PCM_Frequency_Flattening_Transition_State_Geometry_Optimization = "B97-D3/def2-QZVPPD/PCM Frequency Flattening Transition State Geometry Optimization"
     B97_D3_def2_QZVPPD_PCM_Unknown = "B97-D3/def2-QZVPPD/PCM Unknown"
     B97_D3_def2_QZVPPD_SMD_Single_Point = "B97-D3/def2-QZVPPD/SMD Single Point"
     B97_D3_def2_QZVPPD_SMD_Force = "B97-D3/def2-QZVPPD/SMD Force"
-    B97_D3_def2_QZVPPD_SMD_Geometry_Optimization = (
-        "B97-D3/def2-QZVPPD/SMD Geometry Optimization"
-    )
-    B97_D3_def2_QZVPPD_SMD_Frequency_Analysis = (
-        "B97-D3/def2-QZVPPD/SMD Frequency Analysis"
-    )
-    B97_D3_def2_QZVPPD_SMD_Frequency_Flattening_Geometry_Optimization = (
-        "B97-D3/def2-QZVPPD/SMD Frequency Flattening Geometry Optimization"
-    )
-    B97_D3_def2_QZVPPD_SMD_Transition_State_Geometry_Optimization = (
-        "B97-D3/def2-QZVPPD/SMD Transition State Geometry Optimization"
-    )
+    B97_D3_def2_QZVPPD_SMD_Geometry_Optimization = "B97-D3/def2-QZVPPD/SMD Geometry Optimization"
+    B97_D3_def2_QZVPPD_SMD_Frequency_Analysis = "B97-D3/def2-QZVPPD/SMD Frequency Analysis"
+    B97_D3_def2_QZVPPD_SMD_Frequency_Flattening_Geometry_Optimization = "B97-D3/def2-QZVPPD/SMD Frequency Flattening Geometry Optimization"
+    B97_D3_def2_QZVPPD_SMD_Transition_State_Geometry_Optimization = "B97-D3/def2-QZVPPD/SMD Transition State Geometry Optimization"
     B97_D3_def2_QZVPPD_SMD_Frequency_Flattening_Transition_State_Geometry_Optimization = "B97-D3/def2-QZVPPD/SMD Frequency Flattening Transition State Geometry Optimization"
     B97_D3_def2_QZVPPD_SMD_Unknown = "B97-D3/def2-QZVPPD/SMD Unknown"
-    B97M_rV_6_31g_d_VACUUM_Single_Point = "B97M-rV/6-31g*/VACUUM Single Point"
-    B97M_rV_6_31g_d_VACUUM_Force = "B97M-rV/6-31g*/VACUUM Force"
-    B97M_rV_6_31g_d_VACUUM_Geometry_Optimization = (
-        "B97M-rV/6-31g*/VACUUM Geometry Optimization"
-    )
-    B97M_rV_6_31g_d_VACUUM_Frequency_Analysis = (
-        "B97M-rV/6-31g*/VACUUM Frequency Analysis"
-    )
-    B97M_rV_6_31g_d_VACUUM_Frequency_Flattening_Geometry_Optimization = (
-        "B97M-rV/6-31g*/VACUUM Frequency Flattening Geometry Optimization"
-    )
-    B97M_rV_6_31g_d_VACUUM_Transition_State_Geometry_Optimization = (
-        "B97M-rV/6-31g*/VACUUM Transition State Geometry Optimization"
-    )
-    B97M_rV_6_31g_d_VACUUM_Frequency_Flattening_Transition_State_Geometry_Optimization = "B97M-rV/6-31g*/VACUUM Frequency Flattening Transition State Geometry Optimization"
-    B97M_rV_6_31g_d_VACUUM_Unknown = "B97M-rV/6-31g*/VACUUM Unknown"
-    B97M_rV_6_31g_d_PCM_Single_Point = "B97M-rV/6-31g*/PCM Single Point"
-    B97M_rV_6_31g_d_PCM_Force = "B97M-rV/6-31g*/PCM Force"
-    B97M_rV_6_31g_d_PCM_Geometry_Optimization = (
-        "B97M-rV/6-31g*/PCM Geometry Optimization"
-    )
-    B97M_rV_6_31g_d_PCM_Frequency_Analysis = "B97M-rV/6-31g*/PCM Frequency Analysis"
-    B97M_rV_6_31g_d_PCM_Frequency_Flattening_Geometry_Optimization = (
-        "B97M-rV/6-31g*/PCM Frequency Flattening Geometry Optimization"
-    )
-    B97M_rV_6_31g_d_PCM_Transition_State_Geometry_Optimization = (
-        "B97M-rV/6-31g*/PCM Transition State Geometry Optimization"
-    )
-    B97M_rV_6_31g_d_PCM_Frequency_Flattening_Transition_State_Geometry_Optimization = (
-        "B97M-rV/6-31g*/PCM Frequency Flattening Transition State Geometry Optimization"
-    )
-    B97M_rV_6_31g_d_PCM_Unknown = "B97M-rV/6-31g*/PCM Unknown"
-    B97M_rV_6_31g_d_SMD_Single_Point = "B97M-rV/6-31g*/SMD Single Point"
-    B97M_rV_6_31g_d_SMD_Force = "B97M-rV/6-31g*/SMD Force"
-    B97M_rV_6_31g_d_SMD_Geometry_Optimization = (
-        "B97M-rV/6-31g*/SMD Geometry Optimization"
-    )
-    B97M_rV_6_31g_d_SMD_Frequency_Analysis = "B97M-rV/6-31g*/SMD Frequency Analysis"
-    B97M_rV_6_31g_d_SMD_Frequency_Flattening_Geometry_Optimization = (
-        "B97M-rV/6-31g*/SMD Frequency Flattening Geometry Optimization"
-    )
-    B97M_rV_6_31g_d_SMD_Transition_State_Geometry_Optimization = (
-        "B97M-rV/6-31g*/SMD Transition State Geometry Optimization"
-    )
-    B97M_rV_6_31g_d_SMD_Frequency_Flattening_Transition_State_Geometry_Optimization = (
-        "B97M-rV/6-31g*/SMD Frequency Flattening Transition State Geometry Optimization"
-    )
-    B97M_rV_6_31g_d_SMD_Unknown = "B97M-rV/6-31g*/SMD Unknown"
-    B97M_rV_def2_SVPD_VACUUM_Single_Point = "B97M-rV/def2-SVPD/VACUUM Single Point"
-    B97M_rV_def2_SVPD_VACUUM_Force = "B97M-rV/def2-SVPD/VACUUM Force"
-    B97M_rV_def2_SVPD_VACUUM_Geometry_Optimization = (
-        "B97M-rV/def2-SVPD/VACUUM Geometry Optimization"
-    )
-    B97M_rV_def2_SVPD_VACUUM_Frequency_Analysis = (
-        "B97M-rV/def2-SVPD/VACUUM Frequency Analysis"
-    )
-    B97M_rV_def2_SVPD_VACUUM_Frequency_Flattening_Geometry_Optimization = (
-        "B97M-rV/def2-SVPD/VACUUM Frequency Flattening Geometry Optimization"
-    )
-    B97M_rV_def2_SVPD_VACUUM_Transition_State_Geometry_Optimization = (
-        "B97M-rV/def2-SVPD/VACUUM Transition State Geometry Optimization"
-    )
-    B97M_rV_def2_SVPD_VACUUM_Frequency_Flattening_Transition_State_Geometry_Optimization = "B97M-rV/def2-SVPD/VACUUM Frequency Flattening Transition State Geometry Optimization"
-    B97M_rV_def2_SVPD_VACUUM_Unknown = "B97M-rV/def2-SVPD/VACUUM Unknown"
-    B97M_rV_def2_SVPD_PCM_Single_Point = "B97M-rV/def2-SVPD/PCM Single Point"
-    B97M_rV_def2_SVPD_PCM_Force = "B97M-rV/def2-SVPD/PCM Force"
-    B97M_rV_def2_SVPD_PCM_Geometry_Optimization = (
-        "B97M-rV/def2-SVPD/PCM Geometry Optimization"
-    )
-    B97M_rV_def2_SVPD_PCM_Frequency_Analysis = (
-        "B97M-rV/def2-SVPD/PCM Frequency Analysis"
-    )
-    B97M_rV_def2_SVPD_PCM_Frequency_Flattening_Geometry_Optimization = (
-        "B97M-rV/def2-SVPD/PCM Frequency Flattening Geometry Optimization"
-    )
-    B97M_rV_def2_SVPD_PCM_Transition_State_Geometry_Optimization = (
-        "B97M-rV/def2-SVPD/PCM Transition State Geometry Optimization"
-    )
-    B97M_rV_def2_SVPD_PCM_Frequency_Flattening_Transition_State_Geometry_Optimization = "B97M-rV/def2-SVPD/PCM Frequency Flattening Transition State Geometry Optimization"
-    B97M_rV_def2_SVPD_PCM_Unknown = "B97M-rV/def2-SVPD/PCM Unknown"
-    B97M_rV_def2_SVPD_SMD_Single_Point = "B97M-rV/def2-SVPD/SMD Single Point"
-    B97M_rV_def2_SVPD_SMD_Force = "B97M-rV/def2-SVPD/SMD Force"
-    B97M_rV_def2_SVPD_SMD_Geometry_Optimization = (
-        "B97M-rV/def2-SVPD/SMD Geometry Optimization"
-    )
-    B97M_rV_def2_SVPD_SMD_Frequency_Analysis = (
-        "B97M-rV/def2-SVPD/SMD Frequency Analysis"
-    )
-    B97M_rV_def2_SVPD_SMD_Frequency_Flattening_Geometry_Optimization = (
-        "B97M-rV/def2-SVPD/SMD Frequency Flattening Geometry Optimization"
-    )
-    B97M_rV_def2_SVPD_SMD_Transition_State_Geometry_Optimization = (
-        "B97M-rV/def2-SVPD/SMD Transition State Geometry Optimization"
-    )
-    B97M_rV_def2_SVPD_SMD_Frequency_Flattening_Transition_State_Geometry_Optimization = "B97M-rV/def2-SVPD/SMD Frequency Flattening Transition State Geometry Optimization"
-    B97M_rV_def2_SVPD_SMD_Unknown = "B97M-rV/def2-SVPD/SMD Unknown"
-    B97M_rV_def2_TZVP_VACUUM_Single_Point = "B97M-rV/def2-TZVP/VACUUM Single Point"
-    B97M_rV_def2_TZVP_VACUUM_Force = "B97M-rV/def2-TZVP/VACUUM Force"
-    B97M_rV_def2_TZVP_VACUUM_Geometry_Optimization = (
-        "B97M-rV/def2-TZVP/VACUUM Geometry Optimization"
-    )
-    B97M_rV_def2_TZVP_VACUUM_Frequency_Analysis = (
-        "B97M-rV/def2-TZVP/VACUUM Frequency Analysis"
-    )
-    B97M_rV_def2_TZVP_VACUUM_Frequency_Flattening_Geometry_Optimization = (
-        "B97M-rV/def2-TZVP/VACUUM Frequency Flattening Geometry Optimization"
-    )
-    B97M_rV_def2_TZVP_VACUUM_Transition_State_Geometry_Optimization = (
-        "B97M-rV/def2-TZVP/VACUUM Transition State Geometry Optimization"
-    )
-    B97M_rV_def2_TZVP_VACUUM_Frequency_Flattening_Transition_State_Geometry_Optimization = "B97M-rV/def2-TZVP/VACUUM Frequency Flattening Transition State Geometry Optimization"
-    B97M_rV_def2_TZVP_VACUUM_Unknown = "B97M-rV/def2-TZVP/VACUUM Unknown"
-    B97M_rV_def2_TZVP_PCM_Single_Point = "B97M-rV/def2-TZVP/PCM Single Point"
-    B97M_rV_def2_TZVP_PCM_Force = "B97M-rV/def2-TZVP/PCM Force"
-    B97M_rV_def2_TZVP_PCM_Geometry_Optimization = (
-        "B97M-rV/def2-TZVP/PCM Geometry Optimization"
-    )
-    B97M_rV_def2_TZVP_PCM_Frequency_Analysis = (
-        "B97M-rV/def2-TZVP/PCM Frequency Analysis"
-    )
-    B97M_rV_def2_TZVP_PCM_Frequency_Flattening_Geometry_Optimization = (
-        "B97M-rV/def2-TZVP/PCM Frequency Flattening Geometry Optimization"
-    )
-    B97M_rV_def2_TZVP_PCM_Transition_State_Geometry_Optimization = (
-        "B97M-rV/def2-TZVP/PCM Transition State Geometry Optimization"
-    )
-    B97M_rV_def2_TZVP_PCM_Frequency_Flattening_Transition_State_Geometry_Optimization = "B97M-rV/def2-TZVP/PCM Frequency Flattening Transition State Geometry Optimization"
-    B97M_rV_def2_TZVP_PCM_Unknown = "B97M-rV/def2-TZVP/PCM Unknown"
-    B97M_rV_def2_TZVP_SMD_Single_Point = "B97M-rV/def2-TZVP/SMD Single Point"
-    B97M_rV_def2_TZVP_SMD_Force = "B97M-rV/def2-TZVP/SMD Force"
-    B97M_rV_def2_TZVP_SMD_Geometry_Optimization = (
-        "B97M-rV/def2-TZVP/SMD Geometry Optimization"
-    )
-    B97M_rV_def2_TZVP_SMD_Frequency_Analysis = (
-        "B97M-rV/def2-TZVP/SMD Frequency Analysis"
-    )
-    B97M_rV_def2_TZVP_SMD_Frequency_Flattening_Geometry_Optimization = (
-        "B97M-rV/def2-TZVP/SMD Frequency Flattening Geometry Optimization"
-    )
-    B97M_rV_def2_TZVP_SMD_Transition_State_Geometry_Optimization = (
-        "B97M-rV/def2-TZVP/SMD Transition State Geometry Optimization"
-    )
-    B97M_rV_def2_TZVP_SMD_Frequency_Flattening_Transition_State_Geometry_Optimization = "B97M-rV/def2-TZVP/SMD Frequency Flattening Transition State Geometry Optimization"
-    B97M_rV_def2_TZVP_SMD_Unknown = "B97M-rV/def2-TZVP/SMD Unknown"
-    B97M_rV_def2_TZVPD_VACUUM_Single_Point = "B97M-rV/def2-TZVPD/VACUUM Single Point"
-    B97M_rV_def2_TZVPD_VACUUM_Force = "B97M-rV/def2-TZVPD/VACUUM Force"
-    B97M_rV_def2_TZVPD_VACUUM_Geometry_Optimization = (
-        "B97M-rV/def2-TZVPD/VACUUM Geometry Optimization"
-    )
-    B97M_rV_def2_TZVPD_VACUUM_Frequency_Analysis = (
-        "B97M-rV/def2-TZVPD/VACUUM Frequency Analysis"
-    )
-    B97M_rV_def2_TZVPD_VACUUM_Frequency_Flattening_Geometry_Optimization = (
-        "B97M-rV/def2-TZVPD/VACUUM Frequency Flattening Geometry Optimization"
-    )
-    B97M_rV_def2_TZVPD_VACUUM_Transition_State_Geometry_Optimization = (
-        "B97M-rV/def2-TZVPD/VACUUM Transition State Geometry Optimization"
-    )
-    B97M_rV_def2_TZVPD_VACUUM_Frequency_Flattening_Transition_State_Geometry_Optimization = "B97M-rV/def2-TZVPD/VACUUM Frequency Flattening Transition State Geometry Optimization"
-    B97M_rV_def2_TZVPD_VACUUM_Unknown = "B97M-rV/def2-TZVPD/VACUUM Unknown"
-    B97M_rV_def2_TZVPD_PCM_Single_Point = "B97M-rV/def2-TZVPD/PCM Single Point"
-    B97M_rV_def2_TZVPD_PCM_Force = "B97M-rV/def2-TZVPD/PCM Force"
-    B97M_rV_def2_TZVPD_PCM_Geometry_Optimization = (
-        "B97M-rV/def2-TZVPD/PCM Geometry Optimization"
-    )
-    B97M_rV_def2_TZVPD_PCM_Frequency_Analysis = (
-        "B97M-rV/def2-TZVPD/PCM Frequency Analysis"
-    )
-    B97M_rV_def2_TZVPD_PCM_Frequency_Flattening_Geometry_Optimization = (
-        "B97M-rV/def2-TZVPD/PCM Frequency Flattening Geometry Optimization"
-    )
-    B97M_rV_def2_TZVPD_PCM_Transition_State_Geometry_Optimization = (
-        "B97M-rV/def2-TZVPD/PCM Transition State Geometry Optimization"
-    )
-    B97M_rV_def2_TZVPD_PCM_Frequency_Flattening_Transition_State_Geometry_Optimization = "B97M-rV/def2-TZVPD/PCM Frequency Flattening Transition State Geometry Optimization"
-    B97M_rV_def2_TZVPD_PCM_Unknown = "B97M-rV/def2-TZVPD/PCM Unknown"
-    B97M_rV_def2_TZVPD_SMD_Single_Point = "B97M-rV/def2-TZVPD/SMD Single Point"
-    B97M_rV_def2_TZVPD_SMD_Force = "B97M-rV/def2-TZVPD/SMD Force"
-    B97M_rV_def2_TZVPD_SMD_Geometry_Optimization = (
-        "B97M-rV/def2-TZVPD/SMD Geometry Optimization"
-    )
-    B97M_rV_def2_TZVPD_SMD_Frequency_Analysis = (
-        "B97M-rV/def2-TZVPD/SMD Frequency Analysis"
-    )
-    B97M_rV_def2_TZVPD_SMD_Frequency_Flattening_Geometry_Optimization = (
-        "B97M-rV/def2-TZVPD/SMD Frequency Flattening Geometry Optimization"
-    )
-    B97M_rV_def2_TZVPD_SMD_Transition_State_Geometry_Optimization = (
-        "B97M-rV/def2-TZVPD/SMD Transition State Geometry Optimization"
-    )
-    B97M_rV_def2_TZVPD_SMD_Frequency_Flattening_Transition_State_Geometry_Optimization = "B97M-rV/def2-TZVPD/SMD Frequency Flattening Transition State Geometry Optimization"
-    B97M_rV_def2_TZVPD_SMD_Unknown = "B97M-rV/def2-TZVPD/SMD Unknown"
-    B97M_rV_def2_TZVPP_VACUUM_Single_Point = "B97M-rV/def2-TZVPP/VACUUM Single Point"
-    B97M_rV_def2_TZVPP_VACUUM_Force = "B97M-rV/def2-TZVPP/VACUUM Force"
-    B97M_rV_def2_TZVPP_VACUUM_Geometry_Optimization = (
-        "B97M-rV/def2-TZVPP/VACUUM Geometry Optimization"
-    )
-    B97M_rV_def2_TZVPP_VACUUM_Frequency_Analysis = (
-        "B97M-rV/def2-TZVPP/VACUUM Frequency Analysis"
-    )
-    B97M_rV_def2_TZVPP_VACUUM_Frequency_Flattening_Geometry_Optimization = (
-        "B97M-rV/def2-TZVPP/VACUUM Frequency Flattening Geometry Optimization"
-    )
-    B97M_rV_def2_TZVPP_VACUUM_Transition_State_Geometry_Optimization = (
-        "B97M-rV/def2-TZVPP/VACUUM Transition State Geometry Optimization"
-    )
-    B97M_rV_def2_TZVPP_VACUUM_Frequency_Flattening_Transition_State_Geometry_Optimization = "B97M-rV/def2-TZVPP/VACUUM Frequency Flattening Transition State Geometry Optimization"
-    B97M_rV_def2_TZVPP_VACUUM_Unknown = "B97M-rV/def2-TZVPP/VACUUM Unknown"
-    B97M_rV_def2_TZVPP_PCM_Single_Point = "B97M-rV/def2-TZVPP/PCM Single Point"
-    B97M_rV_def2_TZVPP_PCM_Force = "B97M-rV/def2-TZVPP/PCM Force"
-    B97M_rV_def2_TZVPP_PCM_Geometry_Optimization = (
-        "B97M-rV/def2-TZVPP/PCM Geometry Optimization"
-    )
-    B97M_rV_def2_TZVPP_PCM_Frequency_Analysis = (
-        "B97M-rV/def2-TZVPP/PCM Frequency Analysis"
-    )
-    B97M_rV_def2_TZVPP_PCM_Frequency_Flattening_Geometry_Optimization = (
-        "B97M-rV/def2-TZVPP/PCM Frequency Flattening Geometry Optimization"
-    )
-    B97M_rV_def2_TZVPP_PCM_Transition_State_Geometry_Optimization = (
-        "B97M-rV/def2-TZVPP/PCM Transition State Geometry Optimization"
-    )
-    B97M_rV_def2_TZVPP_PCM_Frequency_Flattening_Transition_State_Geometry_Optimization = "B97M-rV/def2-TZVPP/PCM Frequency Flattening Transition State Geometry Optimization"
-    B97M_rV_def2_TZVPP_PCM_Unknown = "B97M-rV/def2-TZVPP/PCM Unknown"
-    B97M_rV_def2_TZVPP_SMD_Single_Point = "B97M-rV/def2-TZVPP/SMD Single Point"
-    B97M_rV_def2_TZVPP_SMD_Force = "B97M-rV/def2-TZVPP/SMD Force"
-    B97M_rV_def2_TZVPP_SMD_Geometry_Optimization = (
-        "B97M-rV/def2-TZVPP/SMD Geometry Optimization"
-    )
-    B97M_rV_def2_TZVPP_SMD_Frequency_Analysis = (
-        "B97M-rV/def2-TZVPP/SMD Frequency Analysis"
-    )
-    B97M_rV_def2_TZVPP_SMD_Frequency_Flattening_Geometry_Optimization = (
-        "B97M-rV/def2-TZVPP/SMD Frequency Flattening Geometry Optimization"
-    )
-    B97M_rV_def2_TZVPP_SMD_Transition_State_Geometry_Optimization = (
-        "B97M-rV/def2-TZVPP/SMD Transition State Geometry Optimization"
-    )
-    B97M_rV_def2_TZVPP_SMD_Frequency_Flattening_Transition_State_Geometry_Optimization = "B97M-rV/def2-TZVPP/SMD Frequency Flattening Transition State Geometry Optimization"
-    B97M_rV_def2_TZVPP_SMD_Unknown = "B97M-rV/def2-TZVPP/SMD Unknown"
-    B97M_rV_def2_TZVPPD_VACUUM_Single_Point = "B97M-rV/def2-TZVPPD/VACUUM Single Point"
-    B97M_rV_def2_TZVPPD_VACUUM_Force = "B97M-rV/def2-TZVPPD/VACUUM Force"
-    B97M_rV_def2_TZVPPD_VACUUM_Geometry_Optimization = (
-        "B97M-rV/def2-TZVPPD/VACUUM Geometry Optimization"
-    )
-    B97M_rV_def2_TZVPPD_VACUUM_Frequency_Analysis = (
-        "B97M-rV/def2-TZVPPD/VACUUM Frequency Analysis"
-    )
-    B97M_rV_def2_TZVPPD_VACUUM_Frequency_Flattening_Geometry_Optimization = (
-        "B97M-rV/def2-TZVPPD/VACUUM Frequency Flattening Geometry Optimization"
-    )
-    B97M_rV_def2_TZVPPD_VACUUM_Transition_State_Geometry_Optimization = (
-        "B97M-rV/def2-TZVPPD/VACUUM Transition State Geometry Optimization"
-    )
-    B97M_rV_def2_TZVPPD_VACUUM_Frequency_Flattening_Transition_State_Geometry_Optimization = "B97M-rV/def2-TZVPPD/VACUUM Frequency Flattening Transition State Geometry Optimization"
-    B97M_rV_def2_TZVPPD_VACUUM_Unknown = "B97M-rV/def2-TZVPPD/VACUUM Unknown"
-    B97M_rV_def2_TZVPPD_PCM_Single_Point = "B97M-rV/def2-TZVPPD/PCM Single Point"
-    B97M_rV_def2_TZVPPD_PCM_Force = "B97M-rV/def2-TZVPPD/PCM Force"
-    B97M_rV_def2_TZVPPD_PCM_Geometry_Optimization = (
-        "B97M-rV/def2-TZVPPD/PCM Geometry Optimization"
-    )
-    B97M_rV_def2_TZVPPD_PCM_Frequency_Analysis = (
-        "B97M-rV/def2-TZVPPD/PCM Frequency Analysis"
-    )
-    B97M_rV_def2_TZVPPD_PCM_Frequency_Flattening_Geometry_Optimization = (
-        "B97M-rV/def2-TZVPPD/PCM Frequency Flattening Geometry Optimization"
-    )
-    B97M_rV_def2_TZVPPD_PCM_Transition_State_Geometry_Optimization = (
-        "B97M-rV/def2-TZVPPD/PCM Transition State Geometry Optimization"
-    )
-    B97M_rV_def2_TZVPPD_PCM_Frequency_Flattening_Transition_State_Geometry_Optimization = "B97M-rV/def2-TZVPPD/PCM Frequency Flattening Transition State Geometry Optimization"
-    B97M_rV_def2_TZVPPD_PCM_Unknown = "B97M-rV/def2-TZVPPD/PCM Unknown"
-    B97M_rV_def2_TZVPPD_SMD_Single_Point = "B97M-rV/def2-TZVPPD/SMD Single Point"
-    B97M_rV_def2_TZVPPD_SMD_Force = "B97M-rV/def2-TZVPPD/SMD Force"
-    B97M_rV_def2_TZVPPD_SMD_Geometry_Optimization = (
-        "B97M-rV/def2-TZVPPD/SMD Geometry Optimization"
-    )
-    B97M_rV_def2_TZVPPD_SMD_Frequency_Analysis = (
-        "B97M-rV/def2-TZVPPD/SMD Frequency Analysis"
-    )
-    B97M_rV_def2_TZVPPD_SMD_Frequency_Flattening_Geometry_Optimization = (
-        "B97M-rV/def2-TZVPPD/SMD Frequency Flattening Geometry Optimization"
-    )
-    B97M_rV_def2_TZVPPD_SMD_Transition_State_Geometry_Optimization = (
-        "B97M-rV/def2-TZVPPD/SMD Transition State Geometry Optimization"
-    )
-    B97M_rV_def2_TZVPPD_SMD_Frequency_Flattening_Transition_State_Geometry_Optimization = "B97M-rV/def2-TZVPPD/SMD Frequency Flattening Transition State Geometry Optimization"
-    B97M_rV_def2_TZVPPD_SMD_Unknown = "B97M-rV/def2-TZVPPD/SMD Unknown"
-    B97M_rV_def2_QZVPD_VACUUM_Single_Point = "B97M-rV/def2-QZVPD/VACUUM Single Point"
-    B97M_rV_def2_QZVPD_VACUUM_Force = "B97M-rV/def2-QZVPD/VACUUM Force"
-    B97M_rV_def2_QZVPD_VACUUM_Geometry_Optimization = (
-        "B97M-rV/def2-QZVPD/VACUUM Geometry Optimization"
-    )
-    B97M_rV_def2_QZVPD_VACUUM_Frequency_Analysis = (
-        "B97M-rV/def2-QZVPD/VACUUM Frequency Analysis"
-    )
-    B97M_rV_def2_QZVPD_VACUUM_Frequency_Flattening_Geometry_Optimization = (
-        "B97M-rV/def2-QZVPD/VACUUM Frequency Flattening Geometry Optimization"
-    )
-    B97M_rV_def2_QZVPD_VACUUM_Transition_State_Geometry_Optimization = (
-        "B97M-rV/def2-QZVPD/VACUUM Transition State Geometry Optimization"
-    )
-    B97M_rV_def2_QZVPD_VACUUM_Frequency_Flattening_Transition_State_Geometry_Optimization = "B97M-rV/def2-QZVPD/VACUUM Frequency Flattening Transition State Geometry Optimization"
-    B97M_rV_def2_QZVPD_VACUUM_Unknown = "B97M-rV/def2-QZVPD/VACUUM Unknown"
-    B97M_rV_def2_QZVPD_PCM_Single_Point = "B97M-rV/def2-QZVPD/PCM Single Point"
-    B97M_rV_def2_QZVPD_PCM_Force = "B97M-rV/def2-QZVPD/PCM Force"
-    B97M_rV_def2_QZVPD_PCM_Geometry_Optimization = (
-        "B97M-rV/def2-QZVPD/PCM Geometry Optimization"
-    )
-    B97M_rV_def2_QZVPD_PCM_Frequency_Analysis = (
-        "B97M-rV/def2-QZVPD/PCM Frequency Analysis"
-    )
-    B97M_rV_def2_QZVPD_PCM_Frequency_Flattening_Geometry_Optimization = (
-        "B97M-rV/def2-QZVPD/PCM Frequency Flattening Geometry Optimization"
-    )
-    B97M_rV_def2_QZVPD_PCM_Transition_State_Geometry_Optimization = (
-        "B97M-rV/def2-QZVPD/PCM Transition State Geometry Optimization"
-    )
-    B97M_rV_def2_QZVPD_PCM_Frequency_Flattening_Transition_State_Geometry_Optimization = "B97M-rV/def2-QZVPD/PCM Frequency Flattening Transition State Geometry Optimization"
-    B97M_rV_def2_QZVPD_PCM_Unknown = "B97M-rV/def2-QZVPD/PCM Unknown"
-    B97M_rV_def2_QZVPD_SMD_Single_Point = "B97M-rV/def2-QZVPD/SMD Single Point"
-    B97M_rV_def2_QZVPD_SMD_Force = "B97M-rV/def2-QZVPD/SMD Force"
-    B97M_rV_def2_QZVPD_SMD_Geometry_Optimization = (
-        "B97M-rV/def2-QZVPD/SMD Geometry Optimization"
-    )
-    B97M_rV_def2_QZVPD_SMD_Frequency_Analysis = (
-        "B97M-rV/def2-QZVPD/SMD Frequency Analysis"
-    )
-    B97M_rV_def2_QZVPD_SMD_Frequency_Flattening_Geometry_Optimization = (
-        "B97M-rV/def2-QZVPD/SMD Frequency Flattening Geometry Optimization"
-    )
-    B97M_rV_def2_QZVPD_SMD_Transition_State_Geometry_Optimization = (
-        "B97M-rV/def2-QZVPD/SMD Transition State Geometry Optimization"
-    )
-    B97M_rV_def2_QZVPD_SMD_Frequency_Flattening_Transition_State_Geometry_Optimization = "B97M-rV/def2-QZVPD/SMD Frequency Flattening Transition State Geometry Optimization"
-    B97M_rV_def2_QZVPD_SMD_Unknown = "B97M-rV/def2-QZVPD/SMD Unknown"
-    B97M_rV_def2_QZVPPD_VACUUM_Single_Point = "B97M-rV/def2-QZVPPD/VACUUM Single Point"
-    B97M_rV_def2_QZVPPD_VACUUM_Force = "B97M-rV/def2-QZVPPD/VACUUM Force"
-    B97M_rV_def2_QZVPPD_VACUUM_Geometry_Optimization = (
-        "B97M-rV/def2-QZVPPD/VACUUM Geometry Optimization"
-    )
-    B97M_rV_def2_QZVPPD_VACUUM_Frequency_Analysis = (
-        "B97M-rV/def2-QZVPPD/VACUUM Frequency Analysis"
-    )
-    B97M_rV_def2_QZVPPD_VACUUM_Frequency_Flattening_Geometry_Optimization = (
-        "B97M-rV/def2-QZVPPD/VACUUM Frequency Flattening Geometry Optimization"
-    )
-    B97M_rV_def2_QZVPPD_VACUUM_Transition_State_Geometry_Optimization = (
-        "B97M-rV/def2-QZVPPD/VACUUM Transition State Geometry Optimization"
-    )
-    B97M_rV_def2_QZVPPD_VACUUM_Frequency_Flattening_Transition_State_Geometry_Optimization = "B97M-rV/def2-QZVPPD/VACUUM Frequency Flattening Transition State Geometry Optimization"
-    B97M_rV_def2_QZVPPD_VACUUM_Unknown = "B97M-rV/def2-QZVPPD/VACUUM Unknown"
-    B97M_rV_def2_QZVPPD_PCM_Single_Point = "B97M-rV/def2-QZVPPD/PCM Single Point"
-    B97M_rV_def2_QZVPPD_PCM_Force = "B97M-rV/def2-QZVPPD/PCM Force"
-    B97M_rV_def2_QZVPPD_PCM_Geometry_Optimization = (
-        "B97M-rV/def2-QZVPPD/PCM Geometry Optimization"
-    )
-    B97M_rV_def2_QZVPPD_PCM_Frequency_Analysis = (
-        "B97M-rV/def2-QZVPPD/PCM Frequency Analysis"
-    )
-    B97M_rV_def2_QZVPPD_PCM_Frequency_Flattening_Geometry_Optimization = (
-        "B97M-rV/def2-QZVPPD/PCM Frequency Flattening Geometry Optimization"
-    )
-    B97M_rV_def2_QZVPPD_PCM_Transition_State_Geometry_Optimization = (
-        "B97M-rV/def2-QZVPPD/PCM Transition State Geometry Optimization"
-    )
-    B97M_rV_def2_QZVPPD_PCM_Frequency_Flattening_Transition_State_Geometry_Optimization = "B97M-rV/def2-QZVPPD/PCM Frequency Flattening Transition State Geometry Optimization"
-    B97M_rV_def2_QZVPPD_PCM_Unknown = "B97M-rV/def2-QZVPPD/PCM Unknown"
-    B97M_rV_def2_QZVPPD_SMD_Single_Point = "B97M-rV/def2-QZVPPD/SMD Single Point"
-    B97M_rV_def2_QZVPPD_SMD_Force = "B97M-rV/def2-QZVPPD/SMD Force"
-    B97M_rV_def2_QZVPPD_SMD_Geometry_Optimization = (
-        "B97M-rV/def2-QZVPPD/SMD Geometry Optimization"
-    )
-    B97M_rV_def2_QZVPPD_SMD_Frequency_Analysis = (
-        "B97M-rV/def2-QZVPPD/SMD Frequency Analysis"
-    )
-    B97M_rV_def2_QZVPPD_SMD_Frequency_Flattening_Geometry_Optimization = (
-        "B97M-rV/def2-QZVPPD/SMD Frequency Flattening Geometry Optimization"
-    )
-    B97M_rV_def2_QZVPPD_SMD_Transition_State_Geometry_Optimization = (
-        "B97M-rV/def2-QZVPPD/SMD Transition State Geometry Optimization"
-    )
-    B97M_rV_def2_QZVPPD_SMD_Frequency_Flattening_Transition_State_Geometry_Optimization = "B97M-rV/def2-QZVPPD/SMD Frequency Flattening Transition State Geometry Optimization"
-    B97M_rV_def2_QZVPPD_SMD_Unknown = "B97M-rV/def2-QZVPPD/SMD Unknown"
+    b97mv_6_31g_d_VACUUM_Single_Point = "b97mv/6-31g*/VACUUM Single Point"
+    b97mv_6_31g_d_VACUUM_Force = "b97mv/6-31g*/VACUUM Force"
+    b97mv_6_31g_d_VACUUM_Geometry_Optimization = "b97mv/6-31g*/VACUUM Geometry Optimization"
+    b97mv_6_31g_d_VACUUM_Frequency_Analysis = "b97mv/6-31g*/VACUUM Frequency Analysis"
+    b97mv_6_31g_d_VACUUM_Frequency_Flattening_Geometry_Optimization = "b97mv/6-31g*/VACUUM Frequency Flattening Geometry Optimization"
+    b97mv_6_31g_d_VACUUM_Transition_State_Geometry_Optimization = "b97mv/6-31g*/VACUUM Transition State Geometry Optimization"
+    b97mv_6_31g_d_VACUUM_Frequency_Flattening_Transition_State_Geometry_Optimization = "b97mv/6-31g*/VACUUM Frequency Flattening Transition State Geometry Optimization"
+    b97mv_6_31g_d_VACUUM_Unknown = "b97mv/6-31g*/VACUUM Unknown"
+    b97mv_6_31g_d_PCM_Single_Point = "b97mv/6-31g*/PCM Single Point"
+    b97mv_6_31g_d_PCM_Force = "b97mv/6-31g*/PCM Force"
+    b97mv_6_31g_d_PCM_Geometry_Optimization = "b97mv/6-31g*/PCM Geometry Optimization"
+    b97mv_6_31g_d_PCM_Frequency_Analysis = "b97mv/6-31g*/PCM Frequency Analysis"
+    b97mv_6_31g_d_PCM_Frequency_Flattening_Geometry_Optimization = "b97mv/6-31g*/PCM Frequency Flattening Geometry Optimization"
+    b97mv_6_31g_d_PCM_Transition_State_Geometry_Optimization = "b97mv/6-31g*/PCM Transition State Geometry Optimization"
+    b97mv_6_31g_d_PCM_Frequency_Flattening_Transition_State_Geometry_Optimization = "b97mv/6-31g*/PCM Frequency Flattening Transition State Geometry Optimization"
+    b97mv_6_31g_d_PCM_Unknown = "b97mv/6-31g*/PCM Unknown"
+    b97mv_6_31g_d_SMD_Single_Point = "b97mv/6-31g*/SMD Single Point"
+    b97mv_6_31g_d_SMD_Force = "b97mv/6-31g*/SMD Force"
+    b97mv_6_31g_d_SMD_Geometry_Optimization = "b97mv/6-31g*/SMD Geometry Optimization"
+    b97mv_6_31g_d_SMD_Frequency_Analysis = "b97mv/6-31g*/SMD Frequency Analysis"
+    b97mv_6_31g_d_SMD_Frequency_Flattening_Geometry_Optimization = "b97mv/6-31g*/SMD Frequency Flattening Geometry Optimization"
+    b97mv_6_31g_d_SMD_Transition_State_Geometry_Optimization = "b97mv/6-31g*/SMD Transition State Geometry Optimization"
+    b97mv_6_31g_d_SMD_Frequency_Flattening_Transition_State_Geometry_Optimization = "b97mv/6-31g*/SMD Frequency Flattening Transition State Geometry Optimization"
+    b97mv_6_31g_d_SMD_Unknown = "b97mv/6-31g*/SMD Unknown"
+    b97mv_def2_SVPD_VACUUM_Single_Point = "b97mv/def2-SVPD/VACUUM Single Point"
+    b97mv_def2_SVPD_VACUUM_Force = "b97mv/def2-SVPD/VACUUM Force"
+    b97mv_def2_SVPD_VACUUM_Geometry_Optimization = "b97mv/def2-SVPD/VACUUM Geometry Optimization"
+    b97mv_def2_SVPD_VACUUM_Frequency_Analysis = "b97mv/def2-SVPD/VACUUM Frequency Analysis"
+    b97mv_def2_SVPD_VACUUM_Frequency_Flattening_Geometry_Optimization = "b97mv/def2-SVPD/VACUUM Frequency Flattening Geometry Optimization"
+    b97mv_def2_SVPD_VACUUM_Transition_State_Geometry_Optimization = "b97mv/def2-SVPD/VACUUM Transition State Geometry Optimization"
+    b97mv_def2_SVPD_VACUUM_Frequency_Flattening_Transition_State_Geometry_Optimization = "b97mv/def2-SVPD/VACUUM Frequency Flattening Transition State Geometry Optimization"
+    b97mv_def2_SVPD_VACUUM_Unknown = "b97mv/def2-SVPD/VACUUM Unknown"
+    b97mv_def2_SVPD_PCM_Single_Point = "b97mv/def2-SVPD/PCM Single Point"
+    b97mv_def2_SVPD_PCM_Force = "b97mv/def2-SVPD/PCM Force"
+    b97mv_def2_SVPD_PCM_Geometry_Optimization = "b97mv/def2-SVPD/PCM Geometry Optimization"
+    b97mv_def2_SVPD_PCM_Frequency_Analysis = "b97mv/def2-SVPD/PCM Frequency Analysis"
+    b97mv_def2_SVPD_PCM_Frequency_Flattening_Geometry_Optimization = "b97mv/def2-SVPD/PCM Frequency Flattening Geometry Optimization"
+    b97mv_def2_SVPD_PCM_Transition_State_Geometry_Optimization = "b97mv/def2-SVPD/PCM Transition State Geometry Optimization"
+    b97mv_def2_SVPD_PCM_Frequency_Flattening_Transition_State_Geometry_Optimization = "b97mv/def2-SVPD/PCM Frequency Flattening Transition State Geometry Optimization"
+    b97mv_def2_SVPD_PCM_Unknown = "b97mv/def2-SVPD/PCM Unknown"
+    b97mv_def2_SVPD_SMD_Single_Point = "b97mv/def2-SVPD/SMD Single Point"
+    b97mv_def2_SVPD_SMD_Force = "b97mv/def2-SVPD/SMD Force"
+    b97mv_def2_SVPD_SMD_Geometry_Optimization = "b97mv/def2-SVPD/SMD Geometry Optimization"
+    b97mv_def2_SVPD_SMD_Frequency_Analysis = "b97mv/def2-SVPD/SMD Frequency Analysis"
+    b97mv_def2_SVPD_SMD_Frequency_Flattening_Geometry_Optimization = "b97mv/def2-SVPD/SMD Frequency Flattening Geometry Optimization"
+    b97mv_def2_SVPD_SMD_Transition_State_Geometry_Optimization = "b97mv/def2-SVPD/SMD Transition State Geometry Optimization"
+    b97mv_def2_SVPD_SMD_Frequency_Flattening_Transition_State_Geometry_Optimization = "b97mv/def2-SVPD/SMD Frequency Flattening Transition State Geometry Optimization"
+    b97mv_def2_SVPD_SMD_Unknown = "b97mv/def2-SVPD/SMD Unknown"
+    b97mv_def2_TZVP_VACUUM_Single_Point = "b97mv/def2-TZVP/VACUUM Single Point"
+    b97mv_def2_TZVP_VACUUM_Force = "b97mv/def2-TZVP/VACUUM Force"
+    b97mv_def2_TZVP_VACUUM_Geometry_Optimization = "b97mv/def2-TZVP/VACUUM Geometry Optimization"
+    b97mv_def2_TZVP_VACUUM_Frequency_Analysis = "b97mv/def2-TZVP/VACUUM Frequency Analysis"
+    b97mv_def2_TZVP_VACUUM_Frequency_Flattening_Geometry_Optimization = "b97mv/def2-TZVP/VACUUM Frequency Flattening Geometry Optimization"
+    b97mv_def2_TZVP_VACUUM_Transition_State_Geometry_Optimization = "b97mv/def2-TZVP/VACUUM Transition State Geometry Optimization"
+    b97mv_def2_TZVP_VACUUM_Frequency_Flattening_Transition_State_Geometry_Optimization = "b97mv/def2-TZVP/VACUUM Frequency Flattening Transition State Geometry Optimization"
+    b97mv_def2_TZVP_VACUUM_Unknown = "b97mv/def2-TZVP/VACUUM Unknown"
+    b97mv_def2_TZVP_PCM_Single_Point = "b97mv/def2-TZVP/PCM Single Point"
+    b97mv_def2_TZVP_PCM_Force = "b97mv/def2-TZVP/PCM Force"
+    b97mv_def2_TZVP_PCM_Geometry_Optimization = "b97mv/def2-TZVP/PCM Geometry Optimization"
+    b97mv_def2_TZVP_PCM_Frequency_Analysis = "b97mv/def2-TZVP/PCM Frequency Analysis"
+    b97mv_def2_TZVP_PCM_Frequency_Flattening_Geometry_Optimization = "b97mv/def2-TZVP/PCM Frequency Flattening Geometry Optimization"
+    b97mv_def2_TZVP_PCM_Transition_State_Geometry_Optimization = "b97mv/def2-TZVP/PCM Transition State Geometry Optimization"
+    b97mv_def2_TZVP_PCM_Frequency_Flattening_Transition_State_Geometry_Optimization = "b97mv/def2-TZVP/PCM Frequency Flattening Transition State Geometry Optimization"
+    b97mv_def2_TZVP_PCM_Unknown = "b97mv/def2-TZVP/PCM Unknown"
+    b97mv_def2_TZVP_SMD_Single_Point = "b97mv/def2-TZVP/SMD Single Point"
+    b97mv_def2_TZVP_SMD_Force = "b97mv/def2-TZVP/SMD Force"
+    b97mv_def2_TZVP_SMD_Geometry_Optimization = "b97mv/def2-TZVP/SMD Geometry Optimization"
+    b97mv_def2_TZVP_SMD_Frequency_Analysis = "b97mv/def2-TZVP/SMD Frequency Analysis"
+    b97mv_def2_TZVP_SMD_Frequency_Flattening_Geometry_Optimization = "b97mv/def2-TZVP/SMD Frequency Flattening Geometry Optimization"
+    b97mv_def2_TZVP_SMD_Transition_State_Geometry_Optimization = "b97mv/def2-TZVP/SMD Transition State Geometry Optimization"
+    b97mv_def2_TZVP_SMD_Frequency_Flattening_Transition_State_Geometry_Optimization = "b97mv/def2-TZVP/SMD Frequency Flattening Transition State Geometry Optimization"
+    b97mv_def2_TZVP_SMD_Unknown = "b97mv/def2-TZVP/SMD Unknown"
+    b97mv_def2_TZVPD_VACUUM_Single_Point = "b97mv/def2-TZVPD/VACUUM Single Point"
+    b97mv_def2_TZVPD_VACUUM_Force = "b97mv/def2-TZVPD/VACUUM Force"
+    b97mv_def2_TZVPD_VACUUM_Geometry_Optimization = "b97mv/def2-TZVPD/VACUUM Geometry Optimization"
+    b97mv_def2_TZVPD_VACUUM_Frequency_Analysis = "b97mv/def2-TZVPD/VACUUM Frequency Analysis"
+    b97mv_def2_TZVPD_VACUUM_Frequency_Flattening_Geometry_Optimization = "b97mv/def2-TZVPD/VACUUM Frequency Flattening Geometry Optimization"
+    b97mv_def2_TZVPD_VACUUM_Transition_State_Geometry_Optimization = "b97mv/def2-TZVPD/VACUUM Transition State Geometry Optimization"
+    b97mv_def2_TZVPD_VACUUM_Frequency_Flattening_Transition_State_Geometry_Optimization = "b97mv/def2-TZVPD/VACUUM Frequency Flattening Transition State Geometry Optimization"
+    b97mv_def2_TZVPD_VACUUM_Unknown = "b97mv/def2-TZVPD/VACUUM Unknown"
+    b97mv_def2_TZVPD_PCM_Single_Point = "b97mv/def2-TZVPD/PCM Single Point"
+    b97mv_def2_TZVPD_PCM_Force = "b97mv/def2-TZVPD/PCM Force"
+    b97mv_def2_TZVPD_PCM_Geometry_Optimization = "b97mv/def2-TZVPD/PCM Geometry Optimization"
+    b97mv_def2_TZVPD_PCM_Frequency_Analysis = "b97mv/def2-TZVPD/PCM Frequency Analysis"
+    b97mv_def2_TZVPD_PCM_Frequency_Flattening_Geometry_Optimization = "b97mv/def2-TZVPD/PCM Frequency Flattening Geometry Optimization"
+    b97mv_def2_TZVPD_PCM_Transition_State_Geometry_Optimization = "b97mv/def2-TZVPD/PCM Transition State Geometry Optimization"
+    b97mv_def2_TZVPD_PCM_Frequency_Flattening_Transition_State_Geometry_Optimization = "b97mv/def2-TZVPD/PCM Frequency Flattening Transition State Geometry Optimization"
+    b97mv_def2_TZVPD_PCM_Unknown = "b97mv/def2-TZVPD/PCM Unknown"
+    b97mv_def2_TZVPD_SMD_Single_Point = "b97mv/def2-TZVPD/SMD Single Point"
+    b97mv_def2_TZVPD_SMD_Force = "b97mv/def2-TZVPD/SMD Force"
+    b97mv_def2_TZVPD_SMD_Geometry_Optimization = "b97mv/def2-TZVPD/SMD Geometry Optimization"
+    b97mv_def2_TZVPD_SMD_Frequency_Analysis = "b97mv/def2-TZVPD/SMD Frequency Analysis"
+    b97mv_def2_TZVPD_SMD_Frequency_Flattening_Geometry_Optimization = "b97mv/def2-TZVPD/SMD Frequency Flattening Geometry Optimization"
+    b97mv_def2_TZVPD_SMD_Transition_State_Geometry_Optimization = "b97mv/def2-TZVPD/SMD Transition State Geometry Optimization"
+    b97mv_def2_TZVPD_SMD_Frequency_Flattening_Transition_State_Geometry_Optimization = "b97mv/def2-TZVPD/SMD Frequency Flattening Transition State Geometry Optimization"
+    b97mv_def2_TZVPD_SMD_Unknown = "b97mv/def2-TZVPD/SMD Unknown"
+    b97mv_def2_TZVPP_VACUUM_Single_Point = "b97mv/def2-TZVPP/VACUUM Single Point"
+    b97mv_def2_TZVPP_VACUUM_Force = "b97mv/def2-TZVPP/VACUUM Force"
+    b97mv_def2_TZVPP_VACUUM_Geometry_Optimization = "b97mv/def2-TZVPP/VACUUM Geometry Optimization"
+    b97mv_def2_TZVPP_VACUUM_Frequency_Analysis = "b97mv/def2-TZVPP/VACUUM Frequency Analysis"
+    b97mv_def2_TZVPP_VACUUM_Frequency_Flattening_Geometry_Optimization = "b97mv/def2-TZVPP/VACUUM Frequency Flattening Geometry Optimization"
+    b97mv_def2_TZVPP_VACUUM_Transition_State_Geometry_Optimization = "b97mv/def2-TZVPP/VACUUM Transition State Geometry Optimization"
+    b97mv_def2_TZVPP_VACUUM_Frequency_Flattening_Transition_State_Geometry_Optimization = "b97mv/def2-TZVPP/VACUUM Frequency Flattening Transition State Geometry Optimization"
+    b97mv_def2_TZVPP_VACUUM_Unknown = "b97mv/def2-TZVPP/VACUUM Unknown"
+    b97mv_def2_TZVPP_PCM_Single_Point = "b97mv/def2-TZVPP/PCM Single Point"
+    b97mv_def2_TZVPP_PCM_Force = "b97mv/def2-TZVPP/PCM Force"
+    b97mv_def2_TZVPP_PCM_Geometry_Optimization = "b97mv/def2-TZVPP/PCM Geometry Optimization"
+    b97mv_def2_TZVPP_PCM_Frequency_Analysis = "b97mv/def2-TZVPP/PCM Frequency Analysis"
+    b97mv_def2_TZVPP_PCM_Frequency_Flattening_Geometry_Optimization = "b97mv/def2-TZVPP/PCM Frequency Flattening Geometry Optimization"
+    b97mv_def2_TZVPP_PCM_Transition_State_Geometry_Optimization = "b97mv/def2-TZVPP/PCM Transition State Geometry Optimization"
+    b97mv_def2_TZVPP_PCM_Frequency_Flattening_Transition_State_Geometry_Optimization = "b97mv/def2-TZVPP/PCM Frequency Flattening Transition State Geometry Optimization"
+    b97mv_def2_TZVPP_PCM_Unknown = "b97mv/def2-TZVPP/PCM Unknown"
+    b97mv_def2_TZVPP_SMD_Single_Point = "b97mv/def2-TZVPP/SMD Single Point"
+    b97mv_def2_TZVPP_SMD_Force = "b97mv/def2-TZVPP/SMD Force"
+    b97mv_def2_TZVPP_SMD_Geometry_Optimization = "b97mv/def2-TZVPP/SMD Geometry Optimization"
+    b97mv_def2_TZVPP_SMD_Frequency_Analysis = "b97mv/def2-TZVPP/SMD Frequency Analysis"
+    b97mv_def2_TZVPP_SMD_Frequency_Flattening_Geometry_Optimization = "b97mv/def2-TZVPP/SMD Frequency Flattening Geometry Optimization"
+    b97mv_def2_TZVPP_SMD_Transition_State_Geometry_Optimization = "b97mv/def2-TZVPP/SMD Transition State Geometry Optimization"
+    b97mv_def2_TZVPP_SMD_Frequency_Flattening_Transition_State_Geometry_Optimization = "b97mv/def2-TZVPP/SMD Frequency Flattening Transition State Geometry Optimization"
+    b97mv_def2_TZVPP_SMD_Unknown = "b97mv/def2-TZVPP/SMD Unknown"
+    b97mv_def2_TZVPPD_VACUUM_Single_Point = "b97mv/def2-TZVPPD/VACUUM Single Point"
+    b97mv_def2_TZVPPD_VACUUM_Force = "b97mv/def2-TZVPPD/VACUUM Force"
+    b97mv_def2_TZVPPD_VACUUM_Geometry_Optimization = "b97mv/def2-TZVPPD/VACUUM Geometry Optimization"
+    b97mv_def2_TZVPPD_VACUUM_Frequency_Analysis = "b97mv/def2-TZVPPD/VACUUM Frequency Analysis"
+    b97mv_def2_TZVPPD_VACUUM_Frequency_Flattening_Geometry_Optimization = "b97mv/def2-TZVPPD/VACUUM Frequency Flattening Geometry Optimization"
+    b97mv_def2_TZVPPD_VACUUM_Transition_State_Geometry_Optimization = "b97mv/def2-TZVPPD/VACUUM Transition State Geometry Optimization"
+    b97mv_def2_TZVPPD_VACUUM_Frequency_Flattening_Transition_State_Geometry_Optimization = "b97mv/def2-TZVPPD/VACUUM Frequency Flattening Transition State Geometry Optimization"
+    b97mv_def2_TZVPPD_VACUUM_Unknown = "b97mv/def2-TZVPPD/VACUUM Unknown"
+    b97mv_def2_TZVPPD_PCM_Single_Point = "b97mv/def2-TZVPPD/PCM Single Point"
+    b97mv_def2_TZVPPD_PCM_Force = "b97mv/def2-TZVPPD/PCM Force"
+    b97mv_def2_TZVPPD_PCM_Geometry_Optimization = "b97mv/def2-TZVPPD/PCM Geometry Optimization"
+    b97mv_def2_TZVPPD_PCM_Frequency_Analysis = "b97mv/def2-TZVPPD/PCM Frequency Analysis"
+    b97mv_def2_TZVPPD_PCM_Frequency_Flattening_Geometry_Optimization = "b97mv/def2-TZVPPD/PCM Frequency Flattening Geometry Optimization"
+    b97mv_def2_TZVPPD_PCM_Transition_State_Geometry_Optimization = "b97mv/def2-TZVPPD/PCM Transition State Geometry Optimization"
+    b97mv_def2_TZVPPD_PCM_Frequency_Flattening_Transition_State_Geometry_Optimization = "b97mv/def2-TZVPPD/PCM Frequency Flattening Transition State Geometry Optimization"
+    b97mv_def2_TZVPPD_PCM_Unknown = "b97mv/def2-TZVPPD/PCM Unknown"
+    b97mv_def2_TZVPPD_SMD_Single_Point = "b97mv/def2-TZVPPD/SMD Single Point"
+    b97mv_def2_TZVPPD_SMD_Force = "b97mv/def2-TZVPPD/SMD Force"
+    b97mv_def2_TZVPPD_SMD_Geometry_Optimization = "b97mv/def2-TZVPPD/SMD Geometry Optimization"
+    b97mv_def2_TZVPPD_SMD_Frequency_Analysis = "b97mv/def2-TZVPPD/SMD Frequency Analysis"
+    b97mv_def2_TZVPPD_SMD_Frequency_Flattening_Geometry_Optimization = "b97mv/def2-TZVPPD/SMD Frequency Flattening Geometry Optimization"
+    b97mv_def2_TZVPPD_SMD_Transition_State_Geometry_Optimization = "b97mv/def2-TZVPPD/SMD Transition State Geometry Optimization"
+    b97mv_def2_TZVPPD_SMD_Frequency_Flattening_Transition_State_Geometry_Optimization = "b97mv/def2-TZVPPD/SMD Frequency Flattening Transition State Geometry Optimization"
+    b97mv_def2_TZVPPD_SMD_Unknown = "b97mv/def2-TZVPPD/SMD Unknown"
+    b97mv_def2_QZVPD_VACUUM_Single_Point = "b97mv/def2-QZVPD/VACUUM Single Point"
+    b97mv_def2_QZVPD_VACUUM_Force = "b97mv/def2-QZVPD/VACUUM Force"
+    b97mv_def2_QZVPD_VACUUM_Geometry_Optimization = "b97mv/def2-QZVPD/VACUUM Geometry Optimization"
+    b97mv_def2_QZVPD_VACUUM_Frequency_Analysis = "b97mv/def2-QZVPD/VACUUM Frequency Analysis"
+    b97mv_def2_QZVPD_VACUUM_Frequency_Flattening_Geometry_Optimization = "b97mv/def2-QZVPD/VACUUM Frequency Flattening Geometry Optimization"
+    b97mv_def2_QZVPD_VACUUM_Transition_State_Geometry_Optimization = "b97mv/def2-QZVPD/VACUUM Transition State Geometry Optimization"
+    b97mv_def2_QZVPD_VACUUM_Frequency_Flattening_Transition_State_Geometry_Optimization = "b97mv/def2-QZVPD/VACUUM Frequency Flattening Transition State Geometry Optimization"
+    b97mv_def2_QZVPD_VACUUM_Unknown = "b97mv/def2-QZVPD/VACUUM Unknown"
+    b97mv_def2_QZVPD_PCM_Single_Point = "b97mv/def2-QZVPD/PCM Single Point"
+    b97mv_def2_QZVPD_PCM_Force = "b97mv/def2-QZVPD/PCM Force"
+    b97mv_def2_QZVPD_PCM_Geometry_Optimization = "b97mv/def2-QZVPD/PCM Geometry Optimization"
+    b97mv_def2_QZVPD_PCM_Frequency_Analysis = "b97mv/def2-QZVPD/PCM Frequency Analysis"
+    b97mv_def2_QZVPD_PCM_Frequency_Flattening_Geometry_Optimization = "b97mv/def2-QZVPD/PCM Frequency Flattening Geometry Optimization"
+    b97mv_def2_QZVPD_PCM_Transition_State_Geometry_Optimization = "b97mv/def2-QZVPD/PCM Transition State Geometry Optimization"
+    b97mv_def2_QZVPD_PCM_Frequency_Flattening_Transition_State_Geometry_Optimization = "b97mv/def2-QZVPD/PCM Frequency Flattening Transition State Geometry Optimization"
+    b97mv_def2_QZVPD_PCM_Unknown = "b97mv/def2-QZVPD/PCM Unknown"
+    b97mv_def2_QZVPD_SMD_Single_Point = "b97mv/def2-QZVPD/SMD Single Point"
+    b97mv_def2_QZVPD_SMD_Force = "b97mv/def2-QZVPD/SMD Force"
+    b97mv_def2_QZVPD_SMD_Geometry_Optimization = "b97mv/def2-QZVPD/SMD Geometry Optimization"
+    b97mv_def2_QZVPD_SMD_Frequency_Analysis = "b97mv/def2-QZVPD/SMD Frequency Analysis"
+    b97mv_def2_QZVPD_SMD_Frequency_Flattening_Geometry_Optimization = "b97mv/def2-QZVPD/SMD Frequency Flattening Geometry Optimization"
+    b97mv_def2_QZVPD_SMD_Transition_State_Geometry_Optimization = "b97mv/def2-QZVPD/SMD Transition State Geometry Optimization"
+    b97mv_def2_QZVPD_SMD_Frequency_Flattening_Transition_State_Geometry_Optimization = "b97mv/def2-QZVPD/SMD Frequency Flattening Transition State Geometry Optimization"
+    b97mv_def2_QZVPD_SMD_Unknown = "b97mv/def2-QZVPD/SMD Unknown"
+    b97mv_def2_QZVPPD_VACUUM_Single_Point = "b97mv/def2-QZVPPD/VACUUM Single Point"
+    b97mv_def2_QZVPPD_VACUUM_Force = "b97mv/def2-QZVPPD/VACUUM Force"
+    b97mv_def2_QZVPPD_VACUUM_Geometry_Optimization = "b97mv/def2-QZVPPD/VACUUM Geometry Optimization"
+    b97mv_def2_QZVPPD_VACUUM_Frequency_Analysis = "b97mv/def2-QZVPPD/VACUUM Frequency Analysis"
+    b97mv_def2_QZVPPD_VACUUM_Frequency_Flattening_Geometry_Optimization = "b97mv/def2-QZVPPD/VACUUM Frequency Flattening Geometry Optimization"
+    b97mv_def2_QZVPPD_VACUUM_Transition_State_Geometry_Optimization = "b97mv/def2-QZVPPD/VACUUM Transition State Geometry Optimization"
+    b97mv_def2_QZVPPD_VACUUM_Frequency_Flattening_Transition_State_Geometry_Optimization = "b97mv/def2-QZVPPD/VACUUM Frequency Flattening Transition State Geometry Optimization"
+    b97mv_def2_QZVPPD_VACUUM_Unknown = "b97mv/def2-QZVPPD/VACUUM Unknown"
+    b97mv_def2_QZVPPD_PCM_Single_Point = "b97mv/def2-QZVPPD/PCM Single Point"
+    b97mv_def2_QZVPPD_PCM_Force = "b97mv/def2-QZVPPD/PCM Force"
+    b97mv_def2_QZVPPD_PCM_Geometry_Optimization = "b97mv/def2-QZVPPD/PCM Geometry Optimization"
+    b97mv_def2_QZVPPD_PCM_Frequency_Analysis = "b97mv/def2-QZVPPD/PCM Frequency Analysis"
+    b97mv_def2_QZVPPD_PCM_Frequency_Flattening_Geometry_Optimization = "b97mv/def2-QZVPPD/PCM Frequency Flattening Geometry Optimization"
+    b97mv_def2_QZVPPD_PCM_Transition_State_Geometry_Optimization = "b97mv/def2-QZVPPD/PCM Transition State Geometry Optimization"
+    b97mv_def2_QZVPPD_PCM_Frequency_Flattening_Transition_State_Geometry_Optimization = "b97mv/def2-QZVPPD/PCM Frequency Flattening Transition State Geometry Optimization"
+    b97mv_def2_QZVPPD_PCM_Unknown = "b97mv/def2-QZVPPD/PCM Unknown"
+    b97mv_def2_QZVPPD_SMD_Single_Point = "b97mv/def2-QZVPPD/SMD Single Point"
+    b97mv_def2_QZVPPD_SMD_Force = "b97mv/def2-QZVPPD/SMD Force"
+    b97mv_def2_QZVPPD_SMD_Geometry_Optimization = "b97mv/def2-QZVPPD/SMD Geometry Optimization"
+    b97mv_def2_QZVPPD_SMD_Frequency_Analysis = "b97mv/def2-QZVPPD/SMD Frequency Analysis"
+    b97mv_def2_QZVPPD_SMD_Frequency_Flattening_Geometry_Optimization = "b97mv/def2-QZVPPD/SMD Frequency Flattening Geometry Optimization"
+    b97mv_def2_QZVPPD_SMD_Transition_State_Geometry_Optimization = "b97mv/def2-QZVPPD/SMD Transition State Geometry Optimization"
+    b97mv_def2_QZVPPD_SMD_Frequency_Flattening_Transition_State_Geometry_Optimization = "b97mv/def2-QZVPPD/SMD Frequency Flattening Transition State Geometry Optimization"
+    b97mv_def2_QZVPPD_SMD_Unknown = "b97mv/def2-QZVPPD/SMD Unknown"
     B3LYP_6_31g_d_VACUUM_Single_Point = "B3LYP/6-31g*/VACUUM Single Point"
     B3LYP_6_31g_d_VACUUM_Force = "B3LYP/6-31g*/VACUUM Force"
-    B3LYP_6_31g_d_VACUUM_Geometry_Optimization = (
-        "B3LYP/6-31g*/VACUUM Geometry Optimization"
-    )
+    B3LYP_6_31g_d_VACUUM_Geometry_Optimization = "B3LYP/6-31g*/VACUUM Geometry Optimization"
     B3LYP_6_31g_d_VACUUM_Frequency_Analysis = "B3LYP/6-31g*/VACUUM Frequency Analysis"
-    B3LYP_6_31g_d_VACUUM_Frequency_Flattening_Geometry_Optimization = (
-        "B3LYP/6-31g*/VACUUM Frequency Flattening Geometry Optimization"
-    )
-    B3LYP_6_31g_d_VACUUM_Transition_State_Geometry_Optimization = (
-        "B3LYP/6-31g*/VACUUM Transition State Geometry Optimization"
-    )
+    B3LYP_6_31g_d_VACUUM_Frequency_Flattening_Geometry_Optimization = "B3LYP/6-31g*/VACUUM Frequency Flattening Geometry Optimization"
+    B3LYP_6_31g_d_VACUUM_Transition_State_Geometry_Optimization = "B3LYP/6-31g*/VACUUM Transition State Geometry Optimization"
     B3LYP_6_31g_d_VACUUM_Frequency_Flattening_Transition_State_Geometry_Optimization = "B3LYP/6-31g*/VACUUM Frequency Flattening Transition State Geometry Optimization"
     B3LYP_6_31g_d_VACUUM_Unknown = "B3LYP/6-31g*/VACUUM Unknown"
     B3LYP_6_31g_d_PCM_Single_Point = "B3LYP/6-31g*/PCM Single Point"
     B3LYP_6_31g_d_PCM_Force = "B3LYP/6-31g*/PCM Force"
     B3LYP_6_31g_d_PCM_Geometry_Optimization = "B3LYP/6-31g*/PCM Geometry Optimization"
     B3LYP_6_31g_d_PCM_Frequency_Analysis = "B3LYP/6-31g*/PCM Frequency Analysis"
-    B3LYP_6_31g_d_PCM_Frequency_Flattening_Geometry_Optimization = (
-        "B3LYP/6-31g*/PCM Frequency Flattening Geometry Optimization"
-    )
-    B3LYP_6_31g_d_PCM_Transition_State_Geometry_Optimization = (
-        "B3LYP/6-31g*/PCM Transition State Geometry Optimization"
-    )
-    B3LYP_6_31g_d_PCM_Frequency_Flattening_Transition_State_Geometry_Optimization = (
-        "B3LYP/6-31g*/PCM Frequency Flattening Transition State Geometry Optimization"
-    )
+    B3LYP_6_31g_d_PCM_Frequency_Flattening_Geometry_Optimization = "B3LYP/6-31g*/PCM Frequency Flattening Geometry Optimization"
+    B3LYP_6_31g_d_PCM_Transition_State_Geometry_Optimization = "B3LYP/6-31g*/PCM Transition State Geometry Optimization"
+    B3LYP_6_31g_d_PCM_Frequency_Flattening_Transition_State_Geometry_Optimization = "B3LYP/6-31g*/PCM Frequency Flattening Transition State Geometry Optimization"
     B3LYP_6_31g_d_PCM_Unknown = "B3LYP/6-31g*/PCM Unknown"
     B3LYP_6_31g_d_SMD_Single_Point = "B3LYP/6-31g*/SMD Single Point"
     B3LYP_6_31g_d_SMD_Force = "B3LYP/6-31g*/SMD Force"
     B3LYP_6_31g_d_SMD_Geometry_Optimization = "B3LYP/6-31g*/SMD Geometry Optimization"
     B3LYP_6_31g_d_SMD_Frequency_Analysis = "B3LYP/6-31g*/SMD Frequency Analysis"
-    B3LYP_6_31g_d_SMD_Frequency_Flattening_Geometry_Optimization = (
-        "B3LYP/6-31g*/SMD Frequency Flattening Geometry Optimization"
-    )
-    B3LYP_6_31g_d_SMD_Transition_State_Geometry_Optimization = (
-        "B3LYP/6-31g*/SMD Transition State Geometry Optimization"
-    )
-    B3LYP_6_31g_d_SMD_Frequency_Flattening_Transition_State_Geometry_Optimization = (
-        "B3LYP/6-31g*/SMD Frequency Flattening Transition State Geometry Optimization"
-    )
+    B3LYP_6_31g_d_SMD_Frequency_Flattening_Geometry_Optimization = "B3LYP/6-31g*/SMD Frequency Flattening Geometry Optimization"
+    B3LYP_6_31g_d_SMD_Transition_State_Geometry_Optimization = "B3LYP/6-31g*/SMD Transition State Geometry Optimization"
+    B3LYP_6_31g_d_SMD_Frequency_Flattening_Transition_State_Geometry_Optimization = "B3LYP/6-31g*/SMD Frequency Flattening Transition State Geometry Optimization"
     B3LYP_6_31g_d_SMD_Unknown = "B3LYP/6-31g*/SMD Unknown"
     B3LYP_def2_SVPD_VACUUM_Single_Point = "B3LYP/def2-SVPD/VACUUM Single Point"
     B3LYP_def2_SVPD_VACUUM_Force = "B3LYP/def2-SVPD/VACUUM Force"
-    B3LYP_def2_SVPD_VACUUM_Geometry_Optimization = (
-        "B3LYP/def2-SVPD/VACUUM Geometry Optimization"
-    )
-    B3LYP_def2_SVPD_VACUUM_Frequency_Analysis = (
-        "B3LYP/def2-SVPD/VACUUM Frequency Analysis"
-    )
-    B3LYP_def2_SVPD_VACUUM_Frequency_Flattening_Geometry_Optimization = (
-        "B3LYP/def2-SVPD/VACUUM Frequency Flattening Geometry Optimization"
-    )
-    B3LYP_def2_SVPD_VACUUM_Transition_State_Geometry_Optimization = (
-        "B3LYP/def2-SVPD/VACUUM Transition State Geometry Optimization"
-    )
+    B3LYP_def2_SVPD_VACUUM_Geometry_Optimization = "B3LYP/def2-SVPD/VACUUM Geometry Optimization"
+    B3LYP_def2_SVPD_VACUUM_Frequency_Analysis = "B3LYP/def2-SVPD/VACUUM Frequency Analysis"
+    B3LYP_def2_SVPD_VACUUM_Frequency_Flattening_Geometry_Optimization = "B3LYP/def2-SVPD/VACUUM Frequency Flattening Geometry Optimization"
+    B3LYP_def2_SVPD_VACUUM_Transition_State_Geometry_Optimization = "B3LYP/def2-SVPD/VACUUM Transition State Geometry Optimization"
     B3LYP_def2_SVPD_VACUUM_Frequency_Flattening_Transition_State_Geometry_Optimization = "B3LYP/def2-SVPD/VACUUM Frequency Flattening Transition State Geometry Optimization"
     B3LYP_def2_SVPD_VACUUM_Unknown = "B3LYP/def2-SVPD/VACUUM Unknown"
     B3LYP_def2_SVPD_PCM_Single_Point = "B3LYP/def2-SVPD/PCM Single Point"
     B3LYP_def2_SVPD_PCM_Force = "B3LYP/def2-SVPD/PCM Force"
-    B3LYP_def2_SVPD_PCM_Geometry_Optimization = (
-        "B3LYP/def2-SVPD/PCM Geometry Optimization"
-    )
+    B3LYP_def2_SVPD_PCM_Geometry_Optimization = "B3LYP/def2-SVPD/PCM Geometry Optimization"
     B3LYP_def2_SVPD_PCM_Frequency_Analysis = "B3LYP/def2-SVPD/PCM Frequency Analysis"
-    B3LYP_def2_SVPD_PCM_Frequency_Flattening_Geometry_Optimization = (
-        "B3LYP/def2-SVPD/PCM Frequency Flattening Geometry Optimization"
-    )
-    B3LYP_def2_SVPD_PCM_Transition_State_Geometry_Optimization = (
-        "B3LYP/def2-SVPD/PCM Transition State Geometry Optimization"
-    )
+    B3LYP_def2_SVPD_PCM_Frequency_Flattening_Geometry_Optimization = "B3LYP/def2-SVPD/PCM Frequency Flattening Geometry Optimization"
+    B3LYP_def2_SVPD_PCM_Transition_State_Geometry_Optimization = "B3LYP/def2-SVPD/PCM Transition State Geometry Optimization"
     B3LYP_def2_SVPD_PCM_Frequency_Flattening_Transition_State_Geometry_Optimization = "B3LYP/def2-SVPD/PCM Frequency Flattening Transition State Geometry Optimization"
     B3LYP_def2_SVPD_PCM_Unknown = "B3LYP/def2-SVPD/PCM Unknown"
     B3LYP_def2_SVPD_SMD_Single_Point = "B3LYP/def2-SVPD/SMD Single Point"
     B3LYP_def2_SVPD_SMD_Force = "B3LYP/def2-SVPD/SMD Force"
-    B3LYP_def2_SVPD_SMD_Geometry_Optimization = (
-        "B3LYP/def2-SVPD/SMD Geometry Optimization"
-    )
+    B3LYP_def2_SVPD_SMD_Geometry_Optimization = "B3LYP/def2-SVPD/SMD Geometry Optimization"
     B3LYP_def2_SVPD_SMD_Frequency_Analysis = "B3LYP/def2-SVPD/SMD Frequency Analysis"
-    B3LYP_def2_SVPD_SMD_Frequency_Flattening_Geometry_Optimization = (
-        "B3LYP/def2-SVPD/SMD Frequency Flattening Geometry Optimization"
-    )
-    B3LYP_def2_SVPD_SMD_Transition_State_Geometry_Optimization = (
-        "B3LYP/def2-SVPD/SMD Transition State Geometry Optimization"
-    )
+    B3LYP_def2_SVPD_SMD_Frequency_Flattening_Geometry_Optimization = "B3LYP/def2-SVPD/SMD Frequency Flattening Geometry Optimization"
+    B3LYP_def2_SVPD_SMD_Transition_State_Geometry_Optimization = "B3LYP/def2-SVPD/SMD Transition State Geometry Optimization"
     B3LYP_def2_SVPD_SMD_Frequency_Flattening_Transition_State_Geometry_Optimization = "B3LYP/def2-SVPD/SMD Frequency Flattening Transition State Geometry Optimization"
     B3LYP_def2_SVPD_SMD_Unknown = "B3LYP/def2-SVPD/SMD Unknown"
     B3LYP_def2_TZVP_VACUUM_Single_Point = "B3LYP/def2-TZVP/VACUUM Single Point"
     B3LYP_def2_TZVP_VACUUM_Force = "B3LYP/def2-TZVP/VACUUM Force"
-    B3LYP_def2_TZVP_VACUUM_Geometry_Optimization = (
-        "B3LYP/def2-TZVP/VACUUM Geometry Optimization"
-    )
-    B3LYP_def2_TZVP_VACUUM_Frequency_Analysis = (
-        "B3LYP/def2-TZVP/VACUUM Frequency Analysis"
-    )
-    B3LYP_def2_TZVP_VACUUM_Frequency_Flattening_Geometry_Optimization = (
-        "B3LYP/def2-TZVP/VACUUM Frequency Flattening Geometry Optimization"
-    )
-    B3LYP_def2_TZVP_VACUUM_Transition_State_Geometry_Optimization = (
-        "B3LYP/def2-TZVP/VACUUM Transition State Geometry Optimization"
-    )
+    B3LYP_def2_TZVP_VACUUM_Geometry_Optimization = "B3LYP/def2-TZVP/VACUUM Geometry Optimization"
+    B3LYP_def2_TZVP_VACUUM_Frequency_Analysis = "B3LYP/def2-TZVP/VACUUM Frequency Analysis"
+    B3LYP_def2_TZVP_VACUUM_Frequency_Flattening_Geometry_Optimization = "B3LYP/def2-TZVP/VACUUM Frequency Flattening Geometry Optimization"
+    B3LYP_def2_TZVP_VACUUM_Transition_State_Geometry_Optimization = "B3LYP/def2-TZVP/VACUUM Transition State Geometry Optimization"
     B3LYP_def2_TZVP_VACUUM_Frequency_Flattening_Transition_State_Geometry_Optimization = "B3LYP/def2-TZVP/VACUUM Frequency Flattening Transition State Geometry Optimization"
     B3LYP_def2_TZVP_VACUUM_Unknown = "B3LYP/def2-TZVP/VACUUM Unknown"
     B3LYP_def2_TZVP_PCM_Single_Point = "B3LYP/def2-TZVP/PCM Single Point"
     B3LYP_def2_TZVP_PCM_Force = "B3LYP/def2-TZVP/PCM Force"
-    B3LYP_def2_TZVP_PCM_Geometry_Optimization = (
-        "B3LYP/def2-TZVP/PCM Geometry Optimization"
-    )
+    B3LYP_def2_TZVP_PCM_Geometry_Optimization = "B3LYP/def2-TZVP/PCM Geometry Optimization"
     B3LYP_def2_TZVP_PCM_Frequency_Analysis = "B3LYP/def2-TZVP/PCM Frequency Analysis"
-    B3LYP_def2_TZVP_PCM_Frequency_Flattening_Geometry_Optimization = (
-        "B3LYP/def2-TZVP/PCM Frequency Flattening Geometry Optimization"
-    )
-    B3LYP_def2_TZVP_PCM_Transition_State_Geometry_Optimization = (
-        "B3LYP/def2-TZVP/PCM Transition State Geometry Optimization"
-    )
+    B3LYP_def2_TZVP_PCM_Frequency_Flattening_Geometry_Optimization = "B3LYP/def2-TZVP/PCM Frequency Flattening Geometry Optimization"
+    B3LYP_def2_TZVP_PCM_Transition_State_Geometry_Optimization = "B3LYP/def2-TZVP/PCM Transition State Geometry Optimization"
     B3LYP_def2_TZVP_PCM_Frequency_Flattening_Transition_State_Geometry_Optimization = "B3LYP/def2-TZVP/PCM Frequency Flattening Transition State Geometry Optimization"
     B3LYP_def2_TZVP_PCM_Unknown = "B3LYP/def2-TZVP/PCM Unknown"
     B3LYP_def2_TZVP_SMD_Single_Point = "B3LYP/def2-TZVP/SMD Single Point"
     B3LYP_def2_TZVP_SMD_Force = "B3LYP/def2-TZVP/SMD Force"
-    B3LYP_def2_TZVP_SMD_Geometry_Optimization = (
-        "B3LYP/def2-TZVP/SMD Geometry Optimization"
-    )
+    B3LYP_def2_TZVP_SMD_Geometry_Optimization = "B3LYP/def2-TZVP/SMD Geometry Optimization"
     B3LYP_def2_TZVP_SMD_Frequency_Analysis = "B3LYP/def2-TZVP/SMD Frequency Analysis"
-    B3LYP_def2_TZVP_SMD_Frequency_Flattening_Geometry_Optimization = (
-        "B3LYP/def2-TZVP/SMD Frequency Flattening Geometry Optimization"
-    )
-    B3LYP_def2_TZVP_SMD_Transition_State_Geometry_Optimization = (
-        "B3LYP/def2-TZVP/SMD Transition State Geometry Optimization"
-    )
+    B3LYP_def2_TZVP_SMD_Frequency_Flattening_Geometry_Optimization = "B3LYP/def2-TZVP/SMD Frequency Flattening Geometry Optimization"
+    B3LYP_def2_TZVP_SMD_Transition_State_Geometry_Optimization = "B3LYP/def2-TZVP/SMD Transition State Geometry Optimization"
     B3LYP_def2_TZVP_SMD_Frequency_Flattening_Transition_State_Geometry_Optimization = "B3LYP/def2-TZVP/SMD Frequency Flattening Transition State Geometry Optimization"
     B3LYP_def2_TZVP_SMD_Unknown = "B3LYP/def2-TZVP/SMD Unknown"
     B3LYP_def2_TZVPD_VACUUM_Single_Point = "B3LYP/def2-TZVPD/VACUUM Single Point"
     B3LYP_def2_TZVPD_VACUUM_Force = "B3LYP/def2-TZVPD/VACUUM Force"
-    B3LYP_def2_TZVPD_VACUUM_Geometry_Optimization = (
-        "B3LYP/def2-TZVPD/VACUUM Geometry Optimization"
-    )
-    B3LYP_def2_TZVPD_VACUUM_Frequency_Analysis = (
-        "B3LYP/def2-TZVPD/VACUUM Frequency Analysis"
-    )
-    B3LYP_def2_TZVPD_VACUUM_Frequency_Flattening_Geometry_Optimization = (
-        "B3LYP/def2-TZVPD/VACUUM Frequency Flattening Geometry Optimization"
-    )
-    B3LYP_def2_TZVPD_VACUUM_Transition_State_Geometry_Optimization = (
-        "B3LYP/def2-TZVPD/VACUUM Transition State Geometry Optimization"
-    )
+    B3LYP_def2_TZVPD_VACUUM_Geometry_Optimization = "B3LYP/def2-TZVPD/VACUUM Geometry Optimization"
+    B3LYP_def2_TZVPD_VACUUM_Frequency_Analysis = "B3LYP/def2-TZVPD/VACUUM Frequency Analysis"
+    B3LYP_def2_TZVPD_VACUUM_Frequency_Flattening_Geometry_Optimization = "B3LYP/def2-TZVPD/VACUUM Frequency Flattening Geometry Optimization"
+    B3LYP_def2_TZVPD_VACUUM_Transition_State_Geometry_Optimization = "B3LYP/def2-TZVPD/VACUUM Transition State Geometry Optimization"
     B3LYP_def2_TZVPD_VACUUM_Frequency_Flattening_Transition_State_Geometry_Optimization = "B3LYP/def2-TZVPD/VACUUM Frequency Flattening Transition State Geometry Optimization"
     B3LYP_def2_TZVPD_VACUUM_Unknown = "B3LYP/def2-TZVPD/VACUUM Unknown"
     B3LYP_def2_TZVPD_PCM_Single_Point = "B3LYP/def2-TZVPD/PCM Single Point"
     B3LYP_def2_TZVPD_PCM_Force = "B3LYP/def2-TZVPD/PCM Force"
-    B3LYP_def2_TZVPD_PCM_Geometry_Optimization = (
-        "B3LYP/def2-TZVPD/PCM Geometry Optimization"
-    )
+    B3LYP_def2_TZVPD_PCM_Geometry_Optimization = "B3LYP/def2-TZVPD/PCM Geometry Optimization"
     B3LYP_def2_TZVPD_PCM_Frequency_Analysis = "B3LYP/def2-TZVPD/PCM Frequency Analysis"
-    B3LYP_def2_TZVPD_PCM_Frequency_Flattening_Geometry_Optimization = (
-        "B3LYP/def2-TZVPD/PCM Frequency Flattening Geometry Optimization"
-    )
-    B3LYP_def2_TZVPD_PCM_Transition_State_Geometry_Optimization = (
-        "B3LYP/def2-TZVPD/PCM Transition State Geometry Optimization"
-    )
+    B3LYP_def2_TZVPD_PCM_Frequency_Flattening_Geometry_Optimization = "B3LYP/def2-TZVPD/PCM Frequency Flattening Geometry Optimization"
+    B3LYP_def2_TZVPD_PCM_Transition_State_Geometry_Optimization = "B3LYP/def2-TZVPD/PCM Transition State Geometry Optimization"
     B3LYP_def2_TZVPD_PCM_Frequency_Flattening_Transition_State_Geometry_Optimization = "B3LYP/def2-TZVPD/PCM Frequency Flattening Transition State Geometry Optimization"
     B3LYP_def2_TZVPD_PCM_Unknown = "B3LYP/def2-TZVPD/PCM Unknown"
     B3LYP_def2_TZVPD_SMD_Single_Point = "B3LYP/def2-TZVPD/SMD Single Point"
     B3LYP_def2_TZVPD_SMD_Force = "B3LYP/def2-TZVPD/SMD Force"
-    B3LYP_def2_TZVPD_SMD_Geometry_Optimization = (
-        "B3LYP/def2-TZVPD/SMD Geometry Optimization"
-    )
+    B3LYP_def2_TZVPD_SMD_Geometry_Optimization = "B3LYP/def2-TZVPD/SMD Geometry Optimization"
     B3LYP_def2_TZVPD_SMD_Frequency_Analysis = "B3LYP/def2-TZVPD/SMD Frequency Analysis"
-    B3LYP_def2_TZVPD_SMD_Frequency_Flattening_Geometry_Optimization = (
-        "B3LYP/def2-TZVPD/SMD Frequency Flattening Geometry Optimization"
-    )
-    B3LYP_def2_TZVPD_SMD_Transition_State_Geometry_Optimization = (
-        "B3LYP/def2-TZVPD/SMD Transition State Geometry Optimization"
-    )
+    B3LYP_def2_TZVPD_SMD_Frequency_Flattening_Geometry_Optimization = "B3LYP/def2-TZVPD/SMD Frequency Flattening Geometry Optimization"
+    B3LYP_def2_TZVPD_SMD_Transition_State_Geometry_Optimization = "B3LYP/def2-TZVPD/SMD Transition State Geometry Optimization"
     B3LYP_def2_TZVPD_SMD_Frequency_Flattening_Transition_State_Geometry_Optimization = "B3LYP/def2-TZVPD/SMD Frequency Flattening Transition State Geometry Optimization"
     B3LYP_def2_TZVPD_SMD_Unknown = "B3LYP/def2-TZVPD/SMD Unknown"
     B3LYP_def2_TZVPP_VACUUM_Single_Point = "B3LYP/def2-TZVPP/VACUUM Single Point"
     B3LYP_def2_TZVPP_VACUUM_Force = "B3LYP/def2-TZVPP/VACUUM Force"
-    B3LYP_def2_TZVPP_VACUUM_Geometry_Optimization = (
-        "B3LYP/def2-TZVPP/VACUUM Geometry Optimization"
-    )
-    B3LYP_def2_TZVPP_VACUUM_Frequency_Analysis = (
-        "B3LYP/def2-TZVPP/VACUUM Frequency Analysis"
-    )
-    B3LYP_def2_TZVPP_VACUUM_Frequency_Flattening_Geometry_Optimization = (
-        "B3LYP/def2-TZVPP/VACUUM Frequency Flattening Geometry Optimization"
-    )
-    B3LYP_def2_TZVPP_VACUUM_Transition_State_Geometry_Optimization = (
-        "B3LYP/def2-TZVPP/VACUUM Transition State Geometry Optimization"
-    )
+    B3LYP_def2_TZVPP_VACUUM_Geometry_Optimization = "B3LYP/def2-TZVPP/VACUUM Geometry Optimization"
+    B3LYP_def2_TZVPP_VACUUM_Frequency_Analysis = "B3LYP/def2-TZVPP/VACUUM Frequency Analysis"
+    B3LYP_def2_TZVPP_VACUUM_Frequency_Flattening_Geometry_Optimization = "B3LYP/def2-TZVPP/VACUUM Frequency Flattening Geometry Optimization"
+    B3LYP_def2_TZVPP_VACUUM_Transition_State_Geometry_Optimization = "B3LYP/def2-TZVPP/VACUUM Transition State Geometry Optimization"
     B3LYP_def2_TZVPP_VACUUM_Frequency_Flattening_Transition_State_Geometry_Optimization = "B3LYP/def2-TZVPP/VACUUM Frequency Flattening Transition State Geometry Optimization"
     B3LYP_def2_TZVPP_VACUUM_Unknown = "B3LYP/def2-TZVPP/VACUUM Unknown"
     B3LYP_def2_TZVPP_PCM_Single_Point = "B3LYP/def2-TZVPP/PCM Single Point"
     B3LYP_def2_TZVPP_PCM_Force = "B3LYP/def2-TZVPP/PCM Force"
-    B3LYP_def2_TZVPP_PCM_Geometry_Optimization = (
-        "B3LYP/def2-TZVPP/PCM Geometry Optimization"
-    )
+    B3LYP_def2_TZVPP_PCM_Geometry_Optimization = "B3LYP/def2-TZVPP/PCM Geometry Optimization"
     B3LYP_def2_TZVPP_PCM_Frequency_Analysis = "B3LYP/def2-TZVPP/PCM Frequency Analysis"
-    B3LYP_def2_TZVPP_PCM_Frequency_Flattening_Geometry_Optimization = (
-        "B3LYP/def2-TZVPP/PCM Frequency Flattening Geometry Optimization"
-    )
-    B3LYP_def2_TZVPP_PCM_Transition_State_Geometry_Optimization = (
-        "B3LYP/def2-TZVPP/PCM Transition State Geometry Optimization"
-    )
+    B3LYP_def2_TZVPP_PCM_Frequency_Flattening_Geometry_Optimization = "B3LYP/def2-TZVPP/PCM Frequency Flattening Geometry Optimization"
+    B3LYP_def2_TZVPP_PCM_Transition_State_Geometry_Optimization = "B3LYP/def2-TZVPP/PCM Transition State Geometry Optimization"
     B3LYP_def2_TZVPP_PCM_Frequency_Flattening_Transition_State_Geometry_Optimization = "B3LYP/def2-TZVPP/PCM Frequency Flattening Transition State Geometry Optimization"
     B3LYP_def2_TZVPP_PCM_Unknown = "B3LYP/def2-TZVPP/PCM Unknown"
     B3LYP_def2_TZVPP_SMD_Single_Point = "B3LYP/def2-TZVPP/SMD Single Point"
     B3LYP_def2_TZVPP_SMD_Force = "B3LYP/def2-TZVPP/SMD Force"
-    B3LYP_def2_TZVPP_SMD_Geometry_Optimization = (
-        "B3LYP/def2-TZVPP/SMD Geometry Optimization"
-    )
+    B3LYP_def2_TZVPP_SMD_Geometry_Optimization = "B3LYP/def2-TZVPP/SMD Geometry Optimization"
     B3LYP_def2_TZVPP_SMD_Frequency_Analysis = "B3LYP/def2-TZVPP/SMD Frequency Analysis"
-    B3LYP_def2_TZVPP_SMD_Frequency_Flattening_Geometry_Optimization = (
-        "B3LYP/def2-TZVPP/SMD Frequency Flattening Geometry Optimization"
-    )
-    B3LYP_def2_TZVPP_SMD_Transition_State_Geometry_Optimization = (
-        "B3LYP/def2-TZVPP/SMD Transition State Geometry Optimization"
-    )
+    B3LYP_def2_TZVPP_SMD_Frequency_Flattening_Geometry_Optimization = "B3LYP/def2-TZVPP/SMD Frequency Flattening Geometry Optimization"
+    B3LYP_def2_TZVPP_SMD_Transition_State_Geometry_Optimization = "B3LYP/def2-TZVPP/SMD Transition State Geometry Optimization"
     B3LYP_def2_TZVPP_SMD_Frequency_Flattening_Transition_State_Geometry_Optimization = "B3LYP/def2-TZVPP/SMD Frequency Flattening Transition State Geometry Optimization"
     B3LYP_def2_TZVPP_SMD_Unknown = "B3LYP/def2-TZVPP/SMD Unknown"
     B3LYP_def2_TZVPPD_VACUUM_Single_Point = "B3LYP/def2-TZVPPD/VACUUM Single Point"
     B3LYP_def2_TZVPPD_VACUUM_Force = "B3LYP/def2-TZVPPD/VACUUM Force"
-    B3LYP_def2_TZVPPD_VACUUM_Geometry_Optimization = (
-        "B3LYP/def2-TZVPPD/VACUUM Geometry Optimization"
-    )
-    B3LYP_def2_TZVPPD_VACUUM_Frequency_Analysis = (
-        "B3LYP/def2-TZVPPD/VACUUM Frequency Analysis"
-    )
-    B3LYP_def2_TZVPPD_VACUUM_Frequency_Flattening_Geometry_Optimization = (
-        "B3LYP/def2-TZVPPD/VACUUM Frequency Flattening Geometry Optimization"
-    )
-    B3LYP_def2_TZVPPD_VACUUM_Transition_State_Geometry_Optimization = (
-        "B3LYP/def2-TZVPPD/VACUUM Transition State Geometry Optimization"
-    )
+    B3LYP_def2_TZVPPD_VACUUM_Geometry_Optimization = "B3LYP/def2-TZVPPD/VACUUM Geometry Optimization"
+    B3LYP_def2_TZVPPD_VACUUM_Frequency_Analysis = "B3LYP/def2-TZVPPD/VACUUM Frequency Analysis"
+    B3LYP_def2_TZVPPD_VACUUM_Frequency_Flattening_Geometry_Optimization = "B3LYP/def2-TZVPPD/VACUUM Frequency Flattening Geometry Optimization"
+    B3LYP_def2_TZVPPD_VACUUM_Transition_State_Geometry_Optimization = "B3LYP/def2-TZVPPD/VACUUM Transition State Geometry Optimization"
     B3LYP_def2_TZVPPD_VACUUM_Frequency_Flattening_Transition_State_Geometry_Optimization = "B3LYP/def2-TZVPPD/VACUUM Frequency Flattening Transition State Geometry Optimization"
     B3LYP_def2_TZVPPD_VACUUM_Unknown = "B3LYP/def2-TZVPPD/VACUUM Unknown"
     B3LYP_def2_TZVPPD_PCM_Single_Point = "B3LYP/def2-TZVPPD/PCM Single Point"
     B3LYP_def2_TZVPPD_PCM_Force = "B3LYP/def2-TZVPPD/PCM Force"
-    B3LYP_def2_TZVPPD_PCM_Geometry_Optimization = (
-        "B3LYP/def2-TZVPPD/PCM Geometry Optimization"
-    )
-    B3LYP_def2_TZVPPD_PCM_Frequency_Analysis = (
-        "B3LYP/def2-TZVPPD/PCM Frequency Analysis"
-    )
-    B3LYP_def2_TZVPPD_PCM_Frequency_Flattening_Geometry_Optimization = (
-        "B3LYP/def2-TZVPPD/PCM Frequency Flattening Geometry Optimization"
-    )
-    B3LYP_def2_TZVPPD_PCM_Transition_State_Geometry_Optimization = (
-        "B3LYP/def2-TZVPPD/PCM Transition State Geometry Optimization"
-    )
+    B3LYP_def2_TZVPPD_PCM_Geometry_Optimization = "B3LYP/def2-TZVPPD/PCM Geometry Optimization"
+    B3LYP_def2_TZVPPD_PCM_Frequency_Analysis = "B3LYP/def2-TZVPPD/PCM Frequency Analysis"
+    B3LYP_def2_TZVPPD_PCM_Frequency_Flattening_Geometry_Optimization = "B3LYP/def2-TZVPPD/PCM Frequency Flattening Geometry Optimization"
+    B3LYP_def2_TZVPPD_PCM_Transition_State_Geometry_Optimization = "B3LYP/def2-TZVPPD/PCM Transition State Geometry Optimization"
     B3LYP_def2_TZVPPD_PCM_Frequency_Flattening_Transition_State_Geometry_Optimization = "B3LYP/def2-TZVPPD/PCM Frequency Flattening Transition State Geometry Optimization"
     B3LYP_def2_TZVPPD_PCM_Unknown = "B3LYP/def2-TZVPPD/PCM Unknown"
     B3LYP_def2_TZVPPD_SMD_Single_Point = "B3LYP/def2-TZVPPD/SMD Single Point"
     B3LYP_def2_TZVPPD_SMD_Force = "B3LYP/def2-TZVPPD/SMD Force"
-    B3LYP_def2_TZVPPD_SMD_Geometry_Optimization = (
-        "B3LYP/def2-TZVPPD/SMD Geometry Optimization"
-    )
-    B3LYP_def2_TZVPPD_SMD_Frequency_Analysis = (
-        "B3LYP/def2-TZVPPD/SMD Frequency Analysis"
-    )
-    B3LYP_def2_TZVPPD_SMD_Frequency_Flattening_Geometry_Optimization = (
-        "B3LYP/def2-TZVPPD/SMD Frequency Flattening Geometry Optimization"
-    )
-    B3LYP_def2_TZVPPD_SMD_Transition_State_Geometry_Optimization = (
-        "B3LYP/def2-TZVPPD/SMD Transition State Geometry Optimization"
-    )
+    B3LYP_def2_TZVPPD_SMD_Geometry_Optimization = "B3LYP/def2-TZVPPD/SMD Geometry Optimization"
+    B3LYP_def2_TZVPPD_SMD_Frequency_Analysis = "B3LYP/def2-TZVPPD/SMD Frequency Analysis"
+    B3LYP_def2_TZVPPD_SMD_Frequency_Flattening_Geometry_Optimization = "B3LYP/def2-TZVPPD/SMD Frequency Flattening Geometry Optimization"
+    B3LYP_def2_TZVPPD_SMD_Transition_State_Geometry_Optimization = "B3LYP/def2-TZVPPD/SMD Transition State Geometry Optimization"
     B3LYP_def2_TZVPPD_SMD_Frequency_Flattening_Transition_State_Geometry_Optimization = "B3LYP/def2-TZVPPD/SMD Frequency Flattening Transition State Geometry Optimization"
     B3LYP_def2_TZVPPD_SMD_Unknown = "B3LYP/def2-TZVPPD/SMD Unknown"
     B3LYP_def2_QZVPD_VACUUM_Single_Point = "B3LYP/def2-QZVPD/VACUUM Single Point"
     B3LYP_def2_QZVPD_VACUUM_Force = "B3LYP/def2-QZVPD/VACUUM Force"
-    B3LYP_def2_QZVPD_VACUUM_Geometry_Optimization = (
-        "B3LYP/def2-QZVPD/VACUUM Geometry Optimization"
-    )
-    B3LYP_def2_QZVPD_VACUUM_Frequency_Analysis = (
-        "B3LYP/def2-QZVPD/VACUUM Frequency Analysis"
-    )
-    B3LYP_def2_QZVPD_VACUUM_Frequency_Flattening_Geometry_Optimization = (
-        "B3LYP/def2-QZVPD/VACUUM Frequency Flattening Geometry Optimization"
-    )
-    B3LYP_def2_QZVPD_VACUUM_Transition_State_Geometry_Optimization = (
-        "B3LYP/def2-QZVPD/VACUUM Transition State Geometry Optimization"
-    )
+    B3LYP_def2_QZVPD_VACUUM_Geometry_Optimization = "B3LYP/def2-QZVPD/VACUUM Geometry Optimization"
+    B3LYP_def2_QZVPD_VACUUM_Frequency_Analysis = "B3LYP/def2-QZVPD/VACUUM Frequency Analysis"
+    B3LYP_def2_QZVPD_VACUUM_Frequency_Flattening_Geometry_Optimization = "B3LYP/def2-QZVPD/VACUUM Frequency Flattening Geometry Optimization"
+    B3LYP_def2_QZVPD_VACUUM_Transition_State_Geometry_Optimization = "B3LYP/def2-QZVPD/VACUUM Transition State Geometry Optimization"
     B3LYP_def2_QZVPD_VACUUM_Frequency_Flattening_Transition_State_Geometry_Optimization = "B3LYP/def2-QZVPD/VACUUM Frequency Flattening Transition State Geometry Optimization"
     B3LYP_def2_QZVPD_VACUUM_Unknown = "B3LYP/def2-QZVPD/VACUUM Unknown"
     B3LYP_def2_QZVPD_PCM_Single_Point = "B3LYP/def2-QZVPD/PCM Single Point"
     B3LYP_def2_QZVPD_PCM_Force = "B3LYP/def2-QZVPD/PCM Force"
-    B3LYP_def2_QZVPD_PCM_Geometry_Optimization = (
-        "B3LYP/def2-QZVPD/PCM Geometry Optimization"
-    )
+    B3LYP_def2_QZVPD_PCM_Geometry_Optimization = "B3LYP/def2-QZVPD/PCM Geometry Optimization"
     B3LYP_def2_QZVPD_PCM_Frequency_Analysis = "B3LYP/def2-QZVPD/PCM Frequency Analysis"
-    B3LYP_def2_QZVPD_PCM_Frequency_Flattening_Geometry_Optimization = (
-        "B3LYP/def2-QZVPD/PCM Frequency Flattening Geometry Optimization"
-    )
-    B3LYP_def2_QZVPD_PCM_Transition_State_Geometry_Optimization = (
-        "B3LYP/def2-QZVPD/PCM Transition State Geometry Optimization"
-    )
+    B3LYP_def2_QZVPD_PCM_Frequency_Flattening_Geometry_Optimization = "B3LYP/def2-QZVPD/PCM Frequency Flattening Geometry Optimization"
+    B3LYP_def2_QZVPD_PCM_Transition_State_Geometry_Optimization = "B3LYP/def2-QZVPD/PCM Transition State Geometry Optimization"
     B3LYP_def2_QZVPD_PCM_Frequency_Flattening_Transition_State_Geometry_Optimization = "B3LYP/def2-QZVPD/PCM Frequency Flattening Transition State Geometry Optimization"
     B3LYP_def2_QZVPD_PCM_Unknown = "B3LYP/def2-QZVPD/PCM Unknown"
     B3LYP_def2_QZVPD_SMD_Single_Point = "B3LYP/def2-QZVPD/SMD Single Point"
     B3LYP_def2_QZVPD_SMD_Force = "B3LYP/def2-QZVPD/SMD Force"
-    B3LYP_def2_QZVPD_SMD_Geometry_Optimization = (
-        "B3LYP/def2-QZVPD/SMD Geometry Optimization"
-    )
+    B3LYP_def2_QZVPD_SMD_Geometry_Optimization = "B3LYP/def2-QZVPD/SMD Geometry Optimization"
     B3LYP_def2_QZVPD_SMD_Frequency_Analysis = "B3LYP/def2-QZVPD/SMD Frequency Analysis"
-    B3LYP_def2_QZVPD_SMD_Frequency_Flattening_Geometry_Optimization = (
-        "B3LYP/def2-QZVPD/SMD Frequency Flattening Geometry Optimization"
-    )
-    B3LYP_def2_QZVPD_SMD_Transition_State_Geometry_Optimization = (
-        "B3LYP/def2-QZVPD/SMD Transition State Geometry Optimization"
-    )
+    B3LYP_def2_QZVPD_SMD_Frequency_Flattening_Geometry_Optimization = "B3LYP/def2-QZVPD/SMD Frequency Flattening Geometry Optimization"
+    B3LYP_def2_QZVPD_SMD_Transition_State_Geometry_Optimization = "B3LYP/def2-QZVPD/SMD Transition State Geometry Optimization"
     B3LYP_def2_QZVPD_SMD_Frequency_Flattening_Transition_State_Geometry_Optimization = "B3LYP/def2-QZVPD/SMD Frequency Flattening Transition State Geometry Optimization"
     B3LYP_def2_QZVPD_SMD_Unknown = "B3LYP/def2-QZVPD/SMD Unknown"
     B3LYP_def2_QZVPPD_VACUUM_Single_Point = "B3LYP/def2-QZVPPD/VACUUM Single Point"
     B3LYP_def2_QZVPPD_VACUUM_Force = "B3LYP/def2-QZVPPD/VACUUM Force"
-    B3LYP_def2_QZVPPD_VACUUM_Geometry_Optimization = (
-        "B3LYP/def2-QZVPPD/VACUUM Geometry Optimization"
-    )
-    B3LYP_def2_QZVPPD_VACUUM_Frequency_Analysis = (
-        "B3LYP/def2-QZVPPD/VACUUM Frequency Analysis"
-    )
-    B3LYP_def2_QZVPPD_VACUUM_Frequency_Flattening_Geometry_Optimization = (
-        "B3LYP/def2-QZVPPD/VACUUM Frequency Flattening Geometry Optimization"
-    )
-    B3LYP_def2_QZVPPD_VACUUM_Transition_State_Geometry_Optimization = (
-        "B3LYP/def2-QZVPPD/VACUUM Transition State Geometry Optimization"
-    )
+    B3LYP_def2_QZVPPD_VACUUM_Geometry_Optimization = "B3LYP/def2-QZVPPD/VACUUM Geometry Optimization"
+    B3LYP_def2_QZVPPD_VACUUM_Frequency_Analysis = "B3LYP/def2-QZVPPD/VACUUM Frequency Analysis"
+    B3LYP_def2_QZVPPD_VACUUM_Frequency_Flattening_Geometry_Optimization = "B3LYP/def2-QZVPPD/VACUUM Frequency Flattening Geometry Optimization"
+    B3LYP_def2_QZVPPD_VACUUM_Transition_State_Geometry_Optimization = "B3LYP/def2-QZVPPD/VACUUM Transition State Geometry Optimization"
     B3LYP_def2_QZVPPD_VACUUM_Frequency_Flattening_Transition_State_Geometry_Optimization = "B3LYP/def2-QZVPPD/VACUUM Frequency Flattening Transition State Geometry Optimization"
     B3LYP_def2_QZVPPD_VACUUM_Unknown = "B3LYP/def2-QZVPPD/VACUUM Unknown"
     B3LYP_def2_QZVPPD_PCM_Single_Point = "B3LYP/def2-QZVPPD/PCM Single Point"
     B3LYP_def2_QZVPPD_PCM_Force = "B3LYP/def2-QZVPPD/PCM Force"
-    B3LYP_def2_QZVPPD_PCM_Geometry_Optimization = (
-        "B3LYP/def2-QZVPPD/PCM Geometry Optimization"
-    )
-    B3LYP_def2_QZVPPD_PCM_Frequency_Analysis = (
-        "B3LYP/def2-QZVPPD/PCM Frequency Analysis"
-    )
-    B3LYP_def2_QZVPPD_PCM_Frequency_Flattening_Geometry_Optimization = (
-        "B3LYP/def2-QZVPPD/PCM Frequency Flattening Geometry Optimization"
-    )
-    B3LYP_def2_QZVPPD_PCM_Transition_State_Geometry_Optimization = (
-        "B3LYP/def2-QZVPPD/PCM Transition State Geometry Optimization"
-    )
+    B3LYP_def2_QZVPPD_PCM_Geometry_Optimization = "B3LYP/def2-QZVPPD/PCM Geometry Optimization"
+    B3LYP_def2_QZVPPD_PCM_Frequency_Analysis = "B3LYP/def2-QZVPPD/PCM Frequency Analysis"
+    B3LYP_def2_QZVPPD_PCM_Frequency_Flattening_Geometry_Optimization = "B3LYP/def2-QZVPPD/PCM Frequency Flattening Geometry Optimization"
+    B3LYP_def2_QZVPPD_PCM_Transition_State_Geometry_Optimization = "B3LYP/def2-QZVPPD/PCM Transition State Geometry Optimization"
     B3LYP_def2_QZVPPD_PCM_Frequency_Flattening_Transition_State_Geometry_Optimization = "B3LYP/def2-QZVPPD/PCM Frequency Flattening Transition State Geometry Optimization"
     B3LYP_def2_QZVPPD_PCM_Unknown = "B3LYP/def2-QZVPPD/PCM Unknown"
     B3LYP_def2_QZVPPD_SMD_Single_Point = "B3LYP/def2-QZVPPD/SMD Single Point"
     B3LYP_def2_QZVPPD_SMD_Force = "B3LYP/def2-QZVPPD/SMD Force"
-    B3LYP_def2_QZVPPD_SMD_Geometry_Optimization = (
-        "B3LYP/def2-QZVPPD/SMD Geometry Optimization"
-    )
-    B3LYP_def2_QZVPPD_SMD_Frequency_Analysis = (
-        "B3LYP/def2-QZVPPD/SMD Frequency Analysis"
-    )
-    B3LYP_def2_QZVPPD_SMD_Frequency_Flattening_Geometry_Optimization = (
-        "B3LYP/def2-QZVPPD/SMD Frequency Flattening Geometry Optimization"
-    )
-    B3LYP_def2_QZVPPD_SMD_Transition_State_Geometry_Optimization = (
-        "B3LYP/def2-QZVPPD/SMD Transition State Geometry Optimization"
-    )
+    B3LYP_def2_QZVPPD_SMD_Geometry_Optimization = "B3LYP/def2-QZVPPD/SMD Geometry Optimization"
+    B3LYP_def2_QZVPPD_SMD_Frequency_Analysis = "B3LYP/def2-QZVPPD/SMD Frequency Analysis"
+    B3LYP_def2_QZVPPD_SMD_Frequency_Flattening_Geometry_Optimization = "B3LYP/def2-QZVPPD/SMD Frequency Flattening Geometry Optimization"
+    B3LYP_def2_QZVPPD_SMD_Transition_State_Geometry_Optimization = "B3LYP/def2-QZVPPD/SMD Transition State Geometry Optimization"
     B3LYP_def2_QZVPPD_SMD_Frequency_Flattening_Transition_State_Geometry_Optimization = "B3LYP/def2-QZVPPD/SMD Frequency Flattening Transition State Geometry Optimization"
     B3LYP_def2_QZVPPD_SMD_Unknown = "B3LYP/def2-QZVPPD/SMD Unknown"
     wB97X_D_6_31g_d_VACUUM_Single_Point = "wB97X-D/6-31g*/VACUUM Single Point"
     wB97X_D_6_31g_d_VACUUM_Force = "wB97X-D/6-31g*/VACUUM Force"
-    wB97X_D_6_31g_d_VACUUM_Geometry_Optimization = (
-        "wB97X-D/6-31g*/VACUUM Geometry Optimization"
-    )
-    wB97X_D_6_31g_d_VACUUM_Frequency_Analysis = (
-        "wB97X-D/6-31g*/VACUUM Frequency Analysis"
-    )
-    wB97X_D_6_31g_d_VACUUM_Frequency_Flattening_Geometry_Optimization = (
-        "wB97X-D/6-31g*/VACUUM Frequency Flattening Geometry Optimization"
-    )
-    wB97X_D_6_31g_d_VACUUM_Transition_State_Geometry_Optimization = (
-        "wB97X-D/6-31g*/VACUUM Transition State Geometry Optimization"
-    )
+    wB97X_D_6_31g_d_VACUUM_Geometry_Optimization = "wB97X-D/6-31g*/VACUUM Geometry Optimization"
+    wB97X_D_6_31g_d_VACUUM_Frequency_Analysis = "wB97X-D/6-31g*/VACUUM Frequency Analysis"
+    wB97X_D_6_31g_d_VACUUM_Frequency_Flattening_Geometry_Optimization = "wB97X-D/6-31g*/VACUUM Frequency Flattening Geometry Optimization"
+    wB97X_D_6_31g_d_VACUUM_Transition_State_Geometry_Optimization = "wB97X-D/6-31g*/VACUUM Transition State Geometry Optimization"
     wB97X_D_6_31g_d_VACUUM_Frequency_Flattening_Transition_State_Geometry_Optimization = "wB97X-D/6-31g*/VACUUM Frequency Flattening Transition State Geometry Optimization"
     wB97X_D_6_31g_d_VACUUM_Unknown = "wB97X-D/6-31g*/VACUUM Unknown"
     wB97X_D_6_31g_d_PCM_Single_Point = "wB97X-D/6-31g*/PCM Single Point"
     wB97X_D_6_31g_d_PCM_Force = "wB97X-D/6-31g*/PCM Force"
-    wB97X_D_6_31g_d_PCM_Geometry_Optimization = (
-        "wB97X-D/6-31g*/PCM Geometry Optimization"
-    )
+    wB97X_D_6_31g_d_PCM_Geometry_Optimization = "wB97X-D/6-31g*/PCM Geometry Optimization"
     wB97X_D_6_31g_d_PCM_Frequency_Analysis = "wB97X-D/6-31g*/PCM Frequency Analysis"
-    wB97X_D_6_31g_d_PCM_Frequency_Flattening_Geometry_Optimization = (
-        "wB97X-D/6-31g*/PCM Frequency Flattening Geometry Optimization"
-    )
-    wB97X_D_6_31g_d_PCM_Transition_State_Geometry_Optimization = (
-        "wB97X-D/6-31g*/PCM Transition State Geometry Optimization"
-    )
-    wB97X_D_6_31g_d_PCM_Frequency_Flattening_Transition_State_Geometry_Optimization = (
-        "wB97X-D/6-31g*/PCM Frequency Flattening Transition State Geometry Optimization"
-    )
+    wB97X_D_6_31g_d_PCM_Frequency_Flattening_Geometry_Optimization = "wB97X-D/6-31g*/PCM Frequency Flattening Geometry Optimization"
+    wB97X_D_6_31g_d_PCM_Transition_State_Geometry_Optimization = "wB97X-D/6-31g*/PCM Transition State Geometry Optimization"
+    wB97X_D_6_31g_d_PCM_Frequency_Flattening_Transition_State_Geometry_Optimization = "wB97X-D/6-31g*/PCM Frequency Flattening Transition State Geometry Optimization"
     wB97X_D_6_31g_d_PCM_Unknown = "wB97X-D/6-31g*/PCM Unknown"
     wB97X_D_6_31g_d_SMD_Single_Point = "wB97X-D/6-31g*/SMD Single Point"
     wB97X_D_6_31g_d_SMD_Force = "wB97X-D/6-31g*/SMD Force"
-    wB97X_D_6_31g_d_SMD_Geometry_Optimization = (
-        "wB97X-D/6-31g*/SMD Geometry Optimization"
-    )
+    wB97X_D_6_31g_d_SMD_Geometry_Optimization = "wB97X-D/6-31g*/SMD Geometry Optimization"
     wB97X_D_6_31g_d_SMD_Frequency_Analysis = "wB97X-D/6-31g*/SMD Frequency Analysis"
-    wB97X_D_6_31g_d_SMD_Frequency_Flattening_Geometry_Optimization = (
-        "wB97X-D/6-31g*/SMD Frequency Flattening Geometry Optimization"
-    )
-    wB97X_D_6_31g_d_SMD_Transition_State_Geometry_Optimization = (
-        "wB97X-D/6-31g*/SMD Transition State Geometry Optimization"
-    )
-    wB97X_D_6_31g_d_SMD_Frequency_Flattening_Transition_State_Geometry_Optimization = (
-        "wB97X-D/6-31g*/SMD Frequency Flattening Transition State Geometry Optimization"
-    )
+    wB97X_D_6_31g_d_SMD_Frequency_Flattening_Geometry_Optimization = "wB97X-D/6-31g*/SMD Frequency Flattening Geometry Optimization"
+    wB97X_D_6_31g_d_SMD_Transition_State_Geometry_Optimization = "wB97X-D/6-31g*/SMD Transition State Geometry Optimization"
+    wB97X_D_6_31g_d_SMD_Frequency_Flattening_Transition_State_Geometry_Optimization = "wB97X-D/6-31g*/SMD Frequency Flattening Transition State Geometry Optimization"
     wB97X_D_6_31g_d_SMD_Unknown = "wB97X-D/6-31g*/SMD Unknown"
     wB97X_D_def2_SVPD_VACUUM_Single_Point = "wB97X-D/def2-SVPD/VACUUM Single Point"
     wB97X_D_def2_SVPD_VACUUM_Force = "wB97X-D/def2-SVPD/VACUUM Force"
-    wB97X_D_def2_SVPD_VACUUM_Geometry_Optimization = (
-        "wB97X-D/def2-SVPD/VACUUM Geometry Optimization"
-    )
-    wB97X_D_def2_SVPD_VACUUM_Frequency_Analysis = (
-        "wB97X-D/def2-SVPD/VACUUM Frequency Analysis"
-    )
-    wB97X_D_def2_SVPD_VACUUM_Frequency_Flattening_Geometry_Optimization = (
-        "wB97X-D/def2-SVPD/VACUUM Frequency Flattening Geometry Optimization"
-    )
-    wB97X_D_def2_SVPD_VACUUM_Transition_State_Geometry_Optimization = (
-        "wB97X-D/def2-SVPD/VACUUM Transition State Geometry Optimization"
-    )
+    wB97X_D_def2_SVPD_VACUUM_Geometry_Optimization = "wB97X-D/def2-SVPD/VACUUM Geometry Optimization"
+    wB97X_D_def2_SVPD_VACUUM_Frequency_Analysis = "wB97X-D/def2-SVPD/VACUUM Frequency Analysis"
+    wB97X_D_def2_SVPD_VACUUM_Frequency_Flattening_Geometry_Optimization = "wB97X-D/def2-SVPD/VACUUM Frequency Flattening Geometry Optimization"
+    wB97X_D_def2_SVPD_VACUUM_Transition_State_Geometry_Optimization = "wB97X-D/def2-SVPD/VACUUM Transition State Geometry Optimization"
     wB97X_D_def2_SVPD_VACUUM_Frequency_Flattening_Transition_State_Geometry_Optimization = "wB97X-D/def2-SVPD/VACUUM Frequency Flattening Transition State Geometry Optimization"
     wB97X_D_def2_SVPD_VACUUM_Unknown = "wB97X-D/def2-SVPD/VACUUM Unknown"
     wB97X_D_def2_SVPD_PCM_Single_Point = "wB97X-D/def2-SVPD/PCM Single Point"
     wB97X_D_def2_SVPD_PCM_Force = "wB97X-D/def2-SVPD/PCM Force"
-    wB97X_D_def2_SVPD_PCM_Geometry_Optimization = (
-        "wB97X-D/def2-SVPD/PCM Geometry Optimization"
-    )
-    wB97X_D_def2_SVPD_PCM_Frequency_Analysis = (
-        "wB97X-D/def2-SVPD/PCM Frequency Analysis"
-    )
-    wB97X_D_def2_SVPD_PCM_Frequency_Flattening_Geometry_Optimization = (
-        "wB97X-D/def2-SVPD/PCM Frequency Flattening Geometry Optimization"
-    )
-    wB97X_D_def2_SVPD_PCM_Transition_State_Geometry_Optimization = (
-        "wB97X-D/def2-SVPD/PCM Transition State Geometry Optimization"
-    )
+    wB97X_D_def2_SVPD_PCM_Geometry_Optimization = "wB97X-D/def2-SVPD/PCM Geometry Optimization"
+    wB97X_D_def2_SVPD_PCM_Frequency_Analysis = "wB97X-D/def2-SVPD/PCM Frequency Analysis"
+    wB97X_D_def2_SVPD_PCM_Frequency_Flattening_Geometry_Optimization = "wB97X-D/def2-SVPD/PCM Frequency Flattening Geometry Optimization"
+    wB97X_D_def2_SVPD_PCM_Transition_State_Geometry_Optimization = "wB97X-D/def2-SVPD/PCM Transition State Geometry Optimization"
     wB97X_D_def2_SVPD_PCM_Frequency_Flattening_Transition_State_Geometry_Optimization = "wB97X-D/def2-SVPD/PCM Frequency Flattening Transition State Geometry Optimization"
     wB97X_D_def2_SVPD_PCM_Unknown = "wB97X-D/def2-SVPD/PCM Unknown"
     wB97X_D_def2_SVPD_SMD_Single_Point = "wB97X-D/def2-SVPD/SMD Single Point"
     wB97X_D_def2_SVPD_SMD_Force = "wB97X-D/def2-SVPD/SMD Force"
-    wB97X_D_def2_SVPD_SMD_Geometry_Optimization = (
-        "wB97X-D/def2-SVPD/SMD Geometry Optimization"
-    )
-    wB97X_D_def2_SVPD_SMD_Frequency_Analysis = (
-        "wB97X-D/def2-SVPD/SMD Frequency Analysis"
-    )
-    wB97X_D_def2_SVPD_SMD_Frequency_Flattening_Geometry_Optimization = (
-        "wB97X-D/def2-SVPD/SMD Frequency Flattening Geometry Optimization"
-    )
-    wB97X_D_def2_SVPD_SMD_Transition_State_Geometry_Optimization = (
-        "wB97X-D/def2-SVPD/SMD Transition State Geometry Optimization"
-    )
+    wB97X_D_def2_SVPD_SMD_Geometry_Optimization = "wB97X-D/def2-SVPD/SMD Geometry Optimization"
+    wB97X_D_def2_SVPD_SMD_Frequency_Analysis = "wB97X-D/def2-SVPD/SMD Frequency Analysis"
+    wB97X_D_def2_SVPD_SMD_Frequency_Flattening_Geometry_Optimization = "wB97X-D/def2-SVPD/SMD Frequency Flattening Geometry Optimization"
+    wB97X_D_def2_SVPD_SMD_Transition_State_Geometry_Optimization = "wB97X-D/def2-SVPD/SMD Transition State Geometry Optimization"
     wB97X_D_def2_SVPD_SMD_Frequency_Flattening_Transition_State_Geometry_Optimization = "wB97X-D/def2-SVPD/SMD Frequency Flattening Transition State Geometry Optimization"
     wB97X_D_def2_SVPD_SMD_Unknown = "wB97X-D/def2-SVPD/SMD Unknown"
     wB97X_D_def2_TZVP_VACUUM_Single_Point = "wB97X-D/def2-TZVP/VACUUM Single Point"
     wB97X_D_def2_TZVP_VACUUM_Force = "wB97X-D/def2-TZVP/VACUUM Force"
-    wB97X_D_def2_TZVP_VACUUM_Geometry_Optimization = (
-        "wB97X-D/def2-TZVP/VACUUM Geometry Optimization"
-    )
-    wB97X_D_def2_TZVP_VACUUM_Frequency_Analysis = (
-        "wB97X-D/def2-TZVP/VACUUM Frequency Analysis"
-    )
-    wB97X_D_def2_TZVP_VACUUM_Frequency_Flattening_Geometry_Optimization = (
-        "wB97X-D/def2-TZVP/VACUUM Frequency Flattening Geometry Optimization"
-    )
-    wB97X_D_def2_TZVP_VACUUM_Transition_State_Geometry_Optimization = (
-        "wB97X-D/def2-TZVP/VACUUM Transition State Geometry Optimization"
-    )
+    wB97X_D_def2_TZVP_VACUUM_Geometry_Optimization = "wB97X-D/def2-TZVP/VACUUM Geometry Optimization"
+    wB97X_D_def2_TZVP_VACUUM_Frequency_Analysis = "wB97X-D/def2-TZVP/VACUUM Frequency Analysis"
+    wB97X_D_def2_TZVP_VACUUM_Frequency_Flattening_Geometry_Optimization = "wB97X-D/def2-TZVP/VACUUM Frequency Flattening Geometry Optimization"
+    wB97X_D_def2_TZVP_VACUUM_Transition_State_Geometry_Optimization = "wB97X-D/def2-TZVP/VACUUM Transition State Geometry Optimization"
     wB97X_D_def2_TZVP_VACUUM_Frequency_Flattening_Transition_State_Geometry_Optimization = "wB97X-D/def2-TZVP/VACUUM Frequency Flattening Transition State Geometry Optimization"
     wB97X_D_def2_TZVP_VACUUM_Unknown = "wB97X-D/def2-TZVP/VACUUM Unknown"
     wB97X_D_def2_TZVP_PCM_Single_Point = "wB97X-D/def2-TZVP/PCM Single Point"
     wB97X_D_def2_TZVP_PCM_Force = "wB97X-D/def2-TZVP/PCM Force"
-    wB97X_D_def2_TZVP_PCM_Geometry_Optimization = (
-        "wB97X-D/def2-TZVP/PCM Geometry Optimization"
-    )
-    wB97X_D_def2_TZVP_PCM_Frequency_Analysis = (
-        "wB97X-D/def2-TZVP/PCM Frequency Analysis"
-    )
-    wB97X_D_def2_TZVP_PCM_Frequency_Flattening_Geometry_Optimization = (
-        "wB97X-D/def2-TZVP/PCM Frequency Flattening Geometry Optimization"
-    )
-    wB97X_D_def2_TZVP_PCM_Transition_State_Geometry_Optimization = (
-        "wB97X-D/def2-TZVP/PCM Transition State Geometry Optimization"
-    )
+    wB97X_D_def2_TZVP_PCM_Geometry_Optimization = "wB97X-D/def2-TZVP/PCM Geometry Optimization"
+    wB97X_D_def2_TZVP_PCM_Frequency_Analysis = "wB97X-D/def2-TZVP/PCM Frequency Analysis"
+    wB97X_D_def2_TZVP_PCM_Frequency_Flattening_Geometry_Optimization = "wB97X-D/def2-TZVP/PCM Frequency Flattening Geometry Optimization"
+    wB97X_D_def2_TZVP_PCM_Transition_State_Geometry_Optimization = "wB97X-D/def2-TZVP/PCM Transition State Geometry Optimization"
     wB97X_D_def2_TZVP_PCM_Frequency_Flattening_Transition_State_Geometry_Optimization = "wB97X-D/def2-TZVP/PCM Frequency Flattening Transition State Geometry Optimization"
     wB97X_D_def2_TZVP_PCM_Unknown = "wB97X-D/def2-TZVP/PCM Unknown"
     wB97X_D_def2_TZVP_SMD_Single_Point = "wB97X-D/def2-TZVP/SMD Single Point"
     wB97X_D_def2_TZVP_SMD_Force = "wB97X-D/def2-TZVP/SMD Force"
-    wB97X_D_def2_TZVP_SMD_Geometry_Optimization = (
-        "wB97X-D/def2-TZVP/SMD Geometry Optimization"
-    )
-    wB97X_D_def2_TZVP_SMD_Frequency_Analysis = (
-        "wB97X-D/def2-TZVP/SMD Frequency Analysis"
-    )
-    wB97X_D_def2_TZVP_SMD_Frequency_Flattening_Geometry_Optimization = (
-        "wB97X-D/def2-TZVP/SMD Frequency Flattening Geometry Optimization"
-    )
-    wB97X_D_def2_TZVP_SMD_Transition_State_Geometry_Optimization = (
-        "wB97X-D/def2-TZVP/SMD Transition State Geometry Optimization"
-    )
+    wB97X_D_def2_TZVP_SMD_Geometry_Optimization = "wB97X-D/def2-TZVP/SMD Geometry Optimization"
+    wB97X_D_def2_TZVP_SMD_Frequency_Analysis = "wB97X-D/def2-TZVP/SMD Frequency Analysis"
+    wB97X_D_def2_TZVP_SMD_Frequency_Flattening_Geometry_Optimization = "wB97X-D/def2-TZVP/SMD Frequency Flattening Geometry Optimization"
+    wB97X_D_def2_TZVP_SMD_Transition_State_Geometry_Optimization = "wB97X-D/def2-TZVP/SMD Transition State Geometry Optimization"
     wB97X_D_def2_TZVP_SMD_Frequency_Flattening_Transition_State_Geometry_Optimization = "wB97X-D/def2-TZVP/SMD Frequency Flattening Transition State Geometry Optimization"
     wB97X_D_def2_TZVP_SMD_Unknown = "wB97X-D/def2-TZVP/SMD Unknown"
     wB97X_D_def2_TZVPD_VACUUM_Single_Point = "wB97X-D/def2-TZVPD/VACUUM Single Point"
     wB97X_D_def2_TZVPD_VACUUM_Force = "wB97X-D/def2-TZVPD/VACUUM Force"
-    wB97X_D_def2_TZVPD_VACUUM_Geometry_Optimization = (
-        "wB97X-D/def2-TZVPD/VACUUM Geometry Optimization"
-    )
-    wB97X_D_def2_TZVPD_VACUUM_Frequency_Analysis = (
-        "wB97X-D/def2-TZVPD/VACUUM Frequency Analysis"
-    )
-    wB97X_D_def2_TZVPD_VACUUM_Frequency_Flattening_Geometry_Optimization = (
-        "wB97X-D/def2-TZVPD/VACUUM Frequency Flattening Geometry Optimization"
-    )
-    wB97X_D_def2_TZVPD_VACUUM_Transition_State_Geometry_Optimization = (
-        "wB97X-D/def2-TZVPD/VACUUM Transition State Geometry Optimization"
-    )
+    wB97X_D_def2_TZVPD_VACUUM_Geometry_Optimization = "wB97X-D/def2-TZVPD/VACUUM Geometry Optimization"
+    wB97X_D_def2_TZVPD_VACUUM_Frequency_Analysis = "wB97X-D/def2-TZVPD/VACUUM Frequency Analysis"
+    wB97X_D_def2_TZVPD_VACUUM_Frequency_Flattening_Geometry_Optimization = "wB97X-D/def2-TZVPD/VACUUM Frequency Flattening Geometry Optimization"
+    wB97X_D_def2_TZVPD_VACUUM_Transition_State_Geometry_Optimization = "wB97X-D/def2-TZVPD/VACUUM Transition State Geometry Optimization"
     wB97X_D_def2_TZVPD_VACUUM_Frequency_Flattening_Transition_State_Geometry_Optimization = "wB97X-D/def2-TZVPD/VACUUM Frequency Flattening Transition State Geometry Optimization"
     wB97X_D_def2_TZVPD_VACUUM_Unknown = "wB97X-D/def2-TZVPD/VACUUM Unknown"
     wB97X_D_def2_TZVPD_PCM_Single_Point = "wB97X-D/def2-TZVPD/PCM Single Point"
     wB97X_D_def2_TZVPD_PCM_Force = "wB97X-D/def2-TZVPD/PCM Force"
-    wB97X_D_def2_TZVPD_PCM_Geometry_Optimization = (
-        "wB97X-D/def2-TZVPD/PCM Geometry Optimization"
-    )
-    wB97X_D_def2_TZVPD_PCM_Frequency_Analysis = (
-        "wB97X-D/def2-TZVPD/PCM Frequency Analysis"
-    )
-    wB97X_D_def2_TZVPD_PCM_Frequency_Flattening_Geometry_Optimization = (
-        "wB97X-D/def2-TZVPD/PCM Frequency Flattening Geometry Optimization"
-    )
-    wB97X_D_def2_TZVPD_PCM_Transition_State_Geometry_Optimization = (
-        "wB97X-D/def2-TZVPD/PCM Transition State Geometry Optimization"
-    )
+    wB97X_D_def2_TZVPD_PCM_Geometry_Optimization = "wB97X-D/def2-TZVPD/PCM Geometry Optimization"
+    wB97X_D_def2_TZVPD_PCM_Frequency_Analysis = "wB97X-D/def2-TZVPD/PCM Frequency Analysis"
+    wB97X_D_def2_TZVPD_PCM_Frequency_Flattening_Geometry_Optimization = "wB97X-D/def2-TZVPD/PCM Frequency Flattening Geometry Optimization"
+    wB97X_D_def2_TZVPD_PCM_Transition_State_Geometry_Optimization = "wB97X-D/def2-TZVPD/PCM Transition State Geometry Optimization"
     wB97X_D_def2_TZVPD_PCM_Frequency_Flattening_Transition_State_Geometry_Optimization = "wB97X-D/def2-TZVPD/PCM Frequency Flattening Transition State Geometry Optimization"
     wB97X_D_def2_TZVPD_PCM_Unknown = "wB97X-D/def2-TZVPD/PCM Unknown"
     wB97X_D_def2_TZVPD_SMD_Single_Point = "wB97X-D/def2-TZVPD/SMD Single Point"
     wB97X_D_def2_TZVPD_SMD_Force = "wB97X-D/def2-TZVPD/SMD Force"
-    wB97X_D_def2_TZVPD_SMD_Geometry_Optimization = (
-        "wB97X-D/def2-TZVPD/SMD Geometry Optimization"
-    )
-    wB97X_D_def2_TZVPD_SMD_Frequency_Analysis = (
-        "wB97X-D/def2-TZVPD/SMD Frequency Analysis"
-    )
-    wB97X_D_def2_TZVPD_SMD_Frequency_Flattening_Geometry_Optimization = (
-        "wB97X-D/def2-TZVPD/SMD Frequency Flattening Geometry Optimization"
-    )
-    wB97X_D_def2_TZVPD_SMD_Transition_State_Geometry_Optimization = (
-        "wB97X-D/def2-TZVPD/SMD Transition State Geometry Optimization"
-    )
+    wB97X_D_def2_TZVPD_SMD_Geometry_Optimization = "wB97X-D/def2-TZVPD/SMD Geometry Optimization"
+    wB97X_D_def2_TZVPD_SMD_Frequency_Analysis = "wB97X-D/def2-TZVPD/SMD Frequency Analysis"
+    wB97X_D_def2_TZVPD_SMD_Frequency_Flattening_Geometry_Optimization = "wB97X-D/def2-TZVPD/SMD Frequency Flattening Geometry Optimization"
+    wB97X_D_def2_TZVPD_SMD_Transition_State_Geometry_Optimization = "wB97X-D/def2-TZVPD/SMD Transition State Geometry Optimization"
     wB97X_D_def2_TZVPD_SMD_Frequency_Flattening_Transition_State_Geometry_Optimization = "wB97X-D/def2-TZVPD/SMD Frequency Flattening Transition State Geometry Optimization"
     wB97X_D_def2_TZVPD_SMD_Unknown = "wB97X-D/def2-TZVPD/SMD Unknown"
     wB97X_D_def2_TZVPP_VACUUM_Single_Point = "wB97X-D/def2-TZVPP/VACUUM Single Point"
     wB97X_D_def2_TZVPP_VACUUM_Force = "wB97X-D/def2-TZVPP/VACUUM Force"
-    wB97X_D_def2_TZVPP_VACUUM_Geometry_Optimization = (
-        "wB97X-D/def2-TZVPP/VACUUM Geometry Optimization"
-    )
-    wB97X_D_def2_TZVPP_VACUUM_Frequency_Analysis = (
-        "wB97X-D/def2-TZVPP/VACUUM Frequency Analysis"
-    )
-    wB97X_D_def2_TZVPP_VACUUM_Frequency_Flattening_Geometry_Optimization = (
-        "wB97X-D/def2-TZVPP/VACUUM Frequency Flattening Geometry Optimization"
-    )
-    wB97X_D_def2_TZVPP_VACUUM_Transition_State_Geometry_Optimization = (
-        "wB97X-D/def2-TZVPP/VACUUM Transition State Geometry Optimization"
-    )
+    wB97X_D_def2_TZVPP_VACUUM_Geometry_Optimization = "wB97X-D/def2-TZVPP/VACUUM Geometry Optimization"
+    wB97X_D_def2_TZVPP_VACUUM_Frequency_Analysis = "wB97X-D/def2-TZVPP/VACUUM Frequency Analysis"
+    wB97X_D_def2_TZVPP_VACUUM_Frequency_Flattening_Geometry_Optimization = "wB97X-D/def2-TZVPP/VACUUM Frequency Flattening Geometry Optimization"
+    wB97X_D_def2_TZVPP_VACUUM_Transition_State_Geometry_Optimization = "wB97X-D/def2-TZVPP/VACUUM Transition State Geometry Optimization"
     wB97X_D_def2_TZVPP_VACUUM_Frequency_Flattening_Transition_State_Geometry_Optimization = "wB97X-D/def2-TZVPP/VACUUM Frequency Flattening Transition State Geometry Optimization"
     wB97X_D_def2_TZVPP_VACUUM_Unknown = "wB97X-D/def2-TZVPP/VACUUM Unknown"
     wB97X_D_def2_TZVPP_PCM_Single_Point = "wB97X-D/def2-TZVPP/PCM Single Point"
     wB97X_D_def2_TZVPP_PCM_Force = "wB97X-D/def2-TZVPP/PCM Force"
-    wB97X_D_def2_TZVPP_PCM_Geometry_Optimization = (
-        "wB97X-D/def2-TZVPP/PCM Geometry Optimization"
-    )
-    wB97X_D_def2_TZVPP_PCM_Frequency_Analysis = (
-        "wB97X-D/def2-TZVPP/PCM Frequency Analysis"
-    )
-    wB97X_D_def2_TZVPP_PCM_Frequency_Flattening_Geometry_Optimization = (
-        "wB97X-D/def2-TZVPP/PCM Frequency Flattening Geometry Optimization"
-    )
-    wB97X_D_def2_TZVPP_PCM_Transition_State_Geometry_Optimization = (
-        "wB97X-D/def2-TZVPP/PCM Transition State Geometry Optimization"
-    )
+    wB97X_D_def2_TZVPP_PCM_Geometry_Optimization = "wB97X-D/def2-TZVPP/PCM Geometry Optimization"
+    wB97X_D_def2_TZVPP_PCM_Frequency_Analysis = "wB97X-D/def2-TZVPP/PCM Frequency Analysis"
+    wB97X_D_def2_TZVPP_PCM_Frequency_Flattening_Geometry_Optimization = "wB97X-D/def2-TZVPP/PCM Frequency Flattening Geometry Optimization"
+    wB97X_D_def2_TZVPP_PCM_Transition_State_Geometry_Optimization = "wB97X-D/def2-TZVPP/PCM Transition State Geometry Optimization"
     wB97X_D_def2_TZVPP_PCM_Frequency_Flattening_Transition_State_Geometry_Optimization = "wB97X-D/def2-TZVPP/PCM Frequency Flattening Transition State Geometry Optimization"
     wB97X_D_def2_TZVPP_PCM_Unknown = "wB97X-D/def2-TZVPP/PCM Unknown"
     wB97X_D_def2_TZVPP_SMD_Single_Point = "wB97X-D/def2-TZVPP/SMD Single Point"
     wB97X_D_def2_TZVPP_SMD_Force = "wB97X-D/def2-TZVPP/SMD Force"
-    wB97X_D_def2_TZVPP_SMD_Geometry_Optimization = (
-        "wB97X-D/def2-TZVPP/SMD Geometry Optimization"
-    )
-    wB97X_D_def2_TZVPP_SMD_Frequency_Analysis = (
-        "wB97X-D/def2-TZVPP/SMD Frequency Analysis"
-    )
-    wB97X_D_def2_TZVPP_SMD_Frequency_Flattening_Geometry_Optimization = (
-        "wB97X-D/def2-TZVPP/SMD Frequency Flattening Geometry Optimization"
-    )
-    wB97X_D_def2_TZVPP_SMD_Transition_State_Geometry_Optimization = (
-        "wB97X-D/def2-TZVPP/SMD Transition State Geometry Optimization"
-    )
+    wB97X_D_def2_TZVPP_SMD_Geometry_Optimization = "wB97X-D/def2-TZVPP/SMD Geometry Optimization"
+    wB97X_D_def2_TZVPP_SMD_Frequency_Analysis = "wB97X-D/def2-TZVPP/SMD Frequency Analysis"
+    wB97X_D_def2_TZVPP_SMD_Frequency_Flattening_Geometry_Optimization = "wB97X-D/def2-TZVPP/SMD Frequency Flattening Geometry Optimization"
+    wB97X_D_def2_TZVPP_SMD_Transition_State_Geometry_Optimization = "wB97X-D/def2-TZVPP/SMD Transition State Geometry Optimization"
     wB97X_D_def2_TZVPP_SMD_Frequency_Flattening_Transition_State_Geometry_Optimization = "wB97X-D/def2-TZVPP/SMD Frequency Flattening Transition State Geometry Optimization"
     wB97X_D_def2_TZVPP_SMD_Unknown = "wB97X-D/def2-TZVPP/SMD Unknown"
     wB97X_D_def2_TZVPPD_VACUUM_Single_Point = "wB97X-D/def2-TZVPPD/VACUUM Single Point"
     wB97X_D_def2_TZVPPD_VACUUM_Force = "wB97X-D/def2-TZVPPD/VACUUM Force"
-    wB97X_D_def2_TZVPPD_VACUUM_Geometry_Optimization = (
-        "wB97X-D/def2-TZVPPD/VACUUM Geometry Optimization"
-    )
-    wB97X_D_def2_TZVPPD_VACUUM_Frequency_Analysis = (
-        "wB97X-D/def2-TZVPPD/VACUUM Frequency Analysis"
-    )
-    wB97X_D_def2_TZVPPD_VACUUM_Frequency_Flattening_Geometry_Optimization = (
-        "wB97X-D/def2-TZVPPD/VACUUM Frequency Flattening Geometry Optimization"
-    )
-    wB97X_D_def2_TZVPPD_VACUUM_Transition_State_Geometry_Optimization = (
-        "wB97X-D/def2-TZVPPD/VACUUM Transition State Geometry Optimization"
-    )
+    wB97X_D_def2_TZVPPD_VACUUM_Geometry_Optimization = "wB97X-D/def2-TZVPPD/VACUUM Geometry Optimization"
+    wB97X_D_def2_TZVPPD_VACUUM_Frequency_Analysis = "wB97X-D/def2-TZVPPD/VACUUM Frequency Analysis"
+    wB97X_D_def2_TZVPPD_VACUUM_Frequency_Flattening_Geometry_Optimization = "wB97X-D/def2-TZVPPD/VACUUM Frequency Flattening Geometry Optimization"
+    wB97X_D_def2_TZVPPD_VACUUM_Transition_State_Geometry_Optimization = "wB97X-D/def2-TZVPPD/VACUUM Transition State Geometry Optimization"
     wB97X_D_def2_TZVPPD_VACUUM_Frequency_Flattening_Transition_State_Geometry_Optimization = "wB97X-D/def2-TZVPPD/VACUUM Frequency Flattening Transition State Geometry Optimization"
     wB97X_D_def2_TZVPPD_VACUUM_Unknown = "wB97X-D/def2-TZVPPD/VACUUM Unknown"
     wB97X_D_def2_TZVPPD_PCM_Single_Point = "wB97X-D/def2-TZVPPD/PCM Single Point"
     wB97X_D_def2_TZVPPD_PCM_Force = "wB97X-D/def2-TZVPPD/PCM Force"
-    wB97X_D_def2_TZVPPD_PCM_Geometry_Optimization = (
-        "wB97X-D/def2-TZVPPD/PCM Geometry Optimization"
-    )
-    wB97X_D_def2_TZVPPD_PCM_Frequency_Analysis = (
-        "wB97X-D/def2-TZVPPD/PCM Frequency Analysis"
-    )
-    wB97X_D_def2_TZVPPD_PCM_Frequency_Flattening_Geometry_Optimization = (
-        "wB97X-D/def2-TZVPPD/PCM Frequency Flattening Geometry Optimization"
-    )
-    wB97X_D_def2_TZVPPD_PCM_Transition_State_Geometry_Optimization = (
-        "wB97X-D/def2-TZVPPD/PCM Transition State Geometry Optimization"
-    )
+    wB97X_D_def2_TZVPPD_PCM_Geometry_Optimization = "wB97X-D/def2-TZVPPD/PCM Geometry Optimization"
+    wB97X_D_def2_TZVPPD_PCM_Frequency_Analysis = "wB97X-D/def2-TZVPPD/PCM Frequency Analysis"
+    wB97X_D_def2_TZVPPD_PCM_Frequency_Flattening_Geometry_Optimization = "wB97X-D/def2-TZVPPD/PCM Frequency Flattening Geometry Optimization"
+    wB97X_D_def2_TZVPPD_PCM_Transition_State_Geometry_Optimization = "wB97X-D/def2-TZVPPD/PCM Transition State Geometry Optimization"
     wB97X_D_def2_TZVPPD_PCM_Frequency_Flattening_Transition_State_Geometry_Optimization = "wB97X-D/def2-TZVPPD/PCM Frequency Flattening Transition State Geometry Optimization"
     wB97X_D_def2_TZVPPD_PCM_Unknown = "wB97X-D/def2-TZVPPD/PCM Unknown"
     wB97X_D_def2_TZVPPD_SMD_Single_Point = "wB97X-D/def2-TZVPPD/SMD Single Point"
     wB97X_D_def2_TZVPPD_SMD_Force = "wB97X-D/def2-TZVPPD/SMD Force"
-    wB97X_D_def2_TZVPPD_SMD_Geometry_Optimization = (
-        "wB97X-D/def2-TZVPPD/SMD Geometry Optimization"
-    )
-    wB97X_D_def2_TZVPPD_SMD_Frequency_Analysis = (
-        "wB97X-D/def2-TZVPPD/SMD Frequency Analysis"
-    )
-    wB97X_D_def2_TZVPPD_SMD_Frequency_Flattening_Geometry_Optimization = (
-        "wB97X-D/def2-TZVPPD/SMD Frequency Flattening Geometry Optimization"
-    )
-    wB97X_D_def2_TZVPPD_SMD_Transition_State_Geometry_Optimization = (
-        "wB97X-D/def2-TZVPPD/SMD Transition State Geometry Optimization"
-    )
+    wB97X_D_def2_TZVPPD_SMD_Geometry_Optimization = "wB97X-D/def2-TZVPPD/SMD Geometry Optimization"
+    wB97X_D_def2_TZVPPD_SMD_Frequency_Analysis = "wB97X-D/def2-TZVPPD/SMD Frequency Analysis"
+    wB97X_D_def2_TZVPPD_SMD_Frequency_Flattening_Geometry_Optimization = "wB97X-D/def2-TZVPPD/SMD Frequency Flattening Geometry Optimization"
+    wB97X_D_def2_TZVPPD_SMD_Transition_State_Geometry_Optimization = "wB97X-D/def2-TZVPPD/SMD Transition State Geometry Optimization"
     wB97X_D_def2_TZVPPD_SMD_Frequency_Flattening_Transition_State_Geometry_Optimization = "wB97X-D/def2-TZVPPD/SMD Frequency Flattening Transition State Geometry Optimization"
     wB97X_D_def2_TZVPPD_SMD_Unknown = "wB97X-D/def2-TZVPPD/SMD Unknown"
     wB97X_D_def2_QZVPD_VACUUM_Single_Point = "wB97X-D/def2-QZVPD/VACUUM Single Point"
     wB97X_D_def2_QZVPD_VACUUM_Force = "wB97X-D/def2-QZVPD/VACUUM Force"
-    wB97X_D_def2_QZVPD_VACUUM_Geometry_Optimization = (
-        "wB97X-D/def2-QZVPD/VACUUM Geometry Optimization"
-    )
-    wB97X_D_def2_QZVPD_VACUUM_Frequency_Analysis = (
-        "wB97X-D/def2-QZVPD/VACUUM Frequency Analysis"
-    )
-    wB97X_D_def2_QZVPD_VACUUM_Frequency_Flattening_Geometry_Optimization = (
-        "wB97X-D/def2-QZVPD/VACUUM Frequency Flattening Geometry Optimization"
-    )
-    wB97X_D_def2_QZVPD_VACUUM_Transition_State_Geometry_Optimization = (
-        "wB97X-D/def2-QZVPD/VACUUM Transition State Geometry Optimization"
-    )
+    wB97X_D_def2_QZVPD_VACUUM_Geometry_Optimization = "wB97X-D/def2-QZVPD/VACUUM Geometry Optimization"
+    wB97X_D_def2_QZVPD_VACUUM_Frequency_Analysis = "wB97X-D/def2-QZVPD/VACUUM Frequency Analysis"
+    wB97X_D_def2_QZVPD_VACUUM_Frequency_Flattening_Geometry_Optimization = "wB97X-D/def2-QZVPD/VACUUM Frequency Flattening Geometry Optimization"
+    wB97X_D_def2_QZVPD_VACUUM_Transition_State_Geometry_Optimization = "wB97X-D/def2-QZVPD/VACUUM Transition State Geometry Optimization"
     wB97X_D_def2_QZVPD_VACUUM_Frequency_Flattening_Transition_State_Geometry_Optimization = "wB97X-D/def2-QZVPD/VACUUM Frequency Flattening Transition State Geometry Optimization"
     wB97X_D_def2_QZVPD_VACUUM_Unknown = "wB97X-D/def2-QZVPD/VACUUM Unknown"
     wB97X_D_def2_QZVPD_PCM_Single_Point = "wB97X-D/def2-QZVPD/PCM Single Point"
     wB97X_D_def2_QZVPD_PCM_Force = "wB97X-D/def2-QZVPD/PCM Force"
-    wB97X_D_def2_QZVPD_PCM_Geometry_Optimization = (
-        "wB97X-D/def2-QZVPD/PCM Geometry Optimization"
-    )
-    wB97X_D_def2_QZVPD_PCM_Frequency_Analysis = (
-        "wB97X-D/def2-QZVPD/PCM Frequency Analysis"
-    )
-    wB97X_D_def2_QZVPD_PCM_Frequency_Flattening_Geometry_Optimization = (
-        "wB97X-D/def2-QZVPD/PCM Frequency Flattening Geometry Optimization"
-    )
-    wB97X_D_def2_QZVPD_PCM_Transition_State_Geometry_Optimization = (
-        "wB97X-D/def2-QZVPD/PCM Transition State Geometry Optimization"
-    )
+    wB97X_D_def2_QZVPD_PCM_Geometry_Optimization = "wB97X-D/def2-QZVPD/PCM Geometry Optimization"
+    wB97X_D_def2_QZVPD_PCM_Frequency_Analysis = "wB97X-D/def2-QZVPD/PCM Frequency Analysis"
+    wB97X_D_def2_QZVPD_PCM_Frequency_Flattening_Geometry_Optimization = "wB97X-D/def2-QZVPD/PCM Frequency Flattening Geometry Optimization"
+    wB97X_D_def2_QZVPD_PCM_Transition_State_Geometry_Optimization = "wB97X-D/def2-QZVPD/PCM Transition State Geometry Optimization"
     wB97X_D_def2_QZVPD_PCM_Frequency_Flattening_Transition_State_Geometry_Optimization = "wB97X-D/def2-QZVPD/PCM Frequency Flattening Transition State Geometry Optimization"
     wB97X_D_def2_QZVPD_PCM_Unknown = "wB97X-D/def2-QZVPD/PCM Unknown"
     wB97X_D_def2_QZVPD_SMD_Single_Point = "wB97X-D/def2-QZVPD/SMD Single Point"
     wB97X_D_def2_QZVPD_SMD_Force = "wB97X-D/def2-QZVPD/SMD Force"
-    wB97X_D_def2_QZVPD_SMD_Geometry_Optimization = (
-        "wB97X-D/def2-QZVPD/SMD Geometry Optimization"
-    )
-    wB97X_D_def2_QZVPD_SMD_Frequency_Analysis = (
-        "wB97X-D/def2-QZVPD/SMD Frequency Analysis"
-    )
-    wB97X_D_def2_QZVPD_SMD_Frequency_Flattening_Geometry_Optimization = (
-        "wB97X-D/def2-QZVPD/SMD Frequency Flattening Geometry Optimization"
-    )
-    wB97X_D_def2_QZVPD_SMD_Transition_State_Geometry_Optimization = (
-        "wB97X-D/def2-QZVPD/SMD Transition State Geometry Optimization"
-    )
+    wB97X_D_def2_QZVPD_SMD_Geometry_Optimization = "wB97X-D/def2-QZVPD/SMD Geometry Optimization"
+    wB97X_D_def2_QZVPD_SMD_Frequency_Analysis = "wB97X-D/def2-QZVPD/SMD Frequency Analysis"
+    wB97X_D_def2_QZVPD_SMD_Frequency_Flattening_Geometry_Optimization = "wB97X-D/def2-QZVPD/SMD Frequency Flattening Geometry Optimization"
+    wB97X_D_def2_QZVPD_SMD_Transition_State_Geometry_Optimization = "wB97X-D/def2-QZVPD/SMD Transition State Geometry Optimization"
     wB97X_D_def2_QZVPD_SMD_Frequency_Flattening_Transition_State_Geometry_Optimization = "wB97X-D/def2-QZVPD/SMD Frequency Flattening Transition State Geometry Optimization"
     wB97X_D_def2_QZVPD_SMD_Unknown = "wB97X-D/def2-QZVPD/SMD Unknown"
     wB97X_D_def2_QZVPPD_VACUUM_Single_Point = "wB97X-D/def2-QZVPPD/VACUUM Single Point"
     wB97X_D_def2_QZVPPD_VACUUM_Force = "wB97X-D/def2-QZVPPD/VACUUM Force"
-    wB97X_D_def2_QZVPPD_VACUUM_Geometry_Optimization = (
-        "wB97X-D/def2-QZVPPD/VACUUM Geometry Optimization"
-    )
-    wB97X_D_def2_QZVPPD_VACUUM_Frequency_Analysis = (
-        "wB97X-D/def2-QZVPPD/VACUUM Frequency Analysis"
-    )
-    wB97X_D_def2_QZVPPD_VACUUM_Frequency_Flattening_Geometry_Optimization = (
-        "wB97X-D/def2-QZVPPD/VACUUM Frequency Flattening Geometry Optimization"
-    )
-    wB97X_D_def2_QZVPPD_VACUUM_Transition_State_Geometry_Optimization = (
-        "wB97X-D/def2-QZVPPD/VACUUM Transition State Geometry Optimization"
-    )
+    wB97X_D_def2_QZVPPD_VACUUM_Geometry_Optimization = "wB97X-D/def2-QZVPPD/VACUUM Geometry Optimization"
+    wB97X_D_def2_QZVPPD_VACUUM_Frequency_Analysis = "wB97X-D/def2-QZVPPD/VACUUM Frequency Analysis"
+    wB97X_D_def2_QZVPPD_VACUUM_Frequency_Flattening_Geometry_Optimization = "wB97X-D/def2-QZVPPD/VACUUM Frequency Flattening Geometry Optimization"
+    wB97X_D_def2_QZVPPD_VACUUM_Transition_State_Geometry_Optimization = "wB97X-D/def2-QZVPPD/VACUUM Transition State Geometry Optimization"
     wB97X_D_def2_QZVPPD_VACUUM_Frequency_Flattening_Transition_State_Geometry_Optimization = "wB97X-D/def2-QZVPPD/VACUUM Frequency Flattening Transition State Geometry Optimization"
     wB97X_D_def2_QZVPPD_VACUUM_Unknown = "wB97X-D/def2-QZVPPD/VACUUM Unknown"
     wB97X_D_def2_QZVPPD_PCM_Single_Point = "wB97X-D/def2-QZVPPD/PCM Single Point"
     wB97X_D_def2_QZVPPD_PCM_Force = "wB97X-D/def2-QZVPPD/PCM Force"
-    wB97X_D_def2_QZVPPD_PCM_Geometry_Optimization = (
-        "wB97X-D/def2-QZVPPD/PCM Geometry Optimization"
-    )
-    wB97X_D_def2_QZVPPD_PCM_Frequency_Analysis = (
-        "wB97X-D/def2-QZVPPD/PCM Frequency Analysis"
-    )
-    wB97X_D_def2_QZVPPD_PCM_Frequency_Flattening_Geometry_Optimization = (
-        "wB97X-D/def2-QZVPPD/PCM Frequency Flattening Geometry Optimization"
-    )
-    wB97X_D_def2_QZVPPD_PCM_Transition_State_Geometry_Optimization = (
-        "wB97X-D/def2-QZVPPD/PCM Transition State Geometry Optimization"
-    )
+    wB97X_D_def2_QZVPPD_PCM_Geometry_Optimization = "wB97X-D/def2-QZVPPD/PCM Geometry Optimization"
+    wB97X_D_def2_QZVPPD_PCM_Frequency_Analysis = "wB97X-D/def2-QZVPPD/PCM Frequency Analysis"
+    wB97X_D_def2_QZVPPD_PCM_Frequency_Flattening_Geometry_Optimization = "wB97X-D/def2-QZVPPD/PCM Frequency Flattening Geometry Optimization"
+    wB97X_D_def2_QZVPPD_PCM_Transition_State_Geometry_Optimization = "wB97X-D/def2-QZVPPD/PCM Transition State Geometry Optimization"
     wB97X_D_def2_QZVPPD_PCM_Frequency_Flattening_Transition_State_Geometry_Optimization = "wB97X-D/def2-QZVPPD/PCM Frequency Flattening Transition State Geometry Optimization"
     wB97X_D_def2_QZVPPD_PCM_Unknown = "wB97X-D/def2-QZVPPD/PCM Unknown"
     wB97X_D_def2_QZVPPD_SMD_Single_Point = "wB97X-D/def2-QZVPPD/SMD Single Point"
     wB97X_D_def2_QZVPPD_SMD_Force = "wB97X-D/def2-QZVPPD/SMD Force"
-    wB97X_D_def2_QZVPPD_SMD_Geometry_Optimization = (
-        "wB97X-D/def2-QZVPPD/SMD Geometry Optimization"
-    )
-    wB97X_D_def2_QZVPPD_SMD_Frequency_Analysis = (
-        "wB97X-D/def2-QZVPPD/SMD Frequency Analysis"
-    )
-    wB97X_D_def2_QZVPPD_SMD_Frequency_Flattening_Geometry_Optimization = (
-        "wB97X-D/def2-QZVPPD/SMD Frequency Flattening Geometry Optimization"
-    )
-    wB97X_D_def2_QZVPPD_SMD_Transition_State_Geometry_Optimization = (
-        "wB97X-D/def2-QZVPPD/SMD Transition State Geometry Optimization"
-    )
+    wB97X_D_def2_QZVPPD_SMD_Geometry_Optimization = "wB97X-D/def2-QZVPPD/SMD Geometry Optimization"
+    wB97X_D_def2_QZVPPD_SMD_Frequency_Analysis = "wB97X-D/def2-QZVPPD/SMD Frequency Analysis"
+    wB97X_D_def2_QZVPPD_SMD_Frequency_Flattening_Geometry_Optimization = "wB97X-D/def2-QZVPPD/SMD Frequency Flattening Geometry Optimization"
+    wB97X_D_def2_QZVPPD_SMD_Transition_State_Geometry_Optimization = "wB97X-D/def2-QZVPPD/SMD Transition State Geometry Optimization"
     wB97X_D_def2_QZVPPD_SMD_Frequency_Flattening_Transition_State_Geometry_Optimization = "wB97X-D/def2-QZVPPD/SMD Frequency Flattening Transition State Geometry Optimization"
     wB97X_D_def2_QZVPPD_SMD_Unknown = "wB97X-D/def2-QZVPPD/SMD Unknown"
     wB97X_D3_6_31g_d_VACUUM_Single_Point = "wB97X-D3/6-31g*/VACUUM Single Point"
     wB97X_D3_6_31g_d_VACUUM_Force = "wB97X-D3/6-31g*/VACUUM Force"
-    wB97X_D3_6_31g_d_VACUUM_Geometry_Optimization = (
-        "wB97X-D3/6-31g*/VACUUM Geometry Optimization"
-    )
-    wB97X_D3_6_31g_d_VACUUM_Frequency_Analysis = (
-        "wB97X-D3/6-31g*/VACUUM Frequency Analysis"
-    )
-    wB97X_D3_6_31g_d_VACUUM_Frequency_Flattening_Geometry_Optimization = (
-        "wB97X-D3/6-31g*/VACUUM Frequency Flattening Geometry Optimization"
-    )
-    wB97X_D3_6_31g_d_VACUUM_Transition_State_Geometry_Optimization = (
-        "wB97X-D3/6-31g*/VACUUM Transition State Geometry Optimization"
-    )
+    wB97X_D3_6_31g_d_VACUUM_Geometry_Optimization = "wB97X-D3/6-31g*/VACUUM Geometry Optimization"
+    wB97X_D3_6_31g_d_VACUUM_Frequency_Analysis = "wB97X-D3/6-31g*/VACUUM Frequency Analysis"
+    wB97X_D3_6_31g_d_VACUUM_Frequency_Flattening_Geometry_Optimization = "wB97X-D3/6-31g*/VACUUM Frequency Flattening Geometry Optimization"
+    wB97X_D3_6_31g_d_VACUUM_Transition_State_Geometry_Optimization = "wB97X-D3/6-31g*/VACUUM Transition State Geometry Optimization"
     wB97X_D3_6_31g_d_VACUUM_Frequency_Flattening_Transition_State_Geometry_Optimization = "wB97X-D3/6-31g*/VACUUM Frequency Flattening Transition State Geometry Optimization"
     wB97X_D3_6_31g_d_VACUUM_Unknown = "wB97X-D3/6-31g*/VACUUM Unknown"
     wB97X_D3_6_31g_d_PCM_Single_Point = "wB97X-D3/6-31g*/PCM Single Point"
     wB97X_D3_6_31g_d_PCM_Force = "wB97X-D3/6-31g*/PCM Force"
-    wB97X_D3_6_31g_d_PCM_Geometry_Optimization = (
-        "wB97X-D3/6-31g*/PCM Geometry Optimization"
-    )
+    wB97X_D3_6_31g_d_PCM_Geometry_Optimization = "wB97X-D3/6-31g*/PCM Geometry Optimization"
     wB97X_D3_6_31g_d_PCM_Frequency_Analysis = "wB97X-D3/6-31g*/PCM Frequency Analysis"
-    wB97X_D3_6_31g_d_PCM_Frequency_Flattening_Geometry_Optimization = (
-        "wB97X-D3/6-31g*/PCM Frequency Flattening Geometry Optimization"
-    )
-    wB97X_D3_6_31g_d_PCM_Transition_State_Geometry_Optimization = (
-        "wB97X-D3/6-31g*/PCM Transition State Geometry Optimization"
-    )
+    wB97X_D3_6_31g_d_PCM_Frequency_Flattening_Geometry_Optimization = "wB97X-D3/6-31g*/PCM Frequency Flattening Geometry Optimization"
+    wB97X_D3_6_31g_d_PCM_Transition_State_Geometry_Optimization = "wB97X-D3/6-31g*/PCM Transition State Geometry Optimization"
     wB97X_D3_6_31g_d_PCM_Frequency_Flattening_Transition_State_Geometry_Optimization = "wB97X-D3/6-31g*/PCM Frequency Flattening Transition State Geometry Optimization"
     wB97X_D3_6_31g_d_PCM_Unknown = "wB97X-D3/6-31g*/PCM Unknown"
     wB97X_D3_6_31g_d_SMD_Single_Point = "wB97X-D3/6-31g*/SMD Single Point"
     wB97X_D3_6_31g_d_SMD_Force = "wB97X-D3/6-31g*/SMD Force"
-    wB97X_D3_6_31g_d_SMD_Geometry_Optimization = (
-        "wB97X-D3/6-31g*/SMD Geometry Optimization"
-    )
+    wB97X_D3_6_31g_d_SMD_Geometry_Optimization = "wB97X-D3/6-31g*/SMD Geometry Optimization"
     wB97X_D3_6_31g_d_SMD_Frequency_Analysis = "wB97X-D3/6-31g*/SMD Frequency Analysis"
-    wB97X_D3_6_31g_d_SMD_Frequency_Flattening_Geometry_Optimization = (
-        "wB97X-D3/6-31g*/SMD Frequency Flattening Geometry Optimization"
-    )
-    wB97X_D3_6_31g_d_SMD_Transition_State_Geometry_Optimization = (
-        "wB97X-D3/6-31g*/SMD Transition State Geometry Optimization"
-    )
+    wB97X_D3_6_31g_d_SMD_Frequency_Flattening_Geometry_Optimization = "wB97X-D3/6-31g*/SMD Frequency Flattening Geometry Optimization"
+    wB97X_D3_6_31g_d_SMD_Transition_State_Geometry_Optimization = "wB97X-D3/6-31g*/SMD Transition State Geometry Optimization"
     wB97X_D3_6_31g_d_SMD_Frequency_Flattening_Transition_State_Geometry_Optimization = "wB97X-D3/6-31g*/SMD Frequency Flattening Transition State Geometry Optimization"
     wB97X_D3_6_31g_d_SMD_Unknown = "wB97X-D3/6-31g*/SMD Unknown"
     wB97X_D3_def2_SVPD_VACUUM_Single_Point = "wB97X-D3/def2-SVPD/VACUUM Single Point"
     wB97X_D3_def2_SVPD_VACUUM_Force = "wB97X-D3/def2-SVPD/VACUUM Force"
-    wB97X_D3_def2_SVPD_VACUUM_Geometry_Optimization = (
-        "wB97X-D3/def2-SVPD/VACUUM Geometry Optimization"
-    )
-    wB97X_D3_def2_SVPD_VACUUM_Frequency_Analysis = (
-        "wB97X-D3/def2-SVPD/VACUUM Frequency Analysis"
-    )
-    wB97X_D3_def2_SVPD_VACUUM_Frequency_Flattening_Geometry_Optimization = (
-        "wB97X-D3/def2-SVPD/VACUUM Frequency Flattening Geometry Optimization"
-    )
-    wB97X_D3_def2_SVPD_VACUUM_Transition_State_Geometry_Optimization = (
-        "wB97X-D3/def2-SVPD/VACUUM Transition State Geometry Optimization"
-    )
+    wB97X_D3_def2_SVPD_VACUUM_Geometry_Optimization = "wB97X-D3/def2-SVPD/VACUUM Geometry Optimization"
+    wB97X_D3_def2_SVPD_VACUUM_Frequency_Analysis = "wB97X-D3/def2-SVPD/VACUUM Frequency Analysis"
+    wB97X_D3_def2_SVPD_VACUUM_Frequency_Flattening_Geometry_Optimization = "wB97X-D3/def2-SVPD/VACUUM Frequency Flattening Geometry Optimization"
+    wB97X_D3_def2_SVPD_VACUUM_Transition_State_Geometry_Optimization = "wB97X-D3/def2-SVPD/VACUUM Transition State Geometry Optimization"
     wB97X_D3_def2_SVPD_VACUUM_Frequency_Flattening_Transition_State_Geometry_Optimization = "wB97X-D3/def2-SVPD/VACUUM Frequency Flattening Transition State Geometry Optimization"
     wB97X_D3_def2_SVPD_VACUUM_Unknown = "wB97X-D3/def2-SVPD/VACUUM Unknown"
     wB97X_D3_def2_SVPD_PCM_Single_Point = "wB97X-D3/def2-SVPD/PCM Single Point"
     wB97X_D3_def2_SVPD_PCM_Force = "wB97X-D3/def2-SVPD/PCM Force"
-    wB97X_D3_def2_SVPD_PCM_Geometry_Optimization = (
-        "wB97X-D3/def2-SVPD/PCM Geometry Optimization"
-    )
-    wB97X_D3_def2_SVPD_PCM_Frequency_Analysis = (
-        "wB97X-D3/def2-SVPD/PCM Frequency Analysis"
-    )
-    wB97X_D3_def2_SVPD_PCM_Frequency_Flattening_Geometry_Optimization = (
-        "wB97X-D3/def2-SVPD/PCM Frequency Flattening Geometry Optimization"
-    )
-    wB97X_D3_def2_SVPD_PCM_Transition_State_Geometry_Optimization = (
-        "wB97X-D3/def2-SVPD/PCM Transition State Geometry Optimization"
-    )
+    wB97X_D3_def2_SVPD_PCM_Geometry_Optimization = "wB97X-D3/def2-SVPD/PCM Geometry Optimization"
+    wB97X_D3_def2_SVPD_PCM_Frequency_Analysis = "wB97X-D3/def2-SVPD/PCM Frequency Analysis"
+    wB97X_D3_def2_SVPD_PCM_Frequency_Flattening_Geometry_Optimization = "wB97X-D3/def2-SVPD/PCM Frequency Flattening Geometry Optimization"
+    wB97X_D3_def2_SVPD_PCM_Transition_State_Geometry_Optimization = "wB97X-D3/def2-SVPD/PCM Transition State Geometry Optimization"
     wB97X_D3_def2_SVPD_PCM_Frequency_Flattening_Transition_State_Geometry_Optimization = "wB97X-D3/def2-SVPD/PCM Frequency Flattening Transition State Geometry Optimization"
     wB97X_D3_def2_SVPD_PCM_Unknown = "wB97X-D3/def2-SVPD/PCM Unknown"
     wB97X_D3_def2_SVPD_SMD_Single_Point = "wB97X-D3/def2-SVPD/SMD Single Point"
     wB97X_D3_def2_SVPD_SMD_Force = "wB97X-D3/def2-SVPD/SMD Force"
-    wB97X_D3_def2_SVPD_SMD_Geometry_Optimization = (
-        "wB97X-D3/def2-SVPD/SMD Geometry Optimization"
-    )
-    wB97X_D3_def2_SVPD_SMD_Frequency_Analysis = (
-        "wB97X-D3/def2-SVPD/SMD Frequency Analysis"
-    )
-    wB97X_D3_def2_SVPD_SMD_Frequency_Flattening_Geometry_Optimization = (
-        "wB97X-D3/def2-SVPD/SMD Frequency Flattening Geometry Optimization"
-    )
-    wB97X_D3_def2_SVPD_SMD_Transition_State_Geometry_Optimization = (
-        "wB97X-D3/def2-SVPD/SMD Transition State Geometry Optimization"
-    )
+    wB97X_D3_def2_SVPD_SMD_Geometry_Optimization = "wB97X-D3/def2-SVPD/SMD Geometry Optimization"
+    wB97X_D3_def2_SVPD_SMD_Frequency_Analysis = "wB97X-D3/def2-SVPD/SMD Frequency Analysis"
+    wB97X_D3_def2_SVPD_SMD_Frequency_Flattening_Geometry_Optimization = "wB97X-D3/def2-SVPD/SMD Frequency Flattening Geometry Optimization"
+    wB97X_D3_def2_SVPD_SMD_Transition_State_Geometry_Optimization = "wB97X-D3/def2-SVPD/SMD Transition State Geometry Optimization"
     wB97X_D3_def2_SVPD_SMD_Frequency_Flattening_Transition_State_Geometry_Optimization = "wB97X-D3/def2-SVPD/SMD Frequency Flattening Transition State Geometry Optimization"
     wB97X_D3_def2_SVPD_SMD_Unknown = "wB97X-D3/def2-SVPD/SMD Unknown"
     wB97X_D3_def2_TZVP_VACUUM_Single_Point = "wB97X-D3/def2-TZVP/VACUUM Single Point"
     wB97X_D3_def2_TZVP_VACUUM_Force = "wB97X-D3/def2-TZVP/VACUUM Force"
-    wB97X_D3_def2_TZVP_VACUUM_Geometry_Optimization = (
-        "wB97X-D3/def2-TZVP/VACUUM Geometry Optimization"
-    )
-    wB97X_D3_def2_TZVP_VACUUM_Frequency_Analysis = (
-        "wB97X-D3/def2-TZVP/VACUUM Frequency Analysis"
-    )
-    wB97X_D3_def2_TZVP_VACUUM_Frequency_Flattening_Geometry_Optimization = (
-        "wB97X-D3/def2-TZVP/VACUUM Frequency Flattening Geometry Optimization"
-    )
-    wB97X_D3_def2_TZVP_VACUUM_Transition_State_Geometry_Optimization = (
-        "wB97X-D3/def2-TZVP/VACUUM Transition State Geometry Optimization"
-    )
+    wB97X_D3_def2_TZVP_VACUUM_Geometry_Optimization = "wB97X-D3/def2-TZVP/VACUUM Geometry Optimization"
+    wB97X_D3_def2_TZVP_VACUUM_Frequency_Analysis = "wB97X-D3/def2-TZVP/VACUUM Frequency Analysis"
+    wB97X_D3_def2_TZVP_VACUUM_Frequency_Flattening_Geometry_Optimization = "wB97X-D3/def2-TZVP/VACUUM Frequency Flattening Geometry Optimization"
+    wB97X_D3_def2_TZVP_VACUUM_Transition_State_Geometry_Optimization = "wB97X-D3/def2-TZVP/VACUUM Transition State Geometry Optimization"
     wB97X_D3_def2_TZVP_VACUUM_Frequency_Flattening_Transition_State_Geometry_Optimization = "wB97X-D3/def2-TZVP/VACUUM Frequency Flattening Transition State Geometry Optimization"
     wB97X_D3_def2_TZVP_VACUUM_Unknown = "wB97X-D3/def2-TZVP/VACUUM Unknown"
     wB97X_D3_def2_TZVP_PCM_Single_Point = "wB97X-D3/def2-TZVP/PCM Single Point"
     wB97X_D3_def2_TZVP_PCM_Force = "wB97X-D3/def2-TZVP/PCM Force"
-    wB97X_D3_def2_TZVP_PCM_Geometry_Optimization = (
-        "wB97X-D3/def2-TZVP/PCM Geometry Optimization"
-    )
-    wB97X_D3_def2_TZVP_PCM_Frequency_Analysis = (
-        "wB97X-D3/def2-TZVP/PCM Frequency Analysis"
-    )
-    wB97X_D3_def2_TZVP_PCM_Frequency_Flattening_Geometry_Optimization = (
-        "wB97X-D3/def2-TZVP/PCM Frequency Flattening Geometry Optimization"
-    )
-    wB97X_D3_def2_TZVP_PCM_Transition_State_Geometry_Optimization = (
-        "wB97X-D3/def2-TZVP/PCM Transition State Geometry Optimization"
-    )
+    wB97X_D3_def2_TZVP_PCM_Geometry_Optimization = "wB97X-D3/def2-TZVP/PCM Geometry Optimization"
+    wB97X_D3_def2_TZVP_PCM_Frequency_Analysis = "wB97X-D3/def2-TZVP/PCM Frequency Analysis"
+    wB97X_D3_def2_TZVP_PCM_Frequency_Flattening_Geometry_Optimization = "wB97X-D3/def2-TZVP/PCM Frequency Flattening Geometry Optimization"
+    wB97X_D3_def2_TZVP_PCM_Transition_State_Geometry_Optimization = "wB97X-D3/def2-TZVP/PCM Transition State Geometry Optimization"
     wB97X_D3_def2_TZVP_PCM_Frequency_Flattening_Transition_State_Geometry_Optimization = "wB97X-D3/def2-TZVP/PCM Frequency Flattening Transition State Geometry Optimization"
     wB97X_D3_def2_TZVP_PCM_Unknown = "wB97X-D3/def2-TZVP/PCM Unknown"
     wB97X_D3_def2_TZVP_SMD_Single_Point = "wB97X-D3/def2-TZVP/SMD Single Point"
     wB97X_D3_def2_TZVP_SMD_Force = "wB97X-D3/def2-TZVP/SMD Force"
-    wB97X_D3_def2_TZVP_SMD_Geometry_Optimization = (
-        "wB97X-D3/def2-TZVP/SMD Geometry Optimization"
-    )
-    wB97X_D3_def2_TZVP_SMD_Frequency_Analysis = (
-        "wB97X-D3/def2-TZVP/SMD Frequency Analysis"
-    )
-    wB97X_D3_def2_TZVP_SMD_Frequency_Flattening_Geometry_Optimization = (
-        "wB97X-D3/def2-TZVP/SMD Frequency Flattening Geometry Optimization"
-    )
-    wB97X_D3_def2_TZVP_SMD_Transition_State_Geometry_Optimization = (
-        "wB97X-D3/def2-TZVP/SMD Transition State Geometry Optimization"
-    )
+    wB97X_D3_def2_TZVP_SMD_Geometry_Optimization = "wB97X-D3/def2-TZVP/SMD Geometry Optimization"
+    wB97X_D3_def2_TZVP_SMD_Frequency_Analysis = "wB97X-D3/def2-TZVP/SMD Frequency Analysis"
+    wB97X_D3_def2_TZVP_SMD_Frequency_Flattening_Geometry_Optimization = "wB97X-D3/def2-TZVP/SMD Frequency Flattening Geometry Optimization"
+    wB97X_D3_def2_TZVP_SMD_Transition_State_Geometry_Optimization = "wB97X-D3/def2-TZVP/SMD Transition State Geometry Optimization"
     wB97X_D3_def2_TZVP_SMD_Frequency_Flattening_Transition_State_Geometry_Optimization = "wB97X-D3/def2-TZVP/SMD Frequency Flattening Transition State Geometry Optimization"
     wB97X_D3_def2_TZVP_SMD_Unknown = "wB97X-D3/def2-TZVP/SMD Unknown"
     wB97X_D3_def2_TZVPD_VACUUM_Single_Point = "wB97X-D3/def2-TZVPD/VACUUM Single Point"
     wB97X_D3_def2_TZVPD_VACUUM_Force = "wB97X-D3/def2-TZVPD/VACUUM Force"
-    wB97X_D3_def2_TZVPD_VACUUM_Geometry_Optimization = (
-        "wB97X-D3/def2-TZVPD/VACUUM Geometry Optimization"
-    )
-    wB97X_D3_def2_TZVPD_VACUUM_Frequency_Analysis = (
-        "wB97X-D3/def2-TZVPD/VACUUM Frequency Analysis"
-    )
-    wB97X_D3_def2_TZVPD_VACUUM_Frequency_Flattening_Geometry_Optimization = (
-        "wB97X-D3/def2-TZVPD/VACUUM Frequency Flattening Geometry Optimization"
-    )
-    wB97X_D3_def2_TZVPD_VACUUM_Transition_State_Geometry_Optimization = (
-        "wB97X-D3/def2-TZVPD/VACUUM Transition State Geometry Optimization"
-    )
+    wB97X_D3_def2_TZVPD_VACUUM_Geometry_Optimization = "wB97X-D3/def2-TZVPD/VACUUM Geometry Optimization"
+    wB97X_D3_def2_TZVPD_VACUUM_Frequency_Analysis = "wB97X-D3/def2-TZVPD/VACUUM Frequency Analysis"
+    wB97X_D3_def2_TZVPD_VACUUM_Frequency_Flattening_Geometry_Optimization = "wB97X-D3/def2-TZVPD/VACUUM Frequency Flattening Geometry Optimization"
+    wB97X_D3_def2_TZVPD_VACUUM_Transition_State_Geometry_Optimization = "wB97X-D3/def2-TZVPD/VACUUM Transition State Geometry Optimization"
     wB97X_D3_def2_TZVPD_VACUUM_Frequency_Flattening_Transition_State_Geometry_Optimization = "wB97X-D3/def2-TZVPD/VACUUM Frequency Flattening Transition State Geometry Optimization"
     wB97X_D3_def2_TZVPD_VACUUM_Unknown = "wB97X-D3/def2-TZVPD/VACUUM Unknown"
     wB97X_D3_def2_TZVPD_PCM_Single_Point = "wB97X-D3/def2-TZVPD/PCM Single Point"
     wB97X_D3_def2_TZVPD_PCM_Force = "wB97X-D3/def2-TZVPD/PCM Force"
-    wB97X_D3_def2_TZVPD_PCM_Geometry_Optimization = (
-        "wB97X-D3/def2-TZVPD/PCM Geometry Optimization"
-    )
-    wB97X_D3_def2_TZVPD_PCM_Frequency_Analysis = (
-        "wB97X-D3/def2-TZVPD/PCM Frequency Analysis"
-    )
-    wB97X_D3_def2_TZVPD_PCM_Frequency_Flattening_Geometry_Optimization = (
-        "wB97X-D3/def2-TZVPD/PCM Frequency Flattening Geometry Optimization"
-    )
-    wB97X_D3_def2_TZVPD_PCM_Transition_State_Geometry_Optimization = (
-        "wB97X-D3/def2-TZVPD/PCM Transition State Geometry Optimization"
-    )
+    wB97X_D3_def2_TZVPD_PCM_Geometry_Optimization = "wB97X-D3/def2-TZVPD/PCM Geometry Optimization"
+    wB97X_D3_def2_TZVPD_PCM_Frequency_Analysis = "wB97X-D3/def2-TZVPD/PCM Frequency Analysis"
+    wB97X_D3_def2_TZVPD_PCM_Frequency_Flattening_Geometry_Optimization = "wB97X-D3/def2-TZVPD/PCM Frequency Flattening Geometry Optimization"
+    wB97X_D3_def2_TZVPD_PCM_Transition_State_Geometry_Optimization = "wB97X-D3/def2-TZVPD/PCM Transition State Geometry Optimization"
     wB97X_D3_def2_TZVPD_PCM_Frequency_Flattening_Transition_State_Geometry_Optimization = "wB97X-D3/def2-TZVPD/PCM Frequency Flattening Transition State Geometry Optimization"
     wB97X_D3_def2_TZVPD_PCM_Unknown = "wB97X-D3/def2-TZVPD/PCM Unknown"
     wB97X_D3_def2_TZVPD_SMD_Single_Point = "wB97X-D3/def2-TZVPD/SMD Single Point"
     wB97X_D3_def2_TZVPD_SMD_Force = "wB97X-D3/def2-TZVPD/SMD Force"
-    wB97X_D3_def2_TZVPD_SMD_Geometry_Optimization = (
-        "wB97X-D3/def2-TZVPD/SMD Geometry Optimization"
-    )
-    wB97X_D3_def2_TZVPD_SMD_Frequency_Analysis = (
-        "wB97X-D3/def2-TZVPD/SMD Frequency Analysis"
-    )
-    wB97X_D3_def2_TZVPD_SMD_Frequency_Flattening_Geometry_Optimization = (
-        "wB97X-D3/def2-TZVPD/SMD Frequency Flattening Geometry Optimization"
-    )
-    wB97X_D3_def2_TZVPD_SMD_Transition_State_Geometry_Optimization = (
-        "wB97X-D3/def2-TZVPD/SMD Transition State Geometry Optimization"
-    )
+    wB97X_D3_def2_TZVPD_SMD_Geometry_Optimization = "wB97X-D3/def2-TZVPD/SMD Geometry Optimization"
+    wB97X_D3_def2_TZVPD_SMD_Frequency_Analysis = "wB97X-D3/def2-TZVPD/SMD Frequency Analysis"
+    wB97X_D3_def2_TZVPD_SMD_Frequency_Flattening_Geometry_Optimization = "wB97X-D3/def2-TZVPD/SMD Frequency Flattening Geometry Optimization"
+    wB97X_D3_def2_TZVPD_SMD_Transition_State_Geometry_Optimization = "wB97X-D3/def2-TZVPD/SMD Transition State Geometry Optimization"
     wB97X_D3_def2_TZVPD_SMD_Frequency_Flattening_Transition_State_Geometry_Optimization = "wB97X-D3/def2-TZVPD/SMD Frequency Flattening Transition State Geometry Optimization"
     wB97X_D3_def2_TZVPD_SMD_Unknown = "wB97X-D3/def2-TZVPD/SMD Unknown"
     wB97X_D3_def2_TZVPP_VACUUM_Single_Point = "wB97X-D3/def2-TZVPP/VACUUM Single Point"
     wB97X_D3_def2_TZVPP_VACUUM_Force = "wB97X-D3/def2-TZVPP/VACUUM Force"
-    wB97X_D3_def2_TZVPP_VACUUM_Geometry_Optimization = (
-        "wB97X-D3/def2-TZVPP/VACUUM Geometry Optimization"
-    )
-    wB97X_D3_def2_TZVPP_VACUUM_Frequency_Analysis = (
-        "wB97X-D3/def2-TZVPP/VACUUM Frequency Analysis"
-    )
-    wB97X_D3_def2_TZVPP_VACUUM_Frequency_Flattening_Geometry_Optimization = (
-        "wB97X-D3/def2-TZVPP/VACUUM Frequency Flattening Geometry Optimization"
-    )
-    wB97X_D3_def2_TZVPP_VACUUM_Transition_State_Geometry_Optimization = (
-        "wB97X-D3/def2-TZVPP/VACUUM Transition State Geometry Optimization"
-    )
+    wB97X_D3_def2_TZVPP_VACUUM_Geometry_Optimization = "wB97X-D3/def2-TZVPP/VACUUM Geometry Optimization"
+    wB97X_D3_def2_TZVPP_VACUUM_Frequency_Analysis = "wB97X-D3/def2-TZVPP/VACUUM Frequency Analysis"
+    wB97X_D3_def2_TZVPP_VACUUM_Frequency_Flattening_Geometry_Optimization = "wB97X-D3/def2-TZVPP/VACUUM Frequency Flattening Geometry Optimization"
+    wB97X_D3_def2_TZVPP_VACUUM_Transition_State_Geometry_Optimization = "wB97X-D3/def2-TZVPP/VACUUM Transition State Geometry Optimization"
     wB97X_D3_def2_TZVPP_VACUUM_Frequency_Flattening_Transition_State_Geometry_Optimization = "wB97X-D3/def2-TZVPP/VACUUM Frequency Flattening Transition State Geometry Optimization"
     wB97X_D3_def2_TZVPP_VACUUM_Unknown = "wB97X-D3/def2-TZVPP/VACUUM Unknown"
     wB97X_D3_def2_TZVPP_PCM_Single_Point = "wB97X-D3/def2-TZVPP/PCM Single Point"
     wB97X_D3_def2_TZVPP_PCM_Force = "wB97X-D3/def2-TZVPP/PCM Force"
-    wB97X_D3_def2_TZVPP_PCM_Geometry_Optimization = (
-        "wB97X-D3/def2-TZVPP/PCM Geometry Optimization"
-    )
-    wB97X_D3_def2_TZVPP_PCM_Frequency_Analysis = (
-        "wB97X-D3/def2-TZVPP/PCM Frequency Analysis"
-    )
-    wB97X_D3_def2_TZVPP_PCM_Frequency_Flattening_Geometry_Optimization = (
-        "wB97X-D3/def2-TZVPP/PCM Frequency Flattening Geometry Optimization"
-    )
-    wB97X_D3_def2_TZVPP_PCM_Transition_State_Geometry_Optimization = (
-        "wB97X-D3/def2-TZVPP/PCM Transition State Geometry Optimization"
-    )
+    wB97X_D3_def2_TZVPP_PCM_Geometry_Optimization = "wB97X-D3/def2-TZVPP/PCM Geometry Optimization"
+    wB97X_D3_def2_TZVPP_PCM_Frequency_Analysis = "wB97X-D3/def2-TZVPP/PCM Frequency Analysis"
+    wB97X_D3_def2_TZVPP_PCM_Frequency_Flattening_Geometry_Optimization = "wB97X-D3/def2-TZVPP/PCM Frequency Flattening Geometry Optimization"
+    wB97X_D3_def2_TZVPP_PCM_Transition_State_Geometry_Optimization = "wB97X-D3/def2-TZVPP/PCM Transition State Geometry Optimization"
     wB97X_D3_def2_TZVPP_PCM_Frequency_Flattening_Transition_State_Geometry_Optimization = "wB97X-D3/def2-TZVPP/PCM Frequency Flattening Transition State Geometry Optimization"
     wB97X_D3_def2_TZVPP_PCM_Unknown = "wB97X-D3/def2-TZVPP/PCM Unknown"
     wB97X_D3_def2_TZVPP_SMD_Single_Point = "wB97X-D3/def2-TZVPP/SMD Single Point"
     wB97X_D3_def2_TZVPP_SMD_Force = "wB97X-D3/def2-TZVPP/SMD Force"
-    wB97X_D3_def2_TZVPP_SMD_Geometry_Optimization = (
-        "wB97X-D3/def2-TZVPP/SMD Geometry Optimization"
-    )
-    wB97X_D3_def2_TZVPP_SMD_Frequency_Analysis = (
-        "wB97X-D3/def2-TZVPP/SMD Frequency Analysis"
-    )
-    wB97X_D3_def2_TZVPP_SMD_Frequency_Flattening_Geometry_Optimization = (
-        "wB97X-D3/def2-TZVPP/SMD Frequency Flattening Geometry Optimization"
-    )
-    wB97X_D3_def2_TZVPP_SMD_Transition_State_Geometry_Optimization = (
-        "wB97X-D3/def2-TZVPP/SMD Transition State Geometry Optimization"
-    )
+    wB97X_D3_def2_TZVPP_SMD_Geometry_Optimization = "wB97X-D3/def2-TZVPP/SMD Geometry Optimization"
+    wB97X_D3_def2_TZVPP_SMD_Frequency_Analysis = "wB97X-D3/def2-TZVPP/SMD Frequency Analysis"
+    wB97X_D3_def2_TZVPP_SMD_Frequency_Flattening_Geometry_Optimization = "wB97X-D3/def2-TZVPP/SMD Frequency Flattening Geometry Optimization"
+    wB97X_D3_def2_TZVPP_SMD_Transition_State_Geometry_Optimization = "wB97X-D3/def2-TZVPP/SMD Transition State Geometry Optimization"
     wB97X_D3_def2_TZVPP_SMD_Frequency_Flattening_Transition_State_Geometry_Optimization = "wB97X-D3/def2-TZVPP/SMD Frequency Flattening Transition State Geometry Optimization"
     wB97X_D3_def2_TZVPP_SMD_Unknown = "wB97X-D3/def2-TZVPP/SMD Unknown"
-    wB97X_D3_def2_TZVPPD_VACUUM_Single_Point = (
-        "wB97X-D3/def2-TZVPPD/VACUUM Single Point"
-    )
+    wB97X_D3_def2_TZVPPD_VACUUM_Single_Point = "wB97X-D3/def2-TZVPPD/VACUUM Single Point"
     wB97X_D3_def2_TZVPPD_VACUUM_Force = "wB97X-D3/def2-TZVPPD/VACUUM Force"
-    wB97X_D3_def2_TZVPPD_VACUUM_Geometry_Optimization = (
-        "wB97X-D3/def2-TZVPPD/VACUUM Geometry Optimization"
-    )
-    wB97X_D3_def2_TZVPPD_VACUUM_Frequency_Analysis = (
-        "wB97X-D3/def2-TZVPPD/VACUUM Frequency Analysis"
-    )
-    wB97X_D3_def2_TZVPPD_VACUUM_Frequency_Flattening_Geometry_Optimization = (
-        "wB97X-D3/def2-TZVPPD/VACUUM Frequency Flattening Geometry Optimization"
-    )
-    wB97X_D3_def2_TZVPPD_VACUUM_Transition_State_Geometry_Optimization = (
-        "wB97X-D3/def2-TZVPPD/VACUUM Transition State Geometry Optimization"
-    )
+    wB97X_D3_def2_TZVPPD_VACUUM_Geometry_Optimization = "wB97X-D3/def2-TZVPPD/VACUUM Geometry Optimization"
+    wB97X_D3_def2_TZVPPD_VACUUM_Frequency_Analysis = "wB97X-D3/def2-TZVPPD/VACUUM Frequency Analysis"
+    wB97X_D3_def2_TZVPPD_VACUUM_Frequency_Flattening_Geometry_Optimization = "wB97X-D3/def2-TZVPPD/VACUUM Frequency Flattening Geometry Optimization"
+    wB97X_D3_def2_TZVPPD_VACUUM_Transition_State_Geometry_Optimization = "wB97X-D3/def2-TZVPPD/VACUUM Transition State Geometry Optimization"
     wB97X_D3_def2_TZVPPD_VACUUM_Frequency_Flattening_Transition_State_Geometry_Optimization = "wB97X-D3/def2-TZVPPD/VACUUM Frequency Flattening Transition State Geometry Optimization"
     wB97X_D3_def2_TZVPPD_VACUUM_Unknown = "wB97X-D3/def2-TZVPPD/VACUUM Unknown"
     wB97X_D3_def2_TZVPPD_PCM_Single_Point = "wB97X-D3/def2-TZVPPD/PCM Single Point"
     wB97X_D3_def2_TZVPPD_PCM_Force = "wB97X-D3/def2-TZVPPD/PCM Force"
-    wB97X_D3_def2_TZVPPD_PCM_Geometry_Optimization = (
-        "wB97X-D3/def2-TZVPPD/PCM Geometry Optimization"
-    )
-    wB97X_D3_def2_TZVPPD_PCM_Frequency_Analysis = (
-        "wB97X-D3/def2-TZVPPD/PCM Frequency Analysis"
-    )
-    wB97X_D3_def2_TZVPPD_PCM_Frequency_Flattening_Geometry_Optimization = (
-        "wB97X-D3/def2-TZVPPD/PCM Frequency Flattening Geometry Optimization"
-    )
-    wB97X_D3_def2_TZVPPD_PCM_Transition_State_Geometry_Optimization = (
-        "wB97X-D3/def2-TZVPPD/PCM Transition State Geometry Optimization"
-    )
+    wB97X_D3_def2_TZVPPD_PCM_Geometry_Optimization = "wB97X-D3/def2-TZVPPD/PCM Geometry Optimization"
+    wB97X_D3_def2_TZVPPD_PCM_Frequency_Analysis = "wB97X-D3/def2-TZVPPD/PCM Frequency Analysis"
+    wB97X_D3_def2_TZVPPD_PCM_Frequency_Flattening_Geometry_Optimization = "wB97X-D3/def2-TZVPPD/PCM Frequency Flattening Geometry Optimization"
+    wB97X_D3_def2_TZVPPD_PCM_Transition_State_Geometry_Optimization = "wB97X-D3/def2-TZVPPD/PCM Transition State Geometry Optimization"
     wB97X_D3_def2_TZVPPD_PCM_Frequency_Flattening_Transition_State_Geometry_Optimization = "wB97X-D3/def2-TZVPPD/PCM Frequency Flattening Transition State Geometry Optimization"
     wB97X_D3_def2_TZVPPD_PCM_Unknown = "wB97X-D3/def2-TZVPPD/PCM Unknown"
     wB97X_D3_def2_TZVPPD_SMD_Single_Point = "wB97X-D3/def2-TZVPPD/SMD Single Point"
     wB97X_D3_def2_TZVPPD_SMD_Force = "wB97X-D3/def2-TZVPPD/SMD Force"
-    wB97X_D3_def2_TZVPPD_SMD_Geometry_Optimization = (
-        "wB97X-D3/def2-TZVPPD/SMD Geometry Optimization"
-    )
-    wB97X_D3_def2_TZVPPD_SMD_Frequency_Analysis = (
-        "wB97X-D3/def2-TZVPPD/SMD Frequency Analysis"
-    )
-    wB97X_D3_def2_TZVPPD_SMD_Frequency_Flattening_Geometry_Optimization = (
-        "wB97X-D3/def2-TZVPPD/SMD Frequency Flattening Geometry Optimization"
-    )
-    wB97X_D3_def2_TZVPPD_SMD_Transition_State_Geometry_Optimization = (
-        "wB97X-D3/def2-TZVPPD/SMD Transition State Geometry Optimization"
-    )
+    wB97X_D3_def2_TZVPPD_SMD_Geometry_Optimization = "wB97X-D3/def2-TZVPPD/SMD Geometry Optimization"
+    wB97X_D3_def2_TZVPPD_SMD_Frequency_Analysis = "wB97X-D3/def2-TZVPPD/SMD Frequency Analysis"
+    wB97X_D3_def2_TZVPPD_SMD_Frequency_Flattening_Geometry_Optimization = "wB97X-D3/def2-TZVPPD/SMD Frequency Flattening Geometry Optimization"
+    wB97X_D3_def2_TZVPPD_SMD_Transition_State_Geometry_Optimization = "wB97X-D3/def2-TZVPPD/SMD Transition State Geometry Optimization"
     wB97X_D3_def2_TZVPPD_SMD_Frequency_Flattening_Transition_State_Geometry_Optimization = "wB97X-D3/def2-TZVPPD/SMD Frequency Flattening Transition State Geometry Optimization"
     wB97X_D3_def2_TZVPPD_SMD_Unknown = "wB97X-D3/def2-TZVPPD/SMD Unknown"
     wB97X_D3_def2_QZVPD_VACUUM_Single_Point = "wB97X-D3/def2-QZVPD/VACUUM Single Point"
     wB97X_D3_def2_QZVPD_VACUUM_Force = "wB97X-D3/def2-QZVPD/VACUUM Force"
-    wB97X_D3_def2_QZVPD_VACUUM_Geometry_Optimization = (
-        "wB97X-D3/def2-QZVPD/VACUUM Geometry Optimization"
-    )
-    wB97X_D3_def2_QZVPD_VACUUM_Frequency_Analysis = (
-        "wB97X-D3/def2-QZVPD/VACUUM Frequency Analysis"
-    )
-    wB97X_D3_def2_QZVPD_VACUUM_Frequency_Flattening_Geometry_Optimization = (
-        "wB97X-D3/def2-QZVPD/VACUUM Frequency Flattening Geometry Optimization"
-    )
-    wB97X_D3_def2_QZVPD_VACUUM_Transition_State_Geometry_Optimization = (
-        "wB97X-D3/def2-QZVPD/VACUUM Transition State Geometry Optimization"
-    )
+    wB97X_D3_def2_QZVPD_VACUUM_Geometry_Optimization = "wB97X-D3/def2-QZVPD/VACUUM Geometry Optimization"
+    wB97X_D3_def2_QZVPD_VACUUM_Frequency_Analysis = "wB97X-D3/def2-QZVPD/VACUUM Frequency Analysis"
+    wB97X_D3_def2_QZVPD_VACUUM_Frequency_Flattening_Geometry_Optimization = "wB97X-D3/def2-QZVPD/VACUUM Frequency Flattening Geometry Optimization"
+    wB97X_D3_def2_QZVPD_VACUUM_Transition_State_Geometry_Optimization = "wB97X-D3/def2-QZVPD/VACUUM Transition State Geometry Optimization"
     wB97X_D3_def2_QZVPD_VACUUM_Frequency_Flattening_Transition_State_Geometry_Optimization = "wB97X-D3/def2-QZVPD/VACUUM Frequency Flattening Transition State Geometry Optimization"
     wB97X_D3_def2_QZVPD_VACUUM_Unknown = "wB97X-D3/def2-QZVPD/VACUUM Unknown"
     wB97X_D3_def2_QZVPD_PCM_Single_Point = "wB97X-D3/def2-QZVPD/PCM Single Point"
     wB97X_D3_def2_QZVPD_PCM_Force = "wB97X-D3/def2-QZVPD/PCM Force"
-    wB97X_D3_def2_QZVPD_PCM_Geometry_Optimization = (
-        "wB97X-D3/def2-QZVPD/PCM Geometry Optimization"
-    )
-    wB97X_D3_def2_QZVPD_PCM_Frequency_Analysis = (
-        "wB97X-D3/def2-QZVPD/PCM Frequency Analysis"
-    )
-    wB97X_D3_def2_QZVPD_PCM_Frequency_Flattening_Geometry_Optimization = (
-        "wB97X-D3/def2-QZVPD/PCM Frequency Flattening Geometry Optimization"
-    )
-    wB97X_D3_def2_QZVPD_PCM_Transition_State_Geometry_Optimization = (
-        "wB97X-D3/def2-QZVPD/PCM Transition State Geometry Optimization"
-    )
+    wB97X_D3_def2_QZVPD_PCM_Geometry_Optimization = "wB97X-D3/def2-QZVPD/PCM Geometry Optimization"
+    wB97X_D3_def2_QZVPD_PCM_Frequency_Analysis = "wB97X-D3/def2-QZVPD/PCM Frequency Analysis"
+    wB97X_D3_def2_QZVPD_PCM_Frequency_Flattening_Geometry_Optimization = "wB97X-D3/def2-QZVPD/PCM Frequency Flattening Geometry Optimization"
+    wB97X_D3_def2_QZVPD_PCM_Transition_State_Geometry_Optimization = "wB97X-D3/def2-QZVPD/PCM Transition State Geometry Optimization"
     wB97X_D3_def2_QZVPD_PCM_Frequency_Flattening_Transition_State_Geometry_Optimization = "wB97X-D3/def2-QZVPD/PCM Frequency Flattening Transition State Geometry Optimization"
     wB97X_D3_def2_QZVPD_PCM_Unknown = "wB97X-D3/def2-QZVPD/PCM Unknown"
     wB97X_D3_def2_QZVPD_SMD_Single_Point = "wB97X-D3/def2-QZVPD/SMD Single Point"
     wB97X_D3_def2_QZVPD_SMD_Force = "wB97X-D3/def2-QZVPD/SMD Force"
-    wB97X_D3_def2_QZVPD_SMD_Geometry_Optimization = (
-        "wB97X-D3/def2-QZVPD/SMD Geometry Optimization"
-    )
-    wB97X_D3_def2_QZVPD_SMD_Frequency_Analysis = (
-        "wB97X-D3/def2-QZVPD/SMD Frequency Analysis"
-    )
-    wB97X_D3_def2_QZVPD_SMD_Frequency_Flattening_Geometry_Optimization = (
-        "wB97X-D3/def2-QZVPD/SMD Frequency Flattening Geometry Optimization"
-    )
-    wB97X_D3_def2_QZVPD_SMD_Transition_State_Geometry_Optimization = (
-        "wB97X-D3/def2-QZVPD/SMD Transition State Geometry Optimization"
-    )
+    wB97X_D3_def2_QZVPD_SMD_Geometry_Optimization = "wB97X-D3/def2-QZVPD/SMD Geometry Optimization"
+    wB97X_D3_def2_QZVPD_SMD_Frequency_Analysis = "wB97X-D3/def2-QZVPD/SMD Frequency Analysis"
+    wB97X_D3_def2_QZVPD_SMD_Frequency_Flattening_Geometry_Optimization = "wB97X-D3/def2-QZVPD/SMD Frequency Flattening Geometry Optimization"
+    wB97X_D3_def2_QZVPD_SMD_Transition_State_Geometry_Optimization = "wB97X-D3/def2-QZVPD/SMD Transition State Geometry Optimization"
     wB97X_D3_def2_QZVPD_SMD_Frequency_Flattening_Transition_State_Geometry_Optimization = "wB97X-D3/def2-QZVPD/SMD Frequency Flattening Transition State Geometry Optimization"
     wB97X_D3_def2_QZVPD_SMD_Unknown = "wB97X-D3/def2-QZVPD/SMD Unknown"
-    wB97X_D3_def2_QZVPPD_VACUUM_Single_Point = (
-        "wB97X-D3/def2-QZVPPD/VACUUM Single Point"
-    )
+    wB97X_D3_def2_QZVPPD_VACUUM_Single_Point = "wB97X-D3/def2-QZVPPD/VACUUM Single Point"
     wB97X_D3_def2_QZVPPD_VACUUM_Force = "wB97X-D3/def2-QZVPPD/VACUUM Force"
-    wB97X_D3_def2_QZVPPD_VACUUM_Geometry_Optimization = (
-        "wB97X-D3/def2-QZVPPD/VACUUM Geometry Optimization"
-    )
-    wB97X_D3_def2_QZVPPD_VACUUM_Frequency_Analysis = (
-        "wB97X-D3/def2-QZVPPD/VACUUM Frequency Analysis"
-    )
-    wB97X_D3_def2_QZVPPD_VACUUM_Frequency_Flattening_Geometry_Optimization = (
-        "wB97X-D3/def2-QZVPPD/VACUUM Frequency Flattening Geometry Optimization"
-    )
-    wB97X_D3_def2_QZVPPD_VACUUM_Transition_State_Geometry_Optimization = (
-        "wB97X-D3/def2-QZVPPD/VACUUM Transition State Geometry Optimization"
-    )
+    wB97X_D3_def2_QZVPPD_VACUUM_Geometry_Optimization = "wB97X-D3/def2-QZVPPD/VACUUM Geometry Optimization"
+    wB97X_D3_def2_QZVPPD_VACUUM_Frequency_Analysis = "wB97X-D3/def2-QZVPPD/VACUUM Frequency Analysis"
+    wB97X_D3_def2_QZVPPD_VACUUM_Frequency_Flattening_Geometry_Optimization = "wB97X-D3/def2-QZVPPD/VACUUM Frequency Flattening Geometry Optimization"
+    wB97X_D3_def2_QZVPPD_VACUUM_Transition_State_Geometry_Optimization = "wB97X-D3/def2-QZVPPD/VACUUM Transition State Geometry Optimization"
     wB97X_D3_def2_QZVPPD_VACUUM_Frequency_Flattening_Transition_State_Geometry_Optimization = "wB97X-D3/def2-QZVPPD/VACUUM Frequency Flattening Transition State Geometry Optimization"
     wB97X_D3_def2_QZVPPD_VACUUM_Unknown = "wB97X-D3/def2-QZVPPD/VACUUM Unknown"
     wB97X_D3_def2_QZVPPD_PCM_Single_Point = "wB97X-D3/def2-QZVPPD/PCM Single Point"
     wB97X_D3_def2_QZVPPD_PCM_Force = "wB97X-D3/def2-QZVPPD/PCM Force"
-    wB97X_D3_def2_QZVPPD_PCM_Geometry_Optimization = (
-        "wB97X-D3/def2-QZVPPD/PCM Geometry Optimization"
-    )
-    wB97X_D3_def2_QZVPPD_PCM_Frequency_Analysis = (
-        "wB97X-D3/def2-QZVPPD/PCM Frequency Analysis"
-    )
-    wB97X_D3_def2_QZVPPD_PCM_Frequency_Flattening_Geometry_Optimization = (
-        "wB97X-D3/def2-QZVPPD/PCM Frequency Flattening Geometry Optimization"
-    )
-    wB97X_D3_def2_QZVPPD_PCM_Transition_State_Geometry_Optimization = (
-        "wB97X-D3/def2-QZVPPD/PCM Transition State Geometry Optimization"
-    )
+    wB97X_D3_def2_QZVPPD_PCM_Geometry_Optimization = "wB97X-D3/def2-QZVPPD/PCM Geometry Optimization"
+    wB97X_D3_def2_QZVPPD_PCM_Frequency_Analysis = "wB97X-D3/def2-QZVPPD/PCM Frequency Analysis"
+    wB97X_D3_def2_QZVPPD_PCM_Frequency_Flattening_Geometry_Optimization = "wB97X-D3/def2-QZVPPD/PCM Frequency Flattening Geometry Optimization"
+    wB97X_D3_def2_QZVPPD_PCM_Transition_State_Geometry_Optimization = "wB97X-D3/def2-QZVPPD/PCM Transition State Geometry Optimization"
     wB97X_D3_def2_QZVPPD_PCM_Frequency_Flattening_Transition_State_Geometry_Optimization = "wB97X-D3/def2-QZVPPD/PCM Frequency Flattening Transition State Geometry Optimization"
     wB97X_D3_def2_QZVPPD_PCM_Unknown = "wB97X-D3/def2-QZVPPD/PCM Unknown"
     wB97X_D3_def2_QZVPPD_SMD_Single_Point = "wB97X-D3/def2-QZVPPD/SMD Single Point"
     wB97X_D3_def2_QZVPPD_SMD_Force = "wB97X-D3/def2-QZVPPD/SMD Force"
-    wB97X_D3_def2_QZVPPD_SMD_Geometry_Optimization = (
-        "wB97X-D3/def2-QZVPPD/SMD Geometry Optimization"
-    )
-    wB97X_D3_def2_QZVPPD_SMD_Frequency_Analysis = (
-        "wB97X-D3/def2-QZVPPD/SMD Frequency Analysis"
-    )
-    wB97X_D3_def2_QZVPPD_SMD_Frequency_Flattening_Geometry_Optimization = (
-        "wB97X-D3/def2-QZVPPD/SMD Frequency Flattening Geometry Optimization"
-    )
-    wB97X_D3_def2_QZVPPD_SMD_Transition_State_Geometry_Optimization = (
-        "wB97X-D3/def2-QZVPPD/SMD Transition State Geometry Optimization"
-    )
+    wB97X_D3_def2_QZVPPD_SMD_Geometry_Optimization = "wB97X-D3/def2-QZVPPD/SMD Geometry Optimization"
+    wB97X_D3_def2_QZVPPD_SMD_Frequency_Analysis = "wB97X-D3/def2-QZVPPD/SMD Frequency Analysis"
+    wB97X_D3_def2_QZVPPD_SMD_Frequency_Flattening_Geometry_Optimization = "wB97X-D3/def2-QZVPPD/SMD Frequency Flattening Geometry Optimization"
+    wB97X_D3_def2_QZVPPD_SMD_Transition_State_Geometry_Optimization = "wB97X-D3/def2-QZVPPD/SMD Transition State Geometry Optimization"
     wB97X_D3_def2_QZVPPD_SMD_Frequency_Flattening_Transition_State_Geometry_Optimization = "wB97X-D3/def2-QZVPPD/SMD Frequency Flattening Transition State Geometry Optimization"
     wB97X_D3_def2_QZVPPD_SMD_Unknown = "wB97X-D3/def2-QZVPPD/SMD Unknown"
     wB97X_V_6_31g_d_VACUUM_Single_Point = "wB97X-V/6-31g*/VACUUM Single Point"
     wB97X_V_6_31g_d_VACUUM_Force = "wB97X-V/6-31g*/VACUUM Force"
-    wB97X_V_6_31g_d_VACUUM_Geometry_Optimization = (
-        "wB97X-V/6-31g*/VACUUM Geometry Optimization"
-    )
-    wB97X_V_6_31g_d_VACUUM_Frequency_Analysis = (
-        "wB97X-V/6-31g*/VACUUM Frequency Analysis"
-    )
-    wB97X_V_6_31g_d_VACUUM_Frequency_Flattening_Geometry_Optimization = (
-        "wB97X-V/6-31g*/VACUUM Frequency Flattening Geometry Optimization"
-    )
-    wB97X_V_6_31g_d_VACUUM_Transition_State_Geometry_Optimization = (
-        "wB97X-V/6-31g*/VACUUM Transition State Geometry Optimization"
-    )
+    wB97X_V_6_31g_d_VACUUM_Geometry_Optimization = "wB97X-V/6-31g*/VACUUM Geometry Optimization"
+    wB97X_V_6_31g_d_VACUUM_Frequency_Analysis = "wB97X-V/6-31g*/VACUUM Frequency Analysis"
+    wB97X_V_6_31g_d_VACUUM_Frequency_Flattening_Geometry_Optimization = "wB97X-V/6-31g*/VACUUM Frequency Flattening Geometry Optimization"
+    wB97X_V_6_31g_d_VACUUM_Transition_State_Geometry_Optimization = "wB97X-V/6-31g*/VACUUM Transition State Geometry Optimization"
     wB97X_V_6_31g_d_VACUUM_Frequency_Flattening_Transition_State_Geometry_Optimization = "wB97X-V/6-31g*/VACUUM Frequency Flattening Transition State Geometry Optimization"
     wB97X_V_6_31g_d_VACUUM_Unknown = "wB97X-V/6-31g*/VACUUM Unknown"
     wB97X_V_6_31g_d_PCM_Single_Point = "wB97X-V/6-31g*/PCM Single Point"
     wB97X_V_6_31g_d_PCM_Force = "wB97X-V/6-31g*/PCM Force"
-    wB97X_V_6_31g_d_PCM_Geometry_Optimization = (
-        "wB97X-V/6-31g*/PCM Geometry Optimization"
-    )
+    wB97X_V_6_31g_d_PCM_Geometry_Optimization = "wB97X-V/6-31g*/PCM Geometry Optimization"
     wB97X_V_6_31g_d_PCM_Frequency_Analysis = "wB97X-V/6-31g*/PCM Frequency Analysis"
-    wB97X_V_6_31g_d_PCM_Frequency_Flattening_Geometry_Optimization = (
-        "wB97X-V/6-31g*/PCM Frequency Flattening Geometry Optimization"
-    )
-    wB97X_V_6_31g_d_PCM_Transition_State_Geometry_Optimization = (
-        "wB97X-V/6-31g*/PCM Transition State Geometry Optimization"
-    )
-    wB97X_V_6_31g_d_PCM_Frequency_Flattening_Transition_State_Geometry_Optimization = (
-        "wB97X-V/6-31g*/PCM Frequency Flattening Transition State Geometry Optimization"
-    )
+    wB97X_V_6_31g_d_PCM_Frequency_Flattening_Geometry_Optimization = "wB97X-V/6-31g*/PCM Frequency Flattening Geometry Optimization"
+    wB97X_V_6_31g_d_PCM_Transition_State_Geometry_Optimization = "wB97X-V/6-31g*/PCM Transition State Geometry Optimization"
+    wB97X_V_6_31g_d_PCM_Frequency_Flattening_Transition_State_Geometry_Optimization = "wB97X-V/6-31g*/PCM Frequency Flattening Transition State Geometry Optimization"
     wB97X_V_6_31g_d_PCM_Unknown = "wB97X-V/6-31g*/PCM Unknown"
     wB97X_V_6_31g_d_SMD_Single_Point = "wB97X-V/6-31g*/SMD Single Point"
     wB97X_V_6_31g_d_SMD_Force = "wB97X-V/6-31g*/SMD Force"
-    wB97X_V_6_31g_d_SMD_Geometry_Optimization = (
-        "wB97X-V/6-31g*/SMD Geometry Optimization"
-    )
+    wB97X_V_6_31g_d_SMD_Geometry_Optimization = "wB97X-V/6-31g*/SMD Geometry Optimization"
     wB97X_V_6_31g_d_SMD_Frequency_Analysis = "wB97X-V/6-31g*/SMD Frequency Analysis"
-    wB97X_V_6_31g_d_SMD_Frequency_Flattening_Geometry_Optimization = (
-        "wB97X-V/6-31g*/SMD Frequency Flattening Geometry Optimization"
-    )
-    wB97X_V_6_31g_d_SMD_Transition_State_Geometry_Optimization = (
-        "wB97X-V/6-31g*/SMD Transition State Geometry Optimization"
-    )
-    wB97X_V_6_31g_d_SMD_Frequency_Flattening_Transition_State_Geometry_Optimization = (
-        "wB97X-V/6-31g*/SMD Frequency Flattening Transition State Geometry Optimization"
-    )
+    wB97X_V_6_31g_d_SMD_Frequency_Flattening_Geometry_Optimization = "wB97X-V/6-31g*/SMD Frequency Flattening Geometry Optimization"
+    wB97X_V_6_31g_d_SMD_Transition_State_Geometry_Optimization = "wB97X-V/6-31g*/SMD Transition State Geometry Optimization"
+    wB97X_V_6_31g_d_SMD_Frequency_Flattening_Transition_State_Geometry_Optimization = "wB97X-V/6-31g*/SMD Frequency Flattening Transition State Geometry Optimization"
     wB97X_V_6_31g_d_SMD_Unknown = "wB97X-V/6-31g*/SMD Unknown"
     wB97X_V_def2_SVPD_VACUUM_Single_Point = "wB97X-V/def2-SVPD/VACUUM Single Point"
     wB97X_V_def2_SVPD_VACUUM_Force = "wB97X-V/def2-SVPD/VACUUM Force"
-    wB97X_V_def2_SVPD_VACUUM_Geometry_Optimization = (
-        "wB97X-V/def2-SVPD/VACUUM Geometry Optimization"
-    )
-    wB97X_V_def2_SVPD_VACUUM_Frequency_Analysis = (
-        "wB97X-V/def2-SVPD/VACUUM Frequency Analysis"
-    )
-    wB97X_V_def2_SVPD_VACUUM_Frequency_Flattening_Geometry_Optimization = (
-        "wB97X-V/def2-SVPD/VACUUM Frequency Flattening Geometry Optimization"
-    )
-    wB97X_V_def2_SVPD_VACUUM_Transition_State_Geometry_Optimization = (
-        "wB97X-V/def2-SVPD/VACUUM Transition State Geometry Optimization"
-    )
+    wB97X_V_def2_SVPD_VACUUM_Geometry_Optimization = "wB97X-V/def2-SVPD/VACUUM Geometry Optimization"
+    wB97X_V_def2_SVPD_VACUUM_Frequency_Analysis = "wB97X-V/def2-SVPD/VACUUM Frequency Analysis"
+    wB97X_V_def2_SVPD_VACUUM_Frequency_Flattening_Geometry_Optimization = "wB97X-V/def2-SVPD/VACUUM Frequency Flattening Geometry Optimization"
+    wB97X_V_def2_SVPD_VACUUM_Transition_State_Geometry_Optimization = "wB97X-V/def2-SVPD/VACUUM Transition State Geometry Optimization"
     wB97X_V_def2_SVPD_VACUUM_Frequency_Flattening_Transition_State_Geometry_Optimization = "wB97X-V/def2-SVPD/VACUUM Frequency Flattening Transition State Geometry Optimization"
     wB97X_V_def2_SVPD_VACUUM_Unknown = "wB97X-V/def2-SVPD/VACUUM Unknown"
     wB97X_V_def2_SVPD_PCM_Single_Point = "wB97X-V/def2-SVPD/PCM Single Point"
     wB97X_V_def2_SVPD_PCM_Force = "wB97X-V/def2-SVPD/PCM Force"
-    wB97X_V_def2_SVPD_PCM_Geometry_Optimization = (
-        "wB97X-V/def2-SVPD/PCM Geometry Optimization"
-    )
-    wB97X_V_def2_SVPD_PCM_Frequency_Analysis = (
-        "wB97X-V/def2-SVPD/PCM Frequency Analysis"
-    )
-    wB97X_V_def2_SVPD_PCM_Frequency_Flattening_Geometry_Optimization = (
-        "wB97X-V/def2-SVPD/PCM Frequency Flattening Geometry Optimization"
-    )
-    wB97X_V_def2_SVPD_PCM_Transition_State_Geometry_Optimization = (
-        "wB97X-V/def2-SVPD/PCM Transition State Geometry Optimization"
-    )
+    wB97X_V_def2_SVPD_PCM_Geometry_Optimization = "wB97X-V/def2-SVPD/PCM Geometry Optimization"
+    wB97X_V_def2_SVPD_PCM_Frequency_Analysis = "wB97X-V/def2-SVPD/PCM Frequency Analysis"
+    wB97X_V_def2_SVPD_PCM_Frequency_Flattening_Geometry_Optimization = "wB97X-V/def2-SVPD/PCM Frequency Flattening Geometry Optimization"
+    wB97X_V_def2_SVPD_PCM_Transition_State_Geometry_Optimization = "wB97X-V/def2-SVPD/PCM Transition State Geometry Optimization"
     wB97X_V_def2_SVPD_PCM_Frequency_Flattening_Transition_State_Geometry_Optimization = "wB97X-V/def2-SVPD/PCM Frequency Flattening Transition State Geometry Optimization"
     wB97X_V_def2_SVPD_PCM_Unknown = "wB97X-V/def2-SVPD/PCM Unknown"
     wB97X_V_def2_SVPD_SMD_Single_Point = "wB97X-V/def2-SVPD/SMD Single Point"
     wB97X_V_def2_SVPD_SMD_Force = "wB97X-V/def2-SVPD/SMD Force"
-    wB97X_V_def2_SVPD_SMD_Geometry_Optimization = (
-        "wB97X-V/def2-SVPD/SMD Geometry Optimization"
-    )
-    wB97X_V_def2_SVPD_SMD_Frequency_Analysis = (
-        "wB97X-V/def2-SVPD/SMD Frequency Analysis"
-    )
-    wB97X_V_def2_SVPD_SMD_Frequency_Flattening_Geometry_Optimization = (
-        "wB97X-V/def2-SVPD/SMD Frequency Flattening Geometry Optimization"
-    )
-    wB97X_V_def2_SVPD_SMD_Transition_State_Geometry_Optimization = (
-        "wB97X-V/def2-SVPD/SMD Transition State Geometry Optimization"
-    )
+    wB97X_V_def2_SVPD_SMD_Geometry_Optimization = "wB97X-V/def2-SVPD/SMD Geometry Optimization"
+    wB97X_V_def2_SVPD_SMD_Frequency_Analysis = "wB97X-V/def2-SVPD/SMD Frequency Analysis"
+    wB97X_V_def2_SVPD_SMD_Frequency_Flattening_Geometry_Optimization = "wB97X-V/def2-SVPD/SMD Frequency Flattening Geometry Optimization"
+    wB97X_V_def2_SVPD_SMD_Transition_State_Geometry_Optimization = "wB97X-V/def2-SVPD/SMD Transition State Geometry Optimization"
     wB97X_V_def2_SVPD_SMD_Frequency_Flattening_Transition_State_Geometry_Optimization = "wB97X-V/def2-SVPD/SMD Frequency Flattening Transition State Geometry Optimization"
     wB97X_V_def2_SVPD_SMD_Unknown = "wB97X-V/def2-SVPD/SMD Unknown"
     wB97X_V_def2_TZVP_VACUUM_Single_Point = "wB97X-V/def2-TZVP/VACUUM Single Point"
     wB97X_V_def2_TZVP_VACUUM_Force = "wB97X-V/def2-TZVP/VACUUM Force"
-    wB97X_V_def2_TZVP_VACUUM_Geometry_Optimization = (
-        "wB97X-V/def2-TZVP/VACUUM Geometry Optimization"
-    )
-    wB97X_V_def2_TZVP_VACUUM_Frequency_Analysis = (
-        "wB97X-V/def2-TZVP/VACUUM Frequency Analysis"
-    )
-    wB97X_V_def2_TZVP_VACUUM_Frequency_Flattening_Geometry_Optimization = (
-        "wB97X-V/def2-TZVP/VACUUM Frequency Flattening Geometry Optimization"
-    )
-    wB97X_V_def2_TZVP_VACUUM_Transition_State_Geometry_Optimization = (
-        "wB97X-V/def2-TZVP/VACUUM Transition State Geometry Optimization"
-    )
+    wB97X_V_def2_TZVP_VACUUM_Geometry_Optimization = "wB97X-V/def2-TZVP/VACUUM Geometry Optimization"
+    wB97X_V_def2_TZVP_VACUUM_Frequency_Analysis = "wB97X-V/def2-TZVP/VACUUM Frequency Analysis"
+    wB97X_V_def2_TZVP_VACUUM_Frequency_Flattening_Geometry_Optimization = "wB97X-V/def2-TZVP/VACUUM Frequency Flattening Geometry Optimization"
+    wB97X_V_def2_TZVP_VACUUM_Transition_State_Geometry_Optimization = "wB97X-V/def2-TZVP/VACUUM Transition State Geometry Optimization"
     wB97X_V_def2_TZVP_VACUUM_Frequency_Flattening_Transition_State_Geometry_Optimization = "wB97X-V/def2-TZVP/VACUUM Frequency Flattening Transition State Geometry Optimization"
     wB97X_V_def2_TZVP_VACUUM_Unknown = "wB97X-V/def2-TZVP/VACUUM Unknown"
     wB97X_V_def2_TZVP_PCM_Single_Point = "wB97X-V/def2-TZVP/PCM Single Point"
     wB97X_V_def2_TZVP_PCM_Force = "wB97X-V/def2-TZVP/PCM Force"
-    wB97X_V_def2_TZVP_PCM_Geometry_Optimization = (
-        "wB97X-V/def2-TZVP/PCM Geometry Optimization"
-    )
-    wB97X_V_def2_TZVP_PCM_Frequency_Analysis = (
-        "wB97X-V/def2-TZVP/PCM Frequency Analysis"
-    )
-    wB97X_V_def2_TZVP_PCM_Frequency_Flattening_Geometry_Optimization = (
-        "wB97X-V/def2-TZVP/PCM Frequency Flattening Geometry Optimization"
-    )
-    wB97X_V_def2_TZVP_PCM_Transition_State_Geometry_Optimization = (
-        "wB97X-V/def2-TZVP/PCM Transition State Geometry Optimization"
-    )
+    wB97X_V_def2_TZVP_PCM_Geometry_Optimization = "wB97X-V/def2-TZVP/PCM Geometry Optimization"
+    wB97X_V_def2_TZVP_PCM_Frequency_Analysis = "wB97X-V/def2-TZVP/PCM Frequency Analysis"
+    wB97X_V_def2_TZVP_PCM_Frequency_Flattening_Geometry_Optimization = "wB97X-V/def2-TZVP/PCM Frequency Flattening Geometry Optimization"
+    wB97X_V_def2_TZVP_PCM_Transition_State_Geometry_Optimization = "wB97X-V/def2-TZVP/PCM Transition State Geometry Optimization"
     wB97X_V_def2_TZVP_PCM_Frequency_Flattening_Transition_State_Geometry_Optimization = "wB97X-V/def2-TZVP/PCM Frequency Flattening Transition State Geometry Optimization"
     wB97X_V_def2_TZVP_PCM_Unknown = "wB97X-V/def2-TZVP/PCM Unknown"
     wB97X_V_def2_TZVP_SMD_Single_Point = "wB97X-V/def2-TZVP/SMD Single Point"
     wB97X_V_def2_TZVP_SMD_Force = "wB97X-V/def2-TZVP/SMD Force"
-    wB97X_V_def2_TZVP_SMD_Geometry_Optimization = (
-        "wB97X-V/def2-TZVP/SMD Geometry Optimization"
-    )
-    wB97X_V_def2_TZVP_SMD_Frequency_Analysis = (
-        "wB97X-V/def2-TZVP/SMD Frequency Analysis"
-    )
-    wB97X_V_def2_TZVP_SMD_Frequency_Flattening_Geometry_Optimization = (
-        "wB97X-V/def2-TZVP/SMD Frequency Flattening Geometry Optimization"
-    )
-    wB97X_V_def2_TZVP_SMD_Transition_State_Geometry_Optimization = (
-        "wB97X-V/def2-TZVP/SMD Transition State Geometry Optimization"
-    )
+    wB97X_V_def2_TZVP_SMD_Geometry_Optimization = "wB97X-V/def2-TZVP/SMD Geometry Optimization"
+    wB97X_V_def2_TZVP_SMD_Frequency_Analysis = "wB97X-V/def2-TZVP/SMD Frequency Analysis"
+    wB97X_V_def2_TZVP_SMD_Frequency_Flattening_Geometry_Optimization = "wB97X-V/def2-TZVP/SMD Frequency Flattening Geometry Optimization"
+    wB97X_V_def2_TZVP_SMD_Transition_State_Geometry_Optimization = "wB97X-V/def2-TZVP/SMD Transition State Geometry Optimization"
     wB97X_V_def2_TZVP_SMD_Frequency_Flattening_Transition_State_Geometry_Optimization = "wB97X-V/def2-TZVP/SMD Frequency Flattening Transition State Geometry Optimization"
     wB97X_V_def2_TZVP_SMD_Unknown = "wB97X-V/def2-TZVP/SMD Unknown"
     wB97X_V_def2_TZVPD_VACUUM_Single_Point = "wB97X-V/def2-TZVPD/VACUUM Single Point"
     wB97X_V_def2_TZVPD_VACUUM_Force = "wB97X-V/def2-TZVPD/VACUUM Force"
-    wB97X_V_def2_TZVPD_VACUUM_Geometry_Optimization = (
-        "wB97X-V/def2-TZVPD/VACUUM Geometry Optimization"
-    )
-    wB97X_V_def2_TZVPD_VACUUM_Frequency_Analysis = (
-        "wB97X-V/def2-TZVPD/VACUUM Frequency Analysis"
-    )
-    wB97X_V_def2_TZVPD_VACUUM_Frequency_Flattening_Geometry_Optimization = (
-        "wB97X-V/def2-TZVPD/VACUUM Frequency Flattening Geometry Optimization"
-    )
-    wB97X_V_def2_TZVPD_VACUUM_Transition_State_Geometry_Optimization = (
-        "wB97X-V/def2-TZVPD/VACUUM Transition State Geometry Optimization"
-    )
+    wB97X_V_def2_TZVPD_VACUUM_Geometry_Optimization = "wB97X-V/def2-TZVPD/VACUUM Geometry Optimization"
+    wB97X_V_def2_TZVPD_VACUUM_Frequency_Analysis = "wB97X-V/def2-TZVPD/VACUUM Frequency Analysis"
+    wB97X_V_def2_TZVPD_VACUUM_Frequency_Flattening_Geometry_Optimization = "wB97X-V/def2-TZVPD/VACUUM Frequency Flattening Geometry Optimization"
+    wB97X_V_def2_TZVPD_VACUUM_Transition_State_Geometry_Optimization = "wB97X-V/def2-TZVPD/VACUUM Transition State Geometry Optimization"
     wB97X_V_def2_TZVPD_VACUUM_Frequency_Flattening_Transition_State_Geometry_Optimization = "wB97X-V/def2-TZVPD/VACUUM Frequency Flattening Transition State Geometry Optimization"
     wB97X_V_def2_TZVPD_VACUUM_Unknown = "wB97X-V/def2-TZVPD/VACUUM Unknown"
     wB97X_V_def2_TZVPD_PCM_Single_Point = "wB97X-V/def2-TZVPD/PCM Single Point"
     wB97X_V_def2_TZVPD_PCM_Force = "wB97X-V/def2-TZVPD/PCM Force"
-    wB97X_V_def2_TZVPD_PCM_Geometry_Optimization = (
-        "wB97X-V/def2-TZVPD/PCM Geometry Optimization"
-    )
-    wB97X_V_def2_TZVPD_PCM_Frequency_Analysis = (
-        "wB97X-V/def2-TZVPD/PCM Frequency Analysis"
-    )
-    wB97X_V_def2_TZVPD_PCM_Frequency_Flattening_Geometry_Optimization = (
-        "wB97X-V/def2-TZVPD/PCM Frequency Flattening Geometry Optimization"
-    )
-    wB97X_V_def2_TZVPD_PCM_Transition_State_Geometry_Optimization = (
-        "wB97X-V/def2-TZVPD/PCM Transition State Geometry Optimization"
-    )
+    wB97X_V_def2_TZVPD_PCM_Geometry_Optimization = "wB97X-V/def2-TZVPD/PCM Geometry Optimization"
+    wB97X_V_def2_TZVPD_PCM_Frequency_Analysis = "wB97X-V/def2-TZVPD/PCM Frequency Analysis"
+    wB97X_V_def2_TZVPD_PCM_Frequency_Flattening_Geometry_Optimization = "wB97X-V/def2-TZVPD/PCM Frequency Flattening Geometry Optimization"
+    wB97X_V_def2_TZVPD_PCM_Transition_State_Geometry_Optimization = "wB97X-V/def2-TZVPD/PCM Transition State Geometry Optimization"
     wB97X_V_def2_TZVPD_PCM_Frequency_Flattening_Transition_State_Geometry_Optimization = "wB97X-V/def2-TZVPD/PCM Frequency Flattening Transition State Geometry Optimization"
     wB97X_V_def2_TZVPD_PCM_Unknown = "wB97X-V/def2-TZVPD/PCM Unknown"
     wB97X_V_def2_TZVPD_SMD_Single_Point = "wB97X-V/def2-TZVPD/SMD Single Point"
     wB97X_V_def2_TZVPD_SMD_Force = "wB97X-V/def2-TZVPD/SMD Force"
-    wB97X_V_def2_TZVPD_SMD_Geometry_Optimization = (
-        "wB97X-V/def2-TZVPD/SMD Geometry Optimization"
-    )
-    wB97X_V_def2_TZVPD_SMD_Frequency_Analysis = (
-        "wB97X-V/def2-TZVPD/SMD Frequency Analysis"
-    )
-    wB97X_V_def2_TZVPD_SMD_Frequency_Flattening_Geometry_Optimization = (
-        "wB97X-V/def2-TZVPD/SMD Frequency Flattening Geometry Optimization"
-    )
-    wB97X_V_def2_TZVPD_SMD_Transition_State_Geometry_Optimization = (
-        "wB97X-V/def2-TZVPD/SMD Transition State Geometry Optimization"
-    )
+    wB97X_V_def2_TZVPD_SMD_Geometry_Optimization = "wB97X-V/def2-TZVPD/SMD Geometry Optimization"
+    wB97X_V_def2_TZVPD_SMD_Frequency_Analysis = "wB97X-V/def2-TZVPD/SMD Frequency Analysis"
+    wB97X_V_def2_TZVPD_SMD_Frequency_Flattening_Geometry_Optimization = "wB97X-V/def2-TZVPD/SMD Frequency Flattening Geometry Optimization"
+    wB97X_V_def2_TZVPD_SMD_Transition_State_Geometry_Optimization = "wB97X-V/def2-TZVPD/SMD Transition State Geometry Optimization"
     wB97X_V_def2_TZVPD_SMD_Frequency_Flattening_Transition_State_Geometry_Optimization = "wB97X-V/def2-TZVPD/SMD Frequency Flattening Transition State Geometry Optimization"
     wB97X_V_def2_TZVPD_SMD_Unknown = "wB97X-V/def2-TZVPD/SMD Unknown"
     wB97X_V_def2_TZVPP_VACUUM_Single_Point = "wB97X-V/def2-TZVPP/VACUUM Single Point"
     wB97X_V_def2_TZVPP_VACUUM_Force = "wB97X-V/def2-TZVPP/VACUUM Force"
-    wB97X_V_def2_TZVPP_VACUUM_Geometry_Optimization = (
-        "wB97X-V/def2-TZVPP/VACUUM Geometry Optimization"
-    )
-    wB97X_V_def2_TZVPP_VACUUM_Frequency_Analysis = (
-        "wB97X-V/def2-TZVPP/VACUUM Frequency Analysis"
-    )
-    wB97X_V_def2_TZVPP_VACUUM_Frequency_Flattening_Geometry_Optimization = (
-        "wB97X-V/def2-TZVPP/VACUUM Frequency Flattening Geometry Optimization"
-    )
-    wB97X_V_def2_TZVPP_VACUUM_Transition_State_Geometry_Optimization = (
-        "wB97X-V/def2-TZVPP/VACUUM Transition State Geometry Optimization"
-    )
+    wB97X_V_def2_TZVPP_VACUUM_Geometry_Optimization = "wB97X-V/def2-TZVPP/VACUUM Geometry Optimization"
+    wB97X_V_def2_TZVPP_VACUUM_Frequency_Analysis = "wB97X-V/def2-TZVPP/VACUUM Frequency Analysis"
+    wB97X_V_def2_TZVPP_VACUUM_Frequency_Flattening_Geometry_Optimization = "wB97X-V/def2-TZVPP/VACUUM Frequency Flattening Geometry Optimization"
+    wB97X_V_def2_TZVPP_VACUUM_Transition_State_Geometry_Optimization = "wB97X-V/def2-TZVPP/VACUUM Transition State Geometry Optimization"
     wB97X_V_def2_TZVPP_VACUUM_Frequency_Flattening_Transition_State_Geometry_Optimization = "wB97X-V/def2-TZVPP/VACUUM Frequency Flattening Transition State Geometry Optimization"
     wB97X_V_def2_TZVPP_VACUUM_Unknown = "wB97X-V/def2-TZVPP/VACUUM Unknown"
     wB97X_V_def2_TZVPP_PCM_Single_Point = "wB97X-V/def2-TZVPP/PCM Single Point"
     wB97X_V_def2_TZVPP_PCM_Force = "wB97X-V/def2-TZVPP/PCM Force"
-    wB97X_V_def2_TZVPP_PCM_Geometry_Optimization = (
-        "wB97X-V/def2-TZVPP/PCM Geometry Optimization"
-    )
-    wB97X_V_def2_TZVPP_PCM_Frequency_Analysis = (
-        "wB97X-V/def2-TZVPP/PCM Frequency Analysis"
-    )
-    wB97X_V_def2_TZVPP_PCM_Frequency_Flattening_Geometry_Optimization = (
-        "wB97X-V/def2-TZVPP/PCM Frequency Flattening Geometry Optimization"
-    )
-    wB97X_V_def2_TZVPP_PCM_Transition_State_Geometry_Optimization = (
-        "wB97X-V/def2-TZVPP/PCM Transition State Geometry Optimization"
-    )
+    wB97X_V_def2_TZVPP_PCM_Geometry_Optimization = "wB97X-V/def2-TZVPP/PCM Geometry Optimization"
+    wB97X_V_def2_TZVPP_PCM_Frequency_Analysis = "wB97X-V/def2-TZVPP/PCM Frequency Analysis"
+    wB97X_V_def2_TZVPP_PCM_Frequency_Flattening_Geometry_Optimization = "wB97X-V/def2-TZVPP/PCM Frequency Flattening Geometry Optimization"
+    wB97X_V_def2_TZVPP_PCM_Transition_State_Geometry_Optimization = "wB97X-V/def2-TZVPP/PCM Transition State Geometry Optimization"
     wB97X_V_def2_TZVPP_PCM_Frequency_Flattening_Transition_State_Geometry_Optimization = "wB97X-V/def2-TZVPP/PCM Frequency Flattening Transition State Geometry Optimization"
     wB97X_V_def2_TZVPP_PCM_Unknown = "wB97X-V/def2-TZVPP/PCM Unknown"
     wB97X_V_def2_TZVPP_SMD_Single_Point = "wB97X-V/def2-TZVPP/SMD Single Point"
     wB97X_V_def2_TZVPP_SMD_Force = "wB97X-V/def2-TZVPP/SMD Force"
-    wB97X_V_def2_TZVPP_SMD_Geometry_Optimization = (
-        "wB97X-V/def2-TZVPP/SMD Geometry Optimization"
-    )
-    wB97X_V_def2_TZVPP_SMD_Frequency_Analysis = (
-        "wB97X-V/def2-TZVPP/SMD Frequency Analysis"
-    )
-    wB97X_V_def2_TZVPP_SMD_Frequency_Flattening_Geometry_Optimization = (
-        "wB97X-V/def2-TZVPP/SMD Frequency Flattening Geometry Optimization"
-    )
-    wB97X_V_def2_TZVPP_SMD_Transition_State_Geometry_Optimization = (
-        "wB97X-V/def2-TZVPP/SMD Transition State Geometry Optimization"
-    )
+    wB97X_V_def2_TZVPP_SMD_Geometry_Optimization = "wB97X-V/def2-TZVPP/SMD Geometry Optimization"
+    wB97X_V_def2_TZVPP_SMD_Frequency_Analysis = "wB97X-V/def2-TZVPP/SMD Frequency Analysis"
+    wB97X_V_def2_TZVPP_SMD_Frequency_Flattening_Geometry_Optimization = "wB97X-V/def2-TZVPP/SMD Frequency Flattening Geometry Optimization"
+    wB97X_V_def2_TZVPP_SMD_Transition_State_Geometry_Optimization = "wB97X-V/def2-TZVPP/SMD Transition State Geometry Optimization"
     wB97X_V_def2_TZVPP_SMD_Frequency_Flattening_Transition_State_Geometry_Optimization = "wB97X-V/def2-TZVPP/SMD Frequency Flattening Transition State Geometry Optimization"
     wB97X_V_def2_TZVPP_SMD_Unknown = "wB97X-V/def2-TZVPP/SMD Unknown"
     wB97X_V_def2_TZVPPD_VACUUM_Single_Point = "wB97X-V/def2-TZVPPD/VACUUM Single Point"
     wB97X_V_def2_TZVPPD_VACUUM_Force = "wB97X-V/def2-TZVPPD/VACUUM Force"
-    wB97X_V_def2_TZVPPD_VACUUM_Geometry_Optimization = (
-        "wB97X-V/def2-TZVPPD/VACUUM Geometry Optimization"
-    )
-    wB97X_V_def2_TZVPPD_VACUUM_Frequency_Analysis = (
-        "wB97X-V/def2-TZVPPD/VACUUM Frequency Analysis"
-    )
-    wB97X_V_def2_TZVPPD_VACUUM_Frequency_Flattening_Geometry_Optimization = (
-        "wB97X-V/def2-TZVPPD/VACUUM Frequency Flattening Geometry Optimization"
-    )
-    wB97X_V_def2_TZVPPD_VACUUM_Transition_State_Geometry_Optimization = (
-        "wB97X-V/def2-TZVPPD/VACUUM Transition State Geometry Optimization"
-    )
+    wB97X_V_def2_TZVPPD_VACUUM_Geometry_Optimization = "wB97X-V/def2-TZVPPD/VACUUM Geometry Optimization"
+    wB97X_V_def2_TZVPPD_VACUUM_Frequency_Analysis = "wB97X-V/def2-TZVPPD/VACUUM Frequency Analysis"
+    wB97X_V_def2_TZVPPD_VACUUM_Frequency_Flattening_Geometry_Optimization = "wB97X-V/def2-TZVPPD/VACUUM Frequency Flattening Geometry Optimization"
+    wB97X_V_def2_TZVPPD_VACUUM_Transition_State_Geometry_Optimization = "wB97X-V/def2-TZVPPD/VACUUM Transition State Geometry Optimization"
     wB97X_V_def2_TZVPPD_VACUUM_Frequency_Flattening_Transition_State_Geometry_Optimization = "wB97X-V/def2-TZVPPD/VACUUM Frequency Flattening Transition State Geometry Optimization"
     wB97X_V_def2_TZVPPD_VACUUM_Unknown = "wB97X-V/def2-TZVPPD/VACUUM Unknown"
     wB97X_V_def2_TZVPPD_PCM_Single_Point = "wB97X-V/def2-TZVPPD/PCM Single Point"
     wB97X_V_def2_TZVPPD_PCM_Force = "wB97X-V/def2-TZVPPD/PCM Force"
-    wB97X_V_def2_TZVPPD_PCM_Geometry_Optimization = (
-        "wB97X-V/def2-TZVPPD/PCM Geometry Optimization"
-    )
-    wB97X_V_def2_TZVPPD_PCM_Frequency_Analysis = (
-        "wB97X-V/def2-TZVPPD/PCM Frequency Analysis"
-    )
-    wB97X_V_def2_TZVPPD_PCM_Frequency_Flattening_Geometry_Optimization = (
-        "wB97X-V/def2-TZVPPD/PCM Frequency Flattening Geometry Optimization"
-    )
-    wB97X_V_def2_TZVPPD_PCM_Transition_State_Geometry_Optimization = (
-        "wB97X-V/def2-TZVPPD/PCM Transition State Geometry Optimization"
-    )
+    wB97X_V_def2_TZVPPD_PCM_Geometry_Optimization = "wB97X-V/def2-TZVPPD/PCM Geometry Optimization"
+    wB97X_V_def2_TZVPPD_PCM_Frequency_Analysis = "wB97X-V/def2-TZVPPD/PCM Frequency Analysis"
+    wB97X_V_def2_TZVPPD_PCM_Frequency_Flattening_Geometry_Optimization = "wB97X-V/def2-TZVPPD/PCM Frequency Flattening Geometry Optimization"
+    wB97X_V_def2_TZVPPD_PCM_Transition_State_Geometry_Optimization = "wB97X-V/def2-TZVPPD/PCM Transition State Geometry Optimization"
     wB97X_V_def2_TZVPPD_PCM_Frequency_Flattening_Transition_State_Geometry_Optimization = "wB97X-V/def2-TZVPPD/PCM Frequency Flattening Transition State Geometry Optimization"
     wB97X_V_def2_TZVPPD_PCM_Unknown = "wB97X-V/def2-TZVPPD/PCM Unknown"
     wB97X_V_def2_TZVPPD_SMD_Single_Point = "wB97X-V/def2-TZVPPD/SMD Single Point"
     wB97X_V_def2_TZVPPD_SMD_Force = "wB97X-V/def2-TZVPPD/SMD Force"
-    wB97X_V_def2_TZVPPD_SMD_Geometry_Optimization = (
-        "wB97X-V/def2-TZVPPD/SMD Geometry Optimization"
-    )
-    wB97X_V_def2_TZVPPD_SMD_Frequency_Analysis = (
-        "wB97X-V/def2-TZVPPD/SMD Frequency Analysis"
-    )
-    wB97X_V_def2_TZVPPD_SMD_Frequency_Flattening_Geometry_Optimization = (
-        "wB97X-V/def2-TZVPPD/SMD Frequency Flattening Geometry Optimization"
-    )
-    wB97X_V_def2_TZVPPD_SMD_Transition_State_Geometry_Optimization = (
-        "wB97X-V/def2-TZVPPD/SMD Transition State Geometry Optimization"
-    )
+    wB97X_V_def2_TZVPPD_SMD_Geometry_Optimization = "wB97X-V/def2-TZVPPD/SMD Geometry Optimization"
+    wB97X_V_def2_TZVPPD_SMD_Frequency_Analysis = "wB97X-V/def2-TZVPPD/SMD Frequency Analysis"
+    wB97X_V_def2_TZVPPD_SMD_Frequency_Flattening_Geometry_Optimization = "wB97X-V/def2-TZVPPD/SMD Frequency Flattening Geometry Optimization"
+    wB97X_V_def2_TZVPPD_SMD_Transition_State_Geometry_Optimization = "wB97X-V/def2-TZVPPD/SMD Transition State Geometry Optimization"
     wB97X_V_def2_TZVPPD_SMD_Frequency_Flattening_Transition_State_Geometry_Optimization = "wB97X-V/def2-TZVPPD/SMD Frequency Flattening Transition State Geometry Optimization"
     wB97X_V_def2_TZVPPD_SMD_Unknown = "wB97X-V/def2-TZVPPD/SMD Unknown"
     wB97X_V_def2_QZVPD_VACUUM_Single_Point = "wB97X-V/def2-QZVPD/VACUUM Single Point"
     wB97X_V_def2_QZVPD_VACUUM_Force = "wB97X-V/def2-QZVPD/VACUUM Force"
-    wB97X_V_def2_QZVPD_VACUUM_Geometry_Optimization = (
-        "wB97X-V/def2-QZVPD/VACUUM Geometry Optimization"
-    )
-    wB97X_V_def2_QZVPD_VACUUM_Frequency_Analysis = (
-        "wB97X-V/def2-QZVPD/VACUUM Frequency Analysis"
-    )
-    wB97X_V_def2_QZVPD_VACUUM_Frequency_Flattening_Geometry_Optimization = (
-        "wB97X-V/def2-QZVPD/VACUUM Frequency Flattening Geometry Optimization"
-    )
-    wB97X_V_def2_QZVPD_VACUUM_Transition_State_Geometry_Optimization = (
-        "wB97X-V/def2-QZVPD/VACUUM Transition State Geometry Optimization"
-    )
+    wB97X_V_def2_QZVPD_VACUUM_Geometry_Optimization = "wB97X-V/def2-QZVPD/VACUUM Geometry Optimization"
+    wB97X_V_def2_QZVPD_VACUUM_Frequency_Analysis = "wB97X-V/def2-QZVPD/VACUUM Frequency Analysis"
+    wB97X_V_def2_QZVPD_VACUUM_Frequency_Flattening_Geometry_Optimization = "wB97X-V/def2-QZVPD/VACUUM Frequency Flattening Geometry Optimization"
+    wB97X_V_def2_QZVPD_VACUUM_Transition_State_Geometry_Optimization = "wB97X-V/def2-QZVPD/VACUUM Transition State Geometry Optimization"
     wB97X_V_def2_QZVPD_VACUUM_Frequency_Flattening_Transition_State_Geometry_Optimization = "wB97X-V/def2-QZVPD/VACUUM Frequency Flattening Transition State Geometry Optimization"
     wB97X_V_def2_QZVPD_VACUUM_Unknown = "wB97X-V/def2-QZVPD/VACUUM Unknown"
     wB97X_V_def2_QZVPD_PCM_Single_Point = "wB97X-V/def2-QZVPD/PCM Single Point"
     wB97X_V_def2_QZVPD_PCM_Force = "wB97X-V/def2-QZVPD/PCM Force"
-    wB97X_V_def2_QZVPD_PCM_Geometry_Optimization = (
-        "wB97X-V/def2-QZVPD/PCM Geometry Optimization"
-    )
-    wB97X_V_def2_QZVPD_PCM_Frequency_Analysis = (
-        "wB97X-V/def2-QZVPD/PCM Frequency Analysis"
-    )
-    wB97X_V_def2_QZVPD_PCM_Frequency_Flattening_Geometry_Optimization = (
-        "wB97X-V/def2-QZVPD/PCM Frequency Flattening Geometry Optimization"
-    )
-    wB97X_V_def2_QZVPD_PCM_Transition_State_Geometry_Optimization = (
-        "wB97X-V/def2-QZVPD/PCM Transition State Geometry Optimization"
-    )
+    wB97X_V_def2_QZVPD_PCM_Geometry_Optimization = "wB97X-V/def2-QZVPD/PCM Geometry Optimization"
+    wB97X_V_def2_QZVPD_PCM_Frequency_Analysis = "wB97X-V/def2-QZVPD/PCM Frequency Analysis"
+    wB97X_V_def2_QZVPD_PCM_Frequency_Flattening_Geometry_Optimization = "wB97X-V/def2-QZVPD/PCM Frequency Flattening Geometry Optimization"
+    wB97X_V_def2_QZVPD_PCM_Transition_State_Geometry_Optimization = "wB97X-V/def2-QZVPD/PCM Transition State Geometry Optimization"
     wB97X_V_def2_QZVPD_PCM_Frequency_Flattening_Transition_State_Geometry_Optimization = "wB97X-V/def2-QZVPD/PCM Frequency Flattening Transition State Geometry Optimization"
     wB97X_V_def2_QZVPD_PCM_Unknown = "wB97X-V/def2-QZVPD/PCM Unknown"
     wB97X_V_def2_QZVPD_SMD_Single_Point = "wB97X-V/def2-QZVPD/SMD Single Point"
     wB97X_V_def2_QZVPD_SMD_Force = "wB97X-V/def2-QZVPD/SMD Force"
-    wB97X_V_def2_QZVPD_SMD_Geometry_Optimization = (
-        "wB97X-V/def2-QZVPD/SMD Geometry Optimization"
-    )
-    wB97X_V_def2_QZVPD_SMD_Frequency_Analysis = (
-        "wB97X-V/def2-QZVPD/SMD Frequency Analysis"
-    )
-    wB97X_V_def2_QZVPD_SMD_Frequency_Flattening_Geometry_Optimization = (
-        "wB97X-V/def2-QZVPD/SMD Frequency Flattening Geometry Optimization"
-    )
-    wB97X_V_def2_QZVPD_SMD_Transition_State_Geometry_Optimization = (
-        "wB97X-V/def2-QZVPD/SMD Transition State Geometry Optimization"
-    )
+    wB97X_V_def2_QZVPD_SMD_Geometry_Optimization = "wB97X-V/def2-QZVPD/SMD Geometry Optimization"
+    wB97X_V_def2_QZVPD_SMD_Frequency_Analysis = "wB97X-V/def2-QZVPD/SMD Frequency Analysis"
+    wB97X_V_def2_QZVPD_SMD_Frequency_Flattening_Geometry_Optimization = "wB97X-V/def2-QZVPD/SMD Frequency Flattening Geometry Optimization"
+    wB97X_V_def2_QZVPD_SMD_Transition_State_Geometry_Optimization = "wB97X-V/def2-QZVPD/SMD Transition State Geometry Optimization"
     wB97X_V_def2_QZVPD_SMD_Frequency_Flattening_Transition_State_Geometry_Optimization = "wB97X-V/def2-QZVPD/SMD Frequency Flattening Transition State Geometry Optimization"
     wB97X_V_def2_QZVPD_SMD_Unknown = "wB97X-V/def2-QZVPD/SMD Unknown"
     wB97X_V_def2_QZVPPD_VACUUM_Single_Point = "wB97X-V/def2-QZVPPD/VACUUM Single Point"
     wB97X_V_def2_QZVPPD_VACUUM_Force = "wB97X-V/def2-QZVPPD/VACUUM Force"
-    wB97X_V_def2_QZVPPD_VACUUM_Geometry_Optimization = (
-        "wB97X-V/def2-QZVPPD/VACUUM Geometry Optimization"
-    )
-    wB97X_V_def2_QZVPPD_VACUUM_Frequency_Analysis = (
-        "wB97X-V/def2-QZVPPD/VACUUM Frequency Analysis"
-    )
-    wB97X_V_def2_QZVPPD_VACUUM_Frequency_Flattening_Geometry_Optimization = (
-        "wB97X-V/def2-QZVPPD/VACUUM Frequency Flattening Geometry Optimization"
-    )
-    wB97X_V_def2_QZVPPD_VACUUM_Transition_State_Geometry_Optimization = (
-        "wB97X-V/def2-QZVPPD/VACUUM Transition State Geometry Optimization"
-    )
+    wB97X_V_def2_QZVPPD_VACUUM_Geometry_Optimization = "wB97X-V/def2-QZVPPD/VACUUM Geometry Optimization"
+    wB97X_V_def2_QZVPPD_VACUUM_Frequency_Analysis = "wB97X-V/def2-QZVPPD/VACUUM Frequency Analysis"
+    wB97X_V_def2_QZVPPD_VACUUM_Frequency_Flattening_Geometry_Optimization = "wB97X-V/def2-QZVPPD/VACUUM Frequency Flattening Geometry Optimization"
+    wB97X_V_def2_QZVPPD_VACUUM_Transition_State_Geometry_Optimization = "wB97X-V/def2-QZVPPD/VACUUM Transition State Geometry Optimization"
     wB97X_V_def2_QZVPPD_VACUUM_Frequency_Flattening_Transition_State_Geometry_Optimization = "wB97X-V/def2-QZVPPD/VACUUM Frequency Flattening Transition State Geometry Optimization"
     wB97X_V_def2_QZVPPD_VACUUM_Unknown = "wB97X-V/def2-QZVPPD/VACUUM Unknown"
     wB97X_V_def2_QZVPPD_PCM_Single_Point = "wB97X-V/def2-QZVPPD/PCM Single Point"
     wB97X_V_def2_QZVPPD_PCM_Force = "wB97X-V/def2-QZVPPD/PCM Force"
-    wB97X_V_def2_QZVPPD_PCM_Geometry_Optimization = (
-        "wB97X-V/def2-QZVPPD/PCM Geometry Optimization"
-    )
-    wB97X_V_def2_QZVPPD_PCM_Frequency_Analysis = (
-        "wB97X-V/def2-QZVPPD/PCM Frequency Analysis"
-    )
-    wB97X_V_def2_QZVPPD_PCM_Frequency_Flattening_Geometry_Optimization = (
-        "wB97X-V/def2-QZVPPD/PCM Frequency Flattening Geometry Optimization"
-    )
-    wB97X_V_def2_QZVPPD_PCM_Transition_State_Geometry_Optimization = (
-        "wB97X-V/def2-QZVPPD/PCM Transition State Geometry Optimization"
-    )
+    wB97X_V_def2_QZVPPD_PCM_Geometry_Optimization = "wB97X-V/def2-QZVPPD/PCM Geometry Optimization"
+    wB97X_V_def2_QZVPPD_PCM_Frequency_Analysis = "wB97X-V/def2-QZVPPD/PCM Frequency Analysis"
+    wB97X_V_def2_QZVPPD_PCM_Frequency_Flattening_Geometry_Optimization = "wB97X-V/def2-QZVPPD/PCM Frequency Flattening Geometry Optimization"
+    wB97X_V_def2_QZVPPD_PCM_Transition_State_Geometry_Optimization = "wB97X-V/def2-QZVPPD/PCM Transition State Geometry Optimization"
     wB97X_V_def2_QZVPPD_PCM_Frequency_Flattening_Transition_State_Geometry_Optimization = "wB97X-V/def2-QZVPPD/PCM Frequency Flattening Transition State Geometry Optimization"
     wB97X_V_def2_QZVPPD_PCM_Unknown = "wB97X-V/def2-QZVPPD/PCM Unknown"
     wB97X_V_def2_QZVPPD_SMD_Single_Point = "wB97X-V/def2-QZVPPD/SMD Single Point"
     wB97X_V_def2_QZVPPD_SMD_Force = "wB97X-V/def2-QZVPPD/SMD Force"
-    wB97X_V_def2_QZVPPD_SMD_Geometry_Optimization = (
-        "wB97X-V/def2-QZVPPD/SMD Geometry Optimization"
-    )
-    wB97X_V_def2_QZVPPD_SMD_Frequency_Analysis = (
-        "wB97X-V/def2-QZVPPD/SMD Frequency Analysis"
-    )
-    wB97X_V_def2_QZVPPD_SMD_Frequency_Flattening_Geometry_Optimization = (
-        "wB97X-V/def2-QZVPPD/SMD Frequency Flattening Geometry Optimization"
-    )
-    wB97X_V_def2_QZVPPD_SMD_Transition_State_Geometry_Optimization = (
-        "wB97X-V/def2-QZVPPD/SMD Transition State Geometry Optimization"
-    )
+    wB97X_V_def2_QZVPPD_SMD_Geometry_Optimization = "wB97X-V/def2-QZVPPD/SMD Geometry Optimization"
+    wB97X_V_def2_QZVPPD_SMD_Frequency_Analysis = "wB97X-V/def2-QZVPPD/SMD Frequency Analysis"
+    wB97X_V_def2_QZVPPD_SMD_Frequency_Flattening_Geometry_Optimization = "wB97X-V/def2-QZVPPD/SMD Frequency Flattening Geometry Optimization"
+    wB97X_V_def2_QZVPPD_SMD_Transition_State_Geometry_Optimization = "wB97X-V/def2-QZVPPD/SMD Transition State Geometry Optimization"
     wB97X_V_def2_QZVPPD_SMD_Frequency_Flattening_Transition_State_Geometry_Optimization = "wB97X-V/def2-QZVPPD/SMD Frequency Flattening Transition State Geometry Optimization"
     wB97X_V_def2_QZVPPD_SMD_Unknown = "wB97X-V/def2-QZVPPD/SMD Unknown"
-    wB97M_V_6_31g_d_VACUUM_Single_Point = "wB97M-V/6-31g*/VACUUM Single Point"
-    wB97M_V_6_31g_d_VACUUM_Force = "wB97M-V/6-31g*/VACUUM Force"
-    wB97M_V_6_31g_d_VACUUM_Geometry_Optimization = (
-        "wB97M-V/6-31g*/VACUUM Geometry Optimization"
-    )
-    wB97M_V_6_31g_d_VACUUM_Frequency_Analysis = (
-        "wB97M-V/6-31g*/VACUUM Frequency Analysis"
-    )
-    wB97M_V_6_31g_d_VACUUM_Frequency_Flattening_Geometry_Optimization = (
-        "wB97M-V/6-31g*/VACUUM Frequency Flattening Geometry Optimization"
-    )
-    wB97M_V_6_31g_d_VACUUM_Transition_State_Geometry_Optimization = (
-        "wB97M-V/6-31g*/VACUUM Transition State Geometry Optimization"
-    )
-    wB97M_V_6_31g_d_VACUUM_Frequency_Flattening_Transition_State_Geometry_Optimization = "wB97M-V/6-31g*/VACUUM Frequency Flattening Transition State Geometry Optimization"
-    wB97M_V_6_31g_d_VACUUM_Unknown = "wB97M-V/6-31g*/VACUUM Unknown"
-    wB97M_V_6_31g_d_PCM_Single_Point = "wB97M-V/6-31g*/PCM Single Point"
-    wB97M_V_6_31g_d_PCM_Force = "wB97M-V/6-31g*/PCM Force"
-    wB97M_V_6_31g_d_PCM_Geometry_Optimization = (
-        "wB97M-V/6-31g*/PCM Geometry Optimization"
-    )
-    wB97M_V_6_31g_d_PCM_Frequency_Analysis = "wB97M-V/6-31g*/PCM Frequency Analysis"
-    wB97M_V_6_31g_d_PCM_Frequency_Flattening_Geometry_Optimization = (
-        "wB97M-V/6-31g*/PCM Frequency Flattening Geometry Optimization"
-    )
-    wB97M_V_6_31g_d_PCM_Transition_State_Geometry_Optimization = (
-        "wB97M-V/6-31g*/PCM Transition State Geometry Optimization"
-    )
-    wB97M_V_6_31g_d_PCM_Frequency_Flattening_Transition_State_Geometry_Optimization = (
-        "wB97M-V/6-31g*/PCM Frequency Flattening Transition State Geometry Optimization"
-    )
-    wB97M_V_6_31g_d_PCM_Unknown = "wB97M-V/6-31g*/PCM Unknown"
-    wB97M_V_6_31g_d_SMD_Single_Point = "wB97M-V/6-31g*/SMD Single Point"
-    wB97M_V_6_31g_d_SMD_Force = "wB97M-V/6-31g*/SMD Force"
-    wB97M_V_6_31g_d_SMD_Geometry_Optimization = (
-        "wB97M-V/6-31g*/SMD Geometry Optimization"
-    )
-    wB97M_V_6_31g_d_SMD_Frequency_Analysis = "wB97M-V/6-31g*/SMD Frequency Analysis"
-    wB97M_V_6_31g_d_SMD_Frequency_Flattening_Geometry_Optimization = (
-        "wB97M-V/6-31g*/SMD Frequency Flattening Geometry Optimization"
-    )
-    wB97M_V_6_31g_d_SMD_Transition_State_Geometry_Optimization = (
-        "wB97M-V/6-31g*/SMD Transition State Geometry Optimization"
-    )
-    wB97M_V_6_31g_d_SMD_Frequency_Flattening_Transition_State_Geometry_Optimization = (
-        "wB97M-V/6-31g*/SMD Frequency Flattening Transition State Geometry Optimization"
-    )
-    wB97M_V_6_31g_d_SMD_Unknown = "wB97M-V/6-31g*/SMD Unknown"
-    wB97M_V_def2_SVPD_VACUUM_Single_Point = "wB97M-V/def2-SVPD/VACUUM Single Point"
-    wB97M_V_def2_SVPD_VACUUM_Force = "wB97M-V/def2-SVPD/VACUUM Force"
-    wB97M_V_def2_SVPD_VACUUM_Geometry_Optimization = (
-        "wB97M-V/def2-SVPD/VACUUM Geometry Optimization"
-    )
-    wB97M_V_def2_SVPD_VACUUM_Frequency_Analysis = (
-        "wB97M-V/def2-SVPD/VACUUM Frequency Analysis"
-    )
-    wB97M_V_def2_SVPD_VACUUM_Frequency_Flattening_Geometry_Optimization = (
-        "wB97M-V/def2-SVPD/VACUUM Frequency Flattening Geometry Optimization"
-    )
-    wB97M_V_def2_SVPD_VACUUM_Transition_State_Geometry_Optimization = (
-        "wB97M-V/def2-SVPD/VACUUM Transition State Geometry Optimization"
-    )
-    wB97M_V_def2_SVPD_VACUUM_Frequency_Flattening_Transition_State_Geometry_Optimization = "wB97M-V/def2-SVPD/VACUUM Frequency Flattening Transition State Geometry Optimization"
-    wB97M_V_def2_SVPD_VACUUM_Unknown = "wB97M-V/def2-SVPD/VACUUM Unknown"
-    wB97M_V_def2_SVPD_PCM_Single_Point = "wB97M-V/def2-SVPD/PCM Single Point"
-    wB97M_V_def2_SVPD_PCM_Force = "wB97M-V/def2-SVPD/PCM Force"
-    wB97M_V_def2_SVPD_PCM_Geometry_Optimization = (
-        "wB97M-V/def2-SVPD/PCM Geometry Optimization"
-    )
-    wB97M_V_def2_SVPD_PCM_Frequency_Analysis = (
-        "wB97M-V/def2-SVPD/PCM Frequency Analysis"
-    )
-    wB97M_V_def2_SVPD_PCM_Frequency_Flattening_Geometry_Optimization = (
-        "wB97M-V/def2-SVPD/PCM Frequency Flattening Geometry Optimization"
-    )
-    wB97M_V_def2_SVPD_PCM_Transition_State_Geometry_Optimization = (
-        "wB97M-V/def2-SVPD/PCM Transition State Geometry Optimization"
-    )
-    wB97M_V_def2_SVPD_PCM_Frequency_Flattening_Transition_State_Geometry_Optimization = "wB97M-V/def2-SVPD/PCM Frequency Flattening Transition State Geometry Optimization"
-    wB97M_V_def2_SVPD_PCM_Unknown = "wB97M-V/def2-SVPD/PCM Unknown"
-    wB97M_V_def2_SVPD_SMD_Single_Point = "wB97M-V/def2-SVPD/SMD Single Point"
-    wB97M_V_def2_SVPD_SMD_Force = "wB97M-V/def2-SVPD/SMD Force"
-    wB97M_V_def2_SVPD_SMD_Geometry_Optimization = (
-        "wB97M-V/def2-SVPD/SMD Geometry Optimization"
-    )
-    wB97M_V_def2_SVPD_SMD_Frequency_Analysis = (
-        "wB97M-V/def2-SVPD/SMD Frequency Analysis"
-    )
-    wB97M_V_def2_SVPD_SMD_Frequency_Flattening_Geometry_Optimization = (
-        "wB97M-V/def2-SVPD/SMD Frequency Flattening Geometry Optimization"
-    )
-    wB97M_V_def2_SVPD_SMD_Transition_State_Geometry_Optimization = (
-        "wB97M-V/def2-SVPD/SMD Transition State Geometry Optimization"
-    )
-    wB97M_V_def2_SVPD_SMD_Frequency_Flattening_Transition_State_Geometry_Optimization = "wB97M-V/def2-SVPD/SMD Frequency Flattening Transition State Geometry Optimization"
-    wB97M_V_def2_SVPD_SMD_Unknown = "wB97M-V/def2-SVPD/SMD Unknown"
-    wB97M_V_def2_TZVP_VACUUM_Single_Point = "wB97M-V/def2-TZVP/VACUUM Single Point"
-    wB97M_V_def2_TZVP_VACUUM_Force = "wB97M-V/def2-TZVP/VACUUM Force"
-    wB97M_V_def2_TZVP_VACUUM_Geometry_Optimization = (
-        "wB97M-V/def2-TZVP/VACUUM Geometry Optimization"
-    )
-    wB97M_V_def2_TZVP_VACUUM_Frequency_Analysis = (
-        "wB97M-V/def2-TZVP/VACUUM Frequency Analysis"
-    )
-    wB97M_V_def2_TZVP_VACUUM_Frequency_Flattening_Geometry_Optimization = (
-        "wB97M-V/def2-TZVP/VACUUM Frequency Flattening Geometry Optimization"
-    )
-    wB97M_V_def2_TZVP_VACUUM_Transition_State_Geometry_Optimization = (
-        "wB97M-V/def2-TZVP/VACUUM Transition State Geometry Optimization"
-    )
-    wB97M_V_def2_TZVP_VACUUM_Frequency_Flattening_Transition_State_Geometry_Optimization = "wB97M-V/def2-TZVP/VACUUM Frequency Flattening Transition State Geometry Optimization"
-    wB97M_V_def2_TZVP_VACUUM_Unknown = "wB97M-V/def2-TZVP/VACUUM Unknown"
-    wB97M_V_def2_TZVP_PCM_Single_Point = "wB97M-V/def2-TZVP/PCM Single Point"
-    wB97M_V_def2_TZVP_PCM_Force = "wB97M-V/def2-TZVP/PCM Force"
-    wB97M_V_def2_TZVP_PCM_Geometry_Optimization = (
-        "wB97M-V/def2-TZVP/PCM Geometry Optimization"
-    )
-    wB97M_V_def2_TZVP_PCM_Frequency_Analysis = (
-        "wB97M-V/def2-TZVP/PCM Frequency Analysis"
-    )
-    wB97M_V_def2_TZVP_PCM_Frequency_Flattening_Geometry_Optimization = (
-        "wB97M-V/def2-TZVP/PCM Frequency Flattening Geometry Optimization"
-    )
-    wB97M_V_def2_TZVP_PCM_Transition_State_Geometry_Optimization = (
-        "wB97M-V/def2-TZVP/PCM Transition State Geometry Optimization"
-    )
-    wB97M_V_def2_TZVP_PCM_Frequency_Flattening_Transition_State_Geometry_Optimization = "wB97M-V/def2-TZVP/PCM Frequency Flattening Transition State Geometry Optimization"
-    wB97M_V_def2_TZVP_PCM_Unknown = "wB97M-V/def2-TZVP/PCM Unknown"
-    wB97M_V_def2_TZVP_SMD_Single_Point = "wB97M-V/def2-TZVP/SMD Single Point"
-    wB97M_V_def2_TZVP_SMD_Force = "wB97M-V/def2-TZVP/SMD Force"
-    wB97M_V_def2_TZVP_SMD_Geometry_Optimization = (
-        "wB97M-V/def2-TZVP/SMD Geometry Optimization"
-    )
-    wB97M_V_def2_TZVP_SMD_Frequency_Analysis = (
-        "wB97M-V/def2-TZVP/SMD Frequency Analysis"
-    )
-    wB97M_V_def2_TZVP_SMD_Frequency_Flattening_Geometry_Optimization = (
-        "wB97M-V/def2-TZVP/SMD Frequency Flattening Geometry Optimization"
-    )
-    wB97M_V_def2_TZVP_SMD_Transition_State_Geometry_Optimization = (
-        "wB97M-V/def2-TZVP/SMD Transition State Geometry Optimization"
-    )
-    wB97M_V_def2_TZVP_SMD_Frequency_Flattening_Transition_State_Geometry_Optimization = "wB97M-V/def2-TZVP/SMD Frequency Flattening Transition State Geometry Optimization"
-    wB97M_V_def2_TZVP_SMD_Unknown = "wB97M-V/def2-TZVP/SMD Unknown"
-    wB97M_V_def2_TZVPD_VACUUM_Single_Point = "wB97M-V/def2-TZVPD/VACUUM Single Point"
-    wB97M_V_def2_TZVPD_VACUUM_Force = "wB97M-V/def2-TZVPD/VACUUM Force"
-    wB97M_V_def2_TZVPD_VACUUM_Geometry_Optimization = (
-        "wB97M-V/def2-TZVPD/VACUUM Geometry Optimization"
-    )
-    wB97M_V_def2_TZVPD_VACUUM_Frequency_Analysis = (
-        "wB97M-V/def2-TZVPD/VACUUM Frequency Analysis"
-    )
-    wB97M_V_def2_TZVPD_VACUUM_Frequency_Flattening_Geometry_Optimization = (
-        "wB97M-V/def2-TZVPD/VACUUM Frequency Flattening Geometry Optimization"
-    )
-    wB97M_V_def2_TZVPD_VACUUM_Transition_State_Geometry_Optimization = (
-        "wB97M-V/def2-TZVPD/VACUUM Transition State Geometry Optimization"
-    )
-    wB97M_V_def2_TZVPD_VACUUM_Frequency_Flattening_Transition_State_Geometry_Optimization = "wB97M-V/def2-TZVPD/VACUUM Frequency Flattening Transition State Geometry Optimization"
-    wB97M_V_def2_TZVPD_VACUUM_Unknown = "wB97M-V/def2-TZVPD/VACUUM Unknown"
-    wB97M_V_def2_TZVPD_PCM_Single_Point = "wB97M-V/def2-TZVPD/PCM Single Point"
-    wB97M_V_def2_TZVPD_PCM_Force = "wB97M-V/def2-TZVPD/PCM Force"
-    wB97M_V_def2_TZVPD_PCM_Geometry_Optimization = (
-        "wB97M-V/def2-TZVPD/PCM Geometry Optimization"
-    )
-    wB97M_V_def2_TZVPD_PCM_Frequency_Analysis = (
-        "wB97M-V/def2-TZVPD/PCM Frequency Analysis"
-    )
-    wB97M_V_def2_TZVPD_PCM_Frequency_Flattening_Geometry_Optimization = (
-        "wB97M-V/def2-TZVPD/PCM Frequency Flattening Geometry Optimization"
-    )
-    wB97M_V_def2_TZVPD_PCM_Transition_State_Geometry_Optimization = (
-        "wB97M-V/def2-TZVPD/PCM Transition State Geometry Optimization"
-    )
-    wB97M_V_def2_TZVPD_PCM_Frequency_Flattening_Transition_State_Geometry_Optimization = "wB97M-V/def2-TZVPD/PCM Frequency Flattening Transition State Geometry Optimization"
-    wB97M_V_def2_TZVPD_PCM_Unknown = "wB97M-V/def2-TZVPD/PCM Unknown"
-    wB97M_V_def2_TZVPD_SMD_Single_Point = "wB97M-V/def2-TZVPD/SMD Single Point"
-    wB97M_V_def2_TZVPD_SMD_Force = "wB97M-V/def2-TZVPD/SMD Force"
-    wB97M_V_def2_TZVPD_SMD_Geometry_Optimization = (
-        "wB97M-V/def2-TZVPD/SMD Geometry Optimization"
-    )
-    wB97M_V_def2_TZVPD_SMD_Frequency_Analysis = (
-        "wB97M-V/def2-TZVPD/SMD Frequency Analysis"
-    )
-    wB97M_V_def2_TZVPD_SMD_Frequency_Flattening_Geometry_Optimization = (
-        "wB97M-V/def2-TZVPD/SMD Frequency Flattening Geometry Optimization"
-    )
-    wB97M_V_def2_TZVPD_SMD_Transition_State_Geometry_Optimization = (
-        "wB97M-V/def2-TZVPD/SMD Transition State Geometry Optimization"
-    )
-    wB97M_V_def2_TZVPD_SMD_Frequency_Flattening_Transition_State_Geometry_Optimization = "wB97M-V/def2-TZVPD/SMD Frequency Flattening Transition State Geometry Optimization"
-    wB97M_V_def2_TZVPD_SMD_Unknown = "wB97M-V/def2-TZVPD/SMD Unknown"
-    wB97M_V_def2_TZVPP_VACUUM_Single_Point = "wB97M-V/def2-TZVPP/VACUUM Single Point"
-    wB97M_V_def2_TZVPP_VACUUM_Force = "wB97M-V/def2-TZVPP/VACUUM Force"
-    wB97M_V_def2_TZVPP_VACUUM_Geometry_Optimization = (
-        "wB97M-V/def2-TZVPP/VACUUM Geometry Optimization"
-    )
-    wB97M_V_def2_TZVPP_VACUUM_Frequency_Analysis = (
-        "wB97M-V/def2-TZVPP/VACUUM Frequency Analysis"
-    )
-    wB97M_V_def2_TZVPP_VACUUM_Frequency_Flattening_Geometry_Optimization = (
-        "wB97M-V/def2-TZVPP/VACUUM Frequency Flattening Geometry Optimization"
-    )
-    wB97M_V_def2_TZVPP_VACUUM_Transition_State_Geometry_Optimization = (
-        "wB97M-V/def2-TZVPP/VACUUM Transition State Geometry Optimization"
-    )
-    wB97M_V_def2_TZVPP_VACUUM_Frequency_Flattening_Transition_State_Geometry_Optimization = "wB97M-V/def2-TZVPP/VACUUM Frequency Flattening Transition State Geometry Optimization"
-    wB97M_V_def2_TZVPP_VACUUM_Unknown = "wB97M-V/def2-TZVPP/VACUUM Unknown"
-    wB97M_V_def2_TZVPP_PCM_Single_Point = "wB97M-V/def2-TZVPP/PCM Single Point"
-    wB97M_V_def2_TZVPP_PCM_Force = "wB97M-V/def2-TZVPP/PCM Force"
-    wB97M_V_def2_TZVPP_PCM_Geometry_Optimization = (
-        "wB97M-V/def2-TZVPP/PCM Geometry Optimization"
-    )
-    wB97M_V_def2_TZVPP_PCM_Frequency_Analysis = (
-        "wB97M-V/def2-TZVPP/PCM Frequency Analysis"
-    )
-    wB97M_V_def2_TZVPP_PCM_Frequency_Flattening_Geometry_Optimization = (
-        "wB97M-V/def2-TZVPP/PCM Frequency Flattening Geometry Optimization"
-    )
-    wB97M_V_def2_TZVPP_PCM_Transition_State_Geometry_Optimization = (
-        "wB97M-V/def2-TZVPP/PCM Transition State Geometry Optimization"
-    )
-    wB97M_V_def2_TZVPP_PCM_Frequency_Flattening_Transition_State_Geometry_Optimization = "wB97M-V/def2-TZVPP/PCM Frequency Flattening Transition State Geometry Optimization"
-    wB97M_V_def2_TZVPP_PCM_Unknown = "wB97M-V/def2-TZVPP/PCM Unknown"
-    wB97M_V_def2_TZVPP_SMD_Single_Point = "wB97M-V/def2-TZVPP/SMD Single Point"
-    wB97M_V_def2_TZVPP_SMD_Force = "wB97M-V/def2-TZVPP/SMD Force"
-    wB97M_V_def2_TZVPP_SMD_Geometry_Optimization = (
-        "wB97M-V/def2-TZVPP/SMD Geometry Optimization"
-    )
-    wB97M_V_def2_TZVPP_SMD_Frequency_Analysis = (
-        "wB97M-V/def2-TZVPP/SMD Frequency Analysis"
-    )
-    wB97M_V_def2_TZVPP_SMD_Frequency_Flattening_Geometry_Optimization = (
-        "wB97M-V/def2-TZVPP/SMD Frequency Flattening Geometry Optimization"
-    )
-    wB97M_V_def2_TZVPP_SMD_Transition_State_Geometry_Optimization = (
-        "wB97M-V/def2-TZVPP/SMD Transition State Geometry Optimization"
-    )
-    wB97M_V_def2_TZVPP_SMD_Frequency_Flattening_Transition_State_Geometry_Optimization = "wB97M-V/def2-TZVPP/SMD Frequency Flattening Transition State Geometry Optimization"
-    wB97M_V_def2_TZVPP_SMD_Unknown = "wB97M-V/def2-TZVPP/SMD Unknown"
-    wB97M_V_def2_TZVPPD_VACUUM_Single_Point = "wB97M-V/def2-TZVPPD/VACUUM Single Point"
-    wB97M_V_def2_TZVPPD_VACUUM_Force = "wB97M-V/def2-TZVPPD/VACUUM Force"
-    wB97M_V_def2_TZVPPD_VACUUM_Geometry_Optimization = (
-        "wB97M-V/def2-TZVPPD/VACUUM Geometry Optimization"
-    )
-    wB97M_V_def2_TZVPPD_VACUUM_Frequency_Analysis = (
-        "wB97M-V/def2-TZVPPD/VACUUM Frequency Analysis"
-    )
-    wB97M_V_def2_TZVPPD_VACUUM_Frequency_Flattening_Geometry_Optimization = (
-        "wB97M-V/def2-TZVPPD/VACUUM Frequency Flattening Geometry Optimization"
-    )
-    wB97M_V_def2_TZVPPD_VACUUM_Transition_State_Geometry_Optimization = (
-        "wB97M-V/def2-TZVPPD/VACUUM Transition State Geometry Optimization"
-    )
-    wB97M_V_def2_TZVPPD_VACUUM_Frequency_Flattening_Transition_State_Geometry_Optimization = "wB97M-V/def2-TZVPPD/VACUUM Frequency Flattening Transition State Geometry Optimization"
-    wB97M_V_def2_TZVPPD_VACUUM_Unknown = "wB97M-V/def2-TZVPPD/VACUUM Unknown"
-    wB97M_V_def2_TZVPPD_PCM_Single_Point = "wB97M-V/def2-TZVPPD/PCM Single Point"
-    wB97M_V_def2_TZVPPD_PCM_Force = "wB97M-V/def2-TZVPPD/PCM Force"
-    wB97M_V_def2_TZVPPD_PCM_Geometry_Optimization = (
-        "wB97M-V/def2-TZVPPD/PCM Geometry Optimization"
-    )
-    wB97M_V_def2_TZVPPD_PCM_Frequency_Analysis = (
-        "wB97M-V/def2-TZVPPD/PCM Frequency Analysis"
-    )
-    wB97M_V_def2_TZVPPD_PCM_Frequency_Flattening_Geometry_Optimization = (
-        "wB97M-V/def2-TZVPPD/PCM Frequency Flattening Geometry Optimization"
-    )
-    wB97M_V_def2_TZVPPD_PCM_Transition_State_Geometry_Optimization = (
-        "wB97M-V/def2-TZVPPD/PCM Transition State Geometry Optimization"
-    )
-    wB97M_V_def2_TZVPPD_PCM_Frequency_Flattening_Transition_State_Geometry_Optimization = "wB97M-V/def2-TZVPPD/PCM Frequency Flattening Transition State Geometry Optimization"
-    wB97M_V_def2_TZVPPD_PCM_Unknown = "wB97M-V/def2-TZVPPD/PCM Unknown"
-    wB97M_V_def2_TZVPPD_SMD_Single_Point = "wB97M-V/def2-TZVPPD/SMD Single Point"
-    wB97M_V_def2_TZVPPD_SMD_Force = "wB97M-V/def2-TZVPPD/SMD Force"
-    wB97M_V_def2_TZVPPD_SMD_Geometry_Optimization = (
-        "wB97M-V/def2-TZVPPD/SMD Geometry Optimization"
-    )
-    wB97M_V_def2_TZVPPD_SMD_Frequency_Analysis = (
-        "wB97M-V/def2-TZVPPD/SMD Frequency Analysis"
-    )
-    wB97M_V_def2_TZVPPD_SMD_Frequency_Flattening_Geometry_Optimization = (
-        "wB97M-V/def2-TZVPPD/SMD Frequency Flattening Geometry Optimization"
-    )
-    wB97M_V_def2_TZVPPD_SMD_Transition_State_Geometry_Optimization = (
-        "wB97M-V/def2-TZVPPD/SMD Transition State Geometry Optimization"
-    )
-    wB97M_V_def2_TZVPPD_SMD_Frequency_Flattening_Transition_State_Geometry_Optimization = "wB97M-V/def2-TZVPPD/SMD Frequency Flattening Transition State Geometry Optimization"
-    wB97M_V_def2_TZVPPD_SMD_Unknown = "wB97M-V/def2-TZVPPD/SMD Unknown"
-    wB97M_V_def2_QZVPD_VACUUM_Single_Point = "wB97M-V/def2-QZVPD/VACUUM Single Point"
-    wB97M_V_def2_QZVPD_VACUUM_Force = "wB97M-V/def2-QZVPD/VACUUM Force"
-    wB97M_V_def2_QZVPD_VACUUM_Geometry_Optimization = (
-        "wB97M-V/def2-QZVPD/VACUUM Geometry Optimization"
-    )
-    wB97M_V_def2_QZVPD_VACUUM_Frequency_Analysis = (
-        "wB97M-V/def2-QZVPD/VACUUM Frequency Analysis"
-    )
-    wB97M_V_def2_QZVPD_VACUUM_Frequency_Flattening_Geometry_Optimization = (
-        "wB97M-V/def2-QZVPD/VACUUM Frequency Flattening Geometry Optimization"
-    )
-    wB97M_V_def2_QZVPD_VACUUM_Transition_State_Geometry_Optimization = (
-        "wB97M-V/def2-QZVPD/VACUUM Transition State Geometry Optimization"
-    )
-    wB97M_V_def2_QZVPD_VACUUM_Frequency_Flattening_Transition_State_Geometry_Optimization = "wB97M-V/def2-QZVPD/VACUUM Frequency Flattening Transition State Geometry Optimization"
-    wB97M_V_def2_QZVPD_VACUUM_Unknown = "wB97M-V/def2-QZVPD/VACUUM Unknown"
-    wB97M_V_def2_QZVPD_PCM_Single_Point = "wB97M-V/def2-QZVPD/PCM Single Point"
-    wB97M_V_def2_QZVPD_PCM_Force = "wB97M-V/def2-QZVPD/PCM Force"
-    wB97M_V_def2_QZVPD_PCM_Geometry_Optimization = (
-        "wB97M-V/def2-QZVPD/PCM Geometry Optimization"
-    )
-    wB97M_V_def2_QZVPD_PCM_Frequency_Analysis = (
-        "wB97M-V/def2-QZVPD/PCM Frequency Analysis"
-    )
-    wB97M_V_def2_QZVPD_PCM_Frequency_Flattening_Geometry_Optimization = (
-        "wB97M-V/def2-QZVPD/PCM Frequency Flattening Geometry Optimization"
-    )
-    wB97M_V_def2_QZVPD_PCM_Transition_State_Geometry_Optimization = (
-        "wB97M-V/def2-QZVPD/PCM Transition State Geometry Optimization"
-    )
-    wB97M_V_def2_QZVPD_PCM_Frequency_Flattening_Transition_State_Geometry_Optimization = "wB97M-V/def2-QZVPD/PCM Frequency Flattening Transition State Geometry Optimization"
-    wB97M_V_def2_QZVPD_PCM_Unknown = "wB97M-V/def2-QZVPD/PCM Unknown"
-    wB97M_V_def2_QZVPD_SMD_Single_Point = "wB97M-V/def2-QZVPD/SMD Single Point"
-    wB97M_V_def2_QZVPD_SMD_Force = "wB97M-V/def2-QZVPD/SMD Force"
-    wB97M_V_def2_QZVPD_SMD_Geometry_Optimization = (
-        "wB97M-V/def2-QZVPD/SMD Geometry Optimization"
-    )
-    wB97M_V_def2_QZVPD_SMD_Frequency_Analysis = (
-        "wB97M-V/def2-QZVPD/SMD Frequency Analysis"
-    )
-    wB97M_V_def2_QZVPD_SMD_Frequency_Flattening_Geometry_Optimization = (
-        "wB97M-V/def2-QZVPD/SMD Frequency Flattening Geometry Optimization"
-    )
-    wB97M_V_def2_QZVPD_SMD_Transition_State_Geometry_Optimization = (
-        "wB97M-V/def2-QZVPD/SMD Transition State Geometry Optimization"
-    )
-    wB97M_V_def2_QZVPD_SMD_Frequency_Flattening_Transition_State_Geometry_Optimization = "wB97M-V/def2-QZVPD/SMD Frequency Flattening Transition State Geometry Optimization"
-    wB97M_V_def2_QZVPD_SMD_Unknown = "wB97M-V/def2-QZVPD/SMD Unknown"
-    wB97M_V_def2_QZVPPD_VACUUM_Single_Point = "wB97M-V/def2-QZVPPD/VACUUM Single Point"
-    wB97M_V_def2_QZVPPD_VACUUM_Force = "wB97M-V/def2-QZVPPD/VACUUM Force"
-    wB97M_V_def2_QZVPPD_VACUUM_Geometry_Optimization = (
-        "wB97M-V/def2-QZVPPD/VACUUM Geometry Optimization"
-    )
-    wB97M_V_def2_QZVPPD_VACUUM_Frequency_Analysis = (
-        "wB97M-V/def2-QZVPPD/VACUUM Frequency Analysis"
-    )
-    wB97M_V_def2_QZVPPD_VACUUM_Frequency_Flattening_Geometry_Optimization = (
-        "wB97M-V/def2-QZVPPD/VACUUM Frequency Flattening Geometry Optimization"
-    )
-    wB97M_V_def2_QZVPPD_VACUUM_Transition_State_Geometry_Optimization = (
-        "wB97M-V/def2-QZVPPD/VACUUM Transition State Geometry Optimization"
-    )
-    wB97M_V_def2_QZVPPD_VACUUM_Frequency_Flattening_Transition_State_Geometry_Optimization = "wB97M-V/def2-QZVPPD/VACUUM Frequency Flattening Transition State Geometry Optimization"
-    wB97M_V_def2_QZVPPD_VACUUM_Unknown = "wB97M-V/def2-QZVPPD/VACUUM Unknown"
-    wB97M_V_def2_QZVPPD_PCM_Single_Point = "wB97M-V/def2-QZVPPD/PCM Single Point"
-    wB97M_V_def2_QZVPPD_PCM_Force = "wB97M-V/def2-QZVPPD/PCM Force"
-    wB97M_V_def2_QZVPPD_PCM_Geometry_Optimization = (
-        "wB97M-V/def2-QZVPPD/PCM Geometry Optimization"
-    )
-    wB97M_V_def2_QZVPPD_PCM_Frequency_Analysis = (
-        "wB97M-V/def2-QZVPPD/PCM Frequency Analysis"
-    )
-    wB97M_V_def2_QZVPPD_PCM_Frequency_Flattening_Geometry_Optimization = (
-        "wB97M-V/def2-QZVPPD/PCM Frequency Flattening Geometry Optimization"
-    )
-    wB97M_V_def2_QZVPPD_PCM_Transition_State_Geometry_Optimization = (
-        "wB97M-V/def2-QZVPPD/PCM Transition State Geometry Optimization"
-    )
-    wB97M_V_def2_QZVPPD_PCM_Frequency_Flattening_Transition_State_Geometry_Optimization = "wB97M-V/def2-QZVPPD/PCM Frequency Flattening Transition State Geometry Optimization"
-    wB97M_V_def2_QZVPPD_PCM_Unknown = "wB97M-V/def2-QZVPPD/PCM Unknown"
-    wB97M_V_def2_QZVPPD_SMD_Single_Point = "wB97M-V/def2-QZVPPD/SMD Single Point"
-    wB97M_V_def2_QZVPPD_SMD_Force = "wB97M-V/def2-QZVPPD/SMD Force"
-    wB97M_V_def2_QZVPPD_SMD_Geometry_Optimization = (
-        "wB97M-V/def2-QZVPPD/SMD Geometry Optimization"
-    )
-    wB97M_V_def2_QZVPPD_SMD_Frequency_Analysis = (
-        "wB97M-V/def2-QZVPPD/SMD Frequency Analysis"
-    )
-    wB97M_V_def2_QZVPPD_SMD_Frequency_Flattening_Geometry_Optimization = (
-        "wB97M-V/def2-QZVPPD/SMD Frequency Flattening Geometry Optimization"
-    )
-    wB97M_V_def2_QZVPPD_SMD_Transition_State_Geometry_Optimization = (
-        "wB97M-V/def2-QZVPPD/SMD Transition State Geometry Optimization"
-    )
-    wB97M_V_def2_QZVPPD_SMD_Frequency_Flattening_Transition_State_Geometry_Optimization = "wB97M-V/def2-QZVPPD/SMD Frequency Flattening Transition State Geometry Optimization"
-    wB97M_V_def2_QZVPPD_SMD_Unknown = "wB97M-V/def2-QZVPPD/SMD Unknown"
+    wb97m_v_6_31g_d_VACUUM_Single_Point = "wb97m-v/6-31g*/VACUUM Single Point"
+    wb97m_v_6_31g_d_VACUUM_Force = "wb97m-v/6-31g*/VACUUM Force"
+    wb97m_v_6_31g_d_VACUUM_Geometry_Optimization = "wb97m-v/6-31g*/VACUUM Geometry Optimization"
+    wb97m_v_6_31g_d_VACUUM_Frequency_Analysis = "wb97m-v/6-31g*/VACUUM Frequency Analysis"
+    wb97m_v_6_31g_d_VACUUM_Frequency_Flattening_Geometry_Optimization = "wb97m-v/6-31g*/VACUUM Frequency Flattening Geometry Optimization"
+    wb97m_v_6_31g_d_VACUUM_Transition_State_Geometry_Optimization = "wb97m-v/6-31g*/VACUUM Transition State Geometry Optimization"
+    wb97m_v_6_31g_d_VACUUM_Frequency_Flattening_Transition_State_Geometry_Optimization = "wb97m-v/6-31g*/VACUUM Frequency Flattening Transition State Geometry Optimization"
+    wb97m_v_6_31g_d_VACUUM_Unknown = "wb97m-v/6-31g*/VACUUM Unknown"
+    wb97m_v_6_31g_d_PCM_Single_Point = "wb97m-v/6-31g*/PCM Single Point"
+    wb97m_v_6_31g_d_PCM_Force = "wb97m-v/6-31g*/PCM Force"
+    wb97m_v_6_31g_d_PCM_Geometry_Optimization = "wb97m-v/6-31g*/PCM Geometry Optimization"
+    wb97m_v_6_31g_d_PCM_Frequency_Analysis = "wb97m-v/6-31g*/PCM Frequency Analysis"
+    wb97m_v_6_31g_d_PCM_Frequency_Flattening_Geometry_Optimization = "wb97m-v/6-31g*/PCM Frequency Flattening Geometry Optimization"
+    wb97m_v_6_31g_d_PCM_Transition_State_Geometry_Optimization = "wb97m-v/6-31g*/PCM Transition State Geometry Optimization"
+    wb97m_v_6_31g_d_PCM_Frequency_Flattening_Transition_State_Geometry_Optimization = "wb97m-v/6-31g*/PCM Frequency Flattening Transition State Geometry Optimization"
+    wb97m_v_6_31g_d_PCM_Unknown = "wb97m-v/6-31g*/PCM Unknown"
+    wb97m_v_6_31g_d_SMD_Single_Point = "wb97m-v/6-31g*/SMD Single Point"
+    wb97m_v_6_31g_d_SMD_Force = "wb97m-v/6-31g*/SMD Force"
+    wb97m_v_6_31g_d_SMD_Geometry_Optimization = "wb97m-v/6-31g*/SMD Geometry Optimization"
+    wb97m_v_6_31g_d_SMD_Frequency_Analysis = "wb97m-v/6-31g*/SMD Frequency Analysis"
+    wb97m_v_6_31g_d_SMD_Frequency_Flattening_Geometry_Optimization = "wb97m-v/6-31g*/SMD Frequency Flattening Geometry Optimization"
+    wb97m_v_6_31g_d_SMD_Transition_State_Geometry_Optimization = "wb97m-v/6-31g*/SMD Transition State Geometry Optimization"
+    wb97m_v_6_31g_d_SMD_Frequency_Flattening_Transition_State_Geometry_Optimization = "wb97m-v/6-31g*/SMD Frequency Flattening Transition State Geometry Optimization"
+    wb97m_v_6_31g_d_SMD_Unknown = "wb97m-v/6-31g*/SMD Unknown"
+    wb97m_v_def2_SVPD_VACUUM_Single_Point = "wb97m-v/def2-SVPD/VACUUM Single Point"
+    wb97m_v_def2_SVPD_VACUUM_Force = "wb97m-v/def2-SVPD/VACUUM Force"
+    wb97m_v_def2_SVPD_VACUUM_Geometry_Optimization = "wb97m-v/def2-SVPD/VACUUM Geometry Optimization"
+    wb97m_v_def2_SVPD_VACUUM_Frequency_Analysis = "wb97m-v/def2-SVPD/VACUUM Frequency Analysis"
+    wb97m_v_def2_SVPD_VACUUM_Frequency_Flattening_Geometry_Optimization = "wb97m-v/def2-SVPD/VACUUM Frequency Flattening Geometry Optimization"
+    wb97m_v_def2_SVPD_VACUUM_Transition_State_Geometry_Optimization = "wb97m-v/def2-SVPD/VACUUM Transition State Geometry Optimization"
+    wb97m_v_def2_SVPD_VACUUM_Frequency_Flattening_Transition_State_Geometry_Optimization = "wb97m-v/def2-SVPD/VACUUM Frequency Flattening Transition State Geometry Optimization"
+    wb97m_v_def2_SVPD_VACUUM_Unknown = "wb97m-v/def2-SVPD/VACUUM Unknown"
+    wb97m_v_def2_SVPD_PCM_Single_Point = "wb97m-v/def2-SVPD/PCM Single Point"
+    wb97m_v_def2_SVPD_PCM_Force = "wb97m-v/def2-SVPD/PCM Force"
+    wb97m_v_def2_SVPD_PCM_Geometry_Optimization = "wb97m-v/def2-SVPD/PCM Geometry Optimization"
+    wb97m_v_def2_SVPD_PCM_Frequency_Analysis = "wb97m-v/def2-SVPD/PCM Frequency Analysis"
+    wb97m_v_def2_SVPD_PCM_Frequency_Flattening_Geometry_Optimization = "wb97m-v/def2-SVPD/PCM Frequency Flattening Geometry Optimization"
+    wb97m_v_def2_SVPD_PCM_Transition_State_Geometry_Optimization = "wb97m-v/def2-SVPD/PCM Transition State Geometry Optimization"
+    wb97m_v_def2_SVPD_PCM_Frequency_Flattening_Transition_State_Geometry_Optimization = "wb97m-v/def2-SVPD/PCM Frequency Flattening Transition State Geometry Optimization"
+    wb97m_v_def2_SVPD_PCM_Unknown = "wb97m-v/def2-SVPD/PCM Unknown"
+    wb97m_v_def2_SVPD_SMD_Single_Point = "wb97m-v/def2-SVPD/SMD Single Point"
+    wb97m_v_def2_SVPD_SMD_Force = "wb97m-v/def2-SVPD/SMD Force"
+    wb97m_v_def2_SVPD_SMD_Geometry_Optimization = "wb97m-v/def2-SVPD/SMD Geometry Optimization"
+    wb97m_v_def2_SVPD_SMD_Frequency_Analysis = "wb97m-v/def2-SVPD/SMD Frequency Analysis"
+    wb97m_v_def2_SVPD_SMD_Frequency_Flattening_Geometry_Optimization = "wb97m-v/def2-SVPD/SMD Frequency Flattening Geometry Optimization"
+    wb97m_v_def2_SVPD_SMD_Transition_State_Geometry_Optimization = "wb97m-v/def2-SVPD/SMD Transition State Geometry Optimization"
+    wb97m_v_def2_SVPD_SMD_Frequency_Flattening_Transition_State_Geometry_Optimization = "wb97m-v/def2-SVPD/SMD Frequency Flattening Transition State Geometry Optimization"
+    wb97m_v_def2_SVPD_SMD_Unknown = "wb97m-v/def2-SVPD/SMD Unknown"
+    wb97m_v_def2_TZVP_VACUUM_Single_Point = "wb97m-v/def2-TZVP/VACUUM Single Point"
+    wb97m_v_def2_TZVP_VACUUM_Force = "wb97m-v/def2-TZVP/VACUUM Force"
+    wb97m_v_def2_TZVP_VACUUM_Geometry_Optimization = "wb97m-v/def2-TZVP/VACUUM Geometry Optimization"
+    wb97m_v_def2_TZVP_VACUUM_Frequency_Analysis = "wb97m-v/def2-TZVP/VACUUM Frequency Analysis"
+    wb97m_v_def2_TZVP_VACUUM_Frequency_Flattening_Geometry_Optimization = "wb97m-v/def2-TZVP/VACUUM Frequency Flattening Geometry Optimization"
+    wb97m_v_def2_TZVP_VACUUM_Transition_State_Geometry_Optimization = "wb97m-v/def2-TZVP/VACUUM Transition State Geometry Optimization"
+    wb97m_v_def2_TZVP_VACUUM_Frequency_Flattening_Transition_State_Geometry_Optimization = "wb97m-v/def2-TZVP/VACUUM Frequency Flattening Transition State Geometry Optimization"
+    wb97m_v_def2_TZVP_VACUUM_Unknown = "wb97m-v/def2-TZVP/VACUUM Unknown"
+    wb97m_v_def2_TZVP_PCM_Single_Point = "wb97m-v/def2-TZVP/PCM Single Point"
+    wb97m_v_def2_TZVP_PCM_Force = "wb97m-v/def2-TZVP/PCM Force"
+    wb97m_v_def2_TZVP_PCM_Geometry_Optimization = "wb97m-v/def2-TZVP/PCM Geometry Optimization"
+    wb97m_v_def2_TZVP_PCM_Frequency_Analysis = "wb97m-v/def2-TZVP/PCM Frequency Analysis"
+    wb97m_v_def2_TZVP_PCM_Frequency_Flattening_Geometry_Optimization = "wb97m-v/def2-TZVP/PCM Frequency Flattening Geometry Optimization"
+    wb97m_v_def2_TZVP_PCM_Transition_State_Geometry_Optimization = "wb97m-v/def2-TZVP/PCM Transition State Geometry Optimization"
+    wb97m_v_def2_TZVP_PCM_Frequency_Flattening_Transition_State_Geometry_Optimization = "wb97m-v/def2-TZVP/PCM Frequency Flattening Transition State Geometry Optimization"
+    wb97m_v_def2_TZVP_PCM_Unknown = "wb97m-v/def2-TZVP/PCM Unknown"
+    wb97m_v_def2_TZVP_SMD_Single_Point = "wb97m-v/def2-TZVP/SMD Single Point"
+    wb97m_v_def2_TZVP_SMD_Force = "wb97m-v/def2-TZVP/SMD Force"
+    wb97m_v_def2_TZVP_SMD_Geometry_Optimization = "wb97m-v/def2-TZVP/SMD Geometry Optimization"
+    wb97m_v_def2_TZVP_SMD_Frequency_Analysis = "wb97m-v/def2-TZVP/SMD Frequency Analysis"
+    wb97m_v_def2_TZVP_SMD_Frequency_Flattening_Geometry_Optimization = "wb97m-v/def2-TZVP/SMD Frequency Flattening Geometry Optimization"
+    wb97m_v_def2_TZVP_SMD_Transition_State_Geometry_Optimization = "wb97m-v/def2-TZVP/SMD Transition State Geometry Optimization"
+    wb97m_v_def2_TZVP_SMD_Frequency_Flattening_Transition_State_Geometry_Optimization = "wb97m-v/def2-TZVP/SMD Frequency Flattening Transition State Geometry Optimization"
+    wb97m_v_def2_TZVP_SMD_Unknown = "wb97m-v/def2-TZVP/SMD Unknown"
+    wb97m_v_def2_TZVPD_VACUUM_Single_Point = "wb97m-v/def2-TZVPD/VACUUM Single Point"
+    wb97m_v_def2_TZVPD_VACUUM_Force = "wb97m-v/def2-TZVPD/VACUUM Force"
+    wb97m_v_def2_TZVPD_VACUUM_Geometry_Optimization = "wb97m-v/def2-TZVPD/VACUUM Geometry Optimization"
+    wb97m_v_def2_TZVPD_VACUUM_Frequency_Analysis = "wb97m-v/def2-TZVPD/VACUUM Frequency Analysis"
+    wb97m_v_def2_TZVPD_VACUUM_Frequency_Flattening_Geometry_Optimization = "wb97m-v/def2-TZVPD/VACUUM Frequency Flattening Geometry Optimization"
+    wb97m_v_def2_TZVPD_VACUUM_Transition_State_Geometry_Optimization = "wb97m-v/def2-TZVPD/VACUUM Transition State Geometry Optimization"
+    wb97m_v_def2_TZVPD_VACUUM_Frequency_Flattening_Transition_State_Geometry_Optimization = "wb97m-v/def2-TZVPD/VACUUM Frequency Flattening Transition State Geometry Optimization"
+    wb97m_v_def2_TZVPD_VACUUM_Unknown = "wb97m-v/def2-TZVPD/VACUUM Unknown"
+    wb97m_v_def2_TZVPD_PCM_Single_Point = "wb97m-v/def2-TZVPD/PCM Single Point"
+    wb97m_v_def2_TZVPD_PCM_Force = "wb97m-v/def2-TZVPD/PCM Force"
+    wb97m_v_def2_TZVPD_PCM_Geometry_Optimization = "wb97m-v/def2-TZVPD/PCM Geometry Optimization"
+    wb97m_v_def2_TZVPD_PCM_Frequency_Analysis = "wb97m-v/def2-TZVPD/PCM Frequency Analysis"
+    wb97m_v_def2_TZVPD_PCM_Frequency_Flattening_Geometry_Optimization = "wb97m-v/def2-TZVPD/PCM Frequency Flattening Geometry Optimization"
+    wb97m_v_def2_TZVPD_PCM_Transition_State_Geometry_Optimization = "wb97m-v/def2-TZVPD/PCM Transition State Geometry Optimization"
+    wb97m_v_def2_TZVPD_PCM_Frequency_Flattening_Transition_State_Geometry_Optimization = "wb97m-v/def2-TZVPD/PCM Frequency Flattening Transition State Geometry Optimization"
+    wb97m_v_def2_TZVPD_PCM_Unknown = "wb97m-v/def2-TZVPD/PCM Unknown"
+    wb97m_v_def2_TZVPD_SMD_Single_Point = "wb97m-v/def2-TZVPD/SMD Single Point"
+    wb97m_v_def2_TZVPD_SMD_Force = "wb97m-v/def2-TZVPD/SMD Force"
+    wb97m_v_def2_TZVPD_SMD_Geometry_Optimization = "wb97m-v/def2-TZVPD/SMD Geometry Optimization"
+    wb97m_v_def2_TZVPD_SMD_Frequency_Analysis = "wb97m-v/def2-TZVPD/SMD Frequency Analysis"
+    wb97m_v_def2_TZVPD_SMD_Frequency_Flattening_Geometry_Optimization = "wb97m-v/def2-TZVPD/SMD Frequency Flattening Geometry Optimization"
+    wb97m_v_def2_TZVPD_SMD_Transition_State_Geometry_Optimization = "wb97m-v/def2-TZVPD/SMD Transition State Geometry Optimization"
+    wb97m_v_def2_TZVPD_SMD_Frequency_Flattening_Transition_State_Geometry_Optimization = "wb97m-v/def2-TZVPD/SMD Frequency Flattening Transition State Geometry Optimization"
+    wb97m_v_def2_TZVPD_SMD_Unknown = "wb97m-v/def2-TZVPD/SMD Unknown"
+    wb97m_v_def2_TZVPP_VACUUM_Single_Point = "wb97m-v/def2-TZVPP/VACUUM Single Point"
+    wb97m_v_def2_TZVPP_VACUUM_Force = "wb97m-v/def2-TZVPP/VACUUM Force"
+    wb97m_v_def2_TZVPP_VACUUM_Geometry_Optimization = "wb97m-v/def2-TZVPP/VACUUM Geometry Optimization"
+    wb97m_v_def2_TZVPP_VACUUM_Frequency_Analysis = "wb97m-v/def2-TZVPP/VACUUM Frequency Analysis"
+    wb97m_v_def2_TZVPP_VACUUM_Frequency_Flattening_Geometry_Optimization = "wb97m-v/def2-TZVPP/VACUUM Frequency Flattening Geometry Optimization"
+    wb97m_v_def2_TZVPP_VACUUM_Transition_State_Geometry_Optimization = "wb97m-v/def2-TZVPP/VACUUM Transition State Geometry Optimization"
+    wb97m_v_def2_TZVPP_VACUUM_Frequency_Flattening_Transition_State_Geometry_Optimization = "wb97m-v/def2-TZVPP/VACUUM Frequency Flattening Transition State Geometry Optimization"
+    wb97m_v_def2_TZVPP_VACUUM_Unknown = "wb97m-v/def2-TZVPP/VACUUM Unknown"
+    wb97m_v_def2_TZVPP_PCM_Single_Point = "wb97m-v/def2-TZVPP/PCM Single Point"
+    wb97m_v_def2_TZVPP_PCM_Force = "wb97m-v/def2-TZVPP/PCM Force"
+    wb97m_v_def2_TZVPP_PCM_Geometry_Optimization = "wb97m-v/def2-TZVPP/PCM Geometry Optimization"
+    wb97m_v_def2_TZVPP_PCM_Frequency_Analysis = "wb97m-v/def2-TZVPP/PCM Frequency Analysis"
+    wb97m_v_def2_TZVPP_PCM_Frequency_Flattening_Geometry_Optimization = "wb97m-v/def2-TZVPP/PCM Frequency Flattening Geometry Optimization"
+    wb97m_v_def2_TZVPP_PCM_Transition_State_Geometry_Optimization = "wb97m-v/def2-TZVPP/PCM Transition State Geometry Optimization"
+    wb97m_v_def2_TZVPP_PCM_Frequency_Flattening_Transition_State_Geometry_Optimization = "wb97m-v/def2-TZVPP/PCM Frequency Flattening Transition State Geometry Optimization"
+    wb97m_v_def2_TZVPP_PCM_Unknown = "wb97m-v/def2-TZVPP/PCM Unknown"
+    wb97m_v_def2_TZVPP_SMD_Single_Point = "wb97m-v/def2-TZVPP/SMD Single Point"
+    wb97m_v_def2_TZVPP_SMD_Force = "wb97m-v/def2-TZVPP/SMD Force"
+    wb97m_v_def2_TZVPP_SMD_Geometry_Optimization = "wb97m-v/def2-TZVPP/SMD Geometry Optimization"
+    wb97m_v_def2_TZVPP_SMD_Frequency_Analysis = "wb97m-v/def2-TZVPP/SMD Frequency Analysis"
+    wb97m_v_def2_TZVPP_SMD_Frequency_Flattening_Geometry_Optimization = "wb97m-v/def2-TZVPP/SMD Frequency Flattening Geometry Optimization"
+    wb97m_v_def2_TZVPP_SMD_Transition_State_Geometry_Optimization = "wb97m-v/def2-TZVPP/SMD Transition State Geometry Optimization"
+    wb97m_v_def2_TZVPP_SMD_Frequency_Flattening_Transition_State_Geometry_Optimization = "wb97m-v/def2-TZVPP/SMD Frequency Flattening Transition State Geometry Optimization"
+    wb97m_v_def2_TZVPP_SMD_Unknown = "wb97m-v/def2-TZVPP/SMD Unknown"
+    wb97m_v_def2_TZVPPD_VACUUM_Single_Point = "wb97m-v/def2-TZVPPD/VACUUM Single Point"
+    wb97m_v_def2_TZVPPD_VACUUM_Force = "wb97m-v/def2-TZVPPD/VACUUM Force"
+    wb97m_v_def2_TZVPPD_VACUUM_Geometry_Optimization = "wb97m-v/def2-TZVPPD/VACUUM Geometry Optimization"
+    wb97m_v_def2_TZVPPD_VACUUM_Frequency_Analysis = "wb97m-v/def2-TZVPPD/VACUUM Frequency Analysis"
+    wb97m_v_def2_TZVPPD_VACUUM_Frequency_Flattening_Geometry_Optimization = "wb97m-v/def2-TZVPPD/VACUUM Frequency Flattening Geometry Optimization"
+    wb97m_v_def2_TZVPPD_VACUUM_Transition_State_Geometry_Optimization = "wb97m-v/def2-TZVPPD/VACUUM Transition State Geometry Optimization"
+    wb97m_v_def2_TZVPPD_VACUUM_Frequency_Flattening_Transition_State_Geometry_Optimization = "wb97m-v/def2-TZVPPD/VACUUM Frequency Flattening Transition State Geometry Optimization"
+    wb97m_v_def2_TZVPPD_VACUUM_Unknown = "wb97m-v/def2-TZVPPD/VACUUM Unknown"
+    wb97m_v_def2_TZVPPD_PCM_Single_Point = "wb97m-v/def2-TZVPPD/PCM Single Point"
+    wb97m_v_def2_TZVPPD_PCM_Force = "wb97m-v/def2-TZVPPD/PCM Force"
+    wb97m_v_def2_TZVPPD_PCM_Geometry_Optimization = "wb97m-v/def2-TZVPPD/PCM Geometry Optimization"
+    wb97m_v_def2_TZVPPD_PCM_Frequency_Analysis = "wb97m-v/def2-TZVPPD/PCM Frequency Analysis"
+    wb97m_v_def2_TZVPPD_PCM_Frequency_Flattening_Geometry_Optimization = "wb97m-v/def2-TZVPPD/PCM Frequency Flattening Geometry Optimization"
+    wb97m_v_def2_TZVPPD_PCM_Transition_State_Geometry_Optimization = "wb97m-v/def2-TZVPPD/PCM Transition State Geometry Optimization"
+    wb97m_v_def2_TZVPPD_PCM_Frequency_Flattening_Transition_State_Geometry_Optimization = "wb97m-v/def2-TZVPPD/PCM Frequency Flattening Transition State Geometry Optimization"
+    wb97m_v_def2_TZVPPD_PCM_Unknown = "wb97m-v/def2-TZVPPD/PCM Unknown"
+    wb97m_v_def2_TZVPPD_SMD_Single_Point = "wb97m-v/def2-TZVPPD/SMD Single Point"
+    wb97m_v_def2_TZVPPD_SMD_Force = "wb97m-v/def2-TZVPPD/SMD Force"
+    wb97m_v_def2_TZVPPD_SMD_Geometry_Optimization = "wb97m-v/def2-TZVPPD/SMD Geometry Optimization"
+    wb97m_v_def2_TZVPPD_SMD_Frequency_Analysis = "wb97m-v/def2-TZVPPD/SMD Frequency Analysis"
+    wb97m_v_def2_TZVPPD_SMD_Frequency_Flattening_Geometry_Optimization = "wb97m-v/def2-TZVPPD/SMD Frequency Flattening Geometry Optimization"
+    wb97m_v_def2_TZVPPD_SMD_Transition_State_Geometry_Optimization = "wb97m-v/def2-TZVPPD/SMD Transition State Geometry Optimization"
+    wb97m_v_def2_TZVPPD_SMD_Frequency_Flattening_Transition_State_Geometry_Optimization = "wb97m-v/def2-TZVPPD/SMD Frequency Flattening Transition State Geometry Optimization"
+    wb97m_v_def2_TZVPPD_SMD_Unknown = "wb97m-v/def2-TZVPPD/SMD Unknown"
+    wb97m_v_def2_QZVPD_VACUUM_Single_Point = "wb97m-v/def2-QZVPD/VACUUM Single Point"
+    wb97m_v_def2_QZVPD_VACUUM_Force = "wb97m-v/def2-QZVPD/VACUUM Force"
+    wb97m_v_def2_QZVPD_VACUUM_Geometry_Optimization = "wb97m-v/def2-QZVPD/VACUUM Geometry Optimization"
+    wb97m_v_def2_QZVPD_VACUUM_Frequency_Analysis = "wb97m-v/def2-QZVPD/VACUUM Frequency Analysis"
+    wb97m_v_def2_QZVPD_VACUUM_Frequency_Flattening_Geometry_Optimization = "wb97m-v/def2-QZVPD/VACUUM Frequency Flattening Geometry Optimization"
+    wb97m_v_def2_QZVPD_VACUUM_Transition_State_Geometry_Optimization = "wb97m-v/def2-QZVPD/VACUUM Transition State Geometry Optimization"
+    wb97m_v_def2_QZVPD_VACUUM_Frequency_Flattening_Transition_State_Geometry_Optimization = "wb97m-v/def2-QZVPD/VACUUM Frequency Flattening Transition State Geometry Optimization"
+    wb97m_v_def2_QZVPD_VACUUM_Unknown = "wb97m-v/def2-QZVPD/VACUUM Unknown"
+    wb97m_v_def2_QZVPD_PCM_Single_Point = "wb97m-v/def2-QZVPD/PCM Single Point"
+    wb97m_v_def2_QZVPD_PCM_Force = "wb97m-v/def2-QZVPD/PCM Force"
+    wb97m_v_def2_QZVPD_PCM_Geometry_Optimization = "wb97m-v/def2-QZVPD/PCM Geometry Optimization"
+    wb97m_v_def2_QZVPD_PCM_Frequency_Analysis = "wb97m-v/def2-QZVPD/PCM Frequency Analysis"
+    wb97m_v_def2_QZVPD_PCM_Frequency_Flattening_Geometry_Optimization = "wb97m-v/def2-QZVPD/PCM Frequency Flattening Geometry Optimization"
+    wb97m_v_def2_QZVPD_PCM_Transition_State_Geometry_Optimization = "wb97m-v/def2-QZVPD/PCM Transition State Geometry Optimization"
+    wb97m_v_def2_QZVPD_PCM_Frequency_Flattening_Transition_State_Geometry_Optimization = "wb97m-v/def2-QZVPD/PCM Frequency Flattening Transition State Geometry Optimization"
+    wb97m_v_def2_QZVPD_PCM_Unknown = "wb97m-v/def2-QZVPD/PCM Unknown"
+    wb97m_v_def2_QZVPD_SMD_Single_Point = "wb97m-v/def2-QZVPD/SMD Single Point"
+    wb97m_v_def2_QZVPD_SMD_Force = "wb97m-v/def2-QZVPD/SMD Force"
+    wb97m_v_def2_QZVPD_SMD_Geometry_Optimization = "wb97m-v/def2-QZVPD/SMD Geometry Optimization"
+    wb97m_v_def2_QZVPD_SMD_Frequency_Analysis = "wb97m-v/def2-QZVPD/SMD Frequency Analysis"
+    wb97m_v_def2_QZVPD_SMD_Frequency_Flattening_Geometry_Optimization = "wb97m-v/def2-QZVPD/SMD Frequency Flattening Geometry Optimization"
+    wb97m_v_def2_QZVPD_SMD_Transition_State_Geometry_Optimization = "wb97m-v/def2-QZVPD/SMD Transition State Geometry Optimization"
+    wb97m_v_def2_QZVPD_SMD_Frequency_Flattening_Transition_State_Geometry_Optimization = "wb97m-v/def2-QZVPD/SMD Frequency Flattening Transition State Geometry Optimization"
+    wb97m_v_def2_QZVPD_SMD_Unknown = "wb97m-v/def2-QZVPD/SMD Unknown"
+    wb97m_v_def2_QZVPPD_VACUUM_Single_Point = "wb97m-v/def2-QZVPPD/VACUUM Single Point"
+    wb97m_v_def2_QZVPPD_VACUUM_Force = "wb97m-v/def2-QZVPPD/VACUUM Force"
+    wb97m_v_def2_QZVPPD_VACUUM_Geometry_Optimization = "wb97m-v/def2-QZVPPD/VACUUM Geometry Optimization"
+    wb97m_v_def2_QZVPPD_VACUUM_Frequency_Analysis = "wb97m-v/def2-QZVPPD/VACUUM Frequency Analysis"
+    wb97m_v_def2_QZVPPD_VACUUM_Frequency_Flattening_Geometry_Optimization = "wb97m-v/def2-QZVPPD/VACUUM Frequency Flattening Geometry Optimization"
+    wb97m_v_def2_QZVPPD_VACUUM_Transition_State_Geometry_Optimization = "wb97m-v/def2-QZVPPD/VACUUM Transition State Geometry Optimization"
+    wb97m_v_def2_QZVPPD_VACUUM_Frequency_Flattening_Transition_State_Geometry_Optimization = "wb97m-v/def2-QZVPPD/VACUUM Frequency Flattening Transition State Geometry Optimization"
+    wb97m_v_def2_QZVPPD_VACUUM_Unknown = "wb97m-v/def2-QZVPPD/VACUUM Unknown"
+    wb97m_v_def2_QZVPPD_PCM_Single_Point = "wb97m-v/def2-QZVPPD/PCM Single Point"
+    wb97m_v_def2_QZVPPD_PCM_Force = "wb97m-v/def2-QZVPPD/PCM Force"
+    wb97m_v_def2_QZVPPD_PCM_Geometry_Optimization = "wb97m-v/def2-QZVPPD/PCM Geometry Optimization"
+    wb97m_v_def2_QZVPPD_PCM_Frequency_Analysis = "wb97m-v/def2-QZVPPD/PCM Frequency Analysis"
+    wb97m_v_def2_QZVPPD_PCM_Frequency_Flattening_Geometry_Optimization = "wb97m-v/def2-QZVPPD/PCM Frequency Flattening Geometry Optimization"
+    wb97m_v_def2_QZVPPD_PCM_Transition_State_Geometry_Optimization = "wb97m-v/def2-QZVPPD/PCM Transition State Geometry Optimization"
+    wb97m_v_def2_QZVPPD_PCM_Frequency_Flattening_Transition_State_Geometry_Optimization = "wb97m-v/def2-QZVPPD/PCM Frequency Flattening Transition State Geometry Optimization"
+    wb97m_v_def2_QZVPPD_PCM_Unknown = "wb97m-v/def2-QZVPPD/PCM Unknown"
+    wb97m_v_def2_QZVPPD_SMD_Single_Point = "wb97m-v/def2-QZVPPD/SMD Single Point"
+    wb97m_v_def2_QZVPPD_SMD_Force = "wb97m-v/def2-QZVPPD/SMD Force"
+    wb97m_v_def2_QZVPPD_SMD_Geometry_Optimization = "wb97m-v/def2-QZVPPD/SMD Geometry Optimization"
+    wb97m_v_def2_QZVPPD_SMD_Frequency_Analysis = "wb97m-v/def2-QZVPPD/SMD Frequency Analysis"
+    wb97m_v_def2_QZVPPD_SMD_Frequency_Flattening_Geometry_Optimization = "wb97m-v/def2-QZVPPD/SMD Frequency Flattening Geometry Optimization"
+    wb97m_v_def2_QZVPPD_SMD_Transition_State_Geometry_Optimization = "wb97m-v/def2-QZVPPD/SMD Transition State Geometry Optimization"
+    wb97m_v_def2_QZVPPD_SMD_Frequency_Flattening_Transition_State_Geometry_Optimization = "wb97m-v/def2-QZVPPD/SMD Frequency Flattening Transition State Geometry Optimization"
+    wb97m_v_def2_QZVPPD_SMD_Unknown = "wb97m-v/def2-QZVPPD/SMD Unknown"
