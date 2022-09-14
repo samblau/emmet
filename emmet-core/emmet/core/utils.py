@@ -200,6 +200,27 @@ def make_mol_graph(
                 bond_tup = (bond[0], bond[1])
                 if bond_tup not in mg_edges:
                     mol_graph.add_edge(bond_tup[0], bond_tup[1])
+    elif not nx.is_connected(mol_graph.graph.to_undirected()):
+        for idx in mol_graph.graph.nodes():
+            if mol_graph.graph.nodes()[idx]["specie"] == "O":
+                for ii, site in enumerate(mol_graph.molecule):
+                    if ii != idx and site not in [
+                        connected_site.site
+                        for connected_site in mol_graph.get_connected_sites(idx)
+                    ]:
+                        if (
+                            str(site.specie) == "C"
+                            and site.distance(mol_graph.molecule[idx]) < 1.48
+                        ):
+                            mol_graph.add_edge(idx, ii)
+                            print("Added CO bond!")
+                        elif (
+                            str(site.specie) == "H"
+                            and site.distance(mol_graph.molecule[idx]) < 0.98
+                        ):
+                            mol_graph.add_edge(idx, ii)
+                            print("Added OH bond!")
+
     return mol_graph
 
 
