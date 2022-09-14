@@ -232,7 +232,7 @@ class ThermoBuilder(Builder):
         def _add_single_atom_enthalpy_entropy(task: TaskDocument, doc: ThermoDoc):
             initial_mol = task.output.initial_molecule
             # If single atom, try to add enthalpy and entropy
-            if len(initial_mol) == 1:
+            if len(initial_mol["sites"]) == 1:
                 if doc.total_enthalpy is None or doc.total_entropy is None:
                     formula = initial_mol.composition.alphabetical_formula
                     if formula in single_mol_thermo:
