@@ -368,6 +368,14 @@ class ThermoBuilder(Builder):
                         task_doc_dict, thermo_doc
                     )
                     this_thermo_docs.append(thermo_doc)
+                else:
+                    thermo_doc = ThermoDoc.from_task(
+                        task_spec, molecule_id=mol.molecule_id, deprecated=False
+                    )
+                    thermo_doc = _add_single_atom_enthalpy_entropy(
+                        task_spec, thermo_doc
+                    )
+                    this_thermo_docs.append(thermo_doc)
 
             docs_by_solvent = defaultdict(list)
             for doc in this_thermo_docs:
