@@ -369,11 +369,14 @@ class ThermoBuilder(Builder):
                     )
                     this_thermo_docs.append(thermo_doc)
                 else:
+                    task_doc_spec = TaskDocument(
+                        **self.tasks.query_one({"task_id": int(task_spec)})
+                    )
                     thermo_doc = ThermoDoc.from_task(
-                        task_spec, molecule_id=mol.molecule_id, deprecated=False
+                        task_doc_spec, molecule_id=mol.molecule_id, deprecated=False
                     )
                     thermo_doc = _add_single_atom_enthalpy_entropy(
-                        task_spec, thermo_doc
+                        task_doc_spec, thermo_doc
                     )
                     this_thermo_docs.append(thermo_doc)
 
