@@ -342,31 +342,32 @@ class ThermoBuilder(Builder):
                     ):
                         matching_structures.append(entry)
 
-                best_dict = sorted(
-                    matching_structures,
-                    key=lambda x: (
-                        sum(evaluate_lot(x["level_of_theory"])),
-                        x["energy"],
-                    ),
-                )[0]
-                task_dict = best_dict["task_id"]
+                if len(matching_structures) > 0:
+                    best_dict = sorted(
+                        matching_structures,
+                        key=lambda x: (
+                            sum(evaluate_lot(x["level_of_theory"])),
+                            x["energy"],
+                        ),
+                    )[0]
+                    task_dict = best_dict["task_id"]
 
-                task_doc_dict = TaskDocument(
-                    **self.tasks.query_one({"task_id": int(task_dict)})
-                )
-                task_doc_spec = TaskDocument(
-                    **self.tasks.query_one({"task_id": int(task_spec)})
-                )
-                thermo_doc = ThermoDoc.from_task(
-                    task_doc_dict,
-                    correction_task=task_doc_spec,
-                    molecule_id=mol.molecule_id,
-                    deprecated=False,
-                )
-                thermo_doc = _add_single_atom_enthalpy_entropy(
-                    task_doc_dict, thermo_doc
-                )
-                this_thermo_docs.append(thermo_doc)
+                    task_doc_dict = TaskDocument(
+                        **self.tasks.query_one({"task_id": int(task_dict)})
+                    )
+                    task_doc_spec = TaskDocument(
+                        **self.tasks.query_one({"task_id": int(task_spec)})
+                    )
+                    thermo_doc = ThermoDoc.from_task(
+                        task_doc_dict,
+                        correction_task=task_doc_spec,
+                        molecule_id=mol.molecule_id,
+                        deprecated=False,
+                    )
+                    thermo_doc = _add_single_atom_enthalpy_entropy(
+                        task_doc_dict, thermo_doc
+                    )
+                    this_thermo_docs.append(thermo_doc)
 
             docs_by_solvent = defaultdict(list)
             for doc in this_thermo_docs:
