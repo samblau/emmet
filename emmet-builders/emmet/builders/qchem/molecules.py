@@ -557,10 +557,9 @@ class MoleculesBuilder(Builder):
                     # TODO: MAKE ClusterBuilder FOR THIS PURPOSE
                     if nx.is_connected(mol_graph.graph.to_undirected()):
                         matched = False
-                        graph_hash = weisfeiler_lehman_graph_hash(mol_graph.graph, node_attr="specie")
+                        graph_hash = weisfeiler_lehman_graph_hash(mol_graph.graph.to_undirected(), node_attr="specie")
 
                         for subgroup in subgroups:
-                            #if mol_graph.isomorphic_to(subgroup["mol_graph"]):
                             if graph_hash == subgroup["graph_hash"]:
                                 subgroup["mol_docs"].append(mol_doc)
                                 matched = True
