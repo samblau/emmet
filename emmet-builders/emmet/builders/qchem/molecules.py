@@ -4,6 +4,7 @@ from math import ceil
 from typing import Any, Dict, Iterable, Iterator, List, Optional
 
 import networkx as nx
+from networkx.algorithms.graph_hashing import weisfeiler_lehman_graph_hash
 
 from maggma.builders import Builder
 from maggma.stores import Store
@@ -556,16 +557,18 @@ class MoleculesBuilder(Builder):
                     # TODO: MAKE ClusterBuilder FOR THIS PURPOSE
                     if nx.is_connected(mol_graph.graph.to_undirected()):
                         matched = False
+                        graph_hash = weisfeiler_lehman_graph_hash(mol_graph.graph, node_attr="specie")
 
                         for subgroup in subgroups:
-                            if mol_graph.isomorphic_to(subgroup["mol_graph"]):
+                            #if mol_graph.isomorphic_to(subgroup["mol_graph"]):
+                            if graph_hash == subgroup["graph_hash"]:
                                 subgroup["mol_docs"].append(mol_doc)
                                 matched = True
                                 break
 
                         if not matched:
                             subgroups.append(
-                                {"mol_graph": mol_graph, "mol_docs": [mol_doc]}
+                                {"graph_hash": graph_hash, "mol_graph": mol_graph, "mol_docs": [mol_doc]}
                             )
 
                 for subgroup in subgroups:
