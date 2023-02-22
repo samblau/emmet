@@ -8,6 +8,8 @@ from typing import Any, Dict, Iterable, Iterator, List, Optional, Union
 from pymatgen.analysis.graphs import MoleculeGraph
 from pymatgen.analysis.local_env import OpenBabelNN
 
+from networkx.algorithms.graph_hashing import weisfeiler_lehman_graph_hash
+
 from maggma.builders import Builder
 from maggma.core import Store
 from maggma.utils import grouper
@@ -339,7 +341,7 @@ class RedoxBuilder(Builder):
         :return: Grouped molecule entries
         """
 
-        mol_graphs_nometal: List[MoleculeGraph] = list()
+        graph_hashes_nometal: List[String] = list()
         results = defaultdict(list)
 
         # Within each group, group by the covalent molecular graph
@@ -355,16 +357,17 @@ class RedoxBuilder(Builder):
             mg_nometal = MoleculeGraph.with_local_env_strategy(
                 mol_nometal, OpenBabelNN()
             )
+            gh_nometal = weisfeiler_lehman_graph_hash(mg_nometal.graph.to_undirected(), node_attr="specie")
 
             match = None
-            for i, mg in enumerate(mol_graphs_nometal):
-                if mg_nometal.isomorphic_to(mg):
+            for i, gh in enumerate(graph_hashes_nometal):
+                if gh_nometal == gh:
                     match = i
                     break
 
             if match is None:
-                results[len(mol_graphs_nometal)].append(t)
-                mol_graphs_nometal.append(mg_nometal)
+                results[len(graph_hashes_nometal)].append(t)
+                graph_hashes_nometal.append(gh_nometal)
             else:
                 results[match].append(t)
 
