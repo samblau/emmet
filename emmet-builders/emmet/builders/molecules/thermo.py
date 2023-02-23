@@ -255,7 +255,7 @@ class ThermoBuilder(Builder):
 
         thermo_docs = list()
 
-        mm = MoleculeMatcher()
+        mm = MoleculeMatcher(tolerance=0.000001)
 
         for mol in mols:
             this_thermo_docs = list()
@@ -282,7 +282,7 @@ class ThermoBuilder(Builder):
                     and entry["spin_multiplicity"] == mol.spin_multiplicity
                 ):
                     sp_entries.append(entry)
-            print("Len of sp_entries", len(sp_entries))
+            # print("Len of sp_entries", len(sp_entries))
 
             # Group both DICTs and SPECs by solvent environment
             by_solvent_dict = defaultdict(list)
@@ -292,8 +292,8 @@ class ThermoBuilder(Builder):
             for entry in sp_entries:
                 by_solvent_spec[entry["solvent"]].append(entry)
 
-            print("by_solvent_dict", by_solvent_dict)
-            print("by_solvent_spec", by_solvent_spec)
+            # print("by_solvent_dict", by_solvent_dict)
+            # print("by_solvent_spec", by_solvent_spec)
 
             if len(thermo_entries) == 0:
                 without_corrections = by_solvent_spec
