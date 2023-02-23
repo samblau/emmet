@@ -292,8 +292,8 @@ class ThermoBuilder(Builder):
             for entry in sp_entries:
                 by_solvent_spec[entry["solvent"]].append(entry)
 
-            self.logger.info("by_solvent_dict", by_solvent_dict)
-            self.logger.info("by_solvent_spec", by_solvent_spec)
+            # self.logger.info("by_solvent_dict", by_solvent_dict)
+            # self.logger.info("by_solvent_spec", by_solvent_spec)
 
             if len(thermo_entries) == 0:
                 without_corrections = by_solvent_spec
