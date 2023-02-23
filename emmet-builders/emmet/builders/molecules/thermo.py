@@ -338,6 +338,7 @@ class ThermoBuilder(Builder):
 
                 for best_spec in spec_sorted:
                     task_spec = best_spec["task_id"]
+                    print("best_spec", best_spec["task_id"])
 
                     matching_structures = list()
                     for entry in thermo_entries:
