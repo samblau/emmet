@@ -400,6 +400,11 @@ class OrbitalDoc(PropertyDoc):
             interactions = list()
             for ind in perts.get("donor bond index", list()):
 
+                if "3C" in perts["donor type"][ind]:
+                    continue
+                if "3C" in perts["acceptor type"][ind]:
+                    continue
+
                 if perts["donor atom 2 number"].get(ind) is None:
                     donor_atom2_number = None
                 else:
