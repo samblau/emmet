@@ -473,8 +473,12 @@ class OrbitalDoc(PropertyDoc):
         # Open-shell
         else:
             pops_inds = [0, 1, 2]
-            lps_inds = [0, 2]
-            bds_inds = [1, 3]
+            if "hyperbonds" in nbo:
+                lps_inds = [0, 3]
+                bds_inds = [1, 4]
+            else:
+                lps_inds = [0, 2]
+                bds_inds = [1, 3]
             perts_inds = [0, 1]
 
         for dset, inds in [
