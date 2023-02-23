@@ -348,8 +348,8 @@ class ThermoBuilder(Builder):
                         print("best LOT", best_spec["level_of_theory"])
                         print("eval best LOT", sum(evaluate_lot(best_spec["level_of_theory"])))
                         if (mm.fit(Molecule.from_dict(entry["molecule"]), Molecule.from_dict(best_spec["molecule"]))
-                            and (sum(evaluate_lot(entry["level_of_theory"])) <
-                                 sum(evaluate_lot(best_spec["level_of_theory"])))):
+                            and (sum(evaluate_lot(best_spec["level_of_theory"])) <
+                                 sum(evaluate_lot(entry["level_of_theory"])))):
                             matching_structures.append(entry)
 
                     if len(matching_structures) == 0:
