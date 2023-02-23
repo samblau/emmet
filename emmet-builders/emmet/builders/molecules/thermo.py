@@ -282,7 +282,7 @@ class ThermoBuilder(Builder):
                     and entry["spin_multiplicity"] == mol.spin_multiplicity
                 ):
                     sp_entries.append(entry)
-            print("Len of sp_entries", len(sp_entries))
+            self.logger.info("Len of sp_entries", len(sp_entries))
 
             # Group both DICTs and SPECs by solvent environment
             by_solvent_dict = defaultdict(list)
