@@ -176,6 +176,8 @@ def task_type(orig: Dict[str, Any], special_run_type: Optional[str] = None) -> T
         return TaskType("Transition State Geometry Optimization")
     elif orig["rem"].get("job_type") == "freq":
         return TaskType("Frequency Analysis")
+    elif orig["rem"].get("job_type") == "force":
+        return TaskType("Force")
 
     return TaskType("Unknown")
 

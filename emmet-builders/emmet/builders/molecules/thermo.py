@@ -277,7 +277,7 @@ class ThermoBuilder(Builder):
                     task_type = entry["task_type"]
 
                 if (
-                    task_type == "Single Point"
+                    task_type == "Single Point" or task_type == "Force"
                     and entry["charge"] == mol.charge
                     and entry["spin_multiplicity"] == mol.spin_multiplicity
                 ):
