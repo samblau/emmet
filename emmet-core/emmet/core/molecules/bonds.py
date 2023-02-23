@@ -116,11 +116,17 @@ def _bonds_peturbation(
     """
 
     bonds = set()
+    if len(metal_indices) == 0:
+        return bonds
     if len(nbo["perturbation_energy"]) > index:
         for inter_ind in nbo["perturbation_energy"][index].get("donor type", list()):
             coord = False
             m_ind: Optional[int] = None
             x_ind: Optional[int] = None
+            if "3C" in nbo["perturbation_energy"][index]["donor type"][inter_ind]:
+                continue
+            if "3C" in nbo["perturbation_energy"][index]["acceptor type"][inter_ind]:
+                continue
             if (
                 int(
                     nbo["perturbation_energy"][index]["acceptor atom 1 number"][
