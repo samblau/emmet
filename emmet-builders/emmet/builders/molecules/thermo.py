@@ -282,7 +282,6 @@ class ThermoBuilder(Builder):
                     and entry["spin_multiplicity"] == mol.spin_multiplicity
                 ):
                     sp_entries.append(entry)
-            # print("Len of sp_entries", len(sp_entries))
 
             # Group both DICTs and SPECs by solvent environment
             by_solvent_dict = defaultdict(list)
@@ -291,9 +290,6 @@ class ThermoBuilder(Builder):
                 by_solvent_dict[entry["solvent"]].append(entry)
             for entry in sp_entries:
                 by_solvent_spec[entry["solvent"]].append(entry)
-
-            # print("by_solvent_dict", by_solvent_dict)
-            # print("by_solvent_spec", by_solvent_spec)
 
             if len(thermo_entries) == 0:
                 without_corrections = by_solvent_spec
@@ -338,15 +334,9 @@ class ThermoBuilder(Builder):
 
                 for best_spec in spec_sorted:
                     task_spec = best_spec["task_id"]
-                    print("best_spec", best_spec["task_id"])
 
                     matching_structures = list()
                     for entry in thermo_entries:
-                        print("mm fit", mm.fit(Molecule.from_dict(entry["molecule"]), Molecule.from_dict(best_spec["molecule"])))
-                        print("entry LOT", entry["level_of_theory"])
-                        print("eval entry LOT", sum(evaluate_lot(entry["level_of_theory"])))
-                        print("best LOT", best_spec["level_of_theory"])
-                        print("eval best LOT", sum(evaluate_lot(best_spec["level_of_theory"])))
                         if (mm.fit(Molecule.from_dict(entry["molecule"]), Molecule.from_dict(best_spec["molecule"]))
                             and (sum(evaluate_lot(best_spec["level_of_theory"])) <
                                  sum(evaluate_lot(entry["level_of_theory"])))):
