@@ -242,7 +242,7 @@ class MoleculeDoc(CoreMoleculeDoc, MoleculeMetadata):
                 else:
                     initial_molecules.append(Molecule.from_dict(task.orig["molecule"]))
 
-            mm = MoleculeMatcher()
+            mm = MoleculeMatcher(tolerance=0.000001)
             initial_molecules = [group[0] for group in mm.group_molecules(initial_molecules)]
 
             # Deprecated
