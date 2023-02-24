@@ -222,12 +222,18 @@ class MoleculeDoc(CoreMoleculeDoc, MoleculeMetadata):
                     best_entries[lot_solv] = entry
 
         else:
+            print("Printing task types!")
+            for task in task_group:
+                print(task.task_type)
+                print(task.task_type in [TaskType.Geometry_Optimization, TaskType.Frequency_Flattening_Geometry_Optimization])
+                print("evaluate task", evaluate_task(task))
             geometry_optimizations = [
                 task
                 for task in task_group
                 if task.task_type
                 in [TaskType.Geometry_Optimization, TaskType.Frequency_Flattening_Geometry_Optimization]  # noqa: E501
             ]
+            print("len(geometry_optimizations)", len(geometry_optimizations))
 
             best_molecule_calc = sorted(geometry_optimizations, key=evaluate_task)[0]
             molecule = best_molecule_calc.output.optimized_molecule
