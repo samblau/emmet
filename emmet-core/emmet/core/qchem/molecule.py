@@ -178,7 +178,7 @@ class MoleculeDoc(CoreMoleculeDoc, MoleculeMetadata):
         calc_types = {task.task_id: task.calc_type for task in task_group}
 
         mols = [task.output.initial_molecule for task in task_group]
-        print("got here 1")
+
         # If we're dealing with single-atoms, process is much different
         if all([len(m) == 1 for m in mols]):
             sorted_tasks = sorted(task_group, key=evaluate_task)
@@ -202,7 +202,7 @@ class MoleculeDoc(CoreMoleculeDoc, MoleculeMetadata):
                     last_updated=sorted_tasks[0].last_updated,
                 )
             ]
-            print("got here 2")
+
             # entries
             best_entries = dict()
             all_lot_solvs = set(lot_solvents.values())
@@ -228,7 +228,7 @@ class MoleculeDoc(CoreMoleculeDoc, MoleculeMetadata):
                 if task.task_type
                 in [TaskType.Geometry_Optimization, TaskType.Frequency_Flattening_Geometry_Optimization]  # noqa: E501
             ]
-            print("got here 3")
+
             best_molecule_calc = sorted(geometry_optimizations, key=evaluate_task)[0]
             molecule = best_molecule_calc.output.optimized_molecule
             species = [e.symbol for e in molecule.species]
@@ -248,7 +248,7 @@ class MoleculeDoc(CoreMoleculeDoc, MoleculeMetadata):
             # Deprecated
             deprecated = all(task.task_id in deprecated_tasks for task in geometry_optimizations)
             deprecated = deprecated or best_molecule_calc.task_id in deprecated_tasks
-            print("got here 4")
+
             # Origins
             origins = [
                 PropertyOrigin(
@@ -275,7 +275,7 @@ class MoleculeDoc(CoreMoleculeDoc, MoleculeMetadata):
                     best_task_doc = relevant_calcs[0]
                     entry = best_task_doc.entry
                     best_entries[lot_solv] = entry
-        print("got here 5")
+
         for entry in entries:
             entry["entry_id"] = molecule_id
 

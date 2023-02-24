@@ -245,18 +245,18 @@ class MoleculesAssociationBuilder(Builder):
         molecules = list()
 
         for group in self.filter_and_group_tasks(tasks):
-            try:
-                doc = MoleculeDoc.from_tasks(group)
-                molecules.append(doc)
-            except Exception as e:
-                failed_ids = list({t_.task_id for t_ in group})
-                doc = MoleculeDoc.construct_deprecated_molecule(tasks)
-                doc.warnings.append(str(e))
-                molecules.append(doc)
-                self.logger.warning(
-                    f"Failed making material for {failed_ids}."
-                    f" Inserted as deprecated molecule: {doc.molecule_id}"
-                )
+            # try:
+            doc = MoleculeDoc.from_tasks(group)
+            molecules.append(doc)
+            # except Exception as e:
+            #     failed_ids = list({t_.task_id for t_ in group})
+            #     doc = MoleculeDoc.construct_deprecated_molecule(tasks)
+            #     doc.warnings.append(str(e))
+            #     molecules.append(doc)
+            #     self.logger.warning(
+            #         f"Failed making material for {failed_ids}."
+            #         f" Inserted as deprecated molecule: {doc.molecule_id}"
+            #     )
 
         self.logger.debug(f"Produced {len(molecules)} molecules for {formula}")
 
