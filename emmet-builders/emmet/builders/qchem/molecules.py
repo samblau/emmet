@@ -314,11 +314,6 @@ class MoleculesAssociationBuilder(Builder):
             molecules.append(m)
 
         grouped_molecules = group_molecules(molecules)
-        print("grouped_molecules")
-        for group in grouped_molecules:
-            print("start group")
-            for mol in group:
-                print(mol)
         for group in grouped_molecules:
             grouped_tasks = [filtered_tasks[mol.ind] for mol in group]  # type: ignore
             yield grouped_tasks
