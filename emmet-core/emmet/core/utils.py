@@ -126,7 +126,7 @@ def group_molecules(molecules: List[Molecule]):
     # different solvent environments)
     # This tolerance was chosen based on trying to distinguish CO optimized in
     # two different solvents
-    mm = MoleculeMatcher(tolerance=0.1)
+    mm = MoleculeMatcher(tolerance=0.000001)
 
     # First, group by formula
     # Hopefully this step is unnecessary - builders should already be doing this
@@ -145,7 +145,7 @@ def group_molecules(molecules: List[Molecule]):
             # Group by structure
             for group in groups:
                 if (
-                    mm.fit(mol_copy, group["mol"])
+                    (mm.fit(mol_copy, group["mol"]) or mol_copy == group["mol"])
                     and mol_copy.charge == group["mol"].charge
                 ):
                     group["mol_list"].append(mol)
