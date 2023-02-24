@@ -126,7 +126,7 @@ def group_molecules(molecules: List[Molecule]):
     # different solvent environments)
     # This tolerance was chosen based on trying to distinguish CO optimized in
     # two different solvents
-    mm = MoleculeMatcher(tolerance=0.0001)
+    mm = MoleculeMatcher(tolerance=0.1)
 
     # First, group by formula
     # Hopefully this step is unnecessary - builders should already be doing this
