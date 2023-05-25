@@ -1,14 +1,18 @@
-
-from pymatgen.analysis.alloys.core import AlloyPair, SupportedProperties, AlloySystem
-
 from emmet.core.base import EmmetBaseModel
 from typing import Dict
 
-import pydantic
+try:
+    from pymatgen.analysis.alloys.core import (
+        AlloyPair,
+        AlloySystem,
+    )
+except ImportError:
+    raise ImportError(
+        "Install pymatgen-analysis-alloys to use AlloyPairDoc or AlloySystemDoc"
+    )
 
 
 class AlloyPairDoc(EmmetBaseModel):
-
     alloy_pair: AlloyPair
 
     pair_id: str
@@ -22,7 +26,6 @@ class AlloyPairDoc(EmmetBaseModel):
 
 
 class AlloySystemDoc(EmmetBaseModel):
-
     alloy_system: AlloySystem
 
     alloy_id: str

@@ -1,8 +1,9 @@
+# mypy: ignore-errors
+
 """
 Settings for defaults in the core definitions of Materials Project Documents
 """
 import json
-import os
 from pathlib import Path
 from typing import Dict, List, Type, TypeVar, Union
 
@@ -69,6 +70,7 @@ class EmmetSettings(BaseSettings):
             "wB97X-D3": 5,
             "wB97X-D": 5,
             "B3LYP": 4,
+            "B97M-V": 3,
             "B97M-rV": 3,
             "B97-D3": 2,
             "B97-D": 2,
@@ -96,13 +98,17 @@ class EmmetSettings(BaseSettings):
     )
 
     QCHEM_TASK_QUALITY_SCORES: Dict[str, int] = Field(
-        {"geometry optimization": 1, "frequency-flattening geometry optimization": 2},
+        {
+            "single_point": 1,
+            "geometry optimization": 2,
+            "frequency-flattening geometry optimization": 3,
+        },
         description="Dictionary mapping Q-Chem task type to a quality score",
     )
 
     VASP_STRUCTURE_QUALITY_SCORES: Dict[str, int] = Field(
         {"R2SCAN": 5, "SCAN": 4, "GGA+U": 3, "GGA": 2, "PBESol": 1},
-        description="Dictionary Mapping VASP calculation run types to rung level for VASP materials builder structure data",
+        description="Dictionary Mapping VASP calculation run types to rung level for VASP materials builder structure data",  # noqa: E501
     )
 
     VASP_KPTS_TOLERANCE: float = Field(

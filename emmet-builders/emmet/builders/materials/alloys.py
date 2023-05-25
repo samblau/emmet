@@ -1,14 +1,12 @@
 from itertools import combinations, chain
-from typing import Tuple, List, Dict
+from typing import Tuple, List, Dict, Union
 
 from tqdm import tqdm
 from maggma.builders import Builder
-from maggma.stores import MongoURIStore
-from monty.serialization import loadfn
 from pymatgen.core.structure import Structure
 from matminer.datasets import load_dataset
+from emmet.core.thermo import ThermoType
 
-from emmet.core.alloys import AlloyPairDoc
 from pymatgen.analysis.alloys.core import (
     AlloyPair,
     InvalidAlloy,
@@ -42,14 +40,23 @@ class AlloyPairBuilder(Builder):
         provenance,
         oxi_states,
         alloy_pairs,
+        thermo_type: Union[ThermoType, str] = ThermoType.GGA_GGA_U_R2SCAN,
     ):
-
         self.materials = materials
         self.thermo = thermo
         self.electronic_structure = electronic_structure
         self.provenance = provenance
         self.oxi_states = oxi_states
         self.alloy_pairs = alloy_pairs
+
+        t_type = thermo_type if isinstance(thermo_type, str) else thermo_type.value
+        valid_types = {*map(str, ThermoType.__members__.values())}
+        if invalid_types := {t_type} - valid_types:
+            raise ValueError(
+                f"Invalid thermo type(s) passed: {invalid_types}, valid types are: {valid_types}"
+            )
+
+        self.thermo_type = t_type
 
         super().__init__(
             sources=[materials, thermo, electronic_structure, provenance, oxi_states],
@@ -58,16 +65,16 @@ class AlloyPairBuilder(Builder):
         )
 
     def ensure_indexes(self):
-
         self.alloy_pairs.ensure_index("pair_id")
         self.alloy_pairs.ensure_index("_search.id")
         self.alloy_pairs.ensure_index("_search.formula")
         self.alloy_pairs.ensure_index("_search.member_ids")
+        self.alloy_pairs.ensure_index("alloy_pair.chemsys")
 
     def get_items(self):
+        self.ensure_indexes()
 
         for idx, af in enumerate(ANON_FORMULAS):
-
             # if af != "AB":
             #     continue
 
@@ -83,7 +90,7 @@ class AlloyPairBuilder(Builder):
             mpids = list(docs.keys())
 
             thermo_docs = self.thermo.query(
-                {"material_id": {"$in": mpids}},
+                {"material_id": {"$in": mpids}, "thermo_type": self.thermo_type},
                 properties=[
                     "material_id",
                     "energy_above_hull",
@@ -113,7 +120,6 @@ class AlloyPairBuilder(Builder):
             oxi_states_docs = {d["material_id"]: d for d in oxi_states_docs}
 
             for material_id, d in docs.items():
-
                 d["structure"] = Structure.from_dict(d["structure"])
 
                 if material_id in oxi_states_docs:
@@ -155,7 +161,6 @@ class AlloyPairBuilder(Builder):
             yield docs
 
     def process_item(self, item):
-
         pairs = []
         for mpids in tqdm(list(combinations(item.keys(), 2))):
             if (
@@ -200,7 +205,6 @@ class AlloyPairBuilder(Builder):
         return pairs
 
     def update_targets(self, items):
-
         docs = list(chain.from_iterable(items))
         if docs:
             self.alloy_pairs.update(docs)
@@ -213,19 +217,25 @@ class AlloyPairMemberBuilder(Builder):
     """
 
     def __init__(self, alloy_pairs, materials, snls, alloy_pair_members):
-
         self.alloy_pairs = alloy_pairs
         self.materials = materials
         self.snls = snls
         self.alloy_pair_members = alloy_pair_members
 
         super().__init__(
-            sources=[alloy_pairs, materials, snls], targets=[alloy_pair_members],
+            sources=[alloy_pairs, materials, snls], targets=[alloy_pair_members]
         )
 
-    def get_items(self):
+    def ensure_indexes(self):
+        self.alloy_pairs.ensure_index("pair_id")
+        self.alloy_pairs.ensure_index("_search.id")
+        self.alloy_pairs.ensure_index("_search.formula")
+        self.alloy_pairs.ensure_index("_search.member_ids")
+        self.alloy_pairs.ensure_index("alloy_pair.chemsys")
+        self.alloy_pairs.ensure_index("alloy_pair.anonymous_formula")
 
-        all_alloy_chemsys = set(alloy_pairs.distinct("alloy_pair.chemsys"))
+    def get_items(self):
+        all_alloy_chemsys = set(self.alloy_pairs.distinct("alloy_pair.chemsys"))
         all_known_chemsys = set(self.materials.distinct("chemsys")) | set(
             self.snls.distinct("chemsys")
         )
@@ -237,7 +247,6 @@ class AlloyPairMemberBuilder(Builder):
         )
 
         for idx, chemsys in enumerate(possible_chemsys):
-
             pairs = self.alloy_pairs.query(criteria={"alloy_pair.chemsys": chemsys})
             pairs = [AlloyPair.from_dict(d["alloy_pair"]) for d in pairs]
 
@@ -249,7 +258,7 @@ class AlloyPairMemberBuilder(Builder):
                 d["material_id"]: Structure.from_dict(d["structure"]) for d in mp_docs
             }
 
-            snl_docs = self.snls.query({"chemsys": chemsys},)
+            snl_docs = self.snls.query({"chemsys": chemsys})
             snl_structures = {d["snl_id"]: Structure.from_dict(d) for d in snl_docs}
 
             structures = mp_structures
@@ -259,7 +268,6 @@ class AlloyPairMemberBuilder(Builder):
                 yield (pairs, structures)
 
     def process_item(self, item: Tuple[List[AlloyPair], Dict[str, Structure]]):
-
         pairs, structures = item
 
         all_pair_members = []
@@ -285,7 +293,6 @@ class AlloyPairMemberBuilder(Builder):
         return all_pair_members
 
     def update_targets(self, items):
-
         docs = list(chain.from_iterable(items))
         if docs:
             self.alloy_pair_members.update(docs)
@@ -302,7 +309,6 @@ class AlloySystemBuilder(Builder):
     def __init__(
         self, alloy_pairs, alloy_pair_members, alloy_pairs_merged, alloy_systems
     ):
-
         self.alloy_pairs = alloy_pairs
         self.alloy_pair_members = alloy_pair_members
         self.alloy_pairs_merged = alloy_pairs_merged
@@ -315,9 +321,7 @@ class AlloySystemBuilder(Builder):
         )
 
     def get_items(self):
-
         for idx, af in enumerate(ANON_FORMULAS):
-
             # comment out to only calculate a single anonymous formula for debugging
             # if af != "AB":
             #     continue
@@ -333,7 +337,6 @@ class AlloySystemBuilder(Builder):
                 yield docs, members
 
     def process_item(self, item):
-
         pair_docs, members = item
 
         for doc in pair_docs:
@@ -365,7 +368,6 @@ class AlloySystemBuilder(Builder):
         return pair_docs, system_docs
 
     def update_targets(self, items):
-
         pair_docs, system_docs = [p for p, s in items], [s for p, s in items]
 
         pair_docs = list(chain.from_iterable(pair_docs))

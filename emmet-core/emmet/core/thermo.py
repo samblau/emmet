@@ -1,6 +1,6 @@
 """ Core definition of a Thermo Document """
 from collections import defaultdict
-from typing import Dict, List, Union
+from typing import Dict, List, Optional, Union
 from datetime import datetime
 from emmet.core.utils import ValueEnum
 
@@ -36,6 +36,7 @@ class DecompositionProduct(BaseModel):
 class ThermoType(ValueEnum):
     GGA_GGA_U = "GGA_GGA+U"
     GGA_GGA_U_R2SCAN = "GGA_GGA+U_R2SCAN"
+    R2SCAN = "R2SCAN"
     UNKNOWN = "UNKNOWN"
 
 
@@ -102,7 +103,8 @@ class ThermoDoc(PropertyDoc):
     )
 
     energy_type: str = Field(
-        ..., description="The type of calculation this energy evaluation comes from.",
+        ...,
+        description="The type of calculation this energy evaluation comes from.",
     )
 
     entry_types: List[str] = Field(
@@ -120,20 +122,26 @@ class ThermoDoc(PropertyDoc):
         cls,
         entries: List[Union[ComputedEntry, ComputedStructureEntry]],
         thermo_type: Union[ThermoType, RunType],
+        phase_diagram: Optional[PhaseDiagram] = None,
+        use_max_chemsys: bool = False,
         **kwargs
     ):
+        """Produce a list of ThermoDocs from a list of Entry objects
 
-        entries_by_comp = defaultdict(list)
-        for e in entries:
-            entries_by_comp[e.composition.reduced_formula].append(e)
+        Args:
+            entries (List[Union[ComputedEntry, ComputedStructureEntry]]): List of Entry objects
+            thermo_type (Union[ThermoType, RunType]): Thermo type
+            phase_diagram (Optional[PhaseDiagram], optional): Already built phase diagram. Defaults to None.
+            use_max_chemsys (bool, optional): Whether to only produce thermo docs for materials
+                that match the largest chemsys represented in the list. Defaults to False.
 
-        # Only use lowest entry per composition to speed up QHull in Phase Diagram
-        reduced_entries = [
-            sorted(comp_entries, key=lambda e: e.energy_per_atom)[0]
-            for comp_entries in entries_by_comp.values()
-        ]
+        Returns:
+            List[ThermoDoc]: List of built thermo doc objects.
+        """
 
-        pd = PhaseDiagram(reduced_entries)
+        pd = phase_diagram or cls.construct_phase_diagram(entries)
+
+        chemsys = "-".join(sorted([str(e) for e in pd.elements]))
 
         docs = []
 
@@ -158,6 +166,11 @@ class ThermoDoc(PropertyDoc):
             )
 
         for material_id, entry_group in entries_by_mpid.items():
+            if (
+                use_max_chemsys
+                and entry_group[0].composition.chemical_system != chemsys
+            ):
+                continue
 
             sorted_entries = sorted(entry_group, key=_energy_eval)
 
@@ -178,8 +191,9 @@ class ThermoDoc(PropertyDoc):
                 "is_stable": blessed_entry in pd.stable_entries,
             }
 
-            if "last_updated" in blessed_entry.data:
-                d["last_updated"] = blessed_entry.data["last_updated"]
+            # Uncomment to make last_updated line up with materials.
+            # if "last_updated" in blessed_entry.data:
+            #     d["last_updated"] = blessed_entry.data["last_updated"]
 
             # Store different info if stable vs decomposes
             if d["is_stable"]:
@@ -223,7 +237,6 @@ class ThermoDoc(PropertyDoc):
 
             # Currently, each entry group contains a single entry due to how the compatability scheme works
             for entry in entry_group:
-
                 d["entry_types"].append(entry.parameters.get("run_type", "Unknown"))
                 d["entries"][entry.parameters.get("run_type", "Unknown")] = entry
 
@@ -241,14 +254,38 @@ class ThermoDoc(PropertyDoc):
                 )
             )
 
-        # Construct new phase diagram with all of the entries, not just those on the hull
-        pd_computed_data = pd._compute()
+        return docs
+
+    @staticmethod
+    def construct_phase_diagram(entries) -> PhaseDiagram:
+        """
+        Efficienty construct a phase diagram using only the lowest entries at every composition
+        represented in the entry data passed.
+
+        Args:
+            entries (List[ComputedStructureEntry]): List of corrected pymatgen entry objects.
+
+        Returns:
+            PhaseDiagram: Pymatgen PhaseDiagram object
+        """
+        entries_by_comp = defaultdict(list)
+        for e in entries:
+            entries_by_comp[e.composition.reduced_formula].append(e)
+
+        # Only use lowest entry per composition to speed up QHull in Phase Diagram
+        reduced_entries = [
+            sorted(comp_entries, key=lambda e: e.energy_per_atom)[0]
+            for comp_entries in entries_by_comp.values()
+        ]
+        pd = PhaseDiagram(reduced_entries)
+
+        # Add back all entries, not just those on the hull
+        pd_computed_data = pd.computed_data
         pd_computed_data["all_entries"] = entries
         new_pd = PhaseDiagram(
             entries, elements=pd.elements, computed_data=pd_computed_data
         )
-
-        return docs, new_pd
+        return new_pd
 
 
 class PhaseDiagramDoc(BaseModel):
@@ -264,7 +301,8 @@ class PhaseDiagramDoc(BaseModel):
     )
 
     chemsys: str = Field(
-        ..., description="Dash-delimited string of elements in the material",
+        ...,
+        description="Dash-delimited string of elements in the material",
     )
 
     thermo_type: Union[ThermoType, RunType] = Field(
@@ -273,7 +311,8 @@ class PhaseDiagramDoc(BaseModel):
     )
 
     phase_diagram: PhaseDiagram = Field(
-        ..., description="Phase diagram for the chemical system.",
+        ...,
+        description="Phase diagram for the chemical system.",
     )
 
     last_updated: datetime = Field(

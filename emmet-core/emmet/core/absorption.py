@@ -1,7 +1,6 @@
-from typing import Dict, List, Any, Union
+from typing import List
 from pydantic import Field
 from emmet.core.material_property import PropertyDoc
-from emmet.core.spectrum import SpectrumDoc
 import numpy as np
 from emmet.core.mpid import MPID
 from pymatgen.core import Structure
@@ -35,9 +34,7 @@ class AbsorptionDoc(PropertyDoc):
         description="Real part of the dielectric function corresponding to the energies",
     )
 
-    bandgap: float = Field(
-        None, description="The electronic band gap"
-    )
+    bandgap: float = Field(None, description="The electronic band gap")
 
     nkpoints: float = Field(
         None, description="The number of kpoints used in the calculation"
@@ -63,7 +60,6 @@ class AbsorptionDoc(PropertyDoc):
         nkpoints: float,
         **kwargs,
     ):
-
         real_d_average = [
             np.average(np.diagonal(cls._convert_list_to_tensor(t))) for t in real_d
         ]
@@ -84,7 +80,7 @@ class AbsorptionDoc(PropertyDoc):
                 "average_real_dielectric": real_d_average,
                 "bandgap": bandgap,
                 "nkpoints": nkpoints,
-                "task_id": task_id
+                "task_id": task_id,
             },
-            **kwargs
+            **kwargs,
         )

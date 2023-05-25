@@ -1,5 +1,5 @@
 from math import ceil
-from typing import Dict, Iterable, Iterator, List, Optional, Set
+from typing import Dict, Iterator, List, Optional
 
 import numpy as np
 from maggma.builders import Builder
@@ -82,15 +82,12 @@ class AbsorptionBuilder(Builder):
     def process_item(self, item):
         structure = Structure.from_dict(item["structure"])
         mpid = item[self.materials.key]
-        origin_entry = {
-            "name": "absorption",
-            "task_id": item["task_id"]
-        }
+        origin_entry = {"name": "absorption", "task_id": item["task_id"]}
 
         doc = AbsorptionDoc.from_structure(
             structure=structure,
             material_id=mpid,
-            task_id=item['task_id'],
+            task_id=item["task_id"],
             deprecated=False,
             energies=item["energies"],
             real_d=item["real_dielectric"],
@@ -99,14 +96,14 @@ class AbsorptionBuilder(Builder):
             bandgap=item["bandgap"],
             nkpoints=item["nkpoints"],
             last_updated=item["updated_on"],
-            origins=[origin_entry]
+            origins=[origin_entry],
         )
 
         return jsanitize(doc.dict(), allow_bson=True)
 
     def update_targets(self, items):
         """
-        Inserts the new dielectric docs into the dielectric collection
+        Inserts the new absorption docs into the absorption collection
         """
         docs = list(filter(None, items))
 
@@ -117,7 +114,6 @@ class AbsorptionBuilder(Builder):
             self.logger.info("No items to update")
 
     def _get_processed_doc(self, mat):
-
         mat_doc = self.materials.query_one(
             {self.materials.key: mat},
             [
@@ -125,7 +121,7 @@ class AbsorptionBuilder(Builder):
                 "structure",
                 "task_types",
                 "run_types",
-                "last_updated"
+                "last_updated",
             ],
         )
 
@@ -156,7 +152,6 @@ class AbsorptionBuilder(Builder):
             )
 
             if task_query["output"]["optical_absorption_coeff"] is not None:
-
                 try:
                     structure = task_query["orig_inputs"]["poscar"]["structure"]
                 except KeyError:
